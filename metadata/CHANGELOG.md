@@ -1,35 +1,15760 @@
-### Feature
-* Create users in metadata backend via API ([#289](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/289)) ([`eeba485`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/eeba485b5c211e6d92bbb841bfc26bca79f051e0))
-* Add Column Badge API ([#273](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/273)) ([`ee0ac63`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/ee0ac63194a4286715cd32c34042443c979f4cea))
-* Column Lineage API ([#280](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/280)) ([`681893f`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/681893fb47ebcfc61ed4736f535618fddb6c4631))
-* Table Lineage API ([#262](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/262)) ([`e306034`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/e306034043e067a2d6c24477bd197d10177d1d6d))
-* Column badges in Atlas Proxy ([#263](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/263)) ([`a3efb4c`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/a3efb4cb778a6a5a58b0e55874622f114fd2e7e7))
-* Added get_lineage method to neo4j proxy ([#259](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/259)) ([`b129cc7`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/b129cc701117871a90ae05c36bcf0f112ae36e5e))
-* Neo4j backend for popular tables personalization ([#233](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/233)) ([`d045efa`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/d045efabe116a5cb459441389b814571fb83232b))
-* Updated popular_tables endpoint to allow optional user_id ([#232](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/232)) ([`5680775`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/56807753963735eaf1556dae199e0da82b4ebb71))
-* AddSwaggerEnabledAsEnvVar ([#215](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/215)) ([`3c9a55e`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/3c9a55e6af4cac9b342803c34cfe81851470e7f5))
-* Add neptune proxy ([#204](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/204)) ([`09845d4`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/09845d479297415093033d123868196bd02d19b5))
-* Return column level badges ([#205](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/205)) ([`d4d8101`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/d4d81017ab2994375526fb5f4c48092fbb804150))
-* Badges with category and badge_type fields ([#201](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/201)) ([`19e1bf8`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/19e1bf8e5c9581ab4b6947f37b7584bac8f2ccf1))
-* Get last updated ts for AtlasProxy ([#177](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/177)) ([`3e92586`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/3e9258675ea46beb4192638b4bbebcb20c30cb77))
-* Data Owner Implementation of Atlas Proxy ([#156](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/156)) ([`48b4c71`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/48b4c71054f7b34bca8a8f148e8b7499dfb986fc))
+# CHANGELOG
 
-### Fix
-* Sort reports alphabetically ([#293](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/293)) ([`c8423c6`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/c8423c62c85f94fe4407f2b42dcc176a77849645))
-* Reconcile gremlin description writes with the Databuilder ([#290](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/290)) ([`18454fe`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/18454fec95a672e7d01fdbfa91e86df318246457))
-* Swagger docs don't align with common entity ([#283](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/283)) ([`db33af9`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/db33af98d6ed2ba29c059b790bc7d09ce71b24c8))
-* Compatibility changes  to the gremlin integration ([#260](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/260)) ([`a765424`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/a765424aa13c71afdb04f7457f30d8a8977974a2))
-* Proxy client creation fails after adding client_kwargs ([#258](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/258)) ([`1880cec`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/1880cec3bf0ed4b889c5fe3b61633228063cdfad))
-* Reapply previous fix ([#245](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/245)) ([`c7dc172`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/c7dc172b2b8c3b8ff4d7f145e5564474a3cb8dd8))
-* Expire is a keyword argument for beaker cache ([#239](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/239)) ([`a7b2ec5`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/a7b2ec543470157361767e705f945beed4b32bac))
-* Get_tags no longer return tag_count 0 tag ([#230](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/230)) ([`5097d2b`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/5097d2baba2fe8894c15e9627e1ca7bacc3807fb))
-* Too many partitions in one Atlas query (Watermarks in Atlas Proxy) ([#217](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/217)) ([`cc3768f`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/cc3768fb3ae055f0f84958ee5c08560e9c63ffc4))
-* Data_type as Column.col_type. ([#203](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/203)) ([`7b97f62`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/7b97f62cc2ef0279d3b292991a952e7b103dfc92))
-* Add /delete bidirectional relations in case of owner ([#206](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/206)) ([`40cd0dd`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/40cd0dd4de7c52ae9f58ecec71309f82553098a0))
-* Removed all badge_type fields from API ([#202](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/202)) ([`6a81b97`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/6a81b974f2715429748f86bdb3459b1c91dfedfb))
-* Improvements to the Owned By feature ([#178](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/178)) ([`0558d69`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/0558d69f619a5f9426e5839cadc06cea13366706))
-* Get all tags should work for all resources ([#175](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/175)) ([`cf1ab6d`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/cf1ab6d179c70c0f43156cc499332c465226cb45))
-* Removing OidcConfig file and making statsd configurable through envrionment variable ([#157](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/157)) ([`2752492`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/2752492e71d6f5e134cdf55c4b55e67254409a88))
+
+## v0.1.0 (2025-02-01)
+
+### Bug Fixes
+
+- 1157 issude - metadata sql alchemy for iodc component
+  ([#1169](https://github.com/zain13337/lyft-amundsen/pull/1169),
+  [`ca02c99`](https://github.com/zain13337/lyft-amundsen/commit/ca02c9995ef8857a6ae29b79a59ed1107f444bd5))
+
+Signed-off-by: iamtodor <todor.ilya@gmail.com>
+
+- Accept non int stats values ([#748](https://github.com/zain13337/lyft-amundsen/pull/748),
+  [`73320e2`](https://github.com/zain13337/lyft-amundsen/commit/73320e25bda1743b4199697742b9be3aae0c23e8))
+
+* added logic to surface any string
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* lint fix and adde dunit tests
+
+* lint
+
+* typed and always return something
+
+* added tests for component
+
+- Add /delete bidirectional relations in case of owner
+  ([#206](https://github.com/zain13337/lyft-amundsen/pull/206),
+  [`9fa47fe`](https://github.com/zain13337/lyft-amundsen/commit/9fa47fedbbd6782f65e568f8ef00c185ae464da6))
+
+* Add /delete bidirectonal relations in case of owner
+
+Signed-off-by: dikshathakur3119 <dikshathakur@lyft.com>
+
+* Update unit test case
+
+* Fix test case
+
+* fix lint
+
+* Add bidirectional relationships to both follow and read
+
+* Add Optional to delete owner query
+
+* Fix lint
+
+- Add amundsen-common requirement ([#1184](https://github.com/zain13337/lyft-amundsen/pull/1184),
+  [`103e701`](https://github.com/zain13337/lyft-amundsen/commit/103e701b9645772b3edb9dfda7ad9b2c7ecbdc54))
+
+Signed-off-by: dechoma <dominik.choma@gmail.com>
+
+- Add changelog file ([#907](https://github.com/zain13337/lyft-amundsen/pull/907),
+  [`47ca30f`](https://github.com/zain13337/lyft-amundsen/commit/47ca30f864983e899d9c5bfe40abaf96819c8782))
+
+* "New release for 3.3.1"
+
+Automatically generated by python-semantic-release
+
+* trying to preserve format of changelog
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* revent v bump
+
+* added changelog file to persist through actions
+
+* removed changelog call from PR creations tep
+
+* removed unnnecesary variable
+
+* ssetup cron to run the first day of every month at 12am
+
+Co-authored-by: semantic-release <semantic-release>
+
+- Add chore to monthly release PRs ([#912](https://github.com/zain13337/lyft-amundsen/pull/912),
+  [`4459ee1`](https://github.com/zain13337/lyft-amundsen/commit/4459ee1339db98a3f22da1b1d9108eb56f389663))
+
+* title lint escape char : in yaml
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* hard code signoff for python-semantic-release commit
+
+* oopsie put it in commit menssage istead of title
+
+- Add comma between bigquery requirements listings
+  ([#452](https://github.com/zain13337/lyft-amundsen/pull/452),
+  [`56f3db5`](https://github.com/zain13337/lyft-amundsen/commit/56f3db5a72d57535d0378087f858d0480f526086))
+
+Signed-off-by: Madison Swain-Bowden <madison.bowden@ookla.com>
+
+- Add csv badges back in Quickstart ([#418](https://github.com/zain13337/lyft-amundsen/pull/418),
+  [`42e8581`](https://github.com/zain13337/lyft-amundsen/commit/42e8581518e9d5b76ba5512fb1975bf704fb2831))
+
+* fix: csv badges back in quickstart
+
+Signed-off-by: jornh <jornhansen@gmail.com>
+
+* Adding noqa C901 because test breaks if I split code
+
+* mypy
+
+* cleanup
+
+* test CsvTableColumnExtractor
+
+* Back out table level badges
+
+* Update example/sample_data/sample_col.csv
+
+* always have caller send a list of badge names
+
+* back out unrelated
+
+* back out unrelated CASE change in test
+
+* __eq__ stricter typing the mypy way
+
+- Add dashboard index map copied from amundsendatabuilder
+  ([#65](https://github.com/zain13337/lyft-amundsen/pull/65),
+  [`8f80fd7`](https://github.com/zain13337/lyft-amundsen/commit/8f80fd742aa5e45724cbb2ddd86b2f98a231cb20))
+
+Signed-off-by: Wonyeong Choi <ciwnyg0815@gmail.com>
+
+- Add databuilder missing dependencies ([#400](https://github.com/zain13337/lyft-amundsen/pull/400),
+  [`4e94629`](https://github.com/zain13337/lyft-amundsen/commit/4e9462967756663482b79ae42cff3254d59f68fe))
+
+* Add dependencies missing from version 4.0.2
+
+Signed-off-by: hhobson <hugo.hobson@dazn.com>
+
+* Update setup.py
+
+- Add es v2 client config ([#1592](https://github.com/zain13337/lyft-amundsen/pull/1592),
+  [`d72900f`](https://github.com/zain13337/lyft-amundsen/commit/d72900f2a68d4383cdc99ee317628fb2a00160b9))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Add Feast Serving URL to Feast Extractor
+  ([#1330](https://github.com/zain13337/lyft-amundsen/pull/1330),
+  [`c96a4ba`](https://github.com/zain13337/lyft-amundsen/commit/c96a4bac78a58a7aae12ee1ba2a6b3faff20ce49))
+
+* Add Feast Serving URL to Feast Extractor
+
+Signed-off-by: Amom <amommendes@hotmail.com>
+
+* Add Serving URL to example script
+
+* Better naming for example script variable
+
+- Add forgotten init file to databuilder/models/feature module
+  ([#1211](https://github.com/zain13337/lyft-amundsen/pull/1211),
+  [`f32721e`](https://github.com/zain13337/lyft-amundsen/commit/f32721e87e3ae8da3b601515d79792eb76182859))
+
+* add init file to feature module
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+* loosen mypy annotation
+
+- Add id field to Dashboard ([#174](https://github.com/zain13337/lyft-amundsen/pull/174),
+  [`44663e9`](https://github.com/zain13337/lyft-amundsen/commit/44663e9960185e907e2a59314403acf9f2358a8c))
+
+Signed-off-by: tianru zhou <tianru.zhou@databricks.com>
+
+- Add import logging to some example scripts
+  ([#468](https://github.com/zain13337/lyft-amundsen/pull/468),
+  [`b9c160f`](https://github.com/zain13337/lyft-amundsen/commit/b9c160ff2e45ef8103e57e7ca8b38424996b4d74))
+
+* Add import logging to some example scripts
+
+Signed-off-by: Justin Kenny <rtytt@hotmail.com>
+
+* fix: Use logging to resolve unit tests
+
+Co-authored-by: Justin Kenny <rtytt@hotmail.com>
+
+- Add missing fields for dashboard uri
+  ([#1631](https://github.com/zain13337/lyft-amundsen/pull/1631),
+  [`277abb5`](https://github.com/zain13337/lyft-amundsen/commit/277abb5f74beea7c844dc4ab553ddffbcae726d0))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Add optional list to atlas_search_extractor
+  ([#1180](https://github.com/zain13337/lyft-amundsen/pull/1180),
+  [`a453987`](https://github.com/zain13337/lyft-amundsen/commit/a4539878c543d08fa6dd71de783b849b9651213a))
+
+Signed-off-by: dechoma <dominik.choma@gmail.com>
+
+- Add postgres compatibility in HiveTableLastUpdatedExtractor
+  ([#1879](https://github.com/zain13337/lyft-amundsen/pull/1879),
+  [`ecfbf37`](https://github.com/zain13337/lyft-amundsen/commit/ecfbf3709cf4f974652249ca806f0ba6fe314119))
+
+* Add postgres compatibility in HiveTableLastUpdatedExtractor
+
+Signed-off-by: Tony Chou <tcheon8788@gmail.com>
+
+* Fix ci UT: check the beginning of connection string to determine whether it's postgres or not
+
+- Add postgres compatibility in PrestoViewMetadataExtractor
+  ([#1878](https://github.com/zain13337/lyft-amundsen/pull/1878),
+  [`a9aa1dd`](https://github.com/zain13337/lyft-amundsen/commit/a9aa1dddca653414d6669492aae3b52bbe2ba835))
+
+* Provide postgres compatibility in presto view metadata extractor
+
+Signed-off-by: Tony Chou <tcheon8788@gmail.com>
+
+* Fix ci UT: check the beginning of connection string to determine whether it's postgres or not
+
+Co-authored-by: Tony Chou <tony.chou@appier.com>
+
+- Add schema name to Lineage graph node labels
+  ([#1792](https://github.com/zain13337/lyft-amundsen/pull/1792),
+  [`85d0d6b`](https://github.com/zain13337/lyft-amundsen/commit/85d0d6b5dbb87ec52ff0d74a3824a8e3ab94aa6a))
+
+* fix: Add schema name to Lineage graph node labels
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+* fix: Add getNodeLabel function
+
+* fix: Pass getNodeLabel without arguments
+
+- Add support for Tableau multi-site deployment
+  ([#463](https://github.com/zain13337/lyft-amundsen/pull/463),
+  [`49926d5`](https://github.com/zain13337/lyft-amundsen/commit/49926d5c1c7664c8f45f28119ddff5aa2f1d2107))
+
+* Add support for Tableau multi-site deployment
+
+Tableau supports multi-tenancy as "site", but current databuilder implementation does not support
+  the feature. Now, dashboard_url and dashboard_group_url contain site name (e.g.
+  https://tableau-server/#/site/my-site/...).
+
+Signed-off-by: Shuichiro MAKIGAKI <shuichiro.makigaki@gmail.com>
+
+* Add defaulting Tableau site name
+
+Default site name is '', and site name conf is optional.
+
+- Add upper-bound for Jinja2 version for backwards compatibility
+  ([#1780](https://github.com/zain13337/lyft-amundsen/pull/1780),
+  [`8a2f85e`](https://github.com/zain13337/lyft-amundsen/commit/8a2f85e8ceae2f16ddfafd81da4c64fb37205f13))
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+- Added default value to optional field in search request
+  ([#1834](https://github.com/zain13337/lyft-amundsen/pull/1834),
+  [`33e341e`](https://github.com/zain13337/lyft-amundsen/commit/33e341ed52825cc4ffa734a4c33f5e3e2526ccff))
+
+* fix: added default value to optional field in search request
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* updated version in reqs
+
+- Added highlight options to request ([#1835](https://github.com/zain13337/lyft-amundsen/pull/1835),
+  [`23ebda4`](https://github.com/zain13337/lyft-amundsen/commit/23ebda447e37fd01deae701e118627ca449aa1bc))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Added max-width style property with 560px value
+  ([#507](https://github.com/zain13337/lyft-amundsen/pull/507),
+  [`dc72d97`](https://github.com/zain13337/lyft-amundsen/commit/dc72d9763027306e8070f1f36af427d072f47925))
+
+* added max-width style property with 560px value
+
+* fixed align on search bar
+
+* implemented Tamika's feedback on nesting classes and rename class for nav-search-bar
+
+- Added missing description fields to mappings
+  ([#1629](https://github.com/zain13337/lyft-amundsen/pull/1629),
+  [`f0d8735`](https://github.com/zain13337/lyft-amundsen/commit/f0d8735d701fcce9207a7c63ffc887f8f82c92a2))
+
+* fix: added missing fields to mappings
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* added descriptions to unit test results
+
+- Added missing job tag key in hive_sample_dag.py
+  ([#308](https://github.com/zain13337/lyft-amundsen/pull/308),
+  [`b3a4519`](https://github.com/zain13337/lyft-amundsen/commit/b3a4519c765b15f4c0ca3ffc33b291f5362144f6))
+
+* Added missing job tag key in hive_sample_dag.py
+
+Running "create_table_metadata_databuilder_job()" was giving an Exception :
+  ""ConfigMissingException" : No Configuration setting found for key job_publish_tag." Hence, Adding
+  a missing key for job_publish_tag in "create_table_metadata_databuilder_job()" of
+  hive_sample_dag.py.
+
+* Made changes as per guidelines
+
+Made changes to the code as per guidelines
+
+* Updated the file for failing build
+
+Updated the file for failing build
+
+- Added page size argument for compatibility
+  ([#1593](https://github.com/zain13337/lyft-amundsen/pull/1593),
+  [`50c72ee`](https://github.com/zain13337/lyft-amundsen/commit/50c72ee082ec14ac06f4f6a962e7f9830869b103))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Added PR creation to release action ([#872](https://github.com/zain13337/lyft-amundsen/pull/872),
+  [`dd2fd13`](https://github.com/zain13337/lyft-amundsen/commit/dd2fd1314acf57d3891000a5d825ed2912230b73))
+
+* added PR creation to release action
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* set new branch rather than master
+
+* changed cron to 12:15pm
+
+- Added pypi token to release action ([#878](https://github.com/zain13337/lyft-amundsen/pull/878),
+  [`08df30c`](https://github.com/zain13337/lyft-amundsen/commit/08df30c74eedb568c7928d2cbdaf7237e3baa530))
+
+* added PR creation to release action
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* set new branch rather than master
+
+* changed cron to 12:15pm
+
+* chnaged release aciton branch and added manual run trigger
+
+* eventually I'll get this right...
+
+* another one
+
+* one more branch change
+
+* trying to get the branch there so it can be checked out
+
+* added pypy credentials
+
+- Added role_name to default user query in Neo4jSearchDataExtractor
+  ([#285](https://github.com/zain13337/lyft-amundsen/pull/285),
+  [`d05f1b9`](https://github.com/zain13337/lyft-amundsen/commit/d05f1b9af623813373888aa4633a7338b71cc0ea))
+
+- Added Status text to last run status line for dashboard
+  ([#603](https://github.com/zain13337/lyft-amundsen/pull/603),
+  [`54d2561`](https://github.com/zain13337/lyft-amundsen/commit/54d2561c894d23b98d8403ea5cab2f2a2884669e))
+
+* added Status text to Las Run status line
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* lint
+
+* added Status: to constants
+
+* lint again, pre-commit hooks not working again...
+
+- Added support in helm chart for air-gapped deployment
+  ([#1614](https://github.com/zain13337/lyft-amundsen/pull/1614),
+  [`3dfc5cc`](https://github.com/zain13337/lyft-amundsen/commit/3dfc5cc05e2bc1112dfff5d803a79a40458659ea))
+
+Signed-off-by: cccs-eric <eric.ladouceur@cyber.gc.ca>
+
+- Added uri and url fields to dashboard mapping function
+  ([#1635](https://github.com/zain13337/lyft-amundsen/pull/1635),
+  [`dbfcddc`](https://github.com/zain13337/lyft-amundsen/commit/dbfcddcd3f3b2e365c683055684caa9e07796142))
+
+* fix: added uri and url fields to dashboard mapping function
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* patch version bump
+
+- Added version to feature name ([#1390](https://github.com/zain13337/lyft-amundsen/pull/1390),
+  [`ce4c3d4`](https://github.com/zain13337/lyft-amundsen/commit/ce4c3d43ea141cc2cef60c5f06173c269362454e))
+
+* chore: bumped version of commonm
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* fix: added version to feature search result name
+
+* added version to name on feature details page too
+
+* updated unit test for search results
+
+- Adding missing secretName in ingress configuration. Helm improvements proposal.
+  ([#1604](https://github.com/zain13337/lyft-amundsen/pull/1604),
+  [`7d94e68`](https://github.com/zain13337/lyft-amundsen/commit/7d94e68c6166c8867156184a9d78f7efcf4e37be))
+
+* Adding missing secretName in ingress configuration. Introducing Bitnami charts.
+
+Signed-off-by: cccs-eric <eric.ladouceur@cyber.gc.ca>
+
+* Split configmap into indivudual ones and added checksum for deployment reload on change. Also
+  added metadata and search config class support.
+
+- Address PyAthena version ([#429](https://github.com/zain13337/lyft-amundsen/pull/429),
+  [`4a205b0`](https://github.com/zain13337/lyft-amundsen/commit/4a205b005c1766c5f19767b2213e808931761bb5))
+
+As seen here: https://github.com/laughingman7743/PyAthena/issues/189 The 2.0.0 version of PyAthena
+  doesn't install SQLAlchemy for some reason This PR fixes that
+
+- Adds loading spinners to table lineage tabs
+  ([#2016](https://github.com/zain13337/lyft-amundsen/pull/2016),
+  [`e1e8048`](https://github.com/zain13337/lyft-amundsen/commit/e1e8048600a9aab72ae022f31540a8714d0940a2))
+
+* fix: adds loading spinners to table lineage tabs
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: adds message when no lineage info
+
+- Adds rest of mouse interaction tracking
+  ([#2143](https://github.com/zain13337/lyft-amundsen/pull/2143),
+  [`3b98cbe`](https://github.com/zain13337/lyft-amundsen/commit/3b98cbe8159c59361fcf2ee584dc73637da7aee3))
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+- Adds support for simple wildcards on page tour configuration paths
+  ([#1827](https://github.com/zain13337/lyft-amundsen/pull/1827),
+  [`908e961`](https://github.com/zain13337/lyft-amundsen/commit/908e96147a1b8d7e963c314e8d16cb6c2da4e695))
+
+* fix: adds support for simple wildcards on page tour configuration paths
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* fix: linting issue
+
+- Adjusting margin on copy button for codebox
+  ([#806](https://github.com/zain13337/lyft-amundsen/pull/806),
+  [`ba3daf4`](https://github.com/zain13337/lyft-amundsen/commit/ba3daf4711014c89d9fce98fb634465eaa294aa5))
+
+* Adjusting margin on copy button for codebox
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Update PR template
+
+- Adjusting Tag display to handle long tag names
+  ([#2271](https://github.com/zain13337/lyft-amundsen/pull/2271),
+  [`e4a887f`](https://github.com/zain13337/lyft-amundsen/commit/e4a887fbf1485791adde4803fb04ffe4365db480))
+
+* fix: Adjusting Tag display to handle long tag names
+
+Signed-off-by: Josh Slaughter <8338893+jdslaugh@users.noreply.github.com>
+
+* Adding type to button to fix eslint error
+
+---------
+
+- Adjustments to tabs components to prevent overflows
+  ([#2278](https://github.com/zain13337/lyft-amundsen/pull/2278),
+  [`8d965df`](https://github.com/zain13337/lyft-amundsen/commit/8d965df0e34566a58ed6ad4e75e0017c285ec299))
+
+* fix: Adjusting layouts to fix overflowing components
+
+Signed-off-by: Josh Slaughter <8338893+jdslaugh@users.noreply.github.com>
+
+* Updated betterer results
+
+---------
+
+- Align and format column stats (new PR)
+  ([#723](https://github.com/zain13337/lyft-amundsen/pull/723),
+  [`0a26800`](https://github.com/zain13337/lyft-amundsen/commit/0a26800ab93679aa9d769ffb0c28349f94f73e2c))
+
+* Allign and format column stats
+
+Signed-off-by: dikshathakur3119 <dikshathakur3119@gmail.com>
+
+* Update common version and other minor changes
+
+* Update mock data include chart_name
+
+* fix lint
+
+- Allow BigQuery Usage Extractor to extract usage for views
+  ([#399](https://github.com/zain13337/lyft-amundsen/pull/399),
+  [`15873b9`](https://github.com/zain13337/lyft-amundsen/commit/15873b91e9056cfb39d675b085dde348609e2da8))
+
+* Fixing BigQuery Usage Extractor to extract usage for views
+
+Signed-off-by: Abhinay Kathuria <abhinay.kathuria@rea-group.com>
+
+Signed-off-by: Abhinay Kathuria <abhinay@kathuria.com.au>
+
+* Fix create records
+
+* Fix Linting
+
+* Add type annotations
+
+- Allow correct behaviour on action log errors.
+  ([#1320](https://github.com/zain13337/lyft-amundsen/pull/1320),
+  [`a9583cd`](https://github.com/zain13337/lyft-amundsen/commit/a9583cdde25c8c0bec812dc7392a4da1f2d1d3a6))
+
+Signed-off-by: BB <boyan@typed.wtf>
+
+- Apache Superset Chart extractor ([#1504](https://github.com/zain13337/lyft-amundsen/pull/1504),
+  [`03d2651`](https://github.com/zain13337/lyft-amundsen/commit/03d26514c18a5a520d54b0625558cc651bf521e6))
+
+Signed-off-by: vazmeee <sakirepalli.srivamsi@gmail.com>
+
+- Apache Superset extractors pagination
+  ([#1436](https://github.com/zain13337/lyft-amundsen/pull/1436),
+  [`dacf296`](https://github.com/zain13337/lyft-amundsen/commit/dacf29672b5d46bc07fc405ea08cbf0d7e86c111))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Application model backwards compatibility
+  ([#1456](https://github.com/zain13337/lyft-amundsen/pull/1456),
+  [`a0f6efa`](https://github.com/zain13337/lyft-amundsen/commit/a0f6efafaabae6c5bb43250c2e10eec8f07f8edc))
+
+- Apply column description length configuration
+  ([#522](https://github.com/zain13337/lyft-amundsen/pull/522),
+  [`893b89b`](https://github.com/zain13337/lyft-amundsen/commit/893b89b066b443147d985f22522a9bd83dc7c4c3))
+
+* Apply column description length configuration
+
+* Lint fix
+
+- Array index out of bound in some cases
+  ([#1751](https://github.com/zain13337/lyft-amundsen/pull/1751),
+  [`64d17ca`](https://github.com/zain13337/lyft-amundsen/commit/64d17caa6cfb8532ceb65f7236ba1876f4f442ea))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Atlas lineage multiple parents ([#1293](https://github.com/zain13337/lyft-amundsen/pull/1293),
+  [`b91ce7a`](https://github.com/zain13337/lyft-amundsen/commit/b91ce7ab288c980e9083d3e801a453a00d83dac1))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Atlas proxy fix ([#1139](https://github.com/zain13337/lyft-amundsen/pull/1139),
+  [`b5cadca`](https://github.com/zain13337/lyft-amundsen/commit/b5cadca1ae191f8dc4fd96f5ac6d992fa1159974))
+
+Signed-off-by: dechoma <dominik.choma@gmail.com>
+
+- Avoid error by checking for existence before close.
+  ([#454](https://github.com/zain13337/lyft-amundsen/pull/454),
+  [`b30bf43`](https://github.com/zain13337/lyft-amundsen/commit/b30bf431cfbe72038043319f42a8b4a46c354d8b))
+
+* refactor: A factory for SQLAlchemyExtractors wrapped by other Extractors.
+
+A common pattern has emerged where database-specific extractors delegate the execution of queries to
+  a SQLAlchemyExtractor instance. The DB specific extractor has the code tailored to a DB's metadata
+  table structure. The SQLAlchemyExtractor has the basic connection lifecycle code.
+
+The pattern involved a few lines of tricky-looking code to handle configs that looks like it has
+  been copy-pasted from one config to the next. This pulls that out in to a factory function in the
+  sql_alchemy_extractor module.
+
+Signed-off-by: Dave Cameron <dcameron@digitalocean.com>
+
+* fix: Avoid error, check before calling close.
+
+Without checking the existence of the _alchemy_extractor attribute, and that the value is not None,
+  an AttributeError can be raised when close() if called if the init method didn't complete. Tasks
+  still call close to clean up, so this code should check if there is anything to clean up first.
+
+- Avoid extra load url search call when default filters are applied
+  ([#1853](https://github.com/zain13337/lyft-amundsen/pull/1853),
+  [`0f684bb`](https://github.com/zain13337/lyft-amundsen/commit/0f684bb89fbcc862612685077f34e62cc8e85e46))
+
+* fix: avoid extra load url search call when default filters are applied
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* lint
+
+- Aws session token that is required for neptune to be called
+  ([#1312](https://github.com/zain13337/lyft-amundsen/pull/1312),
+  [`773452f`](https://github.com/zain13337/lyft-amundsen/commit/773452feb8d95face212a39ec34efa328a2a01c6))
+
+* fix aws session token that is required for neptune to be called
+
+Signed-off-by: iamtodor <todor.ilya@gmail.com>
+
+* fix typo in description
+
+* fix imports with isort
+
+- Aws_config ([#1167](https://github.com/zain13337/lyft-amundsen/pull/1167),
+  [`57ff725`](https://github.com/zain13337/lyft-amundsen/commit/57ff72563f5a7af9d175833868f7be562d436de2))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Better behavior for search filters ([#1852](https://github.com/zain13337/lyft-amundsen/pull/1852),
+  [`fa2ba84`](https://github.com/zain13337/lyft-amundsen/commit/fa2ba84f93df9ffc0fac4a8265718f68f263f936))
+
+* fix: better behavior for application of filters
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* explicit comparison to None
+
+- Better styling for disabled items ([#2014](https://github.com/zain13337/lyft-amundsen/pull/2014),
+  [`a6e914d`](https://github.com/zain13337/lyft-amundsen/commit/a6e914da90c4565c17e45627891e426565522997))
+
+* better styling for disabled items
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* grayslace q
+
+* lint
+
+- Bigquery preview with numeric data type - issue #1658
+  ([#1660](https://github.com/zain13337/lyft-amundsen/pull/1660),
+  [`e55611c`](https://github.com/zain13337/lyft-amundsen/commit/e55611c6416fc77d0f90dedc586cff01750b4010))
+
+* fix: bigquery preview with numeric data type (#1658)
+
+Signed-off-by: Bruno Santos <bsilva89@hotmail.com>
+
+* add typing annotation in the function to address mypy requirements
+
+- Branch name change on release action ([#876](https://github.com/zain13337/lyft-amundsen/pull/876),
+  [`4378e50`](https://github.com/zain13337/lyft-amundsen/commit/4378e503ac77c534bb9ea5c21c18764a9a0e2c84))
+
+* added PR creation to release action
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* set new branch rather than master
+
+* changed cron to 12:15pm
+
+* chnaged release aciton branch and added manual run trigger
+
+* eventually I'll get this right...
+
+* another one
+
+* one more branch change
+
+- Bug #1213 relates to AWS creds Neptune
+  ([#1214](https://github.com/zain13337/lyft-amundsen/pull/1214),
+  [`b223311`](https://github.com/zain13337/lyft-amundsen/commit/b2233117e48025451bce832baac1767be22753c9))
+
+* fix bug #1213 relates to AWS creds Neptune
+
+Signed-off-by: iamtodor <todor.ilya@gmail.com>
+
+* code clean up
+
+- Bump elasticsearch chart version from 1.24.0 to 1.32.4
+  ([#483](https://github.com/zain13337/lyft-amundsen/pull/483),
+  [`077a4b6`](https://github.com/zain13337/lyft-amundsen/commit/077a4b6ba065fdfb2469c3de97b0cf0c7befc8e3))
+
+* Bump elasticsearch chart version from 1.24.0 to 1.32.4
+
+* Reflect elasticsearch verison in README
+
+- Bump pandas version limit ([#2254](https://github.com/zain13337/lyft-amundsen/pull/2254),
+  [`74212e2`](https://github.com/zain13337/lyft-amundsen/commit/74212e2700fa643f8769b2a5b5afa22334af9894))
+
+* bump pandas version limit
+
+Signed-off-by: cmuhao <sduxuhao@gmail.com>
+
+* update feast
+
+* update feast to 0.26.0 to include python 3.8
+
+* revert feast version change
+
+* update feast version
+
+* update feast test
+
+* update numpy
+
+* fix time difference
+
+* remove blank line EOF
+
+* inogre type change as mypy bumped
+
+* fix isort lint
+
+---------
+
+- Bw-incompatible update to user elasticsearch index
+  ([#1241](https://github.com/zain13337/lyft-amundsen/pull/1241),
+  [`79792cd`](https://github.com/zain13337/lyft-amundsen/commit/79792cdd8781c5e9e627f50ae5f4a5682f4d8003))
+
+* fix: update user elasticsearch index
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+* bump version
+
+- Cast dashboard usage to be int ([#412](https://github.com/zain13337/lyft-amundsen/pull/412),
+  [`9440f9b`](https://github.com/zain13337/lyft-amundsen/commit/9440f9b36f787a3b52a52bdf35d48e369600734c))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Change back FE healthcheck ([#1421](https://github.com/zain13337/lyft-amundsen/pull/1421),
+  [`99fc6d1`](https://github.com/zain13337/lyft-amundsen/commit/99fc6d1bf6125d6bfb99397085ffdf1dbffbfe00))
+
+* fix: change back FE healthcheck
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* bumped FE package version
+
+* Tuple type back
+
+* lint :(
+
+- Change badge name and category to lower case
+  ([#1252](https://github.com/zain13337/lyft-amundsen/pull/1252),
+  [`4972462`](https://github.com/zain13337/lyft-amundsen/commit/49724624c70bdd3043784a8474fa635f67873eab))
+
+* change badge name and category to lower case
+
+Signed-off-by: Junda Yang <youngyjd@gmail.com>
+
+* mypy
+
+- Change dashboard and group order in search result
+  ([#658](https://github.com/zain13337/lyft-amundsen/pull/658),
+  [`696d215`](https://github.com/zain13337/lyft-amundsen/commit/696d21515734928c766258c440748781439f1c6a))
+
+* fix: change dashboard and group order in search result
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* fix: update for inline search result as well
+
+* chore: fix js test
+
+- Change databuilder search data extractors to publish `name` in user document.
+  ([#2274](https://github.com/zain13337/lyft-amundsen/pull/2274),
+  [`32b2ab3`](https://github.com/zain13337/lyft-amundsen/commit/32b2ab378b5cc97992bae5f2e75111f8c78780a8))
+
+* Change databuilder search data extractors to publish `name` in user document.
+
+Signed-off-by: Jackson Goerner <jgoerner@squareup.com>
+
+* Fix unit tests for databuilder.
+
+* Have another shot at fixing the user data tests.
+
+* Bump databuilder patch version.
+
+---------
+
+- Changed marshmallow-annotation version, temp solution
+  ([#81](https://github.com/zain13337/lyft-amundsen/pull/81),
+  [`48b93b7`](https://github.com/zain13337/lyft-amundsen/commit/48b93b78199fce0e501dba765d6b6391eac264d7))
+
+* changed marshmallow version, temp solution
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* trying lint fix out
+
+* updated version
+
+- Changed pypi token for user and password on release workflow
+  ([#881](https://github.com/zain13337/lyft-amundsen/pull/881),
+  [`e75836b`](https://github.com/zain13337/lyft-amundsen/commit/e75836b0d17beb004d3c247272574473787ce9f8))
+
+* added PR creation to release action
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* set new branch rather than master
+
+* changed cron to 12:15pm
+
+* chnaged release aciton branch and added manual run trigger
+
+* eventually I'll get this right...
+
+* another one
+
+* one more branch change
+
+* trying to get the branch there so it can be checked out
+
+* added pypy credentials
+
+* chaged to uses/with
+
+* bumped version on setup.py file
+
+* added pypi user and pass
+
+- Changed release action ([#879](https://github.com/zain13337/lyft-amundsen/pull/879),
+  [`846e64a`](https://github.com/zain13337/lyft-amundsen/commit/846e64a8cdf2f88b380822689226fecbeb596fc9))
+
+* added PR creation to release action
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* set new branch rather than master
+
+* changed cron to 12:15pm
+
+* chnaged release aciton branch and added manual run trigger
+
+* eventually I'll get this right...
+
+* another one
+
+* one more branch change
+
+* trying to get the branch there so it can be checked out
+
+* added pypy credentials
+
+* chaged to uses/with
+
+- Changed release workflow completely ([#882](https://github.com/zain13337/lyft-amundsen/pull/882),
+  [`d545fe9`](https://github.com/zain13337/lyft-amundsen/commit/d545fe9287fd45a494d78c0847ee71d7ae782dfe))
+
+* added PR creation to release action
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* set new branch rather than master
+
+* changed cron to 12:15pm
+
+* chnaged release aciton branch and added manual run trigger
+
+* eventually I'll get this right...
+
+* another one
+
+* one more branch change
+
+* trying to get the branch there so it can be checked out
+
+* added pypy credentials
+
+* chaged to uses/with
+
+* bumped version on setup.py file
+
+* added pypi user and pass
+
+* setting base branch to be master
+
+* delete branch after pr closed
+
+* trying a different more granular approach, pypi should be triggered once PR with new version is
+  merged
+
+* publishes new release
+
+* fixed
+
+* hoping this works, will add changelog next if it does
+
+- Clean up ML features page ([#2118](https://github.com/zain13337/lyft-amundsen/pull/2118),
+  [`34b7eef`](https://github.com/zain13337/lyft-amundsen/commit/34b7eef8e6ce41b73307dfcd20c39b18b18f646b))
+
+* fix: clean up ML features page
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* lint
+
+---------
+
+- Cleans ESLint issues with unused variables
+  ([#2080](https://github.com/zain13337/lyft-amundsen/pull/2080),
+  [`13166c6`](https://github.com/zain13337/lyft-amundsen/commit/13166c67355b27d940fb0bb29b5ed3d487eb7133))
+
+* chore: cleans non used variables and dependencies
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: more unused vars, updated rules, updated betterer results
+
+* chore: more unused variables
+
+* chore: removes category labels used by boringbot
+
+* chore: destructuring fixes
+
+- Close SQL Alchemy connections. ([#453](https://github.com/zain13337/lyft-amundsen/pull/453),
+  [`b62311f`](https://github.com/zain13337/lyft-amundsen/commit/b62311fd368e62c849b6631d87f204d87519638a))
+
+This addresses #868, where extractions using the Snowflake extractor would hand until the connection
+  was closed. I've added close() calls to the other SQL Alchemy based extractors since it is a
+  general expectation of SQL Alchemy and most of the infrastructure existed to do it already.
+
+Signed-off-by: Dave Cameron <dcameron@digitalocean.com>
+
+- Codeowners update #1536
+  ([`b5074ba`](https://github.com/zain13337/lyft-amundsen/commit/b5074bac94ba35e687116595e0bfd20e5bf1fbe8))
+
+Signed-off-by: Mariusz Górski <gorskimariusz13@gmail.com>
+
+- Compatibility changes to the gremlin integration
+  ([#260](https://github.com/zain13337/lyft-amundsen/pull/260),
+  [`84aa091`](https://github.com/zain13337/lyft-amundsen/commit/84aa09194d0ef80764207c06b7212281c9b2f241))
+
+* Some fixes to neptune integration
+
+Signed-off-by: Andrew Ciambrone <andrjc4@vt.edu>
+
+* correct a typo in timestamp
+
+* rename stat_name to stat_type and type to col_type
+
+- Correct config getter ([#455](https://github.com/zain13337/lyft-amundsen/pull/455),
+  [`dec8d60`](https://github.com/zain13337/lyft-amundsen/commit/dec8d60993266d91e203fe48ceaf4ea561ea7d22))
+
+Signed-off-by: Andrew Ciambrone <andrjc4@vt.edu>
+
+- Correct typo in Snowflake Last Updated extract query
+  ([#358](https://github.com/zain13337/lyft-amundsen/pull/358),
+  [`c0a0247`](https://github.com/zain13337/lyft-amundsen/commit/c0a02473cd83b2d15731864ada33d5fc56ad6f7e))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Create separate reducer for last indexed value
+  ([#543](https://github.com/zain13337/lyft-amundsen/pull/543),
+  [`be8eed6`](https://github.com/zain13337/lyft-amundsen/commit/be8eed6123cacd6a93c50b4f279fdcd7404c2ac7))
+
+* Added required new files
+
+* Added new reducer for handling lastIndexed
+
+* removed all comments
+
+* suggested changes
+
+- Cypher statement param issue in Neo4jStalenessRemovalTask
+  ([#307](https://github.com/zain13337/lyft-amundsen/pull/307),
+  [`284540c`](https://github.com/zain13337/lyft-amundsen/commit/284540c947750933882e9562938249a46dff3e14))
+
+* fix: cypher statement param issue
+
+* test: update existing test cases according to change in marker param
+
+- Dashboard in atlas metadata proxy ([#1110](https://github.com/zain13337/lyft-amundsen/pull/1110),
+  [`f4d58ad`](https://github.com/zain13337/lyft-amundsen/commit/f4d58adb020e825e517f388d87f17bbecebdaeaf))
+
+Signed-off-by: DOMINIK CHOMA <dominik.choma@ing.com>
+
+- Dashboard query ([#1762](https://github.com/zain13337/lyft-amundsen/pull/1762),
+  [`fb46c4c`](https://github.com/zain13337/lyft-amundsen/commit/fb46c4cf6654aecb05e72a3463bfa2615e680f2e))
+
+* fix: dashboard query
+
+* bumped
+
+- Dashboardpage Flag usage; Markdown to render HTML
+  ([#535](https://github.com/zain13337/lyft-amundsen/pull/535),
+  [`f50652c`](https://github.com/zain13337/lyft-amundsen/commit/f50652c195f6a783b7658e881d54130957dfb4c4))
+
+* Allow markdown descriptions to display html
+
+* Fix Flag usage on DashboardPage; Lint
+
+* Code cleanup
+
+- Data_type as Column.col_type. ([#203](https://github.com/zain13337/lyft-amundsen/pull/203),
+  [`143bae7`](https://github.com/zain13337/lyft-amundsen/commit/143bae7b17cc030011a6626ceaa53757c7c1c7e2))
+
+The lastest version of Atlas has a predefined type
+  [rdbms_column](https://github.com/apache/atlas/blob/master/addons/models/2000-RDBMS/2010-rdbms_model.json#L169),
+  which is assigned as a sub type of Column by
+  [amundsenatlastypes](https://github.com/dwarszawski/amundsen-atlas-types). It has a attribute
+  called "data_type" that is equivalent to Column.col_type.
+
+Signed-off-by: Zhidong <0x4ec7@gmail.com>
+
+- Database filter to return string, not object
+  ([#1041](https://github.com/zain13337/lyft-amundsen/pull/1041),
+  [`3f7400c`](https://github.com/zain13337/lyft-amundsen/commit/3f7400cf1a5ae54c84b20bf3897a6abf581d4b83))
+
+* Database filter returns string not object
+
+Signed-off-by: Grant Seward <grant@stemma.ai>
+
+* Added comma to fix syntax text
+
+- Databuilder docs ([#1224](https://github.com/zain13337/lyft-amundsen/pull/1224),
+  [`101b570`](https://github.com/zain13337/lyft-amundsen/commit/101b57019f60aa8934844938bc0e2475d12730bf))
+
+* atlas_publisher_docs | :memo: Writing docs.
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Deployment-frontend env nested & quote issue
+  ([#1391](https://github.com/zain13337/lyft-amundsen/pull/1391),
+  [`ec25c3c`](https://github.com/zain13337/lyft-amundsen/commit/ec25c3c9b32f97485b5d7e50818ec604383b81a0))
+
+This commit fixes the deployment-frontend.yaml from a slightly bad change that was introduced in
+  #1353. Namely:
+
+- The logic to render the env var for ALL_UNEDITABLE_SCHEMAS was improperly nested in the OIDC
+  config so if you wanted to use it but didn't populate OIDC config then the logic would not work -
+  Use the quote function to properly make an environment variable.
+
+Signed-off-by: jroof88 <jack.roof@samsara.com>
+
+- Disable announcement component by default
+  ([#668](https://github.com/zain13337/lyft-amundsen/pull/668),
+  [`d6dbf23`](https://github.com/zain13337/lyft-amundsen/commit/d6dbf23790f60b804d9e7acc3ea5694ac4d60940))
+
+* fix: disable announcement component by default
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* fix: update betterer
+
+* fix: fix tests and address comment
+
+- Display watermarks for all tables when available
+  ([#971](https://github.com/zain13337/lyft-amundsen/pull/971),
+  [`44f74c3`](https://github.com/zain13337/lyft-amundsen/commit/44f74c325b7c42878339a8222ebab25b3c813f56))
+
+* Removed check to display watermark only if table is not a view
+
+Signed-off-by: Grant Seward <grant@stemma.ai>
+
+* Removed curly braces
+
+- Driver object pickle error ([#1944](https://github.com/zain13337/lyft-amundsen/pull/1944),
+  [`879a002`](https://github.com/zain13337/lyft-amundsen/commit/879a002bb0b7652f9588e2849cb417840e23e374))
+
+* fix: driver object pickle error
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* always used conf w fallback on neo4j extractor
+
+- Edge case in Snowflake information_schema.last_altered value
+  ([#360](https://github.com/zain13337/lyft-amundsen/pull/360),
+  [`cb0e8a6`](https://github.com/zain13337/lyft-amundsen/commit/cb0e8a6dc1a9f8b391d132a3d2a60ffbe70694bf))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Enable flake8 and mypy in CI ([#75](https://github.com/zain13337/lyft-amundsen/pull/75),
+  [`c9d0aa5`](https://github.com/zain13337/lyft-amundsen/commit/c9d0aa59ac72a408027698c8d6ecaf89825ac1e4))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Error in automated release ([#866](https://github.com/zain13337/lyft-amundsen/pull/866),
+  [`a699829`](https://github.com/zain13337/lyft-amundsen/commit/a699829ad9c9fc7d331f5e1a6ce18b243eb81d66))
+
+* added monthly release action
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* changed python version to correct one
+
+* noticed weird behavior of this command with no quatations so added them
+
+* left a comma in by mistake which made it so it was expecting an extra argument
+
+* chaged cron to test
+
+- Error on search with pagination ([#1622](https://github.com/zain13337/lyft-amundsen/pull/1622),
+  [`9966fbc`](https://github.com/zain13337/lyft-amundsen/commit/9966fbce15f275ba99af80bfec91906c0192927c))
+
+* loggigng
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* fixed dummy bug of the century
+
+* remove leftover code
+
+- Escape backslashes in Neo4jCsvPublisher
+  ([`758daa6`](https://github.com/zain13337/lyft-amundsen/commit/758daa6ab51ffeceffba29808b26a4420f695cc2))
+
+- Expire is a keyword argument for beaker cache
+  ([#239](https://github.com/zain13337/lyft-amundsen/pull/239),
+  [`d613453`](https://github.com/zain13337/lyft-amundsen/commit/d6134536202ec9be321187a745b6cb66b85050f1))
+
+- Failing build for public frontend docker image
+  ([#1229](https://github.com/zain13337/lyft-amundsen/pull/1229),
+  [`c41323e`](https://github.com/zain13337/lyft-amundsen/commit/c41323e93cd1d55466226f7d48d405493c6e39e0))
+
+* frontend_public_docker | :tada: Initial commit.
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+* frontend_public_docker | :bug: Fixing a bug.
+
+- Filter names mismatch ([#1277](https://github.com/zain13337/lyft-amundsen/pull/1277),
+  [`afc702c`](https://github.com/zain13337/lyft-amundsen/commit/afc702c2748095d8750d373503c0776ce1bdf2d3))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Filters affected by mapping inheritance issue
+  ([#2121](https://github.com/zain13337/lyft-amundsen/pull/2121),
+  [`b6576d3`](https://github.com/zain13337/lyft-amundsen/commit/b6576d316086b3e49ef012366e05b2044373ab0c))
+
+* fix inheritance issue
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* bump search package version
+
+---------
+
+- Finalized cypher queries for new ES publishing task
+  ([#1717](https://github.com/zain13337/lyft-amundsen/pull/1717),
+  [`cbb3542`](https://github.com/zain13337/lyft-amundsen/commit/cbb35423fac1a1aac1e02ac9de33e62ddd8c350c))
+
+* new queries
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* v 6.5.2
+
+* removed comma
+
+* removed unique usage
+
+* simplified user usage
+
+- Fix column description overflow-y value
+  ([#1937](https://github.com/zain13337/lyft-amundsen/pull/1937),
+  [`4249dd6`](https://github.com/zain13337/lyft-amundsen/commit/4249dd6fcb6b73179e937365e4d8754f1e56082f))
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+- Fix cron to run later today ([#867](https://github.com/zain13337/lyft-amundsen/pull/867),
+  [`2fc2627`](https://github.com/zain13337/lyft-amundsen/commit/2fc26273752dbddfd5a607e3760bfd3b1b422654))
+
+* added monthly release action
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* changed python version to correct one
+
+* noticed weird behavior of this command with no quatations so added them
+
+* left a comma in by mistake which made it so it was expecting an extra argument
+
+* chaged cron to test
+
+* TIME IS IN UTC
+
+- Fix dashboard model errors, change deprecated pytest function
+  ([#160](https://github.com/zain13337/lyft-amundsen/pull/160),
+  [`851a5b4`](https://github.com/zain13337/lyft-amundsen/commit/851a5b42c4a3968eee3cab2017abae318aab2b58))
+
+* Change deprecated function assertEquals to assertEqual
+
+Signed-off-by: Wonyeong Choi <ciwnyg0815@gmail.com>
+
+* fix lint
+
+* fix lint, add chart_names field to chart_names
+
+- Fix dashboard timestamp & dashboard owner text color
+  ([#472](https://github.com/zain13337/lyft-amundsen/pull/472),
+  [`61abb4c`](https://github.com/zain13337/lyft-amundsen/commit/61abb4c5d99c9654772a7ab594ffdd7cde903685))
+
+* Update UI for dashboard related timestamps when they don't exist
+
+* Fix AvatarLabel text color in resource detail left panel
+
+* Code cleanup
+
+- Fix delta lake unit test ([#476](https://github.com/zain13337/lyft-amundsen/pull/476),
+  [`b0590c4`](https://github.com/zain13337/lyft-amundsen/commit/b0590c4b2ffc99e69b09226a0b577e57687a3c47))
+
+* ci: fix delta lake unit test
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* update
+
+- Fix hideNonClickableBadges configuration
+  ([#1974](https://github.com/zain13337/lyft-amundsen/pull/1974),
+  [`6bac23f`](https://github.com/zain13337/lyft-amundsen/commit/6bac23f971b2611a48ba740193ccc84787988b05))
+
+* fix: Fix hideNonClickableBadges configuration
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+* fix: Add test for configuration
+
+- Fix import ([#74](https://github.com/zain13337/lyft-amundsen/pull/74),
+  [`bca92e1`](https://github.com/zain13337/lyft-amundsen/commit/bca92e15cf96abbd364b2506afa2d1eae9e863d1))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Fix invalid timestamp handling in dashboard transformer
+  ([#339](https://github.com/zain13337/lyft-amundsen/pull/339),
+  [`652374f`](https://github.com/zain13337/lyft-amundsen/commit/652374f060c81e451eebcaa63f29022a237aa99a))
+
+* fix: fix invalid timestamp handling in dashboard transformer
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* fix: fix ci
+
+* chore: fix rest_api_query to do basic check
+
+* Update setup.py
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Fix layout ([#521](https://github.com/zain13337/lyft-amundsen/pull/521),
+  [`5a16418`](https://github.com/zain13337/lyft-amundsen/commit/5a1641846bb03251e633889d8afabe9de8833740))
+
+* Revert layout changes
+
+- Fix links in Announcements ([#1934](https://github.com/zain13337/lyft-amundsen/pull/1934),
+  [`7d80884`](https://github.com/zain13337/lyft-amundsen/commit/7d8088429b224958cc212f9aa4d0fca2f3ead655))
+
+* fix: Fix links in Announcements
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+* fix: Fix betterer errors
+
+* fix: Fix build
+
+* fix: Use pointer-events instead of event handler
+
+* Revert: fix: Use pointer-events instead of event handler
+
+* fix: Stop propagation in Announcement component
+
+* fix: databuilder build
+
+* fix: Revert last commits
+
+* Revert fix: Stop propagation in Announcement component
+
+* fix: Add onclick to Announcements allowed attributes
+
+* fix: Revert some changes
+
+* fix: Use push instead of concat
+
+* fix: Frontend tests
+
+- Fix prog desc in fe when no config is provided
+  ([#672](https://github.com/zain13337/lyft-amundsen/pull/672),
+  [`d5cf5b0`](https://github.com/zain13337/lyft-amundsen/commit/d5cf5b0a0357eefc269b672f14fdfacdf709c915))
+
+* fix: fix prog desc in fe when no config is provided
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* fix: fix flake8
+
+- Fix programmatic source data ([#367](https://github.com/zain13337/lyft-amundsen/pull/367),
+  [`5656101`](https://github.com/zain13337/lyft-amundsen/commit/5656101ecc0284ceaa37508d47fdcbe6c07b0f66))
+
+Signed-off-by: Madison Bowden <madison.bowden@ookla.com>
+
+- Fix redash dashboard exporter ([#422](https://github.com/zain13337/lyft-amundsen/pull/422),
+  [`db64091`](https://github.com/zain13337/lyft-amundsen/commit/db64091cf181b8d43094777abe1fd41f49607698))
+
+* fix redash dashboard exporter
+
+Signed-off-by: Lingkai Kong <lingkai.kong@databricks.com>
+
+* fix mypy issue
+
+- Fix some problems with table mutation APIs
+  ([#188](https://github.com/zain13337/lyft-amundsen/pull/188),
+  [`a86eee1`](https://github.com/zain13337/lyft-amundsen/commit/a86eee1d5faa8760ace65a3ca2e7ed48c0d92280))
+
+* requirements: upgrade flasgger patch
+
+There was a bug causing the HTML documentation to be incorrect (possibly other bugs as well)
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+* document apis: improved parsing
+
+There were a few strange things going on here. First, I can't find `strict` as a kwarg. Second, one
+  chain was using `json` intermediate but other wasn't; it seems unnecessary in both cases.
+
+Finally, the error field wasn't being respected, so respect it. (in marshmallow 3.0 this method will
+  throw a ValidationError, so this will be easy to migrate)
+
+* swagger: update TableFields.schema_description to be a string
+
+This reflects the underlying Table model.
+
+* elasticsearch proxy: properly serialize tables in updates
+
+* requirements.txt: bump jsonschema, dependency for flasgger
+
+* tests: pass native python object to mock, not json
+
+- Fix sql for missing columns and mysql based dialects (#550)
+  ([#305](https://github.com/zain13337/lyft-amundsen/pull/305),
+  [`1c629c5`](https://github.com/zain13337/lyft-amundsen/commit/1c629c5cc44b10a1f025bace3992b13f5f60bb9d))
+
+This solves https://github.com/lyft/amundsen/issues/550
+
+- Fix table index map bug ([#86](https://github.com/zain13337/lyft-amundsen/pull/86),
+  [`f6caad4`](https://github.com/zain13337/lyft-amundsen/commit/f6caad402765200dcfa30c372ef9e393451b6ad9))
+
+Signed-off-by: tianru zhou <tianr.zhou@gmail.com>
+
+- Fix table post/put api bug ([#172](https://github.com/zain13337/lyft-amundsen/pull/172),
+  [`7bf122e`](https://github.com/zain13337/lyft-amundsen/commit/7bf122e85adfcb3b570620326429a4fad17477f5))
+
+* fix: fix table post/put api bug
+
+Signed-off-by: tianru zhou <tianru.zhou@databricks.com>
+
+* fix syntax issue v1
+
+* address PR comments
+
+* fix lint test failure
+
+- Fixed branch argument one more time ([#874](https://github.com/zain13337/lyft-amundsen/pull/874),
+  [`0e7a82f`](https://github.com/zain13337/lyft-amundsen/commit/0e7a82fa285ce25f767c9e00e8d5395e9cf3fff9))
+
+* added PR creation to release action
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* set new branch rather than master
+
+* changed cron to 12:15pm
+
+* chnaged release aciton branch and added manual run trigger
+
+* eventually I'll get this right...
+
+- Fixed reviewers field syntax error ([#892](https://github.com/zain13337/lyft-amundsen/pull/892),
+  [`db28410`](https://github.com/zain13337/lyft-amundsen/commit/db284100e12bdd24a5b847061b47e46e01310c11))
+
+* if changes actions don't check
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* added reviewers and fixed branch
+
+* discard chnage, might make it later
+
+* fixed syntax error:
+
+* forgot to save
+
+- Fixed webpack 5 issue ([#786](https://github.com/zain13337/lyft-amundsen/pull/786),
+  [`c163dc5`](https://github.com/zain13337/lyft-amundsen/commit/c163dc5d02fb274eace70c9ac149c4e57e438d14))
+
+* added plugin to fix webpack issue
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* install process
+
+- Fixes cached lineage list content ([#2020](https://github.com/zain13337/lyft-amundsen/pull/2020),
+  [`93dc7b4`](https://github.com/zain13337/lyft-amundsen/commit/93dc7b49580e4a88246a0631d47031100966e439))
+
+* chore: updates eslint rules and dependencies
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* fix: fixes cached lineage data in tabs; fixes ESLint issues
+
+* fix: fixes some random ESLint issues
+
+* chore: update betterer file
+
+- Fixes Collapse text button overlapping lineage tabs
+  ([#2019](https://github.com/zain13337/lyft-amundsen/pull/2019),
+  [`1bae90e`](https://github.com/zain13337/lyft-amundsen/commit/1bae90ecc7e711df077a4097ab595f6e884c9e66))
+
+* fix: fixes Collapse text button overlapping lineage tabs
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* fix: update color variable
+
+- Fixes dashboard query list ([#653](https://github.com/zain13337/lyft-amundsen/pull/653),
+  [`5c1486d`](https://github.com/zain13337/lyft-amundsen/commit/5c1486def34f284fac89394a373b80a0fdbb3f0e))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Fixes scrolling issue after tab changes
+  ([#2021](https://github.com/zain13337/lyft-amundsen/pull/2021),
+  [`2b07003`](https://github.com/zain13337/lyft-amundsen/commit/2b070035b65f8388834ed44cb6b7ad0a725a4b77))
+
+* fix: fixes weird scrolling issue
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: betterer update
+
+- Fixes scrolling on results pages and pagination
+  ([#479](https://github.com/zain13337/lyft-amundsen/pull/479),
+  [`89ec8c4`](https://github.com/zain13337/lyft-amundsen/commit/89ec8c46039b324255a97585c8fc9e714bec3bde))
+
+* Makes search sections scrollable as in Table and Dashboard details
+
+* Adjusting spacing on sidebars
+
+* Fixing spacing
+
+- Fixes sectioning and accessibility issues all over the application
+  ([#480](https://github.com/zain13337/lyft-amundsen/pull/480),
+  [`7cf35a2`](https://github.com/zain13337/lyft-amundsen/commit/7cf35a25f4f933d4991374c511d1334b517f035b))
+
+* Adds alt attribute to images
+
+* Uses time tags on times on the application
+
+* Dealing with sectioning and accessibility issues
+
+* Formatting
+
+* Fixing stuff
+
+* Tamika's comments
+
+* Fixing tests
+
+* Fixing watermark label size
+
+* Tweaks
+
+* More tweaks
+
+- Fixes state sharing between tours of different pages
+  ([#1854](https://github.com/zain13337/lyft-amundsen/pull/1854),
+  [`d376dff`](https://github.com/zain13337/lyft-amundsen/commit/d376dff942bf3bdd37d897f496b7f01a6dd9af93))
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+- Fixes storybook installation ([#2017](https://github.com/zain13337/lyft-amundsen/pull/2017),
+  [`a6e1c3d`](https://github.com/zain13337/lyft-amundsen/commit/a6e1c3d86b498a96ea14b57d022d8031e8478ee3))
+
+* Initial attempt to upgrade storybook
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* chore: updates storybook, webpack; fixes TS issues
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* fix: removes JSX loader as it gives problems
+
+* chore: updates caniuse-lite db
+
+* chore: ran eslint
+
+* chore: fixes lint errors
+
+* chore: cleanups
+
+* chore: Update linting
+
+* chore: linting
+
+* chore: adds Kristen as codeowner
+
+Co-authored-by: Kristen Armes <karmes@lyft.com>
+
+- Fixes the Amundsen Builds ([#1260](https://github.com/zain13337/lyft-amundsen/pull/1260),
+  [`dfea8ff`](https://github.com/zain13337/lyft-amundsen/commit/dfea8ff45dcc184b575b3d43c0ee127bf6afe342))
+
+* tries to check with the version upgrade
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+* testing
+
+* updates
+
+* fixes
+
+* bumps the amundsen common version
+
+- Fixes tour not resetting on different pages
+  ([#1849](https://github.com/zain13337/lyft-amundsen/pull/1849),
+  [`387cbcb`](https://github.com/zain13337/lyft-amundsen/commit/387cbcbe79da62958ff73b1d368ce67e36003972))
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+- Fixes wrong npm links ([#2174](https://github.com/zain13337/lyft-amundsen/pull/2174),
+  [`bbf29cd`](https://github.com/zain13337/lyft-amundsen/commit/bbf29cd2f1f9f44a08d241de0e6bc05ee9fcb72f))
+
+* fix: removes mentions to artifactory
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: updates caniuse-lite
+
+---------
+
+- Fixing EditableSection component ([#508](https://github.com/zain13337/lyft-amundsen/pull/508),
+  [`e22180e`](https://github.com/zain13337/lyft-amundsen/commit/e22180ec3c4d7e83aba1aa1167958d564b7d9e7b))
+
+* Changed tag to div
+
+* check on nativeEvent
+
+* Fixed EditableText propagation
+
+* Fix add new tag button
+
+* Trying to fix tag delete click
+
+* Fix Tag and owner onClick
+
+* Fix clicks on Request Description
+
+* Fix add new owner button
+
+* code cleanup
+
+* modified unit test cases
+
+* Revert changes and moved children components outside label tag
+
+* Added unit test case
+
+- Footer consistently in loading state ([#516](https://github.com/zain13337/lyft-amundsen/pull/516),
+  [`faa9f88`](https://github.com/zain13337/lyft-amundsen/commit/faa9f881ffba6f62c4578d762644be9582b5ec91))
+
+* Added coponentDidUpdate method to footer
+
+* Retaining lastIndexed value from prev state
+
+* Undo retaining state in same reducer
+
+* removing componentDidUpdate method
+
+* Retaining last index value
+
+- For new publisher fix error handling for already created constraints/indices
+  ([#1963](https://github.com/zain13337/lyft-amundsen/pull/1963),
+  [`e9e07f0`](https://github.com/zain13337/lyft-amundsen/commit/e9e07f0da3d346441c3179361f3747cee190c31d))
+
+* Fix error handling for already created constraints/indices
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Bump databuilder version
+
+- Fsneo4jcsvloader fails if nodes have disjoint keys
+  ([#408](https://github.com/zain13337/lyft-amundsen/pull/408),
+  [`2f37b79`](https://github.com/zain13337/lyft-amundsen/commit/2f37b7977ade12868d4fd0cf39ffbaf35bec8cee))
+
+* Prepare for test_fs_neo4j_csv_loader to run multiple tests
+
+Signed-off-by: Joseph Atkins-Turkish <jatkins-turkish@brex.com>
+
+* Add failing test
+
+* Fix failing test
+
+* Implement using numeric keys
+
+- Get all tags should work for all resources
+  ([#175](https://github.com/zain13337/lyft-amundsen/pull/175),
+  [`d3013af`](https://github.com/zain13337/lyft-amundsen/commit/d3013afb7985e4eafbf5065285f355bf6736ab14))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Get_tags no longer return tag_count 0 tag
+  ([#230](https://github.com/zain13337/lyft-amundsen/pull/230),
+  [`cdc7fb7`](https://github.com/zain13337/lyft-amundsen/commit/cdc7fb72165f5c5b4de149fdb1a61ddec1043d2b))
+
+Signed-off-by: bluefa <chulyonga@gmail.com>
+
+- Getting tooltip on edit button of Column Description if un-editable
+  ([#511](https://github.com/zain13337/lyft-amundsen/pull/511),
+  [`2bf8869`](https://github.com/zain13337/lyft-amundsen/commit/2bf886954c11f86ed2242102d9218ae7866381c9))
+
+* passing edit text and url to ColumnList
+
+* Added unit test case
+
+- Got version in line with tag version ([#880](https://github.com/zain13337/lyft-amundsen/pull/880),
+  [`51b14d4`](https://github.com/zain13337/lyft-amundsen/commit/51b14d448fad2b1774e8d3e52bf4db9b9576a97a))
+
+* added PR creation to release action
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* set new branch rather than master
+
+* changed cron to 12:15pm
+
+* chnaged release aciton branch and added manual run trigger
+
+* eventually I'll get this right...
+
+* another one
+
+* one more branch change
+
+* trying to get the branch there so it can be checked out
+
+* added pypy credentials
+
+* chaged to uses/with
+
+* bumped version on setup.py file
+
+- Handle BigQuery 404s gracefully ([#1913](https://github.com/zain13337/lyft-amundsen/pull/1913),
+  [`8b63f13`](https://github.com/zain13337/lyft-amundsen/commit/8b63f13dcd9d721104de4287755a7ad632823c88))
+
+* fix: Handle BigQuery 404s gracefully
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+* fix: Increase max-complexity threshold for _retrieve_tables
+
+- Handle columns in manifest and not in catalog
+  ([#1095](https://github.com/zain13337/lyft-amundsen/pull/1095),
+  [`cb23337`](https://github.com/zain13337/lyft-amundsen/commit/cb233375ef765ee87a01b15d62c9a7e4d2afe516))
+
+Signed-off-by: Adam Boscarino <aboscarino@devoted.com>
+
+- Handle more cases in the Hive parser for nested column support
+  ([#1755](https://github.com/zain13337/lyft-amundsen/pull/1755),
+  [`25fa0c4`](https://github.com/zain13337/lyft-amundsen/commit/25fa0c4016c96b8858ec21297a0887885aa9939a))
+
+* Handle non alpha only cases for the hive parser
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Default to scalar type if the type string cannot be parsed
+
+* Logging/comments
+
+- Handles parsing errors when format not expected on distinct values
+  ([#966](https://github.com/zain13337/lyft-amundsen/pull/966),
+  [`8f80282`](https://github.com/zain13337/lyft-amundsen/commit/8f80282d451cfca7285279ce4f34952f40a79718))
+
+* fix: Handles parsing errors when format not expected on distinct values
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Updates docs
+
+- Hive metadata extractor not work on postgresql
+  ([#394](https://github.com/zain13337/lyft-amundsen/pull/394),
+  [`e92d31d`](https://github.com/zain13337/lyft-amundsen/commit/e92d31df603609db097e8f4252a1fad7047a7b65))
+
+* fix: hive metadata extractor not work on postgresql
+
+Signed-off-by: zhmin <myzhmin@gmail.com>
+
+* fix: add unit test hive metadata extractor patch
+
+Co-authored-by: root <root@master02.hicoretest.com>
+
+- Improve Lineage chart UI ([#1815](https://github.com/zain13337/lyft-amundsen/pull/1815),
+  [`f8c9c2f`](https://github.com/zain13337/lyft-amundsen/commit/f8c9c2f62a8e33f9bb2fc028b391640e5029c0c5))
+
+* fix: Improve Lineage chart UI
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+* fix: Update Lineage graph test case
+
+* fix: Address PR comments
+
+* fix: Remove duplicate line
+
+- Improve Lineage chart UI -- follow-up
+  ([#1821](https://github.com/zain13337/lyft-amundsen/pull/1821),
+  [`925fce9`](https://github.com/zain13337/lyft-amundsen/commit/925fce9c6ae72a125d783dd94eacae93e2383abd))
+
+* fix: Improve Lineage chart UI -- follow-up
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+* fix: Address PR review
+
+- Improvements to the Owned By feature ([#178](https://github.com/zain13337/lyft-amundsen/pull/178),
+  [`24ed6a7`](https://github.com/zain13337/lyft-amundsen/commit/24ed6a731eeada7baa3634946d776b724284d4a6))
+
+* Improvements to the Owned By feature
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+* Fixes the mypy errors and code refactoring
+
+* Code Review changes
+
+* Code Review Changes
+
+* Adds an extra test to cover the owner of feature
+
+- Increase the compatibility of id structure between the Databuilder and the Metadata Library
+  ([#445](https://github.com/zain13337/lyft-amundsen/pull/445),
+  [`eb5b077`](https://github.com/zain13337/lyft-amundsen/commit/eb5b077da991d84e13488e74de41212359a45730))
+
+* Make id format compatible with metadata service
+
+Signed-off-by: Andrew Ciambrone <andrjc4@vt.edu>
+
+* fixes for dashboard search extractor
+
+* fix typo on attr name
+
+* Reconcille databuilder with models in common for stat_name and col_type
+
+- Index tag info into elasticsearch immediately after ui change
+  ([#883](https://github.com/zain13337/lyft-amundsen/pull/883),
+  [`c17993e`](https://github.com/zain13337/lyft-amundsen/commit/c17993ebbeaf1446d870aef62d0bab19ecb1b18f))
+
+* fix: index tag info into elasticsearch immediately after ui change
+
+Signed-off-by: tianru zhou <tianru.zhou@databricks.com>
+
+* address pr comments v1
+
+* fix lint test
+
+* change table key example
+
+- Int is too small for a unix timestamp
+  ([#2079](https://github.com/zain13337/lyft-amundsen/pull/2079),
+  [`a2cb0b2`](https://github.com/zain13337/lyft-amundsen/commit/a2cb0b2f089624f40cae1586f44a4c7ffa0d05a0))
+
+* fox: int is too small for a unix timestamp
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* removed upper bound for amundsen-common req
+
+- Issue with neo4j query for ES data ([#1823](https://github.com/zain13337/lyft-amundsen/pull/1823),
+  [`0cd3cbc`](https://github.com/zain13337/lyft-amundsen/commit/0cd3cbc82820928587ae74f247b3a0b3b400ae6f))
+
+* fix: issue with neo4j query for ES data
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* fixed multiple columns because of user match bug, and fixed uppercase fields breaking filters
+  issue
+
+- Issues with inconsistency in case conversion
+  ([#388](https://github.com/zain13337/lyft-amundsen/pull/388),
+  [`86bcbe7`](https://github.com/zain13337/lyft-amundsen/commit/86bcbe78019a7b67b4842888773550f3af8a37f0))
+
+* Updated README.md to include DremioExtractor
+
+Signed-off-by: Josh Howard <josh.t.howard@ey.com>
+
+* Removed case conversion from databuilder models
+
+* Fixed test deprecation warnings due to assertEquals
+
+Co-authored-by: Josh Howard <josh.t.howard@ey.com>
+
+- Limit max char to display for preview column
+  ([#518](https://github.com/zain13337/lyft-amundsen/pull/518),
+  [`e02ed65`](https://github.com/zain13337/lyft-amundsen/commit/e02ed65bf869775e295d5f5e89021aa19b8a32f1))
+
+* Limit max char to display for preview column
+
+* update
+
+* fix eslint
+
+- Lineage bug and tracking granularity
+  ([#1022](https://github.com/zain13337/lyft-amundsen/pull/1022),
+  [`a7ce1c3`](https://github.com/zain13337/lyft-amundsen/commit/a7ce1c34f2924dcebe7074155d809def6c7bdc7f))
+
+* [frontend] Fix some bugs with lineage - Fix: Navigation causes table lineage to disappear - Fix:
+  Missing column lineage shows '0'
+
+Signed-off-by: Daniel Won <dwon@lyft.com>
+
+* Modified lineage analytics events - Added 'upstream' or 'downstream' to all lineage clicks - Track
+  click of table-list-item
+
+* Add click tracking to dashboard and user list items
+
+- Loading/display for column lineage in column details panel
+  ([#1837](https://github.com/zain13337/lyft-amundsen/pull/1837),
+  [`39b42eb`](https://github.com/zain13337/lyft-amundsen/commit/39b42eb06aab59ae3dcd1632272d577af3e41dad))
+
+* Fixing load of column lineage and hiding sort by controls when right panel is open
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Adding some tests for side panel toggling/lineage loading
+
+- Made branch eval and added reviewers ([#891](https://github.com/zain13337/lyft-amundsen/pull/891),
+  [`ff020ef`](https://github.com/zain13337/lyft-amundsen/commit/ff020efd7e14e6c6d9e1143fa1cdbda6d83eff82))
+
+* if changes actions don't check
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* added reviewers and fixed branch
+
+* discard chnage, might make it later
+
+- Made change to preserve format of changelog
+  ([#896](https://github.com/zain13337/lyft-amundsen/pull/896),
+  [`4d641e8`](https://github.com/zain13337/lyft-amundsen/commit/4d641e87e60b64bb39f0e20383a7190461c0b6ca))
+
+* "New release for 3.3.1"
+
+Automatically generated by python-semantic-release
+
+* trying to preserve format of changelog
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* revent v bump
+
+Co-authored-by: semantic-release <semantic-release>
+
+- Made commit author consistent ([#917](https://github.com/zain13337/lyft-amundsen/pull/917),
+  [`4f9ee97`](https://github.com/zain13337/lyft-amundsen/commit/4f9ee97068abf8ff0120a149a7c7217cfe6d2d00))
+
+* fix: made commit author conssitant
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* added newline
+
+- Make bigquery usage extractor handle missing datasetId in log entry
+  ([#1415](https://github.com/zain13337/lyft-amundsen/pull/1415),
+  [`3340010`](https://github.com/zain13337/lyft-amundsen/commit/33400103e6d0dfd5087cd3b709adf54b83455bb2))
+
+Signed-off-by: MrwanBaghdad <marwan.nabil@deliveryhero.com>
+
+- Make column names searchable by lowercase
+  ([#85](https://github.com/zain13337/lyft-amundsen/pull/85),
+  [`deb7e80`](https://github.com/zain13337/lyft-amundsen/commit/deb7e8067707c050312dce4b0186c09462a93892))
+
+* fix: make column names search case insensitive
+
+Signed-off-by: tianru zhou <tianr.zhou@gmail.com>
+
+* replace tabs with spaces
+
+* update version number
+
+Co-authored-by: tianru zhou <tianrz@tianrus-MBP.attlocal.net>
+
+- Make last run state in dashboard page optional
+  ([#814](https://github.com/zain13337/lyft-amundsen/pull/814),
+  [`ec962ad`](https://github.com/zain13337/lyft-amundsen/commit/ec962ad8871d118644f9b77e3a5db3524a63afbc))
+
+* fix: make last run state in dashboard page optional
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* update
+
+- Make sure not to crash user search api when search service returns empty dict
+  ([#503](https://github.com/zain13337/lyft-amundsen/pull/503),
+  [`33e4bcd`](https://github.com/zain13337/lyft-amundsen/commit/33e4bcda0b68dfe2a05c5dc7b6633b180c4d3e7e))
+
+* Make sure not to crash when user search returns empty dict
+
+* Fix for the total result too
+
+- Makes sure to use the new env variables
+  ([#1253](https://github.com/zain13337/lyft-amundsen/pull/1253),
+  [`2437210`](https://github.com/zain13337/lyft-amundsen/commit/2437210ecce633d95d96978272205665338d7693))
+
+* Makes sure to use the new env variables
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+* Fixes copy/paste from metadata
+
+- Making description uneditable using config file
+  ([#497](https://github.com/zain13337/lyft-amundsen/pull/497),
+  [`2b0f851`](https://github.com/zain13337/lyft-amundsen/commit/2b0f8518da82e768f3c15b197cfb35d27bb78374))
+
+* Making description uneditable using config file
+
+* Table Description Uneditable using regex
+
+* Column Description uneditable
+
+* fixed regex statement
+
+* fixed lint error
+
+* removed print statements
+
+* Adding source to edit button
+
+* Added edit description text
+
+* Added list MatchRules object in configuration
+
+* ignore linting for metadata_utils.py
+
+* addint data type to match rules
+
+* adding data type to match rules
+
+* fixing mypy errors
+
+* restructured logic in metadata_utils
+
+* fixed mypy checks
+
+* fix parse_editable_rule parameters
+
+* Adding unit test cases
+
+* Code cleanup and better comments
+
+* Added documentation
+
+* Modified unit test case
+
+* fixed documentation
+
+* documentation change
+
+- Metadata oidc image build ([#1346](https://github.com/zain13337/lyft-amundsen/pull/1346),
+  [`9d153f4`](https://github.com/zain13337/lyft-amundsen/commit/9d153f4ad0d4bfba789345c045f6ba9a3151a053))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Minor styling fixes for Report an issue modal
+  ([#1756](https://github.com/zain13337/lyft-amundsen/pull/1756),
+  [`5df0b51`](https://github.com/zain13337/lyft-amundsen/commit/5df0b51cc923a571cf1214aed134e4fcb00531a4))
+
+* Minor styling fixes for Report an issue modal
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Using more variables
+
+- Miscellaneous UI Fixes ([#469](https://github.com/zain13337/lyft-amundsen/pull/469),
+  [`9729193`](https://github.com/zain13337/lyft-amundsen/commit/972919322726cebf87848769379a89444c809ba8))
+
+* Fix dashboard preview modal title
+
+* Improve vertical spacing in resource header
+
+* Apply min-height to left panel metadata sections
+
+* Update EditableSection rendering when missing optional props
+
+* Update style for left panel metadata sections
+
+* Fix resource detail height; Remove duplicate style
+
+* Add hover effects on the service links
+
+* Update EditableSection tests
+
+- More logging for badges ([#1991](https://github.com/zain13337/lyft-amundsen/pull/1991),
+  [`25c4a8d`](https://github.com/zain13337/lyft-amundsen/commit/25c4a8d1f01f9c732ea34f750d94ac256e3d014b))
+
+* fix: more logging for badges
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* too much whitespace
+
+* one case where use of single was neccessary
+
+- Move 'grouped_tables' into `_retrieve_tables`
+  ([#430](https://github.com/zain13337/lyft-amundsen/pull/430),
+  [`9e12ef1`](https://github.com/zain13337/lyft-amundsen/commit/9e12ef1b22a61d105214390ad58fec3248c435ae))
+
+Signed-off-by: xuans <xuan_shen@outlook.com>
+
+- Moved version declaration ([#88](https://github.com/zain13337/lyft-amundsen/pull/88),
+  [`0d54bdd`](https://github.com/zain13337/lyft-amundsen/commit/0d54bddd79e1fc32d61255f8e3c40ae08d11a1ac))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Moving method to get index to ES client
+  ([#1739](https://github.com/zain13337/lyft-amundsen/pull/1739),
+  [`98fa16f`](https://github.com/zain13337/lyft-amundsen/commit/98fa16f59294b5e0859a1059d94be8316245cca4))
+
+* fix: moving method to get index to ES client
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* self.
+
+* self,
+
+- Neo4j service name mismatch ([#1460](https://github.com/zain13337/lyft-amundsen/pull/1460),
+  [`4a023d6`](https://github.com/zain13337/lyft-amundsen/commit/4a023d6ffd79c4d074fa5265aacfd6ce09d26989))
+
+* Fixed neo4j service name mismatch
+
+Signed-off-by: Nirav Chotai <niravchotai.ce@gmail.com>
+
+* Added CHANGELOG.md
+
+- Nested delta edge case ([#1373](https://github.com/zain13337/lyft-amundsen/pull/1373),
+  [`4e2e1a5`](https://github.com/zain13337/lyft-amundsen/commit/4e2e1a59c8fc2c3ddccaae7984a5bae5f7816023))
+
+This commit fixes/refactors the implementation of complex delta columns. There was an edge case not
+  taken into account for arrays of arrays (array<array<string>>), maps of maps
+  (map<int,map<int,int>>), and combinations where intermediate nested types were not struct fields.
+  This also prompted a slight re-write of the function where the base case of the recursion is
+  StructField. Basically we only want to add columns that are StructField types since they are named
+  and can be accessed.
+
+I also add three new test cases for these cases and made sure all previous test cases still passed.
+
+Signed-off-by: jroof88 <jack.roof@samsara.com>
+
+- New search API fixes ([#1594](https://github.com/zain13337/lyft-amundsen/pull/1594),
+  [`96f5324`](https://github.com/zain13337/lyft-amundsen/commit/96f53241d4be105953fa97b4832b1cfad6410a2e))
+
+* fix: added healthcheck to proxy
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* proxy set incorrectly
+
+* added search to b ase proxy
+
+* lint
+
+* sort imports
+
+* coerce attrlist and dict to list and dict
+
+- No reason to raise a 404 when a user has no bookmarks or reads
+  ([#1964](https://github.com/zain13337/lyft-amundsen/pull/1964),
+  [`226df77`](https://github.com/zain13337/lyft-amundsen/commit/226df777831aaaabc2021b03479effad9f33836b))
+
+* added error logging for follow
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* fix: we should not raise a 4040 when someone has no bookmarks
+
+- Notification_utils.send_notification accept all 2xx status codes
+  ([#860](https://github.com/zain13337/lyft-amundsen/pull/860),
+  [`8b68280`](https://github.com/zain13337/lyft-amundsen/commit/8b68280afe1a5495a2f32101edb684ab1a3c6ba0))
+
+* Accept all 2xx status codes from mail clients
+
+Signed-off-by: JacobSMoller <scherffenberg91@gmail.com>
+
+* Updates test_send_notification_success to include an ACCEPTED status
+
+* Also check for all 2xx codes for feedback emails
+
+- Null check for availability ([#1276](https://github.com/zain13337/lyft-amundsen/pull/1276),
+  [`e9748bd`](https://github.com/zain13337/lyft-amundsen/commit/e9748bda9d923e544fcc2f4a63d8f75229905015))
+
+* fix: null check for availability
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* fixed logic
+
+* fixed everywhere
+
+* betterer
+
+- Null string passed as text to Flag component prevents page load
+  ([#466](https://github.com/zain13337/lyft-amundsen/pull/466),
+  [`c3bd485`](https://github.com/zain13337/lyft-amundsen/commit/c3bd4853ad7c8753450628729ece0308e4d05ce5))
+
+* Coerce null to empty string in Flag
+
+Fixes bug where a null value passed as text to a Flag component breaks entire pages.
+
+* added unit test
+
+- Open file in read mode and close on cleanup for ElasticsearchPublisher
+  ([#2023](https://github.com/zain13337/lyft-amundsen/pull/2023),
+  [`e2f5f5a`](https://github.com/zain13337/lyft-amundsen/commit/e2f5f5a92139a779de38da20da41741d7d458b6c))
+
+* fix(ElasticsearchPublisher): open file in read mode
+
+We only read from the file and therefore should not open it in write mode.
+
+Signed-off-by: Cedrik Neumann <cedrik.neumann@king.com>
+
+* fix(ElasticsearchPublisher): close file on cleanup
+
+Not closing the file can cause several issues. One of them is that it prevents [temporary
+  directories](https://docs.python.org/3.10/library/tempfile.html#tempfile.TemporaryDirectory)
+  containing the file from automatic deletion.
+
+---------
+
+- Overlapping table name issue in Readers [AtlasProxy]
+  ([`d8ec309`](https://github.com/zain13337/lyft-amundsen/commit/d8ec309e9e123c97a8cefc5d9615b262a9386cd3))
+
+- Override content block in docs for `mkdocs-material==4.6.3` (was latest, 7.1.1)
+  ([#1003](https://github.com/zain13337/lyft-amundsen/pull/1003),
+  [`2a1ea78`](https://github.com/zain13337/lyft-amundsen/commit/2a1ea78fe0524ac3cf24228b6f48b3ed4c8cbf26))
+
+Signed-off-by: sbrugman <sfbbrugman@gmail.com>
+
+- Ownereditor readOnly support ([#545](https://github.com/zain13337/lyft-amundsen/pull/545),
+  [`5defcc9`](https://github.com/zain13337/lyft-amundsen/commit/5defcc972600aee67f26d6fa038e90a207f71719))
+
+* Udpdate UI; readOnly support
+
+* Unit test
+
+* Code cleanup
+
+* Address review comments
+
+* Lint
+
+- Pandas 'nan' values ([#409](https://github.com/zain13337/lyft-amundsen/pull/409),
+  [`95741bf`](https://github.com/zain13337/lyft-amundsen/commit/95741bf6a9c09d1225ef2344c2b00d14a94e8733))
+
+Signed-off-by: bruno nirello <bruno.nirello@hurb.com>
+
+Co-authored-by: bruno nirello <bruno.nirello@hurb.com>
+
+- Previewdata undefined pointer issue
+  ([#1548](https://github.com/zain13337/lyft-amundsen/pull/1548),
+  [`f980b5e`](https://github.com/zain13337/lyft-amundsen/commit/f980b5e8327178859ea36311632f8facb5d222a4))
+
+This commit fixes an issue where when you have PreviewData with list items that don't have all
+  columns (which is can happen with nested data structures) the getSanitizedValue function returns
+  an empty string rather than trying to do .length of undefined.
+
+Signed-off-by: jroof88 <jack.roof@samsara.com>
+
+- Properly request number of entries for popular tables
+  ([#502](https://github.com/zain13337/lyft-amundsen/pull/502),
+  [`6f9014c`](https://github.com/zain13337/lyft-amundsen/commit/6f9014ccaa4a83d2c31262f4f0162320f7b70929))
+
+* Allow minimum reader count to be configurable
+
+* Update popular tables
+
+* Revert adding POPULAR_TABLE_MINIMUM_READER_COUNT config
+
+* dump dict to str
+
+* Add unit test for popular tables
+
+* GET request sends query strings not data
+
+* Update tests
+
+* Use url instead of request param for GET
+
+- Proxy client creation fails after adding client_kwargs
+  ([#258](https://github.com/zain13337/lyft-amundsen/pull/258),
+  [`19e39b7`](https://github.com/zain13337/lyft-amundsen/commit/19e39b75ae48ae819b49a88f03cc3c0f29815b43))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Proxy_validate_ssl = False by default on Neo4j proxy
+  ([#142](https://github.com/zain13337/lyft-amundsen/pull/142),
+  [`5c0a462`](https://github.com/zain13337/lyft-amundsen/commit/5c0a4620e463dc089f09b014d6a91fc946d4411d))
+
+* PROXY_ENCRYPTED = False by default on Neo4j proxy
+
+* Update
+
+- Pyarrow dependency breaking ([#864](https://github.com/zain13337/lyft-amundsen/pull/864),
+  [`4305202`](https://github.com/zain13337/lyft-amundsen/commit/430520222270fa5612c2a820df70212cb08cd74f))
+
+* updated setup
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* req change
+
+* moved pyarrow toe xtras require
+
+- Pytest setup.cfg section fix ([#1144](https://github.com/zain13337/lyft-amundsen/pull/1144),
+  [`37b6ea8`](https://github.com/zain13337/lyft-amundsen/commit/37b6ea88f08b4ad233d6ece9256a23989abfe52a))
+
+Signed-off-by: Jakub Nowacki <j.s.nowacki@gmail.com>
+
+- Rds databuilder dependencies ([#1220](https://github.com/zain13337/lyft-amundsen/pull/1220),
+  [`094dcf4`](https://github.com/zain13337/lyft-amundsen/commit/094dcf40f4ff193785c2fd85469d4fb704f26393))
+
+* rds_deps_databuilder | :tada: Initial commit.
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+* rds_deps_databuilder | :bookmark: Releasing / Version tags.
+
+- Re-fix wrong npm links ([#2176](https://github.com/zain13337/lyft-amundsen/pull/2176),
+  [`feaeabf`](https://github.com/zain13337/lyft-amundsen/commit/feaeabf3f63506d034cb1351245b8b190fa659ff))
+
+- Reapply previous fix ([#245](https://github.com/zain13337/lyft-amundsen/pull/245),
+  [`ce1a670`](https://github.com/zain13337/lyft-amundsen/commit/ce1a6702c006a337a4adf1234e31a2bdc6124817))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Reconcile gremlin description writes with the Databuilder
+  ([#290](https://github.com/zain13337/lyft-amundsen/pull/290),
+  [`0242ea3`](https://github.com/zain13337/lyft-amundsen/commit/0242ea38822efa86871b6a58b716cef6e914bad3))
+
+* Fix up Neptune description writes
+
+Signed-off-by: Andrew Ciambrone <andrjc4@vt.edu>
+
+* fix typing
+
+- Relaxed marshmallow requirement to see if conflicts arise
+  ([#697](https://github.com/zain13337/lyft-amundsen/pull/697),
+  [`599bfcb`](https://github.com/zain13337/lyft-amundsen/commit/599bfcb1f329c04530b7eb77299e8901e2824297))
+
+* relaxed marshmallow requirement to see if conflicts arise
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* relaxed marshmallow-annotations as well
+
+* added requirements upper bound
+
+- Release workflow manual trigger and branch change
+  ([#873](https://github.com/zain13337/lyft-amundsen/pull/873),
+  [`caa9bc7`](https://github.com/zain13337/lyft-amundsen/commit/caa9bc7abcf2b0871160b8b2b3b845d5ffec47a1))
+
+* added PR creation to release action
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* set new branch rather than master
+
+* changed cron to 12:15pm
+
+* chnaged release aciton branch and added manual run trigger
+
+- Remove beta flag for dashboard UI ([#492](https://github.com/zain13337/lyft-amundsen/pull/492),
+  [`4faa0ab`](https://github.com/zain13337/lyft-amundsen/commit/4faa0abbddd43ff0195eb0b8589e37c3024e8944))
+
+* Remove beta flag
+
+* Lint fix
+
+- Remove randomized css widths ([#635](https://github.com/zain13337/lyft-amundsen/pull/635),
+  [`0ce1409`](https://github.com/zain13337/lyft-amundsen/commit/0ce14096b965f635646e100c6b9553ccfe47ac0b))
+
+* Remove css contenthash due to no effect if using
+
+Signed-off-by: Tamika Tannis <ttannis@lyft.com>
+
+* Remove randomized widths
+
+* Cleanup
+
+- Remove style from badges model ([#683](https://github.com/zain13337/lyft-amundsen/pull/683),
+  [`dfaf605`](https://github.com/zain13337/lyft-amundsen/commit/dfaf6050e9482e83c4b327b88ead98cbdf256b4a))
+
+* removing temp badge change
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* changed badgelist logic
+
+* badge changes
+
+* fixing badges
+
+* removed use of tem table
+
+* deleted temporary table
+
+* lint fixes
+
+* updated metadata foxture badge
+
+* updated betterer
+
+- Remove tx.close() with Neo4j driver upgrade
+  ([#143](https://github.com/zain13337/lyft-amundsen/pull/143),
+  [`a8d32a7`](https://github.com/zain13337/lyft-amundsen/commit/a8d32a7aeee910174bd6262fb06b07493889189e))
+
+* Remove tx.close() with Neo4j driver upgrade
+
+Remove tx.close() with Neo4j driver upgrade
+
+* Update setup.py
+
+- Removed all badge_type fields from API
+  ([#202](https://github.com/zain13337/lyft-amundsen/pull/202),
+  [`0efbdbe`](https://github.com/zain13337/lyft-amundsen/commit/0efbdbe67232a5388f5284133fb6015e45bf5510))
+
+* removed all badge_type fields from API
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* small changes
+
+* removed lingering {} from message string
+
+* added short config doc
+
+* doc for badges
+
+* docs
+
+- Removed branch var on release action config
+  ([#869](https://github.com/zain13337/lyft-amundsen/pull/869),
+  [`4230d3d`](https://github.com/zain13337/lyft-amundsen/commit/4230d3d0d583faa0a5a98eabaf0363e89f114257))
+
+* removed branch var
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* updated time
+
+* updated time gain
+
+- Removed echo for changelog command ([#910](https://github.com/zain13337/lyft-amundsen/pull/910),
+  [`0e5c21e`](https://github.com/zain13337/lyft-amundsen/commit/0e5c21e36123259e0b2ba8107f5442d38efe1cc1))
+
+* removed echo cause command doesn't need it
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* reorganized and added committer
+
+* oops
+
+- Removed quotes on branch name ([#875](https://github.com/zain13337/lyft-amundsen/pull/875),
+  [`27eed13`](https://github.com/zain13337/lyft-amundsen/commit/27eed135de8403483d682b13da189625527df8f7))
+
+* added PR creation to release action
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* set new branch rather than master
+
+* changed cron to 12:15pm
+
+* chnaged release aciton branch and added manual run trigger
+
+* eventually I'll get this right...
+
+* another one
+
+- Removing hardcoded K8s Cluster Domain
+  ([#1435](https://github.com/zain13337/lyft-amundsen/pull/1435),
+  [`3297b05`](https://github.com/zain13337/lyft-amundsen/commit/3297b055f5c8de9221d7496234bcb19832c0cf25))
+
+- Removing OidcConfig file and making statsd configurable through envrionment variable
+  ([#157](https://github.com/zain13337/lyft-amundsen/pull/157),
+  [`5118331`](https://github.com/zain13337/lyft-amundsen/commit/51183318ac8d3eb73c6f29ba51a805032d6ece33))
+
+* removing OidcConfig
+
+* making statsd configurable through env variable
+
+- Rendering of bullet on the Features page
+  ([#2092](https://github.com/zain13337/lyft-amundsen/pull/2092),
+  [`e895a35`](https://github.com/zain13337/lyft-amundsen/commit/e895a35fd7f70e580120a41ce8d28da5f283d041))
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+- Replaced aria-label with sr-only to improve accessiblity
+  ([#509](https://github.com/zain13337/lyft-amundsen/pull/509),
+  [`86e2453`](https://github.com/zain13337/lyft-amundsen/commit/86e2453341b28323ede148742d16aed29bcc8afd))
+
+* updated all aria-label componets to use sr-only instead, still need to update tests and fix the
+  constants imports
+
+* fixed imports for constants on RequestMetadataForm comp
+
+* another constants import fix
+
+* removed aria-label attribute from tests
+
+* yet another constants fix
+
+* removed the aria-label as well as the sr-only for the add button on the add owner pop up, this is
+  because when selecting the edit button the sr would read edit on Owners, which means that if this
+  option is selected it can be assumed that when the sr reads Add, it will be related to adding an
+  Owner. Trying to have both a sr-only plus the label of the button itself would lead to confusion
+  because i would read add owner and then add, before with aria-hidden it would just hide Add and
+  say add owner, making this not an issue. We could also keep aria-hidden but idk if this also has
+  support gaps
+
+* added newline at end of file
+
+* fixed format issues
+
+* package oopsie
+
+- Reset tabs after loading a new table page
+  ([#1463](https://github.com/zain13337/lyft-amundsen/pull/1463),
+  [`0f3695b`](https://github.com/zain13337/lyft-amundsen/commit/0f3695bab716f5de1e4be62641cdbb6ec16e6f06))
+
+* Reset tabs after loading a new table page
+
+Signed-off-by: Daniel Won <dwon@lyft.com>
+
+- Retry loop for exception caused by deadlock on badge node
+  ([#404](https://github.com/zain13337/lyft-amundsen/pull/404),
+  [`1823568`](https://github.com/zain13337/lyft-amundsen/commit/18235680406aff658b6ce7a32f8fe441c96be015))
+
+* renamed for spellcheck, and added some logic to handle deadlock issue with badge node, still a
+  draft
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* fixed lint issues
+
+* logic oopsie
+
+* lint...
+
+* changed retries removed comments
+
+* added config key and set
+
+* lint
+
+* constants and rename
+
+* im a dumb dumb
+
+- Return empty list from exceptions in fetch_columns on deltalake extractor
+  ([#1389](https://github.com/zain13337/lyft-amundsen/pull/1389),
+  [`50e8bc3`](https://github.com/zain13337/lyft-amundsen/commit/50e8bc37251bd27d9bde0b969308015e5a43bacd))
+
+For the deltalake metadata extractor, when fetching columns the code `describe`s the table, and then
+  tries to look at schema by doing `spark.table('<table>').schema`; this is wrapped in a try-catch
+  to fail gracefully.
+
+We ran into an issue recently where running `spark.table('<table>').schema` raised an exception,
+  causing this method to drop into the except and log the error and return `raw_columns`. However,
+  the type of `raw_columns` is not `List[ScrapedColumnMetadata]`, it's a list of spark Row objects,
+  e.g.
+
+``` [Row(col_name='date', data_type='date', comment=''), Row(col_name='hour_start',
+  data_type='timestamp', comment=None), ... ```
+
+which caused the eventual user of the result (`create_table_metadata`) to encounter an exception
+  because the metadata was not the type it was expecting.
+
+This commit fixes this by returning an empty list instead of `raw_columns`, and adds a test to
+  assert that this is the behavior if an exception is returned in `fetch_columns`.
+
+Signed-off-by: Parth Upadhyay <parth.upadhyay@gmail.com>
+
+- Returns the empty dictionary to gracefully fail
+  ([#144](https://github.com/zain13337/lyft-amundsen/pull/144),
+  [`85744c5`](https://github.com/zain13337/lyft-amundsen/commit/85744c5be0216d45bc42eb5003862d32d992b47f))
+
+- Revert "ci: remove py2 ci" ([#284](https://github.com/zain13337/lyft-amundsen/pull/284),
+  [`516aeda`](https://github.com/zain13337/lyft-amundsen/commit/516aedadd77197cda20e4be2b90979b4b0203f4a))
+
+* Revert "ci: remove py2 ci (#280)"
+
+This reverts commit 2ac583cf40bc6efbe1470ffaea82c1da14892220.
+
+* Update setup.py
+
+- Revert "fix: fix cron to run later today" move up again
+  ([#868](https://github.com/zain13337/lyft-amundsen/pull/868),
+  [`eb4b77f`](https://github.com/zain13337/lyft-amundsen/commit/eb4b77fff519a56988a0269666cd96edf3bfcc11))
+
+* Revert "fix: fix cron to run later today (#867)"
+
+This reverts commit 160d08a5f1a7f93026e093033f2ecca94a9a4ce3.
+
+* won't mess up again
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Revert default search mapping change ([#276](https://github.com/zain13337/lyft-amundsen/pull/276),
+  [`940ed13`](https://github.com/zain13337/lyft-amundsen/commit/940ed131704ef5c354e940ef89f0eebd7699ae2b))
+
+* Revert "Fix ES mapping typo (#267)"
+
+This reverts commit 5dca1c24f8c9fc06fdcdd36198ad234ad8a672e4.
+
+* Revert "Update table search index mapping (#262)"
+
+This reverts commit 69ea36a61c0e620b124d1d45e6e8ee291f72b3c5.
+
+* fix: revert default search mapping change
+
+- Search filtering behavior fix ([#1612](https://github.com/zain13337/lyft-amundsen/pull/1612),
+  [`1c56322`](https://github.com/zain13337/lyft-amundsen/commit/1c56322b4260f157e162bf5cf78472472f2a9dbc))
+
+* Search filter behavior fix
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Addressing PR comment
+
+- Search_table API swagger file bug fix
+  ([#1120](https://github.com/zain13337/lyft-amundsen/pull/1120),
+  [`b1f2eda`](https://github.com/zain13337/lyft-amundsen/commit/b1f2edae4ebbadbd956da774c2cb51971a701529))
+
+* search table swagger file bug fix
+
+Signed-off-by: nishant_cimpress <nishant.sharma@cimpress.com>
+
+* removed comment
+
+Co-authored-by: nishant_cimpress <nishant.sharma@cimpress.com>
+
+- Separate related dashboards component & request
+  ([#494](https://github.com/zain13337/lyft-amundsen/pull/494),
+  [`2113414`](https://github.com/zain13337/lyft-amundsen/commit/2113414f5d7f6852d6c6da0566143ec974ed73a0))
+
+* Separate related dashboards component & request
+
+* Code clenaup
+
+* Tests
+
+* Fix some tests
+
+- Session db name ([#1948](https://github.com/zain13337/lyft-amundsen/pull/1948),
+  [`ba5f2a4`](https://github.com/zain13337/lyft-amundsen/commit/ba5f2a4a5c846bf5f4348ea80cd1e05b08909e47))
+
+* fix db name in publisher
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* applied to other compoennts
+
+* NEO4J_DATABASE_NAME: neo4j.DEFAULT_DATABASE
+
+* random lintin g error fix
+
+- Set snowflake extractor database to be consistent with other extractors
+  ([#283](https://github.com/zain13337/lyft-amundsen/pull/283),
+  [`4b4011d`](https://github.com/zain13337/lyft-amundsen/commit/4b4011d6da9fde8d702c2db606e3b09f44ef7258))
+
+* Update sample_data_loader.py
+
+* Set snowflake extractor database to be consistent with other extractors
+
+This is a proposed fix for the bug described in https://github.com/lyft/amundsen/issues/494 - it
+  adds a new configuration key, SNOWFLAKE_DATABASE_KEY, and uses it to set the database that
+  metadata should be extracted from. The DATABASE_KEY reverts back to simply describing the
+  database, with a default of 'snowflake'.
+
+* .
+
+* tests
+
+* lint
+
+* update env vars
+
+- Set Tableau URLs (base + API) via config
+  ([#349](https://github.com/zain13337/lyft-amundsen/pull/349),
+  [`bd7f8d9`](https://github.com/zain13337/lyft-amundsen/commit/bd7f8d9a3fe4fc1480287bd2e1eb3950249a07e3))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Small error when using given queries
+  ([#1715](https://github.com/zain13337/lyft-amundsen/pull/1715),
+  [`d7a190e`](https://github.com/zain13337/lyft-amundsen/commit/d7a190e09cf587fed2be256501d91d683b738766))
+
+* fix: small error when using given queries
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* fixed default queries
+
+* correct resource name
+
+* line too long
+
+* removed default published tag filter
+
+- Sort reports alphabetically ([#293](https://github.com/zain13337/lyft-amundsen/pull/293),
+  [`26ea1cb`](https://github.com/zain13337/lyft-amundsen/commit/26ea1cb56330e3129015f913051b3b02c3554e44))
+
+* Sort reports alphabetically
+
+Signed-off-by: sinkuladis <sink.vlad@gmail.com>
+
+* Static typing fix
+
+- Standardize requirements and fixes for marshmallow3+
+  ([#98](https://github.com/zain13337/lyft-amundsen/pull/98),
+  [`503625d`](https://github.com/zain13337/lyft-amundsen/commit/503625d341ed4c6c592cd62ac845e7ca516b8a6c))
+
+- Support capitalized table names ([#2004](https://github.com/zain13337/lyft-amundsen/pull/2004),
+  [`85fe9fc`](https://github.com/zain13337/lyft-amundsen/commit/85fe9fcc743a503b451830fb2353158044879ccc))
+
+* Make name based on key when the key is formatted in the exoected way
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* added comment
+
+* fix comment
+
+* added unit test for get name
+
+- Swagger docs don't align with common entity
+  ([#283](https://github.com/zain13337/lyft-amundsen/pull/283),
+  [`66e212d`](https://github.com/zain13337/lyft-amundsen/commit/66e212d73a596d4eae0096f4887b4c3911ea79e8))
+
+* making swagger docs align with common entity
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* more chnages for schema
+
+* Revert "more chnages for schema"
+
+This reverts commit 9e7e2c335caf00eadf2f216da6d4660d61d25b53.
+
+- Switch to discovery api for mode spaces
+  ([#481](https://github.com/zain13337/lyft-amundsen/pull/481),
+  [`04f1e27`](https://github.com/zain13337/lyft-amundsen/commit/04f1e27a3f337fb16af24ded4b8074ee5fe24543))
+
+* use pagenated rest api query for getting all Mode spaces
+
+Signed-off-by: Junda Yang <youngyjd@gmail.com>
+
+* nit
+
+* update comment
+
+- Table with multiple badges not triggering the correct search
+  ([#767](https://github.com/zain13337/lyft-amundsen/pull/767),
+  [`bf1b55b`](https://github.com/zain13337/lyft-amundsen/commit/bf1b55b4e088dc769c4b5f69b29146120b4f4a5f))
+
+* fixed issue with badge search
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* added text name as parameter instead
+
+- Temporarily fix potential 404 in mode dashboard executions extractor
+  ([#1051](https://github.com/zain13337/lyft-amundsen/pull/1051),
+  [`ed87878`](https://github.com/zain13337/lyft-amundsen/commit/ed878786e1d58a69a8d27095cdb86d0597d15733))
+
+* fix ModeDashboardExecutionsExtractor
+
+Signed-off-by: Junda Yang <youngyjd@gmail.com>
+
+* nit
+
+- Toggle filter should clear when off
+  ([#1848](https://github.com/zain13337/lyft-amundsen/pull/1848),
+  [`eafef20`](https://github.com/zain13337/lyft-amundsen/commit/eafef20403636d034d9acde298b6901902c76205))
+
+* fix: toggle filter should clear when off
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* lint fix
+
+* updated unit test
+
+* suggestion
+
+- Too many partitions in one Atlas query (Watermarks in Atlas Proxy)
+  ([#217](https://github.com/zain13337/lyft-amundsen/pull/217),
+  [`044de55`](https://github.com/zain13337/lyft-amundsen/commit/044de5518069b83518a8e0447bc616f584563990))
+
+* watermark_atlas_proxy | :recycle: Refactoring code.
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+* watermark_atlas_proxy | :rotating_light: Removing linter warnings.
+
+- Try to use the app context ([#1102](https://github.com/zain13337/lyft-amundsen/pull/1102),
+  [`db33e5b`](https://github.com/zain13337/lyft-amundsen/commit/db33e5b240630b9fd02924314934f29e147429af))
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+- Trying to get correct branch ref ([#877](https://github.com/zain13337/lyft-amundsen/pull/877),
+  [`d62c145`](https://github.com/zain13337/lyft-amundsen/commit/d62c145a16befec97e8577aa479755a06817e2bf))
+
+* added PR creation to release action
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* set new branch rather than master
+
+* changed cron to 12:15pm
+
+* chnaged release aciton branch and added manual run trigger
+
+* eventually I'll get this right...
+
+* another one
+
+* one more branch change
+
+* trying to get the branch there so it can be checked out
+
+- Typo in Readme ([#424](https://github.com/zain13337/lyft-amundsen/pull/424),
+  [`ac7d34a`](https://github.com/zain13337/lyft-amundsen/commit/ac7d34a0efe4dae312a5b5576eb74988c1dec102))
+
+- Uneditable descriptions with no value or possible actions should not show header
+  ([#533](https://github.com/zain13337/lyft-amundsen/pull/533),
+  [`f0e2a85`](https://github.com/zain13337/lyft-amundsen/commit/f0e2a853074859be94f8ffeeef8938ddae83e2bd))
+
+* added renderDescription method
+
+* simplified method
+
+* Added unit test cases
+
+* modified logic and unit test cases
+
+* code cleanup
+
+* incorporated PR review suggestions
+
+* minor changes to unit test cases
+
+- Unpacking AtlasEntity named tuple in the wrong order
+  ([#1429](https://github.com/zain13337/lyft-amundsen/pull/1429),
+  [`fee01ab`](https://github.com/zain13337/lyft-amundsen/commit/fee01ab7aabf074c90e8be5fee1ddf10e8935040))
+
+Signed-off-by: Louis Christopher <louis9171@outlook.com>
+
+- Update bounds for databuilder google-auth versions
+  ([#1918](https://github.com/zain13337/lyft-amundsen/pull/1918),
+  [`fdf0f0a`](https://github.com/zain13337/lyft-amundsen/commit/fdf0f0ae08244f97f8ab4f82f574744d63a28175))
+
+* fix: Update bounds for databuilder google-auth versions
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+* fix: Bump up databuilder version
+
+* fix: Revert css change
+
+- Update chart location ([#864](https://github.com/zain13337/lyft-amundsen/pull/864),
+  [`ee7d9db`](https://github.com/zain13337/lyft-amundsen/commit/ee7d9dbe7085840c11a5d5da638c21f4eba9cadd))
+
+Signed-off-by: Cristiano <cristianoperez@gmail.com>
+
+- Update common model to align with databuilder model
+  ([#1232](https://github.com/zain13337/lyft-amundsen/pull/1232),
+  [`3bbc466`](https://github.com/zain13337/lyft-amundsen/commit/3bbc4669a53526e273b5b717d2ecf028fc5233a3))
+
+* Bump common
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* put back chan ges from main
+
+* more changes back
+
+- Update connection string in Snowflake extractor to include wareh…
+  ([#357](https://github.com/zain13337/lyft-amundsen/pull/357),
+  [`81262f0`](https://github.com/zain13337/lyft-amundsen/commit/81262f02949f1e3b560be7760fe7f4a9869ebceb))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Update databuider README GenericUsageExtractor config
+  ([#1227](https://github.com/zain13337/lyft-amundsen/pull/1227),
+  [`6f3c1e1`](https://github.com/zain13337/lyft-amundsen/commit/6f3c1e14f5dca807fec96835e6b7a4d0af168064))
+
+Signed-off-by: Allison Doami <adoami@chanzuckerberg.com>
+
+- Update dbt_extractor - issue-1615 ([#1653](https://github.com/zain13337/lyft-amundsen/pull/1653),
+  [`3996045`](https://github.com/zain13337/lyft-amundsen/commit/3996045d21ecd80de4a52cbc6e45f9c89b086242))
+
+* Update dbt_extractor.py
+
+# Changed: get columns from catalog, not manifest as manifest sometimes does not have all columns
+
+Signed-off-by: Rodrigo Carneiro <teoria@gmail.com>
+
+* fix lint
+
+* lint
+
+- Update EditableSection interaction ([#547](https://github.com/zain13337/lyft-amundsen/pull/547),
+  [`09a8fa4`](https://github.com/zain13337/lyft-amundsen/commit/09a8fa4dfb77238b99f1e18a4b6f28fd230c6434))
+
+* Update EditableSection interaction
+
+* Cleanup
+
+- Update elasticsearch mapping ([#64](https://github.com/zain13337/lyft-amundsen/pull/64),
+  [`27e47ac`](https://github.com/zain13337/lyft-amundsen/commit/27e47acce2ac446525f025bae7ac7874c533f6b3))
+
+Signed-off-by: one0-choi <one0.choi@samsung.com>
+
+Co-authored-by: one0-choi <one0.choi@samsung.com>
+
+- Update elasticsearch table index mapping
+  ([#373](https://github.com/zain13337/lyft-amundsen/pull/373),
+  [`3f26a77`](https://github.com/zain13337/lyft-amundsen/commit/3f26a777b7e49902d87ddc609e176d6e715d8ef4))
+
+Signed-off-by: one0-choi <one0.choi@samsung.com>
+
+Co-authored-by: one0-choi <one0.choi@samsung.com>
+
+- Update env name of oidc secret key ([#858](https://github.com/zain13337/lyft-amundsen/pull/858),
+  [`724bbbe`](https://github.com/zain13337/lyft-amundsen/commit/724bbbe26427f4554efcabc4ebdc9862a784dab7))
+
+Signed-off-by: Wonyeong Choi <ciwnyg0815@gmail.com>
+
+Co-authored-by: hyein <bogo96@kaist.ac.kr>
+
+- Update helm Neo4j deployment ([#706](https://github.com/zain13337/lyft-amundsen/pull/706),
+  [`04e75a5`](https://github.com/zain13337/lyft-amundsen/commit/04e75a598cd4705b6ffa68b3847e5d6a94fadd14))
+
+Use emptyDir for Neo4j deployment plugin volumes instead of hostPath. With this change we get rid of
+  the dependency on hostPath and thus the dependency on the hosts filesystem and pods permissions to
+  the hostPath. The custom Neo4j deployment can now also run on GKE (and other k8s clusters).
+
+I also sorted the config options for for Neo4j and disabled auth. The disabling of Neo4j auth seems
+  to be a consistent setting through this repo (docker examples, and ECS examples).
+
+Signed-off-by: Jonas Brunsgaard <jonas.brunsgaard@gmail.com>
+
+- Update ModeDashboardExtractor to Mode discovery api
+  ([#1063](https://github.com/zain13337/lyft-amundsen/pull/1063),
+  [`0988547`](https://github.com/zain13337/lyft-amundsen/commit/0988547cd4e551488001f8327dd5db67198d9060))
+
+* Update ModeDashboardExtractor to Mode discovery api
+
+Signed-off-by: Junda Yang <youngyjd@gmail.com>
+
+* nit
+
+- Update no partitions message ([#1539](https://github.com/zain13337/lyft-amundsen/pull/1539),
+  [`8560825`](https://github.com/zain13337/lyft-amundsen/commit/85608250d130fbd76ef5538924123a8209f10c13))
+
+* Update no partitions message
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+* change message again
+
+- Update postgres_sample_dag to set table extract job as upstream for elastic search publisher
+  ([#340](https://github.com/zain13337/lyft-amundsen/pull/340),
+  [`7e8170e`](https://github.com/zain13337/lyft-amundsen/commit/7e8170e922d43c4c9d40593c67361146864e191b))
+
+Signed-off-by: Alagappan Sethuraman <alagappan.als@gmail.com>
+
+- Update search header wording ([#656](https://github.com/zain13337/lyft-amundsen/pull/656),
+  [`4ee3dd9`](https://github.com/zain13337/lyft-amundsen/commit/4ee3dd9e07300cb1dda86e96652471b236fa6768))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Update setup.py frontend-oidc ([#1332](https://github.com/zain13337/lyft-amundsen/pull/1332),
+  [`b71c541`](https://github.com/zain13337/lyft-amundsen/commit/b71c5414b39b13094cca120e65e6414062e002b6))
+
+* Update setup.py
+
+bump frontend-oidc version
+
+Signed-off-by: gh-vadepu <74282140+gh-vadepu@users.noreply.github.com>
+
+* updated with correct requested version
+
+- Update sharded_table filter in BigQuery extractor
+  ([#1209](https://github.com/zain13337/lyft-amundsen/pull/1209),
+  [`039ac7e`](https://github.com/zain13337/lyft-amundsen/commit/039ac7e92b187ba5138b3bf4bbc220a2da4ab0af))
+
+* updated shared-table validator
+
+Signed-off-by: xuans <xuan_shen@outlook.com>
+
+* renaming
+
+* fix mypy
+
+* fix lint
+
+- Update the key format of set 'grouped_tables'
+  ([#421](https://github.com/zain13337/lyft-amundsen/pull/421),
+  [`ef60a54`](https://github.com/zain13337/lyft-amundsen/commit/ef60a54de4aeaacd42709ef9b3cb20001e71e783))
+
+Signed-off-by: xuans <xuan_shen@outlook.com>
+
+- Update_atlas_docker_setup ([#498](https://github.com/zain13337/lyft-amundsen/pull/498),
+  [`91fa916`](https://github.com/zain13337/lyft-amundsen/commit/91fa9160d74b7b199f42792bf4b631d01d6eb878))
+
+- Updated UpdateDocumentRequest model to make value optional
+  ([#1617](https://github.com/zain13337/lyft-amundsen/pull/1617),
+  [`73b2c10`](https://github.com/zain13337/lyft-amundsen/commit/73b2c10a9aa6a55c1d7d88ff1e2e53c39273e55f))
+
+* fix: updated UpdateDocumentRequest model to make value optional
+
+* Update setup.py
+
+- Updates the Dashboard Page URL ([#473](https://github.com/zain13337/lyft-amundsen/pull/473),
+  [`937435e`](https://github.com/zain13337/lyft-amundsen/commit/937435e81bdba0bb7154e91c16fac9ce3544c010))
+
+* Modifying DashboardPage component, tests passing
+
+* Cleanups and updating Dashboard resource links
+
+* Flattens folder structure on the component folders
+
+* Extract helpers for building URI and Dashboard Detail Page URL, implement on search results
+  component
+
+* Adding types and cleaning up
+
+* Changing URL schema to use the URI directly on the URL
+
+* Cleanup and basic test for url helper
+
+- Updates the markup of some titles ([#490](https://github.com/zain13337/lyft-amundsen/pull/490),
+  [`78066fd`](https://github.com/zain13337/lyft-amundsen/commit/78066fd646e16d71db47a380a4dba6581506db39))
+
+* Homepage headings
+
+* Headings on announcements page
+
+* Updating search result group title
+
+* Some extra headings
+
+- Updating dbt extractor - to work on all json files
+  ([#1685](https://github.com/zain13337/lyft-amundsen/pull/1685),
+  [`dc73c0b`](https://github.com/zain13337/lyft-amundsen/commit/dc73c0bef20dd3d9272f34254ca65a89cfc4eb87))
+
+* Updating dbt extractor
+
+Signed-off-by: kathleenrms <kathleenramos@hotmail.com>
+
+* fixing tests
+
+- Upgrade mypy version to build with Python3.8
+  ([#975](https://github.com/zain13337/lyft-amundsen/pull/975),
+  [`7983b13`](https://github.com/zain13337/lyft-amundsen/commit/7983b13824138acc3e30f732cc0136861c620e1b))
+
+* Upgraded mypy version and fixed issues introduced in change
+
+Signed-off-by: Grant Seward <grant@stemma.ai>
+
+* Added python3.8 to test matrix
+
+- Use Amundsen id's for the Neptune key
+  ([#472](https://github.com/zain13337/lyft-amundsen/pull/472),
+  [`7f618e2`](https://github.com/zain13337/lyft-amundsen/commit/7f618e246c726adf7c776d781ae5b809d9935274))
+
+* Remove the label from the key attribute
+
+Signed-off-by: Andrew Ciambrone <andrjc4@vt.edu>
+
+* Fix the search on tag
+
+- Use isColumnLineagePageEnabled ([#2012](https://github.com/zain13337/lyft-amundsen/pull/2012),
+  [`2dcb0d5`](https://github.com/zain13337/lyft-amundsen/commit/2dcb0d58d6025eea0bb1006e77a98c527c1660cc))
+
+* fix: Use isColumnLineagePageEnabled
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+- Use managed read transactions for queries in metadata service
+  ([#2119](https://github.com/zain13337/lyft-amundsen/pull/2119),
+  [`61ef5d8`](https://github.com/zain13337/lyft-amundsen/commit/61ef5d8e8c2704e60a4c3b02f69d79d5612b1bd7))
+
+* Use managed read transactions for queries in metadata service
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Return same type as before
+
+---------
+
+- Use storage class for Persistent Volume
+  ([#941](https://github.com/zain13337/lyft-amundsen/pull/941),
+  [`e8328cf`](https://github.com/zain13337/lyft-amundsen/commit/e8328cfaeae694ad34722331eb069f1240b48fab))
+
+Signed-off-by: benrifkind <ben.rifkind@gmail.com>
+
+- Use TestConfig for FE container ([#948](https://github.com/zain13337/lyft-amundsen/pull/948),
+  [`eacdefd`](https://github.com/zain13337/lyft-amundsen/commit/eacdefd52a9bab362509ec80947db4316265c092))
+
+- Use the right scope when getting the bigquery table usage
+  ([#181](https://github.com/zain13337/lyft-amundsen/pull/181),
+  [`d06aff2`](https://github.com/zain13337/lyft-amundsen/commit/d06aff27e85a7ae36535556521b71afaaa7adcf0))
+
+- Variable organization in Model URL ([#293](https://github.com/zain13337/lyft-amundsen/pull/293),
+  [`a430e1f`](https://github.com/zain13337/lyft-amundsen/commit/a430e1f5f63527ef204480dc56d81289e60e1623))
+
+The Mode dashboard URL should change based on organization name passed in the config.
+
+- Various fixes to nested columns based on feedback
+  ([#1901](https://github.com/zain13337/lyft-amundsen/pull/1901),
+  [`8a22ce8`](https://github.com/zain13337/lyft-amundsen/commit/8a22ce8454879884783e3d7f33db3ebd0df8371a))
+
+* Various fixes to nested columns based on feedback
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Addressing PR comments
+
+- While using glue search table with filters for more than 10…
+  ([#1303](https://github.com/zain13337/lyft-amundsen/pull/1303),
+  [`6e04c2a`](https://github.com/zain13337/lyft-amundsen/commit/6e04c2a3643b98d73e449688ed655f6f75b60902))
+
+- Wrap dashboard description in .editable-text for styles
+  ([#520](https://github.com/zain13337/lyft-amundsen/pull/520),
+  [`98177b0`](https://github.com/zain13337/lyft-amundsen/commit/98177b02bb988652b992b430e5b59a20fe70db38))
+
+- Wrong protocol in docker-amudnsen-atlas.yml
+  ([`531664d`](https://github.com/zain13337/lyft-amundsen/commit/531664d667987aa63166f8a66cc731f1ba3ce6c4))
+
+- Yaml syntax error ([#913](https://github.com/zain13337/lyft-amundsen/pull/913),
+  [`88c5a66`](https://github.com/zain13337/lyft-amundsen/commit/88c5a66dcd27f9924da15ebba1aa7bed94986ce7))
+
+* title lint escape char : in yaml
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* hard code signoff for python-semantic-release commit
+
+* oopsie put it in commit menssage istead of title
+
+* escaping a colon is hard
+
+- **deps**: Unpin attrs ([#332](https://github.com/zain13337/lyft-amundsen/pull/332),
+  [`a4fb9af`](https://github.com/zain13337/lyft-amundsen/commit/a4fb9afb64a41a6d6e0dd511c602aa38f25e740d))
+
+This fixes the issue with the attrs transitive dependency described in #331 , without touching
+  everything else.
+
+Signed-off-by: Joseph Atkins-Turkish <jatkins-turkish@brex.com>
+
+### Build System
+
+- [security] bump urijs in /amundsen_application/static
+  ([#855](https://github.com/zain13337/lyft-amundsen/pull/855),
+  [`318e98d`](https://github.com/zain13337/lyft-amundsen/commit/318e98d888530423859b7cf1b7b7d3be04e58fc3))
+
+Bumps [urijs](https://github.com/medialize/URI.js) from 1.19.2 to 1.19.4. **This update includes a
+  security fix.** - [Release notes](https://github.com/medialize/URI.js/releases) -
+  [Changelog](https://github.com/medialize/URI.js/blob/gh-pages/CHANGELOG.md) -
+  [Commits](https://github.com/medialize/URI.js/compare/v1.19.2...v1.19.4)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Add Storybook ([#563](https://github.com/zain13337/lyft-amundsen/pull/563),
+  [`a63bb3b`](https://github.com/zain13337/lyft-amundsen/commit/a63bb3b5a314da563f55b3909ee7f91beb6d929d))
+
+* Adds Storybook
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+* tsconfig: move module options to parent file
+
+This might be an oopsie, but I'm not totally clear on the rationale of having multiple tsconfigs, so
+  I'm
+
+Motivation is that storybook needs these options, but there's no way AFAICT to specify a tsconfig
+  for it (putting tsconfig.json in .storybook doesn't work)
+
+* storybook: convert main to typescript; import most of the config
+
+* storybook: just use the dev config wholesale
+
+* storybook: remove story for component that doesn't exist yet
+
+* storybook: move story files to live with their views
+
+Open to feedback on this, but I think this will be more scalable.
+
+* storybook: re-add preview, which includes global styles
+
+* storybook: fix config via env var switching
+
+Co-authored-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+- Adding betterer to workflow ([#598](https://github.com/zain13337/lyft-amundsen/pull/598),
+  [`401fb97`](https://github.com/zain13337/lyft-amundsen/commit/401fb973ba933dec8b1c94c5fafb51641720a8cf))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Bump requests from 2.25.0 to 2.25.1 ([#845](https://github.com/zain13337/lyft-amundsen/pull/845),
+  [`8834c0a`](https://github.com/zain13337/lyft-amundsen/commit/8834c0aac56f053c199e6f64a820a6055a153152))
+
+Bumps [requests](https://github.com/psf/requests) from 2.25.0 to 2.25.1. - [Release
+  notes](https://github.com/psf/requests/releases) -
+  [Changelog](https://github.com/psf/requests/blob/master/HISTORY.md) -
+  [Commits](https://github.com/psf/requests/compare/v2.25.0...v2.25.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Configures ESLint and Prettier ([#477](https://github.com/zain13337/lyft-amundsen/pull/477),
+  [`35a4825`](https://github.com/zain13337/lyft-amundsen/commit/35a482514a9acbc6052e7725b67c53a41ab0fa63))
+
+* Updates eslint packages
+
+* Merging commits
+
+* Updating
+
+* Updates
+
+* Fixing Query block issues
+
+* Fixes anchor issue and bracket values type errors
+
+* Formatting
+
+- Fix broken tests in Python 3.7, test in CI
+  ([#334](https://github.com/zain13337/lyft-amundsen/pull/334),
+  [`9d1ae2c`](https://github.com/zain13337/lyft-amundsen/commit/9d1ae2c7b805ee0268f3efaf30ff6fc501efcdf0))
+
+- Remove defunct eslint tsconfig file ([#565](https://github.com/zain13337/lyft-amundsen/pull/565),
+  [`38000dc`](https://github.com/zain13337/lyft-amundsen/commit/38000dc773bdcab2b23e8e39f8e130b27d5bcc38))
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+- Use static CSS and JS filenames in dev
+  ([#534](https://github.com/zain13337/lyft-amundsen/pull/534),
+  [`250900e`](https://github.com/zain13337/lyft-amundsen/commit/250900ec9e6d8a5d4236f048b754457832e72ee1))
+
+In production, it's helpful to use content addressing to guarantee cache busting when publishing
+  changes.
+
+However, in development, because the server serves a static copy of the index.html, that means that
+  changing the Javascript bundle or CSS requires an otherwise-unnecessary restart of the server.
+
+This change makes the CSS and JS assets use fixed filenames so that a server restart isn't needed.
+
+Downside of this approach is there's now a dev/prod disparity and the config is more spread out
+  between files. The positive is we don't need to modify the semantics of the server at all.
+
+- **deps**: [security] bump elliptic in /amundsen_application/static
+  ([#950](https://github.com/zain13337/lyft-amundsen/pull/950),
+  [`3e6ee64`](https://github.com/zain13337/lyft-amundsen/commit/3e6ee64fbe7b92ebbd5b010d13715699776f97e9))
+
+Bumps [elliptic](https://github.com/indutny/elliptic) from 6.5.3 to 6.5.4. **This update includes a
+  security fix.** - [Release notes](https://github.com/indutny/elliptic/releases) -
+  [Commits](https://github.com/indutny/elliptic/compare/v6.5.3...v6.5.4)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: [security] bump ini in /amundsen_application/static
+  ([#818](https://github.com/zain13337/lyft-amundsen/pull/818),
+  [`58d5aa8`](https://github.com/zain13337/lyft-amundsen/commit/58d5aa8768cc611e0ff17dbd0db8e7795244eefa))
+
+Bumps [ini](https://github.com/isaacs/ini) from 1.3.5 to 1.3.7. **This update includes a security
+  fix.** - [Release notes](https://github.com/isaacs/ini/releases) -
+  [Commits](https://github.com/isaacs/ini/compare/v1.3.5...v1.3.7)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: [security] bump lodash in /amundsen_application/static
+  ([#587](https://github.com/zain13337/lyft-amundsen/pull/587),
+  [`3affeff`](https://github.com/zain13337/lyft-amundsen/commit/3affeff281ece923cd4b965bccc42c3bba89913d))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps**: [security] bump nested-object-assign
+  ([#906](https://github.com/zain13337/lyft-amundsen/pull/906),
+  [`3ab089a`](https://github.com/zain13337/lyft-amundsen/commit/3ab089aa2d17d921d84f52d77c0743d104dc291c))
+
+Bumps [nested-object-assign](https://github.com/Geta/NestedObjectAssign) from 1.0.3 to 1.0.4. **This
+  update includes a security fix.** - [Release
+  notes](https://github.com/Geta/NestedObjectAssign/releases) -
+  [Commits](https://github.com/Geta/NestedObjectAssign/compare/v1.0.3...v1.0.4)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: [security] bump node-notifier
+  ([#848](https://github.com/zain13337/lyft-amundsen/pull/848),
+  [`06e7214`](https://github.com/zain13337/lyft-amundsen/commit/06e72148048c185f214b09eccbca3222077dc685))
+
+Bumps [node-notifier](https://github.com/mikaelbr/node-notifier) from 8.0.0 to 8.0.1. **This update
+  includes a security fix.** - [Release notes](https://github.com/mikaelbr/node-notifier/releases) -
+  [Changelog](https://github.com/mikaelbr/node-notifier/blob/v8.0.1/CHANGELOG.md) -
+  [Commits](https://github.com/mikaelbr/node-notifier/compare/v8.0.0...v8.0.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: [security] bump serialize-javascript
+  ([#629](https://github.com/zain13337/lyft-amundsen/pull/629),
+  [`62f1920`](https://github.com/zain13337/lyft-amundsen/commit/62f19203b4b1b5ee21b2bf219cf4e19dfd7a435e))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps**: [security] bump ssri in /amundsen_application/static
+  ([#973](https://github.com/zain13337/lyft-amundsen/pull/973),
+  [`8789841`](https://github.com/zain13337/lyft-amundsen/commit/8789841b5d41ab73eae337c5d766cea0db6339b5))
+
+Bumps [ssri](https://github.com/npm/ssri) from 6.0.1 to 6.0.2. **This update includes a security
+  fix.** - [Release notes](https://github.com/npm/ssri/releases) -
+  [Changelog](https://github.com/npm/ssri/blob/v6.0.2/CHANGELOG.md) -
+  [Commits](https://github.com/npm/ssri/compare/v6.0.1...v6.0.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: [security] bump y18n in /amundsen_application/static
+  ([#959](https://github.com/zain13337/lyft-amundsen/pull/959),
+  [`ff782a2`](https://github.com/zain13337/lyft-amundsen/commit/ff782a2f3ed40dc2ab78930a63dd410b518f705e))
+
+Bumps [y18n](https://github.com/yargs/y18n) from 4.0.0 to 4.0.1. **This update includes a security
+  fix.** - [Release notes](https://github.com/yargs/y18n/releases) -
+  [Changelog](https://github.com/yargs/y18n/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/yargs/y18n/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump amundsen-common from 0.5.11 to 0.6.0
+  ([#921](https://github.com/zain13337/lyft-amundsen/pull/921),
+  [`888ce76`](https://github.com/zain13337/lyft-amundsen/commit/888ce7613a8416cac6f833e5aef9ea6ad9269bf1))
+
+Bumps [amundsen-common](https://github.com/amundsen-io/amundsencommon) from 0.5.11 to 0.6.0. -
+  [Release notes](https://github.com/amundsen-io/amundsencommon/releases) -
+  [Changelog](https://github.com/amundsen-io/amundsencommon/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/amundsen-io/amundsencommon/compare/0.5.11...0.6.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump amundsen-common from 0.5.9 to 0.5.11
+  ([#898](https://github.com/zain13337/lyft-amundsen/pull/898),
+  [`b27494c`](https://github.com/zain13337/lyft-amundsen/commit/b27494c4f1bfcf300aa852be699d6dbfbc4490f3))
+
+Bumps [amundsen-common](https://github.com/amundsen-io/amundsencommon) from 0.5.9 to 0.5.11. -
+  [Release notes](https://github.com/amundsen-io/amundsencommon/releases) -
+  [Commits](https://github.com/amundsen-io/amundsencommon/compare/0.5.9...0.5.11)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump amundsengremlin from `4d8e77c` to `ac5c512`
+  ([#1385](https://github.com/zain13337/lyft-amundsen/pull/1385),
+  [`7903995`](https://github.com/zain13337/lyft-amundsen/commit/79039954d53c75d0bbdb0f2bee2f465a7b977f45))
+
+Bumps [amundsengremlin](https://github.com/amundsen-io/amundsengremlin) from `4d8e77c` to `ac5c512`.
+  - [Release notes](https://github.com/amundsen-io/amundsengremlin/releases) -
+  [Commits](https://github.com/amundsen-io/amundsengremlin/compare/4d8e77c53d8d7ccefe51eeecb961103ddb50c5e6...ac5c512e962db4e7f37fa88c955181fcae2edb9e)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump amundsengremlin from `aa5c676` to `4d8e77c`
+  ([#1358](https://github.com/zain13337/lyft-amundsen/pull/1358),
+  [`f4a9a0e`](https://github.com/zain13337/lyft-amundsen/commit/f4a9a0e5ab2008595deb07a653f36b9f1089f7e4))
+
+Bumps [amundsengremlin](https://github.com/amundsen-io/amundsengremlin) from `aa5c676` to `4d8e77c`.
+  - [Release notes](https://github.com/amundsen-io/amundsengremlin/releases) -
+  [Commits](https://github.com/amundsen-io/amundsengremlin/compare/aa5c676153817c5f259b002c07fe38a00fffb55d...4d8e77c53d8d7ccefe51eeecb961103ddb50c5e6)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump amundsengremlin from `e4f3eb6` to `aa5c676`
+  ([#1226](https://github.com/zain13337/lyft-amundsen/pull/1226),
+  [`c858811`](https://github.com/zain13337/lyft-amundsen/commit/c858811948486a799cc34b69ea24bee4d9ef796f))
+
+Bumps [amundsengremlin](https://github.com/amundsen-io/amundsengremlin) from `e4f3eb6` to `aa5c676`.
+  - [Release notes](https://github.com/amundsen-io/amundsengremlin/releases) -
+  [Commits](https://github.com/amundsen-io/amundsengremlin/compare/e4f3eb6bcb611162d5ecc9410354735f00078480...aa5c676153817c5f259b002c07fe38a00fffb55d)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump amundsenrds from `589be11` to `4509bb0`
+  ([#1174](https://github.com/zain13337/lyft-amundsen/pull/1174),
+  [`2e5ff71`](https://github.com/zain13337/lyft-amundsen/commit/2e5ff719483f7da99e079bafd27dc4a1a10da89e))
+
+Bumps [amundsenrds](https://github.com/amundsen-io/amundsenrds) from `589be11` to `4509bb0`. -
+  [Release notes](https://github.com/amundsen-io/amundsenrds/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenrds/compare/589be110895b149eb3cdb83e86df3058337e5763...4509bb01877488ea5873a7debe29435142cceee5)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump analytics in /amundsen_application/static
+  ([#901](https://github.com/zain13337/lyft-amundsen/pull/901),
+  [`1bcbcac`](https://github.com/zain13337/lyft-amundsen/commit/1bcbcac7693011bfa66f128f261c585087ff35d9))
+
+Bumps [analytics](https://github.com/DavidWells/analytics) from 0.5.5 to 0.7.2. - [Release
+  notes](https://github.com/DavidWells/analytics/releases) -
+  [Commits](https://github.com/DavidWells/analytics/compare/analytics@0.5.5...analytics@0.7.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump analytics in /amundsen_application/static
+  ([#937](https://github.com/zain13337/lyft-amundsen/pull/937),
+  [`4ab2d4c`](https://github.com/zain13337/lyft-amundsen/commit/4ab2d4cc17c138b468c76ae17090fa4117a2b628))
+
+Bumps [analytics](https://github.com/DavidWells/analytics) from 0.7.2 to 0.7.3. - [Release
+  notes](https://github.com/DavidWells/analytics/releases) -
+  [Commits](https://github.com/DavidWells/analytics/compare/analytics@0.7.2...analytics@0.7.3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump asana from 0.10.0 to 0.10.3
+  ([#717](https://github.com/zain13337/lyft-amundsen/pull/717),
+  [`d63512f`](https://github.com/zain13337/lyft-amundsen/commit/d63512f1e7e3104e9520efad2d854ac04e2d64e8))
+
+Bumps [asana](https://github.com/asana/python-asana) from 0.10.0 to 0.10.3. - [Release
+  notes](https://github.com/asana/python-asana/releases) -
+  [Commits](https://github.com/asana/python-asana/compare/v0.10.0...v0.10.3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump axios in /amundsen_application/static
+  ([#858](https://github.com/zain13337/lyft-amundsen/pull/858),
+  [`81eed5a`](https://github.com/zain13337/lyft-amundsen/commit/81eed5a3ec40d581c71939e665607e52c18f916b))
+
+Bumps [axios](https://github.com/axios/axios) from 0.19.0 to 0.21.1. - [Release
+  notes](https://github.com/axios/axios/releases) -
+  [Changelog](https://github.com/axios/axios/blob/v0.21.1/CHANGELOG.md) -
+  [Commits](https://github.com/axios/axios/compare/v0.19.0...v0.21.1)
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump flake8-tidy-imports from 1.1.0 to 4.2.1
+  ([#844](https://github.com/zain13337/lyft-amundsen/pull/844),
+  [`7186630`](https://github.com/zain13337/lyft-amundsen/commit/7186630669ce45bf4e72861e8f028d1f9558bd1a))
+
+Bumps [flake8-tidy-imports](https://github.com/adamchainz/flake8-tidy-imports) from 1.1.0 to 4.2.1.
+  - [Release notes](https://github.com/adamchainz/flake8-tidy-imports/releases) -
+  [Changelog](https://github.com/adamchainz/flake8-tidy-imports/blob/master/HISTORY.rst) -
+  [Commits](https://github.com/adamchainz/flake8-tidy-imports/compare/1.1.0...4.2.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump flask-restful from 0.3.7 to 0.3.8
+  ([#553](https://github.com/zain13337/lyft-amundsen/pull/553),
+  [`32bdea6`](https://github.com/zain13337/lyft-amundsen/commit/32bdea61317b4a300b2e3bf671c43c25398f3ddd))
+
+Bumps [flask-restful](https://github.com/flask-restful/flask-restful) from 0.3.7 to 0.3.8. -
+  [Release notes](https://github.com/flask-restful/flask-restful/releases) -
+  [Changelog](https://github.com/flask-restful/flask-restful/blob/master/CHANGES.md) -
+  [Commits](https://github.com/flask-restful/flask-restful/compare/0.3.7...0.3.8)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump fsevents in /amundsen_application/static
+  ([#630](https://github.com/zain13337/lyft-amundsen/pull/630),
+  [`20c3c93`](https://github.com/zain13337/lyft-amundsen/commit/20c3c9302afe5b03155a6140ff3147bda1ba3a11))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps**: Bump mock from 2.0.0 to 4.0.2
+  ([#607](https://github.com/zain13337/lyft-amundsen/pull/607),
+  [`dea2ac0`](https://github.com/zain13337/lyft-amundsen/commit/dea2ac016de2c0f4717d0f929121a56c26ffab9d))
+
+Bumps [mock](https://github.com/testing-cabal/mock) from 2.0.0 to 4.0.2. - [Release
+  notes](https://github.com/testing-cabal/mock/releases) -
+  [Changelog](https://github.com/testing-cabal/mock/blob/master/CHANGELOG.rst) -
+  [Commits](https://github.com/testing-cabal/mock/compare/2.0.0...4.0.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump mock from 4.0.2 to 4.0.3
+  ([#824](https://github.com/zain13337/lyft-amundsen/pull/824),
+  [`ccd4b00`](https://github.com/zain13337/lyft-amundsen/commit/ccd4b00f615e509b30ae30e18c8fc109a1418d50))
+
+Bumps [mock](https://github.com/testing-cabal/mock) from 4.0.2 to 4.0.3. - [Release
+  notes](https://github.com/testing-cabal/mock/releases) -
+  [Changelog](https://github.com/testing-cabal/mock/blob/master/CHANGELOG.rst) -
+  [Commits](https://github.com/testing-cabal/mock/compare/4.0.2...4.0.3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump moment-timezone in /amundsen_application/static
+  ([#949](https://github.com/zain13337/lyft-amundsen/pull/949),
+  [`971334f`](https://github.com/zain13337/lyft-amundsen/commit/971334fe923c86fc0eaaa5cfbce5edcdce8f8a04))
+
+Bumps [moment-timezone](https://github.com/moment/moment-timezone) from 0.5.32 to 0.5.33. - [Release
+  notes](https://github.com/moment/moment-timezone/releases) -
+  [Changelog](https://github.com/moment/moment-timezone/blob/develop/changelog.md) -
+  [Commits](https://github.com/moment/moment-timezone/compare/0.5.32...0.5.33)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump py from 1.5.3 to 1.10.0 in /databuilder
+  ([#1049](https://github.com/zain13337/lyft-amundsen/pull/1049),
+  [`c737d98`](https://github.com/zain13337/lyft-amundsen/commit/c737d984b1dd5962f54943143a6f36eb08b3f9c2))
+
+- **deps**: Bump pytest from 3.5.1 to 6.1.1
+  ([#703](https://github.com/zain13337/lyft-amundsen/pull/703),
+  [`af12871`](https://github.com/zain13337/lyft-amundsen/commit/af128715a86a38c2a2106357f1ec8c5c468c4a55))
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 3.5.1 to 6.1.1. - [Release
+  notes](https://github.com/pytest-dev/pytest/releases) -
+  [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst) -
+  [Commits](https://github.com/pytest-dev/pytest/compare/3.5.1...6.1.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump pytest from 6.1.1 to 6.1.2
+  ([#743](https://github.com/zain13337/lyft-amundsen/pull/743),
+  [`e2309c3`](https://github.com/zain13337/lyft-amundsen/commit/e2309c341d1f20285e0bdf8458c9c8e72adec14a))
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 6.1.1 to 6.1.2. - [Release
+  notes](https://github.com/pytest-dev/pytest/releases) -
+  [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst) -
+  [Commits](https://github.com/pytest-dev/pytest/compare/6.1.1...6.1.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump pytest from 6.1.2 to 6.2.1
+  ([#836](https://github.com/zain13337/lyft-amundsen/pull/836),
+  [`9f45ea3`](https://github.com/zain13337/lyft-amundsen/commit/9f45ea3588a7483e9a15e8b8f081203e607d42a4))
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 6.1.2 to 6.2.1. - [Release
+  notes](https://github.com/pytest-dev/pytest/releases) -
+  [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst) -
+  [Commits](https://github.com/pytest-dev/pytest/compare/6.1.2...6.2.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump pytest from 6.2.1 to 6.2.2
+  ([#899](https://github.com/zain13337/lyft-amundsen/pull/899),
+  [`2a4f161`](https://github.com/zain13337/lyft-amundsen/commit/2a4f161a33a3e7daa633cbce05740f581d7a286f))
+
+Bumps [pytest](https://github.com/pytest-dev/pytest) from 6.2.1 to 6.2.2. - [Release
+  notes](https://github.com/pytest-dev/pytest/releases) -
+  [Changelog](https://github.com/pytest-dev/pytest/blob/master/CHANGELOG.rst) -
+  [Commits](https://github.com/pytest-dev/pytest/compare/6.2.1...6.2.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump pytest-cov from 2.11.0 to 2.11.1
+  ([#889](https://github.com/zain13337/lyft-amundsen/pull/889),
+  [`ebaa4b5`](https://github.com/zain13337/lyft-amundsen/commit/ebaa4b536fdbd52366f9daf374216bf6dd1094bd))
+
+Bumps [pytest-cov](https://github.com/pytest-dev/pytest-cov) from 2.11.0 to 2.11.1. - [Release
+  notes](https://github.com/pytest-dev/pytest-cov/releases) -
+  [Changelog](https://github.com/pytest-dev/pytest-cov/blob/master/CHANGELOG.rst) -
+  [Commits](https://github.com/pytest-dev/pytest-cov/compare/v2.11.0...v2.11.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump pytest-cov from 2.5.1 to 2.11.0
+  ([#870](https://github.com/zain13337/lyft-amundsen/pull/870),
+  [`20cd587`](https://github.com/zain13337/lyft-amundsen/commit/20cd587a3f9d294c5b19b11ba6a3ca3d83a34673))
+
+Bumps [pytest-cov](https://github.com/pytest-dev/pytest-cov) from 2.5.1 to 2.11.0. - [Release
+  notes](https://github.com/pytest-dev/pytest-cov/releases) -
+  [Changelog](https://github.com/pytest-dev/pytest-cov/blob/master/CHANGELOG.rst) -
+  [Commits](https://github.com/pytest-dev/pytest-cov/compare/v2.5.1...v2.11.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump pytest-mock from 1.1 to 3.4.0
+  ([#847](https://github.com/zain13337/lyft-amundsen/pull/847),
+  [`42ab5b2`](https://github.com/zain13337/lyft-amundsen/commit/42ab5b23183da9d5fb89b3e1d0356cf48c932253))
+
+Bumps [pytest-mock](https://github.com/pytest-dev/pytest-mock) from 1.1 to 3.4.0. - [Release
+  notes](https://github.com/pytest-dev/pytest-mock/releases) -
+  [Changelog](https://github.com/pytest-dev/pytest-mock/blob/master/CHANGELOG.rst) -
+  [Commits](https://github.com/pytest-dev/pytest-mock/compare/v1.1...v3.4.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump pytest-mock from 3.4.0 to 3.5.1
+  ([#862](https://github.com/zain13337/lyft-amundsen/pull/862),
+  [`dca588f`](https://github.com/zain13337/lyft-amundsen/commit/dca588f2675599a66b40937e044036b9aeb8611b))
+
+Bumps [pytest-mock](https://github.com/pytest-dev/pytest-mock) from 3.4.0 to 3.5.1. - [Release
+  notes](https://github.com/pytest-dev/pytest-mock/releases) -
+  [Changelog](https://github.com/pytest-dev/pytest-mock/blob/master/CHANGELOG.rst) -
+  [Commits](https://github.com/pytest-dev/pytest-mock/compare/v3.4.0...v3.5.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump react-code-blocks in /amundsen_application/static
+  ([#763](https://github.com/zain13337/lyft-amundsen/pull/763),
+  [`5e856f1`](https://github.com/zain13337/lyft-amundsen/commit/5e856f11816a6e71972b84ab418126fddcae1ef4))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps**: Bump react-markdown in /amundsen_application/static
+  ([#790](https://github.com/zain13337/lyft-amundsen/pull/790),
+  [`31e2180`](https://github.com/zain13337/lyft-amundsen/commit/31e21806d9e9cb02e6e1fa17dddf6624ed06dedb))
+
+Bumps [react-markdown](https://github.com/remarkjs/react-markdown) from 5.0.2 to 5.0.3. - [Release
+  notes](https://github.com/remarkjs/react-markdown/releases) -
+  [Changelog](https://github.com/remarkjs/react-markdown/blob/main/changelog.md) -
+  [Commits](https://github.com/remarkjs/react-markdown/compare/5.0.2...5.0.3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump redux-promise in /amundsen_application/static
+  ([#932](https://github.com/zain13337/lyft-amundsen/pull/932),
+  [`664ac5b`](https://github.com/zain13337/lyft-amundsen/commit/664ac5bc51b62f32ae581b1f2e6514caada5303e))
+
+Bumps [redux-promise](https://github.com/redux-utilities/redux-promise) from 0.5.3 to 0.6.0. -
+  [Release notes](https://github.com/redux-utilities/redux-promise/releases) -
+  [Commits](https://github.com/redux-utilities/redux-promise/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump requests from 2.20.0 to 2.24.0
+  ([#608](https://github.com/zain13337/lyft-amundsen/pull/608),
+  [`fbe7cfc`](https://github.com/zain13337/lyft-amundsen/commit/fbe7cfc68b55d3e327fa778fa7a0b9c162a16495))
+
+Bumps [requests](https://github.com/psf/requests) from 2.20.0 to 2.24.0. - [Release
+  notes](https://github.com/psf/requests/releases) -
+  [Changelog](https://github.com/psf/requests/blob/master/HISTORY.md) -
+  [Commits](https://github.com/psf/requests/compare/v2.20.0...v2.24.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump requests from 2.24.0 to 2.25.0
+  ([#778](https://github.com/zain13337/lyft-amundsen/pull/778),
+  [`21bcd90`](https://github.com/zain13337/lyft-amundsen/commit/21bcd909d532a0d4c557960a8927295bfb0bf1f2))
+
+Bumps [requests](https://github.com/psf/requests) from 2.24.0 to 2.25.0. - [Release
+  notes](https://github.com/psf/requests/releases) -
+  [Changelog](https://github.com/psf/requests/blob/master/HISTORY.md) -
+  [Commits](https://github.com/psf/requests/compare/v2.24.0...v2.25.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump responses from 0.12.0 to 0.12.1
+  ([#779](https://github.com/zain13337/lyft-amundsen/pull/779),
+  [`4baf0ac`](https://github.com/zain13337/lyft-amundsen/commit/4baf0acebedafce31fe29aef91b8db5db07c30e6))
+
+Bumps [responses](https://github.com/getsentry/responses) from 0.12.0 to 0.12.1. - [Release
+  notes](https://github.com/getsentry/responses/releases) -
+  [Changelog](https://github.com/getsentry/responses/blob/master/CHANGES) -
+  [Commits](https://github.com/getsentry/responses/compare/0.12.0...0.12.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump responses from 0.9.0 to 0.12.0
+  ([#626](https://github.com/zain13337/lyft-amundsen/pull/626),
+  [`137d3bb`](https://github.com/zain13337/lyft-amundsen/commit/137d3bbcfa076cfb1d4d0532cf2030d3b7526de9))
+
+Bumps [responses](https://github.com/getsentry/responses) from 0.9.0 to 0.12.0. - [Release
+  notes](https://github.com/getsentry/responses/releases) -
+  [Changelog](https://github.com/getsentry/responses/blob/master/CHANGES) -
+  [Commits](https://github.com/getsentry/responses/compare/0.9.0...0.12.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+Co-authored-by: dikshathakur3119 <dikshathakur3119@gmail.com>
+
+- **deps**: Bump sqlalchemy from 1.3.20 to 1.3.22
+  ([#846](https://github.com/zain13337/lyft-amundsen/pull/846),
+  [`13b0e0a`](https://github.com/zain13337/lyft-amundsen/commit/13b0e0a1a98a1b3ab8c1a340dd03b0a76ff6ed2d))
+
+Bumps [sqlalchemy](https://github.com/sqlalchemy/sqlalchemy) from 1.3.20 to 1.3.22. - [Release
+  notes](https://github.com/sqlalchemy/sqlalchemy/releases) -
+  [Changelog](https://github.com/sqlalchemy/sqlalchemy/blob/master/CHANGES) -
+  [Commits](https://github.com/sqlalchemy/sqlalchemy/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump sqlalchemy from 1.3.22 to 1.3.23
+  ([#922](https://github.com/zain13337/lyft-amundsen/pull/922),
+  [`d61535b`](https://github.com/zain13337/lyft-amundsen/commit/d61535b67492f58179cbf3b116f7c821d8b70132))
+
+Bumps [sqlalchemy](https://github.com/sqlalchemy/sqlalchemy) from 1.3.22 to 1.3.23. - [Release
+  notes](https://github.com/sqlalchemy/sqlalchemy/releases) -
+  [Changelog](https://github.com/sqlalchemy/sqlalchemy/blob/master/CHANGES) -
+  [Commits](https://github.com/sqlalchemy/sqlalchemy/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump throttle-debounce in /amundsen_application/static
+  ([#711](https://github.com/zain13337/lyft-amundsen/pull/711),
+  [`c7d0fd7`](https://github.com/zain13337/lyft-amundsen/commit/c7d0fd790023a7fcba754896b78fdf0843a92c34))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps**: Bump urijs in /amundsen_application/static
+  ([#938](https://github.com/zain13337/lyft-amundsen/pull/938),
+  [`f72e55b`](https://github.com/zain13337/lyft-amundsen/commit/f72e55be231e74caa0e9378276732b8f2f1e8662))
+
+Bumps [urijs](https://github.com/medialize/URI.js) from 1.19.4 to 1.19.6. - [Release
+  notes](https://github.com/medialize/URI.js/releases) -
+  [Changelog](https://github.com/medialize/URI.js/blob/gh-pages/CHANGELOG.md) -
+  [Commits](https://github.com/medialize/URI.js/compare/v1.19.4...v1.19.6)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump wheel from 0.33.1 to 0.36.1
+  ([#812](https://github.com/zain13337/lyft-amundsen/pull/812),
+  [`9ae421c`](https://github.com/zain13337/lyft-amundsen/commit/9ae421cfcda28c511fba9a9ba169774e8633a1b3))
+
+Bumps [wheel](https://github.com/pypa/wheel) from 0.33.1 to 0.36.1. - [Release
+  notes](https://github.com/pypa/wheel/releases) -
+  [Changelog](https://github.com/pypa/wheel/blob/master/docs/news.rst) -
+  [Commits](https://github.com/pypa/wheel/compare/0.33.1...0.36.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump wheel from 0.36.1 to 0.36.2
+  ([#822](https://github.com/zain13337/lyft-amundsen/pull/822),
+  [`32d547d`](https://github.com/zain13337/lyft-amundsen/commit/32d547db828c2a9e3b9e72cde80c931747d1b957))
+
+Bumps [wheel](https://github.com/pypa/wheel) from 0.36.1 to 0.36.2. - [Release
+  notes](https://github.com/pypa/wheel/releases) -
+  [Changelog](https://github.com/pypa/wheel/blob/master/docs/news.rst) -
+  [Commits](https://github.com/pypa/wheel/compare/0.36.1...0.36.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Update amundsen-common requirement
+  ([#732](https://github.com/zain13337/lyft-amundsen/pull/732),
+  [`e6071e7`](https://github.com/zain13337/lyft-amundsen/commit/e6071e78fa3076cd0c33322e742865faf3a39e39))
+
+Updates the requirements on [amundsen-common](https://github.com/amundsen-io/amundsencommon) to
+  permit the latest version. - [Release
+  notes](https://github.com/amundsen-io/amundsencommon/releases) -
+  [Commits](https://github.com/amundsen-io/amundsencommon/compare/0.5.6...0.5.7)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/core in /amundsen_application/static
+  ([#558](https://github.com/zain13337/lyft-amundsen/pull/558),
+  [`8d9433b`](https://github.com/zain13337/lyft-amundsen/commit/8d9433bc12fe54c99c4c92206d02fee050099275))
+
+Bumps [@babel/core](https://github.com/babel/babel/tree/HEAD/packages/babel-core) from 7.9.6 to
+  7.11.1. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.11.1/packages/babel-core)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/core in /amundsen_application/static
+  ([#664](https://github.com/zain13337/lyft-amundsen/pull/664),
+  [`4812460`](https://github.com/zain13337/lyft-amundsen/commit/4812460daa62b411a16f751dd8f00681659a2517))
+
+Bumps [@babel/core](https://github.com/babel/babel/tree/HEAD/packages/babel-core) from 7.11.1 to
+  7.11.6. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.11.6/packages/babel-core)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/core in /amundsen_application/static
+  ([#839](https://github.com/zain13337/lyft-amundsen/pull/839),
+  [`e925ffa`](https://github.com/zain13337/lyft-amundsen/commit/e925ffa5a742bf7f0f991056f010bf3e0298525c))
+
+Bumps [@babel/core](https://github.com/babel/babel/tree/HEAD/packages/babel-core) from 7.11.6 to
+  7.12.10. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.12.10/packages/babel-core)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-class-properties
+  ([#810](https://github.com/zain13337/lyft-amundsen/pull/810),
+  [`e11a2dd`](https://github.com/zain13337/lyft-amundsen/commit/e11a2ddd131b3e10b205ec1041952dd07246f7b7))
+
+Bumps
+  [@babel/plugin-proposal-class-properties](https://github.com/babel/babel/tree/HEAD/packages/babel-plugin-proposal-class-properties)
+  from 7.8.3 to 7.12.1. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.12.1/packages/babel-plugin-proposal-class-properties)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-class-properties
+  ([#931](https://github.com/zain13337/lyft-amundsen/pull/931),
+  [`530e19c`](https://github.com/zain13337/lyft-amundsen/commit/530e19c950220392c54588585c4b4cb24a5a374e))
+
+Bumps
+  [@babel/plugin-proposal-class-properties](https://github.com/babel/babel/tree/HEAD/packages/babel-plugin-proposal-class-properties)
+  from 7.12.1 to 7.12.13. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.12.13/packages/babel-plugin-proposal-class-properties)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-decorators
+  ([#807](https://github.com/zain13337/lyft-amundsen/pull/807),
+  [`3fac0f2`](https://github.com/zain13337/lyft-amundsen/commit/3fac0f2caec5504e1224e518b7e6233eb16bb9d3))
+
+Bumps
+  [@babel/plugin-proposal-decorators](https://github.com/babel/babel/tree/HEAD/packages/babel-plugin-proposal-decorators)
+  from 7.8.3 to 7.12.1. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.12.1/packages/babel-plugin-proposal-decorators)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-decorators
+  ([#853](https://github.com/zain13337/lyft-amundsen/pull/853),
+  [`be323e4`](https://github.com/zain13337/lyft-amundsen/commit/be323e4bfd9de706eb392b40f6163876e8c40e9f))
+
+Bumps
+  [@babel/plugin-proposal-decorators](https://github.com/babel/babel/tree/HEAD/packages/babel-plugin-proposal-decorators)
+  from 7.12.1 to 7.12.12. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.12.12/packages/babel-plugin-proposal-decorators)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-do-expressions
+  ([#678](https://github.com/zain13337/lyft-amundsen/pull/678),
+  [`aff3cb0`](https://github.com/zain13337/lyft-amundsen/commit/aff3cb070eab87cb17bbd9fbaef719c00e843ca3))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-export-default-from
+  ([#612](https://github.com/zain13337/lyft-amundsen/pull/612),
+  [`783b765`](https://github.com/zain13337/lyft-amundsen/commit/783b7652d96df668e538e0eac0b748b8ceaa65dc))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-export-namespace-from
+  ([#588](https://github.com/zain13337/lyft-amundsen/pull/588),
+  [`3f33d75`](https://github.com/zain13337/lyft-amundsen/commit/3f33d758af86f0361fd031f0e219de2e26dd7211))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-export-namespace-from
+  ([#736](https://github.com/zain13337/lyft-amundsen/pull/736),
+  [`f7c2453`](https://github.com/zain13337/lyft-amundsen/commit/f7c24533220d380f671eb7f1e233598014157deb))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-function-sent
+  ([#718](https://github.com/zain13337/lyft-amundsen/pull/718),
+  [`da8f0a5`](https://github.com/zain13337/lyft-amundsen/commit/da8f0a56d0a1b79173cd9cb39e4c6f164273f525))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-function-sent
+  ([#852](https://github.com/zain13337/lyft-amundsen/pull/852),
+  [`39ad2d8`](https://github.com/zain13337/lyft-amundsen/commit/39ad2d8a37beebff9bba6e36398dbc8514512ceb))
+
+Bumps
+  [@babel/plugin-proposal-function-sent](https://github.com/babel/babel/tree/HEAD/packages/babel-plugin-proposal-function-sent)
+  from 7.10.4 to 7.12.1. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.12.1/packages/babel-plugin-proposal-function-sent)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-function-sent
+  ([#929](https://github.com/zain13337/lyft-amundsen/pull/929),
+  [`b205740`](https://github.com/zain13337/lyft-amundsen/commit/b205740a984d2759467166d122c907100cf3f547))
+
+Bumps
+  [@babel/plugin-proposal-function-sent](https://github.com/babel/babel/tree/HEAD/packages/babel-plugin-proposal-function-sent)
+  from 7.12.1 to 7.12.13. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.12.13/packages/babel-plugin-proposal-function-sent)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-json-strings
+  ([#650](https://github.com/zain13337/lyft-amundsen/pull/650),
+  [`9839bd1`](https://github.com/zain13337/lyft-amundsen/commit/9839bd17aca51da72dfc912253ed44f3e6c5a7b3))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-logical-assignment-operators
+  ([#574](https://github.com/zain13337/lyft-amundsen/pull/574),
+  [`a426f3b`](https://github.com/zain13337/lyft-amundsen/commit/a426f3b3ee83e050956ab0ce087f0f506a9b89ae))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-logical-assignment-operators
+  ([#775](https://github.com/zain13337/lyft-amundsen/pull/775),
+  [`23808a9`](https://github.com/zain13337/lyft-amundsen/commit/23808a98e57f01684e7ebe21a1f7c1a499a5fa46))
+
+Bumps
+  [@babel/plugin-proposal-logical-assignment-operators](https://github.com/babel/babel/tree/HEAD/packages/babel-plugin-proposal-logical-assignment-operators)
+  from 7.11.0 to 7.12.1. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.12.1/packages/babel-plugin-proposal-logical-assignment-operators)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-nullish-coalescing-operator
+  ([#720](https://github.com/zain13337/lyft-amundsen/pull/720),
+  [`ede9b88`](https://github.com/zain13337/lyft-amundsen/commit/ede9b8828b0be3ee2bbc1885793b207f525dcd26))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-numeric-separator
+  ([#721](https://github.com/zain13337/lyft-amundsen/pull/721),
+  [`624f18c`](https://github.com/zain13337/lyft-amundsen/commit/624f18ce9285d2efb5fcb287edea0b73ab2cbadf))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-numeric-separator
+  ([#761](https://github.com/zain13337/lyft-amundsen/pull/761),
+  [`ad25215`](https://github.com/zain13337/lyft-amundsen/commit/ad252159e7c5dfb181c3a2448682992f50d865ab))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-numeric-separator
+  ([#924](https://github.com/zain13337/lyft-amundsen/pull/924),
+  [`79a7827`](https://github.com/zain13337/lyft-amundsen/commit/79a7827374fb819b2add41a8ed9692bc1e2fdbc7))
+
+Bumps
+  [@babel/plugin-proposal-numeric-separator](https://github.com/babel/babel/tree/HEAD/packages/babel-plugin-proposal-numeric-separator)
+  from 7.12.7 to 7.12.13. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.12.13/packages/babel-plugin-proposal-numeric-separator)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-optional-chaining
+  ([#933](https://github.com/zain13337/lyft-amundsen/pull/933),
+  [`c749842`](https://github.com/zain13337/lyft-amundsen/commit/c74984210c1bb7bd87bef1fd1a39304336352ef4))
+
+Bumps
+  [@babel/plugin-proposal-optional-chaining](https://github.com/babel/babel/tree/HEAD/packages/babel-plugin-proposal-optional-chaining)
+  from 7.9.0 to 7.12.16. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.12.16/packages/babel-plugin-proposal-optional-chaining)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/plugin-proposal-throw-expressions
+  ([#614](https://github.com/zain13337/lyft-amundsen/pull/614),
+  [`1177d85`](https://github.com/zain13337/lyft-amundsen/commit/1177d855eadc49fa12419690e4054743d1584c02))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @babel/plugin-syntax-import-meta
+  ([#885](https://github.com/zain13337/lyft-amundsen/pull/885),
+  [`c72a88a`](https://github.com/zain13337/lyft-amundsen/commit/c72a88a6d75d37ad6b9bd1076f238dcd7dc991b8))
+
+Bumps
+  [@babel/plugin-syntax-import-meta](https://github.com/babel/babel/tree/HEAD/packages/babel-plugin-syntax-import-meta)
+  from 7.8.3 to 7.10.4. - [Release notes](https://github.com/babel/babel/releases) -
+  [Commits](https://github.com/babel/babel/commits/v7.10.4/packages/babel-plugin-syntax-import-meta)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/preset-env in /amundsen_application/static
+  ([#793](https://github.com/zain13337/lyft-amundsen/pull/793),
+  [`fc4db39`](https://github.com/zain13337/lyft-amundsen/commit/fc4db39842835d6af4fda3b5c46aaa5b6281ae9b))
+
+Bumps [@babel/preset-env](https://github.com/babel/babel/tree/HEAD/packages/babel-preset-env) from
+  7.9.6 to 7.12.7. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.12.7/packages/babel-preset-env)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/preset-react
+  ([#710](https://github.com/zain13337/lyft-amundsen/pull/710),
+  [`22edfc7`](https://github.com/zain13337/lyft-amundsen/commit/22edfc74ffa90c6c52b96f8bab571563e50734d8))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @babel/preset-react
+  ([#776](https://github.com/zain13337/lyft-amundsen/pull/776),
+  [`be4ea8d`](https://github.com/zain13337/lyft-amundsen/commit/be4ea8d984a929618a66e2f7ed920fc427bfcae6))
+
+Bumps [@babel/preset-react](https://github.com/babel/babel/tree/HEAD/packages/babel-preset-react)
+  from 7.10.4 to 7.12.7. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.12.7/packages/babel-preset-react)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/preset-react
+  ([#886](https://github.com/zain13337/lyft-amundsen/pull/886),
+  [`603a3ae`](https://github.com/zain13337/lyft-amundsen/commit/603a3aefeb9affb84510071095da5fc55898a865))
+
+Bumps [@babel/preset-react](https://github.com/babel/babel/tree/HEAD/packages/babel-preset-react)
+  from 7.12.7 to 7.12.10. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.12.10/packages/babel-preset-react)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @storybook/addon-actions
+  ([#631](https://github.com/zain13337/lyft-amundsen/pull/631),
+  [`de755f5`](https://github.com/zain13337/lyft-amundsen/commit/de755f57e4262166773fafc6c6abeb1e50f110b5))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @storybook/addon-actions
+  ([#774](https://github.com/zain13337/lyft-amundsen/pull/774),
+  [`57a98db`](https://github.com/zain13337/lyft-amundsen/commit/57a98db1bcc1bd400da5660ad5e2729ab607fc20))
+
+Bumps [@storybook/addon-actions](https://github.com/storybookjs/storybook/tree/HEAD/addons/actions)
+  from 6.0.26 to 6.1.2. - [Release notes](https://github.com/storybookjs/storybook/releases) -
+  [Changelog](https://github.com/storybookjs/storybook/blob/next/CHANGELOG.md) -
+  [Commits](https://github.com/storybookjs/storybook/commits/v6.1.2/addons/actions)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @storybook/addons in /amundsen_application/static
+  ([#746](https://github.com/zain13337/lyft-amundsen/pull/746),
+  [`a1180af`](https://github.com/zain13337/lyft-amundsen/commit/a1180af07d0f1d3c078d8e8368ad2123bc571feb))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @storybook/addons in /amundsen_application/static
+  ([#888](https://github.com/zain13337/lyft-amundsen/pull/888),
+  [`0b12845`](https://github.com/zain13337/lyft-amundsen/commit/0b128457d9e5c24d5e0b74a017feaa4cbc3ea88f))
+
+Bumps [@storybook/addons](https://github.com/storybookjs/storybook/tree/HEAD/lib/addons) from 6.1.11
+  to 6.1.15. - [Release notes](https://github.com/storybookjs/storybook/releases) -
+  [Changelog](https://github.com/storybookjs/storybook/blob/next/CHANGELOG.md) -
+  [Commits](https://github.com/storybookjs/storybook/commits/v6.1.15/lib/addons)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @storybook/react in /amundsen_application/static
+  ([#791](https://github.com/zain13337/lyft-amundsen/pull/791),
+  [`5333e5c`](https://github.com/zain13337/lyft-amundsen/commit/5333e5c8277e31a9e5eb73f7af69961d27a02349))
+
+Bumps [@storybook/react](https://github.com/storybookjs/storybook/tree/HEAD/app/react) from 6.0.26
+  to 6.1.9. - [Release notes](https://github.com/storybookjs/storybook/releases) -
+  [Changelog](https://github.com/storybookjs/storybook/blob/next/CHANGELOG.md) -
+  [Commits](https://github.com/storybookjs/storybook/commits/v6.1.9/app/react)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @storybook/theming in /amundsen_application/static
+  ([#666](https://github.com/zain13337/lyft-amundsen/pull/666),
+  [`b8ed485`](https://github.com/zain13337/lyft-amundsen/commit/b8ed485f54b16ac013474db87bfb3767cf4e41cd))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @storybook/theming in /amundsen_application/static
+  ([#749](https://github.com/zain13337/lyft-amundsen/pull/749),
+  [`55df114`](https://github.com/zain13337/lyft-amundsen/commit/55df1142af6771efed594bafe6194be94a52a17f))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @types/enzyme in /amundsen_application/static
+  ([#887](https://github.com/zain13337/lyft-amundsen/pull/887),
+  [`a801e20`](https://github.com/zain13337/lyft-amundsen/commit/a801e20200fc6532e594757bb751c5de5f5c04e0))
+
+Bumps [@types/enzyme](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/enzyme)
+  from 3.10.5 to 3.10.8. - [Release
+  notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases) -
+  [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/enzyme)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @types/node in /amundsen_application/static
+  ([#905](https://github.com/zain13337/lyft-amundsen/pull/905),
+  [`c108bb3`](https://github.com/zain13337/lyft-amundsen/commit/c108bb3d70279744064eb1ad2dddbf28b0a6fd5b))
+
+Bumps [@types/node](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/node) from
+  10.17.21 to 14.14.22. - [Release
+  notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases) -
+  [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/node)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @types/webpack in /amundsen_application/static
+  ([#719](https://github.com/zain13337/lyft-amundsen/pull/719),
+  [`a50a82d`](https://github.com/zain13337/lyft-amundsen/commit/a50a82dbe13d72227b6ec6de98f4d3b62025e967))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump @types/webpack in /amundsen_application/static
+  ([#941](https://github.com/zain13337/lyft-amundsen/pull/941),
+  [`211a6b3`](https://github.com/zain13337/lyft-amundsen/commit/211a6b35bde8ec39093dd2e08a70c7020777245a))
+
+Bumps [@types/webpack](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/HEAD/types/webpack)
+  from 4.41.25 to 4.41.26. - [Release
+  notes](https://github.com/DefinitelyTyped/DefinitelyTyped/releases) -
+  [Commits](https://github.com/DefinitelyTyped/DefinitelyTyped/commits/HEAD/types/webpack)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @typescript-eslint/eslint-plugin
+  ([#561](https://github.com/zain13337/lyft-amundsen/pull/561),
+  [`0e72e05`](https://github.com/zain13337/lyft-amundsen/commit/0e72e05971be0aaf43ed183845abe3b55f366360))
+
+Bumps
+  [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin)
+  from 3.1.0 to 3.9.0. - [Release
+  notes](https://github.com/typescript-eslint/typescript-eslint/releases) -
+  [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/CHANGELOG.md)
+  -
+  [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v3.9.0/packages/eslint-plugin)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @typescript-eslint/eslint-plugin
+  ([#926](https://github.com/zain13337/lyft-amundsen/pull/926),
+  [`1927b92`](https://github.com/zain13337/lyft-amundsen/commit/1927b92a4a21faf27987c90090e98c4d91927029))
+
+Bumps
+  [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin)
+  from 4.5.0 to 4.14.2. - [Release
+  notes](https://github.com/typescript-eslint/typescript-eslint/releases) -
+  [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin/CHANGELOG.md)
+  -
+  [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v4.14.2/packages/eslint-plugin)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @typescript-eslint/eslint-plugin-tslint
+  ([#902](https://github.com/zain13337/lyft-amundsen/pull/902),
+  [`269df5e`](https://github.com/zain13337/lyft-amundsen/commit/269df5e38da99202129b18349ec4b0e72454c3b0))
+
+Bumps
+  [@typescript-eslint/eslint-plugin-tslint](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin-tslint)
+  from 4.5.0 to 4.14.1. - [Release
+  notes](https://github.com/typescript-eslint/typescript-eslint/releases) -
+  [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin-tslint/CHANGELOG.md)
+  -
+  [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v4.14.1/packages/eslint-plugin-tslint)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @typescript-eslint/eslint-plugin-tslint
+  ([#928](https://github.com/zain13337/lyft-amundsen/pull/928),
+  [`ba25bca`](https://github.com/zain13337/lyft-amundsen/commit/ba25bcac9adaf3b11ab2f3d9c55fe38653ce7f25))
+
+Bumps
+  [@typescript-eslint/eslint-plugin-tslint](https://github.com/typescript-eslint/typescript-eslint/tree/HEAD/packages/eslint-plugin-tslint)
+  from 4.14.1 to 4.15.0. - [Release
+  notes](https://github.com/typescript-eslint/typescript-eslint/releases) -
+  [Changelog](https://github.com/typescript-eslint/typescript-eslint/blob/master/packages/eslint-plugin-tslint/CHANGELOG.md)
+  -
+  [Commits](https://github.com/typescript-eslint/typescript-eslint/commits/v4.15.0/packages/eslint-plugin-tslint)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @typescript-eslint/parser
+  ([#750](https://github.com/zain13337/lyft-amundsen/pull/750),
+  [`8f40318`](https://github.com/zain13337/lyft-amundsen/commit/8f403186612e055777c57801fd4fcf3cda9ab3c8))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump babel-jest in /amundsen_application/static
+  ([#681](https://github.com/zain13337/lyft-amundsen/pull/681),
+  [`14b3478`](https://github.com/zain13337/lyft-amundsen/commit/14b3478f043a9bf7e880dd967cd437bc24631ea0))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump babel-jest in /amundsen_application/static
+  ([#744](https://github.com/zain13337/lyft-amundsen/pull/744),
+  [`531ee76`](https://github.com/zain13337/lyft-amundsen/commit/531ee769e873e8c486ae5d766b8f443079d81e50))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump babel-jest in /amundsen_application/static
+  ([#792](https://github.com/zain13337/lyft-amundsen/pull/792),
+  [`0e39d22`](https://github.com/zain13337/lyft-amundsen/commit/0e39d22c6e92481cf7c6c3af8bbb8099d6031eeb))
+
+Bumps [babel-jest](https://github.com/facebook/jest/tree/HEAD/packages/babel-jest) from 26.6.2 to
+  26.6.3. - [Release notes](https://github.com/facebook/jest/releases) -
+  [Changelog](https://github.com/facebook/jest/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/facebook/jest/commits/v26.6.3/packages/babel-jest)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump babel-loader in /amundsen_application/static
+  ([#808](https://github.com/zain13337/lyft-amundsen/pull/808),
+  [`a6f3ff2`](https://github.com/zain13337/lyft-amundsen/commit/a6f3ff2079369fb68d401cc0968fa961fc4ad54e))
+
+Bumps [babel-loader](https://github.com/babel/babel-loader) from 8.1.0 to 8.2.2. - [Release
+  notes](https://github.com/babel/babel-loader/releases) -
+  [Changelog](https://github.com/babel/babel-loader/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel-loader/compare/v8.1.0...v8.2.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump cross-env in /amundsen_application/static
+  ([#728](https://github.com/zain13337/lyft-amundsen/pull/728),
+  [`77c7f17`](https://github.com/zain13337/lyft-amundsen/commit/77c7f17034a4fcdf44df57e941a4aad5e32a6bec))
+
+Bumps [cross-env](https://github.com/kentcdodds/cross-env) from 5.2.1 to 7.0.2. - [Release
+  notes](https://github.com/kentcdodds/cross-env/releases) -
+  [Changelog](https://github.com/kentcdodds/cross-env/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/kentcdodds/cross-env/compare/v5.2.1...v7.0.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump css-loader in /amundsen_application/static
+  ([#679](https://github.com/zain13337/lyft-amundsen/pull/679),
+  [`eb0070b`](https://github.com/zain13337/lyft-amundsen/commit/eb0070b525735cb922397ad4892f4e2b7857f35d))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump css-loader in /amundsen_application/static
+  ([#759](https://github.com/zain13337/lyft-amundsen/pull/759),
+  [`df72e67`](https://github.com/zain13337/lyft-amundsen/commit/df72e67404f005ceee224d8fc49ce5a5a68cc63c))
+
+Bumps [css-loader](https://github.com/webpack-contrib/css-loader) from 4.3.0 to 5.0.1. - [Release
+  notes](https://github.com/webpack-contrib/css-loader/releases) -
+  [Changelog](https://github.com/webpack-contrib/css-loader/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/webpack-contrib/css-loader/compare/v4.3.0...v5.0.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump enzyme-adapter-react-16
+  ([#707](https://github.com/zain13337/lyft-amundsen/pull/707),
+  [`a272ec4`](https://github.com/zain13337/lyft-amundsen/commit/a272ec467d3a9db01cdb7c6c026bc42a048cf1a1))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump enzyme-to-json in /amundsen_application/static
+  ([#726](https://github.com/zain13337/lyft-amundsen/pull/726),
+  [`0871e73`](https://github.com/zain13337/lyft-amundsen/commit/0871e738d2ef4d6b50696559623f9e3ebc369880))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump eslint in /amundsen_application/static
+  ([#850](https://github.com/zain13337/lyft-amundsen/pull/850),
+  [`76e91c1`](https://github.com/zain13337/lyft-amundsen/commit/76e91c10d9184dbc39f5c585bb3a28c21628d3c8))
+
+Bumps [eslint](https://github.com/eslint/eslint) from 7.15.0 to 7.16.0. - [Release
+  notes](https://github.com/eslint/eslint/releases) -
+  [Changelog](https://github.com/eslint/eslint/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/eslint/eslint/compare/v7.15.0...v7.16.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump eslint-config-airbnb-typescript
+  ([#843](https://github.com/zain13337/lyft-amundsen/pull/843),
+  [`efa75dc`](https://github.com/zain13337/lyft-amundsen/commit/efa75dc0093405b328f94377e7c7dc6a9770b1db))
+
+Bumps [eslint-config-airbnb-typescript](https://github.com/iamturns/eslint-config-airbnb-typescript)
+  from 8.0.2 to 12.0.0. - [Release
+  notes](https://github.com/iamturns/eslint-config-airbnb-typescript/releases) -
+  [Changelog](https://github.com/iamturns/eslint-config-airbnb-typescript/blob/master/CHANGELOG.md)
+  - [Commits](https://github.com/iamturns/eslint-config-airbnb-typescript/compare/v8.0.2...v12.0.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump eslint-plugin-prettier
+  ([#651](https://github.com/zain13337/lyft-amundsen/pull/651),
+  [`ac60373`](https://github.com/zain13337/lyft-amundsen/commit/ac60373edfd72bea490ed99ae9e943b1630db574))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump eslint-plugin-prettier
+  ([#871](https://github.com/zain13337/lyft-amundsen/pull/871),
+  [`cf21d43`](https://github.com/zain13337/lyft-amundsen/commit/cf21d43b0d0d8c4a3d3515e23b442d9b883df764))
+
+Bumps [eslint-plugin-prettier](https://github.com/prettier/eslint-plugin-prettier) from 3.1.4 to
+  3.3.1. - [Release notes](https://github.com/prettier/eslint-plugin-prettier/releases) -
+  [Changelog](https://github.com/prettier/eslint-plugin-prettier/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/prettier/eslint-plugin-prettier/compare/v3.1.4...v3.3.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump eslint-plugin-react
+  ([#560](https://github.com/zain13337/lyft-amundsen/pull/560),
+  [`36d1ebe`](https://github.com/zain13337/lyft-amundsen/commit/36d1ebe211261dfafb8d28a1adf5501e777a0820))
+
+Bumps [eslint-plugin-react](https://github.com/yannickcr/eslint-plugin-react) from 7.20.0 to 7.20.5.
+  - [Release notes](https://github.com/yannickcr/eslint-plugin-react/releases) -
+  [Changelog](https://github.com/yannickcr/eslint-plugin-react/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/yannickcr/eslint-plugin-react/compare/v7.20.0...v7.20.5)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump eslint-plugin-react-hooks
+  ([#842](https://github.com/zain13337/lyft-amundsen/pull/842),
+  [`24b9312`](https://github.com/zain13337/lyft-amundsen/commit/24b9312f85be4523c3b36042c50b65081eac8da8))
+
+Bumps
+  [eslint-plugin-react-hooks](https://github.com/facebook/react/tree/HEAD/packages/eslint-plugin-react-hooks)
+  from 4.0.4 to 4.2.0. - [Release notes](https://github.com/facebook/react/releases) -
+  [Changelog](https://github.com/facebook/react/blob/master/packages/eslint-plugin-react-hooks/CHANGELOG.md)
+  - [Commits](https://github.com/facebook/react/commits/HEAD/packages/eslint-plugin-react-hooks)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump find-unused-sass-variables
+  ([#777](https://github.com/zain13337/lyft-amundsen/pull/777),
+  [`62ce8b0`](https://github.com/zain13337/lyft-amundsen/commit/62ce8b064e596f6195147df936ab6e4c710b9e77))
+
+Bumps [find-unused-sass-variables](https://github.com/XhmikosR/find-unused-sass-variables) from
+  2.0.0 to 3.0.0. - [Release notes](https://github.com/XhmikosR/find-unused-sass-variables/releases)
+  - [Commits](https://github.com/XhmikosR/find-unused-sass-variables/compare/v2.0.0...v3.0.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump flaskoidc from 0.1.0 to 0.1.1
+  ([#705](https://github.com/zain13337/lyft-amundsen/pull/705),
+  [`b1ca8a7`](https://github.com/zain13337/lyft-amundsen/commit/b1ca8a70888e5d4fa049fab9b3dbbcf0684e31c9))
+
+Bumps [flaskoidc](https://github.com/verdan/flaskoidc) from 0.1.0 to 0.1.1. - [Release
+  notes](https://github.com/verdan/flaskoidc/releases) -
+  [Commits](https://github.com/verdan/flaskoidc/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump html-webpack-plugin
+  ([#851](https://github.com/zain13337/lyft-amundsen/pull/851),
+  [`661b724`](https://github.com/zain13337/lyft-amundsen/commit/661b724f2cf12f6079a0739a9be0acae18f4f185))
+
+Bumps [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) from 5.0.0-alpha.15 to
+  5.0.0-beta.1. - [Release notes](https://github.com/jantimon/html-webpack-plugin/releases) -
+  [Changelog](https://github.com/jantimon/html-webpack-plugin/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/jantimon/html-webpack-plugin/commits)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump husky in /amundsen_application/static
+  ([#663](https://github.com/zain13337/lyft-amundsen/pull/663),
+  [`3b0dce1`](https://github.com/zain13337/lyft-amundsen/commit/3b0dce155d306ddf8c3d55068fb9ca7edd5ea051))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump husky in /amundsen_application/static
+  ([#927](https://github.com/zain13337/lyft-amundsen/pull/927),
+  [`7515de6`](https://github.com/zain13337/lyft-amundsen/commit/7515de65e4aeb90c510e3932cfa6b555b83fb73f))
+
+Bumps [husky](https://github.com/typicode/husky) from 4.3.0 to 4.3.8. - [Release
+  notes](https://github.com/typicode/husky/releases) -
+  [Commits](https://github.com/typicode/husky/compare/v4.3.0...v4.3.8)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump jest in /amundsen_application/static
+  ([#708](https://github.com/zain13337/lyft-amundsen/pull/708),
+  [`39f623f`](https://github.com/zain13337/lyft-amundsen/commit/39f623fbd89019f9e24ec6df8e11711a700a4665))
+
+Bumps [jest](https://github.com/facebook/jest) from 26.4.2 to 26.5.0. - [Release
+  notes](https://github.com/facebook/jest/releases) -
+  [Changelog](https://github.com/facebook/jest/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/facebook/jest/compare/v26.4.2...v26.5.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump jest in /amundsen_application/static
+  ([#724](https://github.com/zain13337/lyft-amundsen/pull/724),
+  [`807de0a`](https://github.com/zain13337/lyft-amundsen/commit/807de0adaeb5b70a37621ec292b9668065df78b2))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump jest in /amundsen_application/static
+  ([#811](https://github.com/zain13337/lyft-amundsen/pull/811),
+  [`99c2a40`](https://github.com/zain13337/lyft-amundsen/commit/99c2a40833309ca1af0f70a7230d5f2ce0819d8e))
+
+Bumps [jest](https://github.com/facebook/jest) from 26.6.0 to 26.6.3. - [Release
+  notes](https://github.com/facebook/jest/releases) -
+  [Changelog](https://github.com/facebook/jest/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/facebook/jest/compare/v26.6.0...v26.6.3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump lint-staged in /amundsen_application/static
+  ([#590](https://github.com/zain13337/lyft-amundsen/pull/590),
+  [`c689762`](https://github.com/zain13337/lyft-amundsen/commit/c689762abd73ab9bd93dd1c1a7f5184f0e7412cc))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump lint-staged in /amundsen_application/static
+  ([#809](https://github.com/zain13337/lyft-amundsen/pull/809),
+  [`8657e77`](https://github.com/zain13337/lyft-amundsen/commit/8657e77f1113b4d4ea08050c9bee8a8143908a79))
+
+Bumps [lint-staged](https://github.com/okonet/lint-staged) from 10.2.11 to 10.5.3. - [Release
+  notes](https://github.com/okonet/lint-staged/releases) -
+  [Commits](https://github.com/okonet/lint-staged/compare/v10.2.11...v10.5.3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump mini-css-extract-plugin
+  ([#559](https://github.com/zain13337/lyft-amundsen/pull/559),
+  [`05e1403`](https://github.com/zain13337/lyft-amundsen/commit/05e1403c92b6e638d438e74152624c3c551aeb2a))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump mini-css-extract-plugin
+  ([#930](https://github.com/zain13337/lyft-amundsen/pull/930),
+  [`ee52f6f`](https://github.com/zain13337/lyft-amundsen/commit/ee52f6f48240ee704569c05ce54d2e8a53b89e85))
+
+Bumps [mini-css-extract-plugin](https://github.com/webpack-contrib/mini-css-extract-plugin) from
+  0.12.0 to 1.3.6. - [Release
+  notes](https://github.com/webpack-contrib/mini-css-extract-plugin/releases) -
+  [Changelog](https://github.com/webpack-contrib/mini-css-extract-plugin/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/webpack-contrib/mini-css-extract-plugin/compare/v0.12.0...v1.3.6)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump postcss in /amundsen_application/static
+  ([#615](https://github.com/zain13337/lyft-amundsen/pull/615),
+  [`0ada13b`](https://github.com/zain13337/lyft-amundsen/commit/0ada13b886e0575e38736b9c0e551031b4be6f0e))
+
+Bumps [postcss](https://github.com/postcss/postcss) from 7.0.30 to 7.0.32. - [Release
+  notes](https://github.com/postcss/postcss/releases) -
+  [Changelog](https://github.com/postcss/postcss/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/postcss/postcss/compare/7.0.30...7.0.32)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump pyarrow from 2.0.0 to 3.0.0
+  ([#900](https://github.com/zain13337/lyft-amundsen/pull/900),
+  [`42df54a`](https://github.com/zain13337/lyft-amundsen/commit/42df54a34dca44b54e6220bbf3f36004dff73e0b))
+
+Bumps [pyarrow](https://github.com/apache/arrow) from 2.0.0 to 3.0.0. - [Release
+  notes](https://github.com/apache/arrow/releases) -
+  [Commits](https://github.com/apache/arrow/compare/apache-arrow-2.0.0...apache-arrow-3.0.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump sass-loader in /amundsen_application/static
+  ([#841](https://github.com/zain13337/lyft-amundsen/pull/841),
+  [`b3b2dfd`](https://github.com/zain13337/lyft-amundsen/commit/b3b2dfd41bf6b4b5b0191678b69ed2fa75bb156c))
+
+Bumps [sass-loader](https://github.com/webpack-contrib/sass-loader) from 10.0.5 to 10.1.0. -
+  [Release notes](https://github.com/webpack-contrib/sass-loader/releases) -
+  [Changelog](https://github.com/webpack-contrib/sass-loader/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/webpack-contrib/sass-loader/compare/v10.0.5...v10.1.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump stylelint in /amundsen_application/static
+  ([#682](https://github.com/zain13337/lyft-amundsen/pull/682),
+  [`e424cec`](https://github.com/zain13337/lyft-amundsen/commit/e424ceca9286c8605df00603085c7cbdd13f894b))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump stylelint in /amundsen_application/static
+  ([#747](https://github.com/zain13337/lyft-amundsen/pull/747),
+  [`c422ed2`](https://github.com/zain13337/lyft-amundsen/commit/c422ed27ab8b6f0b70f2eb8e034b9c3ada10acc8))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump terser-webpack-plugin
+  ([#632](https://github.com/zain13337/lyft-amundsen/pull/632),
+  [`ec1a5d9`](https://github.com/zain13337/lyft-amundsen/commit/ec1a5d9510cc0bd923fd15bda762084d22d710c9))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump terser-webpack-plugin
+  ([#760](https://github.com/zain13337/lyft-amundsen/pull/760),
+  [`ffb75c4`](https://github.com/zain13337/lyft-amundsen/commit/ffb75c4642534b9c4d3f7d7e05cd56a4dc18f387))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump ts-loader in /amundsen_application/static
+  ([#722](https://github.com/zain13337/lyft-amundsen/pull/722),
+  [`5b1a776`](https://github.com/zain13337/lyft-amundsen/commit/5b1a776b6fc89e035232ba4e4e05c820b3ac04ea))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump ts-loader in /amundsen_application/static
+  ([#725](https://github.com/zain13337/lyft-amundsen/pull/725),
+  [`1430e98`](https://github.com/zain13337/lyft-amundsen/commit/1430e98b74a4a76977d4981eb420e827b31088f0))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump ts-node in /amundsen_application/static
+  ([#665](https://github.com/zain13337/lyft-amundsen/pull/665),
+  [`c26bb91`](https://github.com/zain13337/lyft-amundsen/commit/c26bb911bf47bfd4ee99648b9d16f5b51ee62d1b))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump tslint in /amundsen_application/static
+  ([#727](https://github.com/zain13337/lyft-amundsen/pull/727),
+  [`47827a3`](https://github.com/zain13337/lyft-amundsen/commit/47827a36125878d1ef60295d3405d2a0c82b63dc))
+
+Bumps [tslint](https://github.com/palantir/tslint) from 6.1.2 to 6.1.3. - [Release
+  notes](https://github.com/palantir/tslint/releases) -
+  [Changelog](https://github.com/palantir/tslint/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/palantir/tslint/compare/6.1.2...6.1.3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump typescript in /amundsen_application/static
+  ([#951](https://github.com/zain13337/lyft-amundsen/pull/951),
+  [`20f0387`](https://github.com/zain13337/lyft-amundsen/commit/20f0387fc332bbe9ec2d19b8081376ddca42e8cf))
+
+Bumps [typescript](https://github.com/Microsoft/TypeScript) from 4.0.5 to 4.2.3. - [Release
+  notes](https://github.com/Microsoft/TypeScript/releases) -
+  [Commits](https://github.com/Microsoft/TypeScript/compare/v4.0.5...v4.2.3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump webpack in /amundsen_application/static
+  ([#613](https://github.com/zain13337/lyft-amundsen/pull/613),
+  [`e647927`](https://github.com/zain13337/lyft-amundsen/commit/e647927849ac3ef66253c938bd6df9be812ec444))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps-dev**: Bump webpack in /amundsen_application/static
+  ([#780](https://github.com/zain13337/lyft-amundsen/pull/780),
+  [`b9bc765`](https://github.com/zain13337/lyft-amundsen/commit/b9bc76517e574d94dd3b05c1b2cb4998bb0dcc1c))
+
+Bumps [webpack](https://github.com/webpack/webpack) from 5.0.0-rc.6 to 5.6.0. - [Release
+  notes](https://github.com/webpack/webpack/releases) -
+  [Commits](https://github.com/webpack/webpack/compare/v5.0.0-rc.6...v5.6.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump webworkify-webpack in /amundsen_application/static
+  ([#680](https://github.com/zain13337/lyft-amundsen/pull/680),
+  [`af736e7`](https://github.com/zain13337/lyft-amundsen/commit/af736e7936c306bd639d0ef08f8f1aec6fbe8f46))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+### Chores
+
+- Add a badge for twitter ([#574](https://github.com/zain13337/lyft-amundsen/pull/574),
+  [`012b91b`](https://github.com/zain13337/lyft-amundsen/commit/012b91be16dd437b31b1120505482a64690ee6ad))
+
+- Add a github badge for Amundsen ([#831](https://github.com/zain13337/lyft-amundsen/pull/831),
+  [`4047391`](https://github.com/zain13337/lyft-amundsen/commit/4047391c7d3900081482db8effbe2421c67be805))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add bagelcode to Amundsen user ([#559](https://github.com/zain13337/lyft-amundsen/pull/559),
+  [`f478829`](https://github.com/zain13337/lyft-amundsen/commit/f4788299cd588a9001acc31297b6d5820a9adf28))
+
+- Add code owner file ([#143](https://github.com/zain13337/lyft-amundsen/pull/143),
+  [`2fc90c8`](https://github.com/zain13337/lyft-amundsen/commit/2fc90c8d798e04fca042cc9747cfd5bbf98814b7))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add code owner file ([#192](https://github.com/zain13337/lyft-amundsen/pull/192),
+  [`bf3b413`](https://github.com/zain13337/lyft-amundsen/commit/bf3b413e8d696f9b4161994b20b2dec2d0e5d60d))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add code owner file ([#354](https://github.com/zain13337/lyft-amundsen/pull/354),
+  [`64a8596`](https://github.com/zain13337/lyft-amundsen/commit/64a85967c4dbf59feb56104a45e0bde8e371671a))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add code owner file ([#57](https://github.com/zain13337/lyft-amundsen/pull/57),
+  [`8bf06f8`](https://github.com/zain13337/lyft-amundsen/commit/8bf06f88b70b0a558605756537c944febb900226))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add code owner file ([#671](https://github.com/zain13337/lyft-amundsen/pull/671),
+  [`1fb45a9`](https://github.com/zain13337/lyft-amundsen/commit/1fb45a956c7a825d7b5549e1a52e0c5d8c6b0fc9))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add codecov action ([#182](https://github.com/zain13337/lyft-amundsen/pull/182),
+  [`ebb7d0e`](https://github.com/zain13337/lyft-amundsen/commit/ebb7d0e0425154f8c7e884ae47f3ba8f330bb4db))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add coles as Amundsen user ([#475](https://github.com/zain13337/lyft-amundsen/pull/475),
+  [`74a32e6`](https://github.com/zain13337/lyft-amundsen/commit/74a32e6cb4ab9c7bd810c38ae90ec6c3896c80c9))
+
+- Add contributing to docs ([#472](https://github.com/zain13337/lyft-amundsen/pull/472),
+  [`bda67f0`](https://github.com/zain13337/lyft-amundsen/commit/bda67f0726d0e7a6b33570a49dfe2433f056769a))
+
+- Add contributor badge ([#746](https://github.com/zain13337/lyft-amundsen/pull/746),
+  [`a19bb46`](https://github.com/zain13337/lyft-amundsen/commit/a19bb46092dbd2264133f84e35a265c2fccb9bb6))
+
+* chore: add badge
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* doc: update a bit
+
+- Add Dcard as user ([#584](https://github.com/zain13337/lyft-amundsen/pull/584),
+  [`2716fc5`](https://github.com/zain13337/lyft-amundsen/commit/2716fc5dc915cbe753687e4a2c4b99eb4475bee6))
+
+- Add delta logo ([#813](https://github.com/zain13337/lyft-amundsen/pull/813),
+  [`bad216e`](https://github.com/zain13337/lyft-amundsen/commit/bad216e4f368980f14c8b7f6e044fc70aa9eac1e))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add docker publish action and remove travis
+  ([#131](https://github.com/zain13337/lyft-amundsen/pull/131),
+  [`48cccc1`](https://github.com/zain13337/lyft-amundsen/commit/48cccc13e55c3655d784d8e46db7386182d4d04e))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add docker publish action and remove travis
+  ([#171](https://github.com/zain13337/lyft-amundsen/pull/171),
+  [`5003110`](https://github.com/zain13337/lyft-amundsen/commit/5003110f789309a653fecdde2b83960cc9f564ed))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add docker publisher to new github flow
+  ([#190](https://github.com/zain13337/lyft-amundsen/pull/190),
+  [`817c6ae`](https://github.com/zain13337/lyft-amundsen/commit/817c6ae6bd321f2bb42da3b84c825b20c3e00ce5))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add dorian to codeowners ([#854](https://github.com/zain13337/lyft-amundsen/pull/854),
+  [`c9b4d80`](https://github.com/zain13337/lyft-amundsen/commit/c9b4d80b0b7d22d9eb09f2b5a1581b12a07724b9))
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+- Add git submodule action ([#638](https://github.com/zain13337/lyft-amundsen/pull/638),
+  [`dea3bcd`](https://github.com/zain13337/lyft-amundsen/commit/dea3bcde94fa3c17de54c0c3eedfcf0a852632ca))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add in Snowflake db logo ([#686](https://github.com/zain13337/lyft-amundsen/pull/686),
+  [`878a97a`](https://github.com/zain13337/lyft-amundsen/commit/878a97a286d6a6322d68ddf13fc691c6176e4c31))
+
+Signed-off-by: Zack Wu <zack.wu@instacart.com>
+
+- Add isort to ci ([#173](https://github.com/zain13337/lyft-amundsen/pull/173),
+  [`99dc85e`](https://github.com/zain13337/lyft-amundsen/commit/99dc85e08b370ec9ad9a90b08e14bd89a439c85c))
+
+* chore: add isort to ci
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* chore: add deps
+
+* chore: fix setup.py
+
+- Add isort to ci ([#249](https://github.com/zain13337/lyft-amundsen/pull/249),
+  [`8ce7577`](https://github.com/zain13337/lyft-amundsen/commit/8ce7577b46eed6d807983b3b8aaceb2c8e2b2f82))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add lfai to readme ([#616](https://github.com/zain13337/lyft-amundsen/pull/616),
+  [`43fe02b`](https://github.com/zain13337/lyft-amundsen/commit/43fe02bcb9071c04f74d34ab27041d00fe203066))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add license check action ([#144](https://github.com/zain13337/lyft-amundsen/pull/144),
+  [`2fd0740`](https://github.com/zain13337/lyft-amundsen/commit/2fd0740a182fb11a0f894b4dffc1d0e4be5a2651))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add license check action ([#193](https://github.com/zain13337/lyft-amundsen/pull/193),
+  [`5a7cb11`](https://github.com/zain13337/lyft-amundsen/commit/5a7cb1131655dfc72072dbe602b42a1a7b13e7f8))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add license check action ([#355](https://github.com/zain13337/lyft-amundsen/pull/355),
+  [`e6ca512`](https://github.com/zain13337/lyft-amundsen/commit/e6ca512166bf14def7711d6c3fd7cf06f42d7c37))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add license check action ([#58](https://github.com/zain13337/lyft-amundsen/pull/58),
+  [`f5983c4`](https://github.com/zain13337/lyft-amundsen/commit/f5983c42e0d96c6be4e37ee74fce33aef564e23d))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add license check action ([#638](https://github.com/zain13337/lyft-amundsen/pull/638),
+  [`d21b96d`](https://github.com/zain13337/lyft-amundsen/commit/d21b96d7aee49dc4bb79b50c4310bf67ecd874c4))
+
+* chore: add license check action
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* chore: update
+
+* chore: fix action
+
+* chore: fix files
+
+- Add license header for new files ([#640](https://github.com/zain13337/lyft-amundsen/pull/640),
+  [`ed84625`](https://github.com/zain13337/lyft-amundsen/commit/ed846255c17715f678d2f9ad7b64ac77cca5e63f))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add mailmap to associate the right user
+  ([#1061](https://github.com/zain13337/lyft-amundsen/pull/1061),
+  [`f9501a9`](https://github.com/zain13337/lyft-amundsen/commit/f9501a9396e6eb08e975478bf0a71f9efdcdf246))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add method get_resources_using_table to metadata gremlin_proxy
+  ([#2223](https://github.com/zain13337/lyft-amundsen/pull/2223),
+  [`505a840`](https://github.com/zain13337/lyft-amundsen/commit/505a840d72d28e3cc3236890c81e075c5156c2d6))
+
+* Add function get_resources_using_table to metadata gremlin_proxy
+
+Signed-off-by: sihaotan4 <34644190+sihaotan4@users.noreply.github.com>
+
+* Added function docstring for get_resources_using_table
+
+---------
+
+- Add myself as codeowner for other services
+  ([#1204](https://github.com/zain13337/lyft-amundsen/pull/1204),
+  [`8d87e7c`](https://github.com/zain13337/lyft-amundsen/commit/8d87e7cd442ab03f4382d85ee93be42506c86ac2))
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+- Add myself to CODEOWNERS, remove Diksha
+  ([#282](https://github.com/zain13337/lyft-amundsen/pull/282),
+  [`5a87bc8`](https://github.com/zain13337/lyft-amundsen/commit/5a87bc8c9f4862dd47cff2f8c80ba38ea477195f))
+
+Removal per https://github.com/amundsen-io/amundsencommon/pull/98#discussion_r590908528
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+- Add neptune proxy to config ([#226](https://github.com/zain13337/lyft-amundsen/pull/226),
+  [`ec3db2a`](https://github.com/zain13337/lyft-amundsen/commit/ec3db2a0977ae990ae5a21189ed9111706bd4493))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add prlint
+  ([`c76ac27`](https://github.com/zain13337/lyft-amundsen/commit/c76ac279d5e8ee6802e1ce51a9f90158ea413f5c))
+
+chore: add prlint
+
+- Add prlint
+  ([`a26adc3`](https://github.com/zain13337/lyft-amundsen/commit/a26adc38a7100f2943174f4a684daf2ca7bfa910))
+
+- Add prlint ([#107](https://github.com/zain13337/lyft-amundsen/pull/107),
+  [`b2fdb6f`](https://github.com/zain13337/lyft-amundsen/commit/b2fdb6f28473afe8d38bd01af3cd96f1a0f81300))
+
+- Add prlint ([#138](https://github.com/zain13337/lyft-amundsen/pull/138),
+  [`5ea21cc`](https://github.com/zain13337/lyft-amundsen/commit/5ea21cc3fac63762d81e3ce6e9b73a112d6ce3fc))
+
+- Add prlint ([#269](https://github.com/zain13337/lyft-amundsen/pull/269),
+  [`599c09a`](https://github.com/zain13337/lyft-amundsen/commit/599c09aba57e32952a5149f6dfdcdbb0d8beb88c))
+
+* chore: add prlint
+
+* fix deps
+
+- Add prlint for fe ([#463](https://github.com/zain13337/lyft-amundsen/pull/463),
+  [`70d2ebf`](https://github.com/zain13337/lyft-amundsen/commit/70d2ebf93714ac00f25d0fc1a15deccb709e2f9f))
+
+- Add prlint rule ([#460](https://github.com/zain13337/lyft-amundsen/pull/460),
+  [`d3fa565`](https://github.com/zain13337/lyft-amundsen/commit/d3fa5651f44cd54db40b0c77236b63f7bb67c3d1))
+
+* chore: add prlint rule
+
+* chore: add prlint rule file
+
+* Update .github/prlint.json
+
+Co-authored-by: Marcos Iglesias <190833+Golodhros@users.noreply.github.com>
+
+* chore: update prlint
+
+- Add py3.10 to compatibility matrix across all services except for metadata
+  ([#2242](https://github.com/zain13337/lyft-amundsen/pull/2242),
+  [`164b956`](https://github.com/zain13337/lyft-amundsen/commit/164b9560801d763fb54aaed5968a1f32b5936221))
+
+* Add py3.10 to compatibility matrix
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Fix search tests and upgrade pyarrow
+
+* One more search test fix
+
+* lint
+
+* Take 3.10 out for metadata, currently blocked by amundsengremlin related tests
+
+---------
+
+- Add pypi publish action ([#130](https://github.com/zain13337/lyft-amundsen/pull/130),
+  [`4352eb6`](https://github.com/zain13337/lyft-amundsen/commit/4352eb66dce838f8f310b15928422771e0768233))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add pypi publish action ([#170](https://github.com/zain13337/lyft-amundsen/pull/170),
+  [`7d5c0ca`](https://github.com/zain13337/lyft-amundsen/commit/7d5c0ca731e71d15146f4644682e2bade8490da2))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add rds submodule ([#893](https://github.com/zain13337/lyft-amundsen/pull/893),
+  [`5cb8e93`](https://github.com/zain13337/lyft-amundsen/commit/5cb8e93ba43c0fdada7c79d2241e4890ecdf10cf))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add repr function to BadgeMetadata ([#397](https://github.com/zain13337/lyft-amundsen/pull/397),
+  [`55a57e0`](https://github.com/zain13337/lyft-amundsen/commit/55a57e0992b88e13768d247383f5a6f90919b790))
+
+* Add repr function for BadgeMetadata
+
+Signed-off-by: dikshathakur3119 <dikshathakur@lyft.com>
+
+* remove badge instance from repr function
+
+* bump version
+
+* Delete db,, schema from BadgeMetadata
+
+* Remove cluster
+
+* fix lint
+
+- Add sample airflow dag for snowflake integration
+  ([#343](https://github.com/zain13337/lyft-amundsen/pull/343),
+  [`5bd4c39`](https://github.com/zain13337/lyft-amundsen/commit/5bd4c39653698e07fa95bcc9f731fb0c44334353))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add Tao to see FE pr ([#646](https://github.com/zain13337/lyft-amundsen/pull/646),
+  [`f081f12`](https://github.com/zain13337/lyft-amundsen/commit/f081f121d21599672ab2b4713ad83478f33fd1e4))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add upper boundary for amundsen-common pin
+  ([#1736](https://github.com/zain13337/lyft-amundsen/pull/1736),
+  [`0a4e11c`](https://github.com/zain13337/lyft-amundsen/commit/0a4e11c419d425d81ce11472f06db4c869b11ca2))
+
+Signed-off-by: Mariusz Górski <gorskimariusz13@gmail.com>
+
+- Addded release to automate releases ([#255](https://github.com/zain13337/lyft-amundsen/pull/255),
+  [`64f6828`](https://github.com/zain13337/lyft-amundsen/commit/64f682866b8bf8eb6e3271a4455f5abe5d748c4f))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Added @sewardgw to *.py codeowner ([#1369](https://github.com/zain13337/lyft-amundsen/pull/1369),
+  [`d677439`](https://github.com/zain13337/lyft-amundsen/commit/d6774398b1cade686903f7f45c24821be523206f))
+
+* Added @sewardgw to .py codeowner
+
+Signed-off-by: Grant Seward <grant@stemma.ai>
+
+* added to all to for PRs with multiple impacted components
+
+- Added action for automated release ([#87](https://github.com/zain13337/lyft-amundsen/pull/87),
+  [`3a43476`](https://github.com/zain13337/lyft-amundsen/commit/3a43476b21abfc0aa402c49b44110072c764c2b0))
+
+* chore: added action for automated release
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* removed extra new line
+
+- Added action to automate releases ([#185](https://github.com/zain13337/lyft-amundsen/pull/185),
+  [`81063cc`](https://github.com/zain13337/lyft-amundsen/commit/81063ccf7938a3076bce39b6a22a2fd8de9e04d9))
+
+* chore: added action to automate releases
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* added newline
+
+- Adds explicit npm registry on .npmrc
+  ([#1765](https://github.com/zain13337/lyft-amundsen/pull/1765),
+  [`a60a75e`](https://github.com/zain13337/lyft-amundsen/commit/a60a75eb1163db30223ac031e3ef0050e46440b3))
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+- Adds page view tracking via logAction
+  ([#2114](https://github.com/zain13337/lyft-amundsen/pull/2114),
+  [`3e329fc`](https://github.com/zain13337/lyft-amundsen/commit/3e329fca7cc172b1177a2945c1446f8d99ed03bd))
+
+* chore: adds page view tracking via logAction
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: updates PR template and adds PRLint configuration
+
+---------
+
+- Adds pre-commit linting and formatting for JavaScript and Styles
+  ([#475](https://github.com/zain13337/lyft-amundsen/pull/475),
+  [`4e064b1`](https://github.com/zain13337/lyft-amundsen/commit/4e064b17c94f624784e5c8bdd23f9a143bd5c80c))
+
+* Updates prettier and hooks it as a post-test task
+
+* Overall Prettier Format run
+
+* Adding lint-staged pre-commit with Husky
+
+* Adding extra spaces
+
+* Adds stylelint and fixes autofixable issues
+
+* Fixes basic style issues
+
+* Testing hook
+
+* Fixing conflicts
+
+* Moving TS comment
+
+* Resolving merge conflict
+
+* Cleaning up variable
+
+- Adds storybooks for default Bootstrap and custom buttons
+  ([#2097](https://github.com/zain13337/lyft-amundsen/pull/2097),
+  [`caa3349`](https://github.com/zain13337/lyft-amundsen/commit/caa3349673d690ccdbee8aa9645004845ef9ec2c))
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+- Adds table detail logging ([#2131](https://github.com/zain13337/lyft-amundsen/pull/2131),
+  [`afeb79e`](https://github.com/zain13337/lyft-amundsen/commit/afeb79e654cb54164fec94a843cf33d48457ae99))
+
+* chore: logs column info drawer interactions
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: logs column sorting feature
+
+* chore: logs back to search button
+
+---------
+
+- Apply license headers to all the source files
+  ([#116](https://github.com/zain13337/lyft-amundsen/pull/116),
+  [`4892a7d`](https://github.com/zain13337/lyft-amundsen/commit/4892a7d305fe83415fbf2906e2e383724ee2f2a2))
+
+* chore: apply license headers to all the source files
+
+* fix flake8 with autopep8
+
+* fix lint
+
+- Apply license headers to all the source files
+  ([#153](https://github.com/zain13337/lyft-amundsen/pull/153),
+  [`6106c29`](https://github.com/zain13337/lyft-amundsen/commit/6106c293b1586e679379cdb803dda7bd0fb682f3))
+
+* chore: apply license headers to all the source files
+
+* fix flake8
+
+- Apply license headers to all the source files
+  ([#304](https://github.com/zain13337/lyft-amundsen/pull/304),
+  [`5791a4b`](https://github.com/zain13337/lyft-amundsen/commit/5791a4bbf1bbde90bcd7fe60be3f367f9c96a576))
+
+* chore: apply license headers to all the source files
+
+* fix flake8 with autopep8
+
+* fix more lint
+
+- Apply license headers to all the source files
+  ([#41](https://github.com/zain13337/lyft-amundsen/pull/41),
+  [`10ba812`](https://github.com/zain13337/lyft-amundsen/commit/10ba8122033fff7c811e3cedd962b602e0c200b7))
+
+- Auto merge git submodule update ([#767](https://github.com/zain13337/lyft-amundsen/pull/767),
+  [`2f2508e`](https://github.com/zain13337/lyft-amundsen/commit/2f2508ef933cb9f3092467be755719721afa3261))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Automate releases ([#435](https://github.com/zain13337/lyft-amundsen/pull/435),
+  [`0e8107e`](https://github.com/zain13337/lyft-amundsen/commit/0e8107e2f04b681620d2b0a0147af9f618ef80e1))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Bigquery example preview client ([#935](https://github.com/zain13337/lyft-amundsen/pull/935),
+  [`080ec1a`](https://github.com/zain13337/lyft-amundsen/commit/080ec1a328990f9e2d0e8390801318923db4eecb))
+
+* Bigquery example preview client
+
+Signed-off-by: JacobSMoller <scherffenberg91@gmail.com>
+
+* Fix bad copy paste of imports
+
+* Clean up junk comment in config
+
+* Refactor way to config custom implementation and fix mypy
+
+* Optional install of dependencies for bigquery preview client
+
+* install bigquery deps for unit testing on PR
+
+* Make an all_deps option like in databuilder
+
+* Just use all option for unit tests
+
+- Build a new release ([#246](https://github.com/zain13337/lyft-amundsen/pull/246),
+  [`9fd5ca5`](https://github.com/zain13337/lyft-amundsen/commit/9fd5ca51c81b781c6f03398978b8a6358ce5fc7d))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Build(deps): bump flake8 from 3.5.0 to 3.8.4
+  ([#704](https://github.com/zain13337/lyft-amundsen/pull/704),
+  [`d6a4ebe`](https://github.com/zain13337/lyft-amundsen/commit/d6a4ebe0eaa6edb36470a157bba1db78e7670ace))
+
+* build(deps): bump flake8 from 3.5.0 to 3.8.4
+
+Bumps [flake8](https://gitlab.com/pycqa/flake8) from 3.5.0 to 3.8.4. - [Release
+  notes](https://gitlab.com/pycqa/flake8/tags) -
+  [Commits](https://gitlab.com/pycqa/flake8/compare/3.5.0...3.8.4)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+* lint fixes
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* exception as e lint issue
+
+* fixed exception flake8 error
+
+* more lint
+
+* weird lint
+
+* weird lint errors deadlock fix
+
+* spaces mismatch
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+Co-authored-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Build(deps-dev): bump css-loader from 3.5.3 to 4.2.2 in /amundsen_application/static
+  ([#647](https://github.com/zain13337/lyft-amundsen/pull/647),
+  [`e9d31da`](https://github.com/zain13337/lyft-amundsen/commit/e9d31da5c7fd71d11f515e984d51ca292bb2a2ba))
+
+* build(deps-dev): bump css-loader in /amundsen_application/static
+
+Bumps [css-loader](https://github.com/webpack-contrib/css-loader) from 3.5.3 to 4.2.2. - [Release
+  notes](https://github.com/webpack-contrib/css-loader/releases) -
+  [Changelog](https://github.com/webpack-contrib/css-loader/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/webpack-contrib/css-loader/compare/v3.5.3...v4.2.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+* Updates url paths to be relative
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+Co-authored-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+- Build(deps-dev): bump prettier from 2.0.5 to 2.2.1 in /amundsen_application/static
+  ([#904](https://github.com/zain13337/lyft-amundsen/pull/904),
+  [`49b286c`](https://github.com/zain13337/lyft-amundsen/commit/49b286c811b87a958872b8e5700057ebcc8e1ed7))
+
+* build(deps-dev): bump prettier in /amundsen_application/static
+
+Bumps [prettier](https://github.com/prettier/prettier) from 2.0.5 to 2.2.1. - [Release
+  notes](https://github.com/prettier/prettier/releases) -
+  [Changelog](https://github.com/prettier/prettier/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/prettier/prettier/compare/2.0.5...2.2.1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+* fixed new prettier issues
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+Co-authored-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Build(deps-dev): bump sass-loader from 7.3.1 to 10.0.2 in /amundsen_application/static
+  ([#648](https://github.com/zain13337/lyft-amundsen/pull/648),
+  [`3784ccb`](https://github.com/zain13337/lyft-amundsen/commit/3784ccbc62e2969833c8bbd6bf49b46c9249bbbb))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Build: upgrade webpack from 4 to 5 ([#770](https://github.com/zain13337/lyft-amundsen/pull/770),
+  [`4461e4f`](https://github.com/zain13337/lyft-amundsen/commit/4461e4f2f7811fd4a009a81b5c386e53f9eaffcb))
+
+* app node_modules: upgrade webpack to 4->5
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+* package.json: install path-browserify
+
+Needed by react-markdown as of 5.0.2
+
+* webpack: use polyfill for path
+
+* webpack: add hack to make old react-bootstrap work
+
+* package.json: upgrade html-webpack-plugin 4 -> 4.5.0
+
+* package.json: upgrade mini-css-extract-plugin 0.10 -> 0.12
+
+Fixes many webpack deprecation warnings.
+
+* webpack: fix deprecation warning in moduleIds optimization
+
+* webpack: link hacky behavior to ticket
+
+https://github.com/amundsen-io/amundsen/issues/818
+
+- Bump amundsen common to 0.23.0 ([#1580](https://github.com/zain13337/lyft-amundsen/pull/1580),
+  [`36b689a`](https://github.com/zain13337/lyft-amundsen/commit/36b689a296356fc787b4a654579e9f6cf7119873))
+
+* chore: bump amundsen common to 0.23.0
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* rerun
+
+- Bump amundsen-frontend from 3.0.0 -> 3.1.0
+  ([#829](https://github.com/zain13337/lyft-amundsen/pull/829),
+  [`fb1eb13`](https://github.com/zain13337/lyft-amundsen/commit/fb1eb13590ae36879c5c1b2d374b453cf12245dd))
+
+Signed-off-by: Mark Grover <mark@apache.org>
+
+- Bump amundsencommon from `0218301` to `731d803`
+  ([#476](https://github.com/zain13337/lyft-amundsen/pull/476),
+  [`940b304`](https://github.com/zain13337/lyft-amundsen/commit/940b304f229be283c7a1e4069896aa4000b8831d))
+
+Bumps [amundsencommon](https://github.com/lyft/amundsencommon) from `0218301` to `731d803`. -
+  [Release notes](https://github.com/lyft/amundsencommon/releases) -
+  [Commits](https://github.com/lyft/amundsencommon/compare/0218301ea454982e01f4ac97e3450e4631a38717...731d803f65ef73154e941348325365e6c79cb028)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `09897d9` to `abaf553`
+  ([#684](https://github.com/zain13337/lyft-amundsen/pull/684),
+  [`628b4d8`](https://github.com/zain13337/lyft-amundsen/commit/628b4d891d9751f3dbd1c9267dd499b3a9db33e5))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Bump amundsencommon from `14d02a9` to `508fdf3`
+  ([#623](https://github.com/zain13337/lyft-amundsen/pull/623),
+  [`a6961f3`](https://github.com/zain13337/lyft-amundsen/commit/a6961f3619ae109b28839e5d5c66e03bacfb746b))
+
+Bumps [amundsencommon](https://github.com/lyft/amundsencommon) from `14d02a9` to `508fdf3`. -
+  [Release notes](https://github.com/lyft/amundsencommon/releases) -
+  [Commits](https://github.com/lyft/amundsencommon/compare/14d02a9e73991b6260efc89c2a6fe4e1d6b71a64...508fdf3da3c6a933f1ed82c5156232ddd57b777d)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `1a2733b` to `7ff2fe1`
+  ([#720](https://github.com/zain13337/lyft-amundsen/pull/720),
+  [`f50e862`](https://github.com/zain13337/lyft-amundsen/commit/f50e86272918c4f546f213ea918df24c5ca3dc8e))
+
+Bumps [amundsencommon](https://github.com/amundsen-io/amundsencommon) from `1a2733b` to `7ff2fe1`. -
+  [Release notes](https://github.com/amundsen-io/amundsencommon/releases) -
+  [Commits](https://github.com/amundsen-io/amundsencommon/compare/1a2733bbe667eac3cb58429e6318eead52903a95...7ff2fe1c6e299338c6cc78b90196fa353b67b995)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `25622d2` to `f250d6a`
+  ([#895](https://github.com/zain13337/lyft-amundsen/pull/895),
+  [`0be8852`](https://github.com/zain13337/lyft-amundsen/commit/0be885277ad4dcf8fb3fbf037926e837dfa6ee02))
+
+Bumps [amundsencommon](https://github.com/amundsen-io/amundsencommon) from `25622d2` to `f250d6a`. -
+  [Release notes](https://github.com/amundsen-io/amundsencommon/releases) -
+  [Commits](https://github.com/amundsen-io/amundsencommon/compare/25622d2c3e829bd190f8818711638626861f3c2b...f250d6aea170e2d3e448867f68bc40f4c01cb91b)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `3b71ebb` to `a954f1b`
+  ([#936](https://github.com/zain13337/lyft-amundsen/pull/936),
+  [`8836cd9`](https://github.com/zain13337/lyft-amundsen/commit/8836cd90b338f0672753a2efb846d24dd8929a38))
+
+Bumps [amundsencommon](https://github.com/amundsen-io/amundsencommon) from `3b71ebb` to `a954f1b`. -
+  [Release notes](https://github.com/amundsen-io/amundsencommon/releases) -
+  [Commits](https://github.com/amundsen-io/amundsencommon/compare/3b71ebb5ed69d753cba1a311415ad699ded545e5...a954f1b5485a045fcb4b217477420946abd5ad50)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `508fdf3` to `cdb8028`
+  ([#656](https://github.com/zain13337/lyft-amundsen/pull/656),
+  [`0ff6e12`](https://github.com/zain13337/lyft-amundsen/commit/0ff6e12e374870eb351f2b56b8622ddc94729b7b))
+
+Bumps [amundsencommon](https://github.com/amundsen-io/amundsencommon) from `508fdf3` to `cdb8028`. -
+  [Release notes](https://github.com/amundsen-io/amundsencommon/releases) -
+  [Commits](https://github.com/amundsen-io/amundsencommon/compare/508fdf3da3c6a933f1ed82c5156232ddd57b777d...cdb8028001eaab91bcaf34a6d7b68fc1b318ea5d)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `60b1751` to `7ea1e5e`
+  ([#556](https://github.com/zain13337/lyft-amundsen/pull/556),
+  [`9fb94ab`](https://github.com/zain13337/lyft-amundsen/commit/9fb94ab5aa04b447448c6949d5977679742d4d0e))
+
+Bumps [amundsencommon](https://github.com/lyft/amundsencommon) from `60b1751` to `7ea1e5e`. -
+  [Release notes](https://github.com/lyft/amundsencommon/releases) -
+  [Commits](https://github.com/lyft/amundsencommon/compare/60b1751be8e99a77a83876d5264e6530d37f50e4...7ea1e5ea2b1be6687c322cbc71f6156d4db08bca)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `731d803` to `fac6503`
+  ([#508](https://github.com/zain13337/lyft-amundsen/pull/508),
+  [`0184c5e`](https://github.com/zain13337/lyft-amundsen/commit/0184c5e41ce6841dcda0660d571242f7d7dded24))
+
+Bumps [amundsencommon](https://github.com/lyft/amundsencommon) from `731d803` to `fac6503`. -
+  [Release notes](https://github.com/lyft/amundsencommon/releases) -
+  [Commits](https://github.com/lyft/amundsencommon/compare/731d803f65ef73154e941348325365e6c79cb028...fac65039cea0fbd058a029908b83cd9d3d176046)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `7ea1e5e` to `14d02a9`
+  ([#568](https://github.com/zain13337/lyft-amundsen/pull/568),
+  [`6a4b369`](https://github.com/zain13337/lyft-amundsen/commit/6a4b369ba36a9b4c19a13c5cc0476de2f81ebe11))
+
+Bumps [amundsencommon](https://github.com/lyft/amundsencommon) from `7ea1e5e` to `14d02a9`. -
+  [Release notes](https://github.com/lyft/amundsencommon/releases) -
+  [Commits](https://github.com/lyft/amundsencommon/compare/7ea1e5ea2b1be6687c322cbc71f6156d4db08bca...14d02a9e73991b6260efc89c2a6fe4e1d6b71a64)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `7ff2fe1` to `bab8939`
+  ([#749](https://github.com/zain13337/lyft-amundsen/pull/749),
+  [`66b8f28`](https://github.com/zain13337/lyft-amundsen/commit/66b8f283a3cba639e1137f7067e4ed3990729e70))
+
+Bumps [amundsencommon](https://github.com/amundsen-io/amundsencommon) from `7ff2fe1` to `bab8939`. -
+  [Release notes](https://github.com/amundsen-io/amundsencommon/releases) -
+  [Commits](https://github.com/amundsen-io/amundsencommon/compare/7ff2fe1c6e299338c6cc78b90196fa353b67b995...bab893932fc275270fded5737f8591abf8fb5a37)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `a954f1b` to `d185046`
+  ([#960](https://github.com/zain13337/lyft-amundsen/pull/960),
+  [`903aea3`](https://github.com/zain13337/lyft-amundsen/commit/903aea3aef57dbee230dba3aa7f3f1d2d50d1eac))
+
+Bumps [amundsencommon](https://github.com/amundsen-io/amundsencommon) from `a954f1b` to `d185046`. -
+  [Release notes](https://github.com/amundsen-io/amundsencommon/releases) -
+  [Commits](https://github.com/amundsen-io/amundsencommon/compare/a954f1b5485a045fcb4b217477420946abd5ad50...d185046260fc7b0c9951a18a2f0d00b715ca9afe)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `abaf553` to `1a2733b`
+  ([#709](https://github.com/zain13337/lyft-amundsen/pull/709),
+  [`a560412`](https://github.com/zain13337/lyft-amundsen/commit/a560412e2d25c21b0638b4db0bd6b830b655bf72))
+
+Bumps [amundsencommon](https://github.com/amundsen-io/amundsencommon) from `abaf553` to `1a2733b`. -
+  [Release notes](https://github.com/amundsen-io/amundsencommon/releases) -
+  [Commits](https://github.com/amundsen-io/amundsencommon/compare/abaf553c1df5b6596c6d4fd0700451a91c813e55...1a2733bbe667eac3cb58429e6318eead52903a95)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `bab8939` to `4a7eea4`
+  ([#763](https://github.com/zain13337/lyft-amundsen/pull/763),
+  [`6290961`](https://github.com/zain13337/lyft-amundsen/commit/62909612f9c8d1784e9983181afa40235529aff0))
+
+Bumps [amundsencommon](https://github.com/amundsen-io/amundsencommon) from `bab8939` to `4a7eea4`. -
+  [Release notes](https://github.com/amundsen-io/amundsencommon/releases) -
+  [Commits](https://github.com/amundsen-io/amundsencommon/compare/bab893932fc275270fded5737f8591abf8fb5a37...4a7eea49a22371d1cbf21258685790f4fc1beafb)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `cdb8028` to `09897d9`
+  ([#669](https://github.com/zain13337/lyft-amundsen/pull/669),
+  [`7e611e0`](https://github.com/zain13337/lyft-amundsen/commit/7e611e0b7f6bb043332a62eb5ebe3844677b5339))
+
+Bumps [amundsencommon](https://github.com/amundsen-io/amundsencommon) from `cdb8028` to `09897d9`. -
+  [Release notes](https://github.com/amundsen-io/amundsencommon/releases) -
+  [Commits](https://github.com/amundsen-io/amundsencommon/compare/cdb8028001eaab91bcaf34a6d7b68fc1b318ea5d...09897d9828e87ff2eb372b06a35684e197613165)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `d185046` to `bd0b0a5`
+  ([#976](https://github.com/zain13337/lyft-amundsen/pull/976),
+  [`a7d9483`](https://github.com/zain13337/lyft-amundsen/commit/a7d9483ede0bb59837040f60554e040b797e1b68))
+
+Bumps [amundsencommon](https://github.com/amundsen-io/amundsencommon) from `d185046` to `bd0b0a5`. -
+  [Release notes](https://github.com/amundsen-io/amundsencommon/releases) -
+  [Commits](https://github.com/amundsen-io/amundsencommon/compare/d185046260fc7b0c9951a18a2f0d00b715ca9afe...bd0b0a521cebf4c432437a7f4a85e5f9d2f8225c)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `f250d6a` to `3b71ebb`
+  ([#907](https://github.com/zain13337/lyft-amundsen/pull/907),
+  [`7ab5c07`](https://github.com/zain13337/lyft-amundsen/commit/7ab5c072c90cf20ec78c18bed929280b73cc0be6))
+
+Bumps [amundsencommon](https://github.com/amundsen-io/amundsencommon) from `f250d6a` to `3b71ebb`. -
+  [Release notes](https://github.com/amundsen-io/amundsencommon/releases) -
+  [Commits](https://github.com/amundsen-io/amundsencommon/compare/f250d6aea170e2d3e448867f68bc40f4c01cb91b...3b71ebb5ed69d753cba1a311415ad699ded545e5)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `fac6503` to `60b1751`
+  ([#529](https://github.com/zain13337/lyft-amundsen/pull/529),
+  [`161eb31`](https://github.com/zain13337/lyft-amundsen/commit/161eb31e62c46d78f4f573de1a6925f4b8c13523))
+
+Bumps [amundsencommon](https://github.com/lyft/amundsencommon) from `fac6503` to `60b1751`. -
+  [Release notes](https://github.com/lyft/amundsencommon/releases) -
+  [Commits](https://github.com/lyft/amundsencommon/compare/fac65039cea0fbd058a029908b83cd9d3d176046...60b1751be8e99a77a83876d5264e6530d37f50e4)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsencommon from `ff9d2e2` to `25622d2`
+  ([#840](https://github.com/zain13337/lyft-amundsen/pull/840),
+  [`a8fb197`](https://github.com/zain13337/lyft-amundsen/commit/a8fb197a82cee55076c61334f846410e1998e18d))
+
+Bumps [amundsencommon](https://github.com/amundsen-io/amundsencommon) from `ff9d2e2` to `25622d2`. -
+  [Release notes](https://github.com/amundsen-io/amundsencommon/releases) -
+  [Commits](https://github.com/amundsen-io/amundsencommon/compare/ff9d2e249452bf85924ec5864003bf96494e2500...25622d2c3e829bd190f8818711638626861f3c2b)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `0078761` to `d24cba9`
+  ([#603](https://github.com/zain13337/lyft-amundsen/pull/603),
+  [`6c53318`](https://github.com/zain13337/lyft-amundsen/commit/6c533185653c227ce6c87ffa68aa93fcc0af4ced))
+
+Bumps [amundsendatabuilder](https://github.com/lyft/amundsendatabuilder) from `0078761` to
+  `d24cba9`. - [Release notes](https://github.com/lyft/amundsendatabuilder/releases) -
+  [Commits](https://github.com/lyft/amundsendatabuilder/compare/0078761dc94c33c785557df09bb86411ef8f6f46...d24cba9d51795f908c8325d847e020b3c949f34a)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `06c1dbe` to `928e090`
+  ([#512](https://github.com/zain13337/lyft-amundsen/pull/512),
+  [`8d4f1b4`](https://github.com/zain13337/lyft-amundsen/commit/8d4f1b44fe7aae66e07f9c4299e6c4bcab614e63))
+
+Bumps [amundsendatabuilder](https://github.com/lyft/amundsendatabuilder) from `06c1dbe` to
+  `928e090`. - [Release notes](https://github.com/lyft/amundsendatabuilder/releases) -
+  [Commits](https://github.com/lyft/amundsendatabuilder/compare/06c1dbef4959d1084acee702b54444e323b93fa8...928e090c6fece1a547227218f0cc6a67453cb279)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `1baec33` to `c3e713e`
+  ([#683](https://github.com/zain13337/lyft-amundsen/pull/683),
+  [`6387ebc`](https://github.com/zain13337/lyft-amundsen/commit/6387ebcd694655867319e205626f2e1c58cf563c))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `1baec33` to
+  `c3e713e`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/1baec33899df8394b42b6a667ff2a5d1224b8528...c3e713e7f39e7240f3038daa3a3937fb060dbecb)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `21a763a` to `496ddfe`
+  ([#557](https://github.com/zain13337/lyft-amundsen/pull/557),
+  [`1931823`](https://github.com/zain13337/lyft-amundsen/commit/19318230e81be7bb61ef67771666dd8f7b451179))
+
+Bumps [amundsendatabuilder](https://github.com/lyft/amundsendatabuilder) from `21a763a` to
+  `496ddfe`. - [Release notes](https://github.com/lyft/amundsendatabuilder/releases) -
+  [Commits](https://github.com/lyft/amundsendatabuilder/compare/21a763add3c00c34b4f4c2d9809f59e50fb264c8...496ddfe6b6f17eaec477b67892a7073dd9efa9b5)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `2343a90` to `59fd752`
+  ([#838](https://github.com/zain13337/lyft-amundsen/pull/838),
+  [`c7504fd`](https://github.com/zain13337/lyft-amundsen/commit/c7504fd7777681930dc5d794c920c30693d5c7dd))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `2343a90` to
+  `59fd752`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/2343a90b09932a173cbef13ad912bd2e7864dea0...59fd7529dc8c43c393ce06445c4b9d3b0c09817d)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `24b3b0a` to `4b7b147`
+  ([#581](https://github.com/zain13337/lyft-amundsen/pull/581),
+  [`1fa6572`](https://github.com/zain13337/lyft-amundsen/commit/1fa65728a7d567abe406173a2a891d11cc05cee9))
+
+Bumps [amundsendatabuilder](https://github.com/lyft/amundsendatabuilder) from `24b3b0a` to
+  `4b7b147`. - [Release notes](https://github.com/lyft/amundsendatabuilder/releases) -
+  [Commits](https://github.com/lyft/amundsendatabuilder/compare/24b3b0afdf4ad3c6b13f9677d9f805ff43f42de7...4b7b147b1d32cd8fce6aa7c24fa1db8d823b8038)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `271ffe1` to `86f658d`
+  ([#635](https://github.com/zain13337/lyft-amundsen/pull/635),
+  [`ae567ad`](https://github.com/zain13337/lyft-amundsen/commit/ae567ad38ce8a70099f6f298d108767228c0146f))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `271ffe1` to
+  `86f658d`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/271ffe12da42b50e755020da96871faeb49188cd...86f658d1ea9750ad916a91056a678e34a71654fb)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `445b29f` to `a579a96`
+  ([#977](https://github.com/zain13337/lyft-amundsen/pull/977),
+  [`f540864`](https://github.com/zain13337/lyft-amundsen/commit/f5408649bdb47ec57655c6816ab433954fe4897d))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `445b29f` to
+  `a579a96`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/445b29fd27020f5bfc69ffd647acd95ee861bee3...a579a96da4e69ae862c8a1761978cf7a96b05ea1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `453a18b` to `8c63307`
+  ([#861](https://github.com/zain13337/lyft-amundsen/pull/861),
+  [`246ae44`](https://github.com/zain13337/lyft-amundsen/commit/246ae44e3d5484731009c870ac48396e3acda456))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `453a18b` to
+  `8c63307`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/453a18b9f70b94226bf01180d7e44b915ca2ddcf...8c633072da81b7fb2e343aa31e6e7f9c3bfae07d)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `496ddfe` to `24b3b0a`
+  ([#570](https://github.com/zain13337/lyft-amundsen/pull/570),
+  [`6a1b402`](https://github.com/zain13337/lyft-amundsen/commit/6a1b402509b0b443732757813fdf8a921c854f76))
+
+Bumps [amundsendatabuilder](https://github.com/lyft/amundsendatabuilder) from `496ddfe` to
+  `24b3b0a`. - [Release notes](https://github.com/lyft/amundsendatabuilder/releases) -
+  [Commits](https://github.com/lyft/amundsendatabuilder/compare/496ddfe6b6f17eaec477b67892a7073dd9efa9b5...24b3b0afdf4ad3c6b13f9677d9f805ff43f42de7)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `49ae0ed` to `f02c823`
+  ([#904](https://github.com/zain13337/lyft-amundsen/pull/904),
+  [`61aeeae`](https://github.com/zain13337/lyft-amundsen/commit/61aeeaef7137625cd2a9aba8c75a4cbe0792b8a4))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `49ae0ed` to
+  `f02c823`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/49ae0ed253aabec38346d0f26479218dec62081f...f02c823c655d8fbfd32c334d7e72a3f3520e063a)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `4b7b147` to `0078761`
+  ([#592](https://github.com/zain13337/lyft-amundsen/pull/592),
+  [`4968618`](https://github.com/zain13337/lyft-amundsen/commit/496861840c099abf026badcdab001a521b6d0357))
+
+Bumps [amundsendatabuilder](https://github.com/lyft/amundsendatabuilder) from `4b7b147` to
+  `0078761`. - [Release notes](https://github.com/lyft/amundsendatabuilder/releases) -
+  [Commits](https://github.com/lyft/amundsendatabuilder/compare/4b7b147b1d32cd8fce6aa7c24fa1db8d823b8038...0078761dc94c33c785557df09bb86411ef8f6f46)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `4f5df39` to `6802ab1`
+  ([#722](https://github.com/zain13337/lyft-amundsen/pull/722),
+  [`56e3df1`](https://github.com/zain13337/lyft-amundsen/commit/56e3df1daaed6fa851746fd20d464ae64be3bc0b))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `4f5df39` to
+  `6802ab1`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/4f5df39cd6ddf05d2347b6d2b280f5cf0fdda5b9...6802ab13d18d9a3f27d54dd7a7e43b4c3606da39)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `54e89ce` to `445b29f`
+  ([#970](https://github.com/zain13337/lyft-amundsen/pull/970),
+  [`3953564`](https://github.com/zain13337/lyft-amundsen/commit/39535649c90ae1342e7ead737552f7d2b38fd30f))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `54e89ce` to
+  `445b29f`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/54e89ce74b70ade742edc77d4e76b9fc8241d8ab...445b29fd27020f5bfc69ffd647acd95ee861bee3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `59fd752` to `453a18b`
+  ([#851](https://github.com/zain13337/lyft-amundsen/pull/851),
+  [`a7fc6d7`](https://github.com/zain13337/lyft-amundsen/commit/a7fc6d7505784316382a28fb2434883026f7dc53))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `59fd752` to
+  `453a18b`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/59fd7529dc8c43c393ce06445c4b9d3b0c09817d...453a18b9f70b94226bf01180d7e44b915ca2ddcf)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `5dca1c2` to `80162a2`
+  ([#480](https://github.com/zain13337/lyft-amundsen/pull/480),
+  [`bbb3d75`](https://github.com/zain13337/lyft-amundsen/commit/bbb3d75674214bb4609d9d1461b85a44a76a2e5a))
+
+Bumps [amundsendatabuilder](https://github.com/lyft/amundsendatabuilder) from `5dca1c2` to
+  `80162a2`. - [Release notes](https://github.com/lyft/amundsendatabuilder/releases) -
+  [Commits](https://github.com/lyft/amundsendatabuilder/compare/5dca1c24f8c9fc06fdcdd36198ad234ad8a672e4...80162a283c64c01adbe2031afc41b6f82169c723)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `60c837d` to `1baec33`
+  ([#667](https://github.com/zain13337/lyft-amundsen/pull/667),
+  [`06f3cfb`](https://github.com/zain13337/lyft-amundsen/commit/06f3cfbe56d6c0267319a3cdb4a8b26c741a0aac))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `60c837d` to
+  `1baec33`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/60c837d5b4c4b0a54cf1db343762d34b3c4da542...1baec33899df8394b42b6a667ff2a5d1224b8528)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `6802ab1` to `acac5e8`
+  ([#756](https://github.com/zain13337/lyft-amundsen/pull/756),
+  [`d6b3bdc`](https://github.com/zain13337/lyft-amundsen/commit/d6b3bdc2eb591c02808d0d47a078c506200dffb4))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `6802ab1` to
+  `acac5e8`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/6802ab13d18d9a3f27d54dd7a7e43b4c3606da39...acac5e8bc90d5241f20c6595f5a005c1871d00b6)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `6fd5035` to `d91c0c5`
+  ([#798](https://github.com/zain13337/lyft-amundsen/pull/798),
+  [`ae4650d`](https://github.com/zain13337/lyft-amundsen/commit/ae4650d181f156a85284a0765053625ee40d41ce))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `6fd5035` to
+  `d91c0c5`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/6fd503563d49157a4a2611ad66fca2680dc62c68...d91c0c562c6e560dbc2a687e5dfb0d4cbc4a1c88)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `71492a9` to `4f5df39`
+  ([#710](https://github.com/zain13337/lyft-amundsen/pull/710),
+  [`09f33a8`](https://github.com/zain13337/lyft-amundsen/commit/09f33a876c6e010841140e7ef0e747340360c546))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `71492a9` to
+  `4f5df39`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/71492a96066060cbc6395a3a9afdb6289f3ad491...4f5df39cd6ddf05d2347b6d2b280f5cf0fdda5b9)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `7ef5ab6` to `21a763a`
+  ([#535](https://github.com/zain13337/lyft-amundsen/pull/535),
+  [`6d798b8`](https://github.com/zain13337/lyft-amundsen/commit/6d798b8f706099488f87af129e623c737b2dc164))
+
+Bumps [amundsendatabuilder](https://github.com/lyft/amundsendatabuilder) from `7ef5ab6` to
+  `21a763a`. - [Release notes](https://github.com/lyft/amundsendatabuilder/releases) -
+  [Commits](https://github.com/lyft/amundsendatabuilder/compare/7ef5ab69bd04061e8aaf375e5b81516f849dd767...21a763add3c00c34b4f4c2d9809f59e50fb264c8)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `80162a2` to `06c1dbe`
+  ([#491](https://github.com/zain13337/lyft-amundsen/pull/491),
+  [`784cbd4`](https://github.com/zain13337/lyft-amundsen/commit/784cbd4de32ef2124a19fff9985e2e36e22afcb5))
+
+Bumps [amundsendatabuilder](https://github.com/lyft/amundsendatabuilder) from `80162a2` to
+  `06c1dbe`. - [Release notes](https://github.com/lyft/amundsendatabuilder/releases) -
+  [Commits](https://github.com/lyft/amundsendatabuilder/compare/80162a283c64c01adbe2031afc41b6f82169c723...06c1dbef4959d1084acee702b54444e323b93fa8)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `8162926` to `6a13762`
+  ([#934](https://github.com/zain13337/lyft-amundsen/pull/934),
+  [`c1323af`](https://github.com/zain13337/lyft-amundsen/commit/c1323affdace1f643bcf0fe8f0ecf8d1839c61f3))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `8162926` to
+  `6a13762`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/81629260c570e5c7c886bdc9399dafea7918e20d...6a13762ddaea1226f54d289f2b3011c4cb1e43c7)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `86f658d` to `60c837d`
+  ([#652](https://github.com/zain13337/lyft-amundsen/pull/652),
+  [`69d1158`](https://github.com/zain13337/lyft-amundsen/commit/69d11585009bf13eefe41cf7e99d9b48fe15162c))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `86f658d` to
+  `60c837d`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/86f658d1ea9750ad916a91056a678e34a71654fb...60c837d5b4c4b0a54cf1db343762d34b3c4da542)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `8a9618e` to `c07cec9`
+  ([#821](https://github.com/zain13337/lyft-amundsen/pull/821),
+  [`3119503`](https://github.com/zain13337/lyft-amundsen/commit/31195038d680224779d55b4e05a4102ec6a97cc8))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `8a9618e` to
+  `c07cec9`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/8a9618ec2239a713827374e8ca50394a3f2198fd...c07cec9588e30e8c87682882417a72dca1d1866d)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `8c63307` to `49ae0ed`
+  ([#896](https://github.com/zain13337/lyft-amundsen/pull/896),
+  [`758f163`](https://github.com/zain13337/lyft-amundsen/commit/758f163b479c3133eb1e8b9905c9a60f8fb1344b))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `8c63307` to
+  `49ae0ed`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/8c633072da81b7fb2e343aa31e6e7f9c3bfae07d...49ae0ed253aabec38346d0f26479218dec62081f)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `928e090` to `d2f4bd3`
+  ([#522](https://github.com/zain13337/lyft-amundsen/pull/522),
+  [`dae74f5`](https://github.com/zain13337/lyft-amundsen/commit/dae74f5c88afd850cf8e4c723c451944287170bb))
+
+Bumps [amundsendatabuilder](https://github.com/lyft/amundsendatabuilder) from `928e090` to
+  `d2f4bd3`. - [Release notes](https://github.com/lyft/amundsendatabuilder/releases) -
+  [Commits](https://github.com/lyft/amundsendatabuilder/compare/928e090c6fece1a547227218f0cc6a67453cb279...d2f4bd308c1ef92ea2bbfb7a7443cb42113f03f9)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `a579a96` to `cc1caf3`
+  ([#984](https://github.com/zain13337/lyft-amundsen/pull/984),
+  [`2ab0e80`](https://github.com/zain13337/lyft-amundsen/commit/2ab0e80f52a5894be8f9b596c6e34562b166e43c))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `a579a96` to
+  `cc1caf3`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/a579a96da4e69ae862c8a1761978cf7a96b05ea1...cc1caf37f87b140a393aedfd0a07fd17c58e8ac4)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `acac5e8` to `af4b512`
+  ([#762](https://github.com/zain13337/lyft-amundsen/pull/762),
+  [`4ac817b`](https://github.com/zain13337/lyft-amundsen/commit/4ac817bf349f56e65654820a4408410b30bea6be))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `acac5e8` to
+  `af4b512`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/acac5e8bc90d5241f20c6595f5a005c1871d00b6...af4b51265e11d1ee9e8651cebeb0d00592eec2d5)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `af4b512` to `6fd5035`
+  ([#781](https://github.com/zain13337/lyft-amundsen/pull/781),
+  [`b865a74`](https://github.com/zain13337/lyft-amundsen/commit/b865a74bc82b2069c3d0b7ca5b23493b6c2f4fcd))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `af4b512` to
+  `6fd5035`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/af4b51265e11d1ee9e8651cebeb0d00592eec2d5...6fd503563d49157a4a2611ad66fca2680dc62c68)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `c07cec9` to `2343a90`
+  ([#826](https://github.com/zain13337/lyft-amundsen/pull/826),
+  [`a9a6456`](https://github.com/zain13337/lyft-amundsen/commit/a9a645696cec54d747899a4ef41420ddebe092f9))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `c07cec9` to
+  `2343a90`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/c07cec9588e30e8c87682882417a72dca1d1866d...2343a90b09932a173cbef13ad912bd2e7864dea0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `c2bee74` to `54e89ce`
+  ([#959](https://github.com/zain13337/lyft-amundsen/pull/959),
+  [`8cf5629`](https://github.com/zain13337/lyft-amundsen/commit/8cf5629ba34c0aeb0c1b4a886a5e6f3503c23634))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `c2bee74` to
+  `54e89ce`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/c2bee74b2476fb1d4dde870ff21cef4fcddbd501...54e89ce74b70ade742edc77d4e76b9fc8241d8ab)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `c3e713e` to `71492a9`
+  ([#695](https://github.com/zain13337/lyft-amundsen/pull/695),
+  [`431a279`](https://github.com/zain13337/lyft-amundsen/commit/431a279fcbb8d246104ab7b4f24e82168c8233c7))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `c3e713e` to
+  `71492a9`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/c3e713e7f39e7240f3038daa3a3937fb060dbecb...71492a96066060cbc6395a3a9afdb6289f3ad491)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `cc1caf3` to `a91dc13`
+  ([#994](https://github.com/zain13337/lyft-amundsen/pull/994),
+  [`1e16bb1`](https://github.com/zain13337/lyft-amundsen/commit/1e16bb151367095edfb98079b24e5009608f9684))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `cc1caf3` to
+  `a91dc13`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/cc1caf37f87b140a393aedfd0a07fd17c58e8ac4...a91dc138289d21bbfee5b5e5f4832ae05b1731ac)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `d24cba9` to `271ffe1`
+  ([#622](https://github.com/zain13337/lyft-amundsen/pull/622),
+  [`f713187`](https://github.com/zain13337/lyft-amundsen/commit/f7131873db2097cd2e46b02080ceb496757acac9))
+
+Bumps [amundsendatabuilder](https://github.com/lyft/amundsendatabuilder) from `d24cba9` to
+  `271ffe1`. - [Release notes](https://github.com/lyft/amundsendatabuilder/releases) -
+  [Commits](https://github.com/lyft/amundsendatabuilder/compare/d24cba9d51795f908c8325d847e020b3c949f34a...271ffe12da42b50e755020da96871faeb49188cd)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `d2f4bd3` to `7ef5ab6`
+  ([#530](https://github.com/zain13337/lyft-amundsen/pull/530),
+  [`6e2c57f`](https://github.com/zain13337/lyft-amundsen/commit/6e2c57fb0aa35b721d94fc1654d7619e5ff37395))
+
+Bumps [amundsendatabuilder](https://github.com/lyft/amundsendatabuilder) from `d2f4bd3` to
+  `7ef5ab6`. - [Release notes](https://github.com/lyft/amundsendatabuilder/releases) -
+  [Commits](https://github.com/lyft/amundsendatabuilder/compare/d2f4bd308c1ef92ea2bbfb7a7443cb42113f03f9...7ef5ab69bd04061e8aaf375e5b81516f849dd767)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsendatabuilder from `f02c823` to `8162926`
+  ([#922](https://github.com/zain13337/lyft-amundsen/pull/922),
+  [`25726fd`](https://github.com/zain13337/lyft-amundsen/commit/25726fd25642f7bf9c14135c53acfcc1cfb0e9f4))
+
+Bumps [amundsendatabuilder](https://github.com/amundsen-io/amundsendatabuilder) from `f02c823` to
+  `8162926`. - [Release notes](https://github.com/amundsen-io/amundsendatabuilder/releases) -
+  [Commits](https://github.com/amundsen-io/amundsendatabuilder/compare/f02c823c655d8fbfd32c334d7e72a3f3520e063a...81629260c570e5c7c886bdc9399dafea7918e20d)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `01c8023` to `9d558af`
+  ([#889](https://github.com/zain13337/lyft-amundsen/pull/889),
+  [`cb2a9f3`](https://github.com/zain13337/lyft-amundsen/commit/cb2a9f3602e7fa669c1e9407a97e50161411d751))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `01c8023` to `9d558af`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/01c80230e304770aaee9cf4b7fc2e1828bc12c2b...9d558af458c3545249daafb5b44c48fbf3746a6a)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `0c0d08f` to `4f20cc9`
+  ([#935](https://github.com/zain13337/lyft-amundsen/pull/935),
+  [`825f8b8`](https://github.com/zain13337/lyft-amundsen/commit/825f8b8dfa28de6d785042b7e951417d41df38f4))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `0c0d08f` to `4f20cc9`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/0c0d08fc15522a5d1e8aab32303dab4b3435dc16...4f20cc9f93c0529671007cfb6747d071ee711ffb)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `179e2b6` to `a58f088`
+  ([#916](https://github.com/zain13337/lyft-amundsen/pull/916),
+  [`2804db7`](https://github.com/zain13337/lyft-amundsen/commit/2804db74e8ccf3bbab1137bdc117a7acc0163436))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `179e2b6` to `a58f088`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/179e2b6b03d602478a3374416278fbd61c6fe11b...a58f088ec6c6114ee23d6e9d8154df04975e683e)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `1898a88` to `c632102`
+  ([#747](https://github.com/zain13337/lyft-amundsen/pull/747),
+  [`53056f2`](https://github.com/zain13337/lyft-amundsen/commit/53056f26a848b2ba25e1771d570586f5fc23ed56))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `1898a88` to `c632102`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/1898a88ed730c1381b9baae3c02d1130ac557315...c6321020813e17fffef33a8b9a03d307233082a4)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `1a858a9` to `3aa7ef3`
+  ([#867](https://github.com/zain13337/lyft-amundsen/pull/867),
+  [`d3c5d66`](https://github.com/zain13337/lyft-amundsen/commit/d3c5d663f3b2ffa77948e5903ecc7eab3ac1dc7c))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `1a858a9` to `3aa7ef3`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/1a858a99466876c1ebd8721843f89f2ae49c054d...3aa7ef38f512da95abce638c3d08862a3f95e5bd)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `2ca517c` to `3e416cd`
+  ([#969](https://github.com/zain13337/lyft-amundsen/pull/969),
+  [`4118e0c`](https://github.com/zain13337/lyft-amundsen/commit/4118e0c13ddb65e22e7de380da442857ec8640a9))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `2ca517c` to `3e416cd`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/2ca517c24a6d508619b56ae8be734698664f35fc...3e416cd253b6436e6bbf75a59837e613453cfdb3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `32504c0` to `8cd70af`
+  ([#766](https://github.com/zain13337/lyft-amundsen/pull/766),
+  [`d455b6d`](https://github.com/zain13337/lyft-amundsen/commit/d455b6db9bdd8cbf62f810fab0a498579c831d8c))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `32504c0` to `8cd70af`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/32504c0b3b96c47c9047b2fe6c77b07f7934312e...8cd70af95d57c204a220e10631a5360d2714023a)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `3aa7ef3` to `cb83d53`
+  ([#873](https://github.com/zain13337/lyft-amundsen/pull/873),
+  [`257c3ee`](https://github.com/zain13337/lyft-amundsen/commit/257c3ee113d0170591d345b4c88342fb52d787b7))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `3aa7ef3` to `cb83d53`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/3aa7ef38f512da95abce638c3d08862a3f95e5bd...cb83d539eb9179d9922c98145b7ffe4e4f5db1ac)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `3ce62cc` to `6af5c08`
+  ([#680](https://github.com/zain13337/lyft-amundsen/pull/680),
+  [`b392cc4`](https://github.com/zain13337/lyft-amundsen/commit/b392cc489f3fb236c94e4ca6c4682558f326d8ff))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Bump amundsenfrontendlibrary from `3e416cd` to `473bbdb`
+  ([#983](https://github.com/zain13337/lyft-amundsen/pull/983),
+  [`140e338`](https://github.com/zain13337/lyft-amundsen/commit/140e3384da8d6b55bb7e95137301c3e980e873de))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `3e416cd` to `473bbdb`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/3e416cd253b6436e6bbf75a59837e613453cfdb3...473bbdb95c5dd25625bcadc04171dfe19aacd328)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `473bbdb` to `072d531`
+  ([#991](https://github.com/zain13337/lyft-amundsen/pull/991),
+  [`c8074d7`](https://github.com/zain13337/lyft-amundsen/commit/c8074d7821de37c25d8d95af1e894456f4727bbb))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `473bbdb` to `072d531`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/473bbdb95c5dd25625bcadc04171dfe19aacd328...072d5319f2fd85b8731e4d36ca1d4571c9cee030)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `4f20cc9` to `2ca517c`
+  ([#958](https://github.com/zain13337/lyft-amundsen/pull/958),
+  [`7a3f9eb`](https://github.com/zain13337/lyft-amundsen/commit/7a3f9eb0d87ccbf09a5aaad1b60a57fa96eadffd))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `4f20cc9` to `2ca517c`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/4f20cc9f93c0529671007cfb6747d071ee711ffb...2ca517c24a6d508619b56ae8be734698664f35fc)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `524bc07` to `7da4c54`
+  ([#862](https://github.com/zain13337/lyft-amundsen/pull/862),
+  [`afc03ed`](https://github.com/zain13337/lyft-amundsen/commit/afc03eddfb7c9d9753878e8b271b2b4c10a11d95))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `524bc07` to `7da4c54`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/524bc07b326b4ac1a6a6614b6bb72a53f9d2c970...7da4c54c0ba46704e706d2dac2ce32b6547060ad)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `58ff2da` to `d6b8909`
+  ([#824](https://github.com/zain13337/lyft-amundsen/pull/824),
+  [`992cb33`](https://github.com/zain13337/lyft-amundsen/commit/992cb33f7e83af13a3126cd25b6f2a54d016881a))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `58ff2da` to `d6b8909`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/58ff2da7313d005fbfc12ac4e0db7711ed3938ad...d6b8909143fca995409f765086a7e76e98b5a36a)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `6af5c08` to `ee0474f`
+  ([#694](https://github.com/zain13337/lyft-amundsen/pull/694),
+  [`9717329`](https://github.com/zain13337/lyft-amundsen/commit/97173298688d05327d96e24da991195667aa7d97))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `6af5c08` to `ee0474f`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/6af5c08b23d961d0da1b12c4cd1604db61721279...ee0474fdcce6c8c1b01c9032b5cd2750b1d0d92c)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `6b324c8` to `a87354b`
+  ([#478](https://github.com/zain13337/lyft-amundsen/pull/478),
+  [`3edff39`](https://github.com/zain13337/lyft-amundsen/commit/3edff390014ac80e8f1dcdbd169f9780b7129877))
+
+Bumps [amundsenfrontendlibrary](https://github.com/lyft/amundsenfrontendlibrary) from `6b324c8` to
+  `a87354b`. - [Release notes](https://github.com/lyft/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenfrontendlibrary/compare/6b324c8b3ed26263ae44a17cb13789af729b2a8a...a87354bda52f5151d8785f4a0d7023a51e215df2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `7da4c54` to `1a858a9`
+  ([#865](https://github.com/zain13337/lyft-amundsen/pull/865),
+  [`9bf2128`](https://github.com/zain13337/lyft-amundsen/commit/9bf2128839344f0e63c98aa15670047a862dd6c3))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `7da4c54` to `1a858a9`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/7da4c54c0ba46704e706d2dac2ce32b6547060ad...1a858a99466876c1ebd8721843f89f2ae49c054d)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `832aa72` to `c9bba88`
+  ([#634](https://github.com/zain13337/lyft-amundsen/pull/634),
+  [`558880f`](https://github.com/zain13337/lyft-amundsen/commit/558880fcde1df6abc82d7269a559cc42e3217a69))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `832aa72` to `c9bba88`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/832aa72dc850a908f9adaaaf41f7e7a6d826a2a0...c9bba886e74f19d71036574ee525892f1b02a768)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `89bbf5b` to `f7de1e8`
+  ([#553](https://github.com/zain13337/lyft-amundsen/pull/553),
+  [`f6df7b0`](https://github.com/zain13337/lyft-amundsen/commit/f6df7b06f53d7f0d9d128df4bd95b456438f7cd7))
+
+Bumps [amundsenfrontendlibrary](https://github.com/lyft/amundsenfrontendlibrary) from `89bbf5b` to
+  `f7de1e8`. - [Release notes](https://github.com/lyft/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenfrontendlibrary/compare/89bbf5b44dc23ef9d7979c59abfbc0caedd1e191...f7de1e81f14b0d00f2e15f48339f3640a54b0c22)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `8cd70af` to `cd85092`
+  ([#782](https://github.com/zain13337/lyft-amundsen/pull/782),
+  [`c555cfe`](https://github.com/zain13337/lyft-amundsen/commit/c555cfe282fd7bf4ea8fca177174832e972119fa))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `8cd70af` to `cd85092`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/8cd70af95d57c204a220e10631a5360d2714023a...cd85092e9794936d227aeb444fc2d23322fdd9a2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `8f11e7c` to `ffea88d`
+  ([#593](https://github.com/zain13337/lyft-amundsen/pull/593),
+  [`c072989`](https://github.com/zain13337/lyft-amundsen/commit/c072989505511f98b2fc61e46c6eac9964d349d8))
+
+Bumps [amundsenfrontendlibrary](https://github.com/lyft/amundsenfrontendlibrary) from `8f11e7c` to
+  `ffea88d`. - [Release notes](https://github.com/lyft/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenfrontendlibrary/compare/8f11e7c9f47a4f5b958505483efbe0745ba139cd...ffea88dfbaa61b97ec7c443f2a9dd35bbf2e5f6f)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `9d558af` to `c17c3b7`
+  ([#899](https://github.com/zain13337/lyft-amundsen/pull/899),
+  [`b442e82`](https://github.com/zain13337/lyft-amundsen/commit/b442e82ef3971ed66cc4777c32a735aa4e2e231f))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `9d558af` to `c17c3b7`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/9d558af458c3545249daafb5b44c48fbf3746a6a...c17c3b7cb9ad62b70466c5edc152a43a863961c0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `a58f088` to `0c0d08f`
+  ([#921](https://github.com/zain13337/lyft-amundsen/pull/921),
+  [`6d4bc07`](https://github.com/zain13337/lyft-amundsen/commit/6d4bc076c51a3e4d3cd456e68e4e18159602fc57))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `a58f088` to `0c0d08f`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/a58f088ec6c6114ee23d6e9d8154df04975e683e...0c0d08fc15522a5d1e8aab32303dab4b3435dc16)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `a87354b` to `b427448`
+  ([#490](https://github.com/zain13337/lyft-amundsen/pull/490),
+  [`c7b9d00`](https://github.com/zain13337/lyft-amundsen/commit/c7b9d003d7ff94096c947dea6374ddb0d1b314c0))
+
+Bumps [amundsenfrontendlibrary](https://github.com/lyft/amundsenfrontendlibrary) from `a87354b` to
+  `b427448`. - [Release notes](https://github.com/lyft/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenfrontendlibrary/compare/a87354bda52f5151d8785f4a0d7023a51e215df2...b4274486075607743267a3238106bff927fb8738)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `b427448` to `d3dd961`
+  ([#510](https://github.com/zain13337/lyft-amundsen/pull/510),
+  [`11a8543`](https://github.com/zain13337/lyft-amundsen/commit/11a854325d3faf31b55a7944da537ae9f683a574))
+
+Bumps [amundsenfrontendlibrary](https://github.com/lyft/amundsenfrontendlibrary) from `b427448` to
+  `d3dd961`. - [Release notes](https://github.com/lyft/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenfrontendlibrary/compare/b4274486075607743267a3238106bff927fb8738...d3dd961740fd903e9b227396b1adb319a6bb6fef)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `bcb47ec` to `832aa72`
+  ([#625](https://github.com/zain13337/lyft-amundsen/pull/625),
+  [`10774ed`](https://github.com/zain13337/lyft-amundsen/commit/10774ed6625518bf35f80ccbd770c69a09ff9d4e))
+
+Bumps [amundsenfrontendlibrary](https://github.com/lyft/amundsenfrontendlibrary) from `bcb47ec` to
+  `832aa72`. - [Release notes](https://github.com/lyft/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenfrontendlibrary/compare/bcb47ec3505ff4f937d2cc3c408504bbf9b676ff...832aa72dc850a908f9adaaaf41f7e7a6d826a2a0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `c17c3b7` to `179e2b6`
+  ([#906](https://github.com/zain13337/lyft-amundsen/pull/906),
+  [`a5391db`](https://github.com/zain13337/lyft-amundsen/commit/a5391dbfa78eb9832a12a21888a6a87b4e671a1a))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `c17c3b7` to `179e2b6`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/c17c3b7cb9ad62b70466c5edc152a43a863961c0...179e2b6b03d602478a3374416278fbd61c6fe11b)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `c632102` to `32504c0`
+  ([#755](https://github.com/zain13337/lyft-amundsen/pull/755),
+  [`59901ab`](https://github.com/zain13337/lyft-amundsen/commit/59901abab89093c3551b6b57e715e485240bc43a))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `c632102` to `32504c0`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/c6321020813e17fffef33a8b9a03d307233082a4...32504c0b3b96c47c9047b2fe6c77b07f7934312e)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `c9bba88` to `dba541c`
+  ([#654](https://github.com/zain13337/lyft-amundsen/pull/654),
+  [`44731ac`](https://github.com/zain13337/lyft-amundsen/commit/44731acc256ee2502f05e62db3c4460a6ef78872))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `c9bba88` to `dba541c`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/c9bba886e74f19d71036574ee525892f1b02a768...dba541c27ae69a5a2a76e647da889dd06d23c7da)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `cb83d53` to `01c8023`
+  ([#883](https://github.com/zain13337/lyft-amundsen/pull/883),
+  [`62a136d`](https://github.com/zain13337/lyft-amundsen/commit/62a136d9c0eb2e3790904d496cfa019d66a05d95))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `cb83d53` to `01c8023`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/cb83d539eb9179d9922c98145b7ffe4e4f5db1ac...01c80230e304770aaee9cf4b7fc2e1828bc12c2b)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `ccfd2d6` to `8f11e7c`
+  ([#583](https://github.com/zain13337/lyft-amundsen/pull/583),
+  [`e5203aa`](https://github.com/zain13337/lyft-amundsen/commit/e5203aa34d1925716e425cb08782c05818f35d44))
+
+Bumps [amundsenfrontendlibrary](https://github.com/lyft/amundsenfrontendlibrary) from `ccfd2d6` to
+  `8f11e7c`. - [Release notes](https://github.com/lyft/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenfrontendlibrary/compare/ccfd2d6b82957fef347e956b243e4048c191fc0d...8f11e7c9f47a4f5b958505483efbe0745ba139cd)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `cd85092` to `1426119`
+  ([#799](https://github.com/zain13337/lyft-amundsen/pull/799),
+  [`3d92e30`](https://github.com/zain13337/lyft-amundsen/commit/3d92e3007562ebbf1d9afbfa219c916523254e93))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `cd85092` to `1426119`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/cd85092e9794936d227aeb444fc2d23322fdd9a2...14261198a3bfabcac3405923f048d1efbcf5ba96)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `d27326f` to `58ff2da`
+  ([#820](https://github.com/zain13337/lyft-amundsen/pull/820),
+  [`0d62369`](https://github.com/zain13337/lyft-amundsen/commit/0d62369adffed8ba5ca03fe080d4933bb0b431d9))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `d27326f` to `58ff2da`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/d27326fb0234e8329f0ac2dac25d1c0c48cda931...58ff2da7313d005fbfc12ac4e0db7711ed3938ad)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `d3dd961` to `f5a1c32`
+  ([#520](https://github.com/zain13337/lyft-amundsen/pull/520),
+  [`5ea64ac`](https://github.com/zain13337/lyft-amundsen/commit/5ea64ac2404498f18abc98c034e84177ea77a97a))
+
+Bumps [amundsenfrontendlibrary](https://github.com/lyft/amundsenfrontendlibrary) from `d3dd961` to
+  `f5a1c32`. - [Release notes](https://github.com/lyft/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenfrontendlibrary/compare/d3dd961740fd903e9b227396b1adb319a6bb6fef...f5a1c32a435e75312e215b0d7d8558dbae56f756)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `d6b8909` to `dbe744d`
+  ([#839](https://github.com/zain13337/lyft-amundsen/pull/839),
+  [`4fcabf1`](https://github.com/zain13337/lyft-amundsen/commit/4fcabf154f82f17dcf6008f109535dd02b348908))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `d6b8909` to `dbe744d`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/d6b8909143fca995409f765086a7e76e98b5a36a...dbe744dcf81605781b1711b2cd028e13ab872267)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `dba541c` to `3ce62cc`
+  ([#670](https://github.com/zain13337/lyft-amundsen/pull/670),
+  [`3f125b3`](https://github.com/zain13337/lyft-amundsen/commit/3f125b34426299b4159fba34b056fc742bdc5535))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `dba541c` to `3ce62cc`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/dba541c27ae69a5a2a76e647da889dd06d23c7da...3ce62cc34ca410ad90b09c34257593cb2380a534)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `dbe744d` to `524bc07`
+  ([#850](https://github.com/zain13337/lyft-amundsen/pull/850),
+  [`8f7dd5f`](https://github.com/zain13337/lyft-amundsen/commit/8f7dd5fbc3ca83024fe25e8ac222f2b9d7eabceb))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `dbe744d` to `524bc07`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/dbe744dcf81605781b1711b2cd028e13ab872267...524bc07b326b4ac1a6a6614b6bb72a53f9d2c970)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `ee0474f` to `f3e1c7a`
+  ([#708](https://github.com/zain13337/lyft-amundsen/pull/708),
+  [`6c15a14`](https://github.com/zain13337/lyft-amundsen/commit/6c15a144e8459c8031a10f04fdcf237dffe9ddd0))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `ee0474f` to `f3e1c7a`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/ee0474fdcce6c8c1b01c9032b5cd2750b1d0d92c...f3e1c7a3fcdd71651db4a9c7a805955d250395cb)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `f3e1c7a` to `1898a88`
+  ([#719](https://github.com/zain13337/lyft-amundsen/pull/719),
+  [`f31d2a1`](https://github.com/zain13337/lyft-amundsen/commit/f31d2a15eac41d697bbf740e84886166148b5ce1))
+
+Bumps [amundsenfrontendlibrary](https://github.com/amundsen-io/amundsenfrontendlibrary) from
+  `f3e1c7a` to `1898a88`. - [Release
+  notes](https://github.com/amundsen-io/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenfrontendlibrary/compare/f3e1c7a3fcdd71651db4a9c7a805955d250395cb...1898a88ed730c1381b9baae3c02d1130ac557315)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `f5a1c32` to `f6da011`
+  ([#531](https://github.com/zain13337/lyft-amundsen/pull/531),
+  [`7107337`](https://github.com/zain13337/lyft-amundsen/commit/71073371df9268238da89bac59cb4384777521a1))
+
+Bumps [amundsenfrontendlibrary](https://github.com/lyft/amundsenfrontendlibrary) from `f5a1c32` to
+  `f6da011`. - [Release notes](https://github.com/lyft/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenfrontendlibrary/compare/f5a1c32a435e75312e215b0d7d8558dbae56f756...f6da011b058cc97b86eacb0815e23acc28e17828)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `f6da011` to `89bbf5b`
+  ([#536](https://github.com/zain13337/lyft-amundsen/pull/536),
+  [`8afc092`](https://github.com/zain13337/lyft-amundsen/commit/8afc092565e8406d17927654f09b9283d4c08b62))
+
+Bumps [amundsenfrontendlibrary](https://github.com/lyft/amundsenfrontendlibrary) from `f6da011` to
+  `89bbf5b`. - [Release notes](https://github.com/lyft/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenfrontendlibrary/compare/f6da011b058cc97b86eacb0815e23acc28e17828...89bbf5b44dc23ef9d7979c59abfbc0caedd1e191)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `f7de1e8` to `ccfd2d6`
+  ([#569](https://github.com/zain13337/lyft-amundsen/pull/569),
+  [`14f4a2c`](https://github.com/zain13337/lyft-amundsen/commit/14f4a2c84ebd301dfedd49deb56a8161868585e9))
+
+Bumps [amundsenfrontendlibrary](https://github.com/lyft/amundsenfrontendlibrary) from `f7de1e8` to
+  `ccfd2d6`. - [Release notes](https://github.com/lyft/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenfrontendlibrary/compare/f7de1e81f14b0d00f2e15f48339f3640a54b0c22...ccfd2d6b82957fef347e956b243e4048c191fc0d)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenfrontendlibrary from `ffea88d` to `bcb47ec`
+  ([#602](https://github.com/zain13337/lyft-amundsen/pull/602),
+  [`9e6a1d9`](https://github.com/zain13337/lyft-amundsen/commit/9e6a1d9a700c549249e47d980ed80ceb9113d2f3))
+
+Bumps [amundsenfrontendlibrary](https://github.com/lyft/amundsenfrontendlibrary) from `ffea88d` to
+  `bcb47ec`. - [Release notes](https://github.com/lyft/amundsenfrontendlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenfrontendlibrary/compare/ffea88dfbaa61b97ec7c443f2a9dd35bbf2e5f6f...bcb47ec3505ff4f937d2cc3c408504bbf9b676ff)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsengremlin from `51e2c60` to `e4f3eb6`
+  ([#993](https://github.com/zain13337/lyft-amundsen/pull/993),
+  [`b558abe`](https://github.com/zain13337/lyft-amundsen/commit/b558abebeae18a1e6dc21bd5abb99a88e7c529c8))
+
+Bumps [amundsengremlin](https://github.com/amundsen-io/amundsengremlin) from `51e2c60` to `e4f3eb6`.
+  - [Release notes](https://github.com/amundsen-io/amundsengremlin/releases) -
+  [Commits](https://github.com/amundsen-io/amundsengremlin/compare/51e2c6015f2a6b2a6b03cf593ed593c5a5ae84c0...e4f3eb6bcb611162d5ecc9410354735f00078480)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsengremlin from `613bdc7` to `9ae5a5b`
+  ([#894](https://github.com/zain13337/lyft-amundsen/pull/894),
+  [`8d09dd7`](https://github.com/zain13337/lyft-amundsen/commit/8d09dd75e356fa864569cf7062178978acd072d9))
+
+Bumps [amundsengremlin](https://github.com/amundsen-io/amundsengremlin) from `613bdc7` to `9ae5a5b`.
+  - [Release notes](https://github.com/amundsen-io/amundsengremlin/releases) -
+  [Commits](https://github.com/amundsen-io/amundsengremlin/compare/613bdc7319f9617a9db2c197b8a9c911926770bb...9ae5a5bfd5bcb1705eceecdb1bd606ec13d037c4)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsengremlin from `cc7e9b2` to `613bdc7`
+  ([#797](https://github.com/zain13337/lyft-amundsen/pull/797),
+  [`79ffda3`](https://github.com/zain13337/lyft-amundsen/commit/79ffda3405b80c5a8e6909d88d3e36b00b28d54b))
+
+Bumps [amundsengremlin](https://github.com/amundsen-io/amundsengremlin) from `cc7e9b2` to `613bdc7`.
+  - [Release notes](https://github.com/amundsen-io/amundsengremlin/releases) -
+  [Commits](https://github.com/amundsen-io/amundsengremlin/compare/cc7e9b2005425acbec5350c5627a43698d624805...613bdc7319f9617a9db2c197b8a9c911926770bb)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadata to 3.3.0 ([#951](https://github.com/zain13337/lyft-amundsen/pull/951),
+  [`be5226d`](https://github.com/zain13337/lyft-amundsen/commit/be5226daf163c3b66e8ee57aff03d8d3a1d8c65b))
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+- Bump amundsenmetadatalibrary from `012f9ab` to `a765424`
+  ([#933](https://github.com/zain13337/lyft-amundsen/pull/933),
+  [`4300678`](https://github.com/zain13337/lyft-amundsen/commit/430067897261ea355c5ef7c66727f2b9a934a901))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `012f9ab` to `a765424`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/012f9abd245600007da002a693d7d3c5ea85f837...a765424aa13c71afdb04f7457f30d8a8977974a2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `1880cec` to `012f9ab`
+  ([#923](https://github.com/zain13337/lyft-amundsen/pull/923),
+  [`ffda8e5`](https://github.com/zain13337/lyft-amundsen/commit/ffda8e5a690ffa288de6b55485eb0cf99bd72f38))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `1880cec` to `012f9ab`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/1880cec3bf0ed4b889c5fe3b61633228063cdfad...012f9abd245600007da002a693d7d3c5ea85f837)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `19e1bf8` to `6a81b97`
+  ([#721](https://github.com/zain13337/lyft-amundsen/pull/721),
+  [`21702b3`](https://github.com/zain13337/lyft-amundsen/commit/21702b358943188936e5c77afc94713623e57670))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `19e1bf8` to `6a81b97`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/19e1bf8e5c9581ab4b6947f37b7584bac8f2ccf1...6a81b974f2715429748f86bdb3459b1c91dfedfb)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `1e2e3c8` to `1880cec`
+  ([#905](https://github.com/zain13337/lyft-amundsen/pull/905),
+  [`c1b4829`](https://github.com/zain13337/lyft-amundsen/commit/c1b4829e00bcece613260ce1790ed9150c688da9))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `1e2e3c8` to `1880cec`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/1e2e3c8b50a8f83489d441316ff5491e5cb73934...1880cec3bf0ed4b889c5fe3b61633228063cdfad)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `2336439` to `c7b0e7a`
+  ([#992](https://github.com/zain13337/lyft-amundsen/pull/992),
+  [`a0d7dc8`](https://github.com/zain13337/lyft-amundsen/commit/a0d7dc8769c213376a86bace8515dd42df080ddc))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `2336439` to `c7b0e7a`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/2336439c112e371f2dbb442ba5ae34b91d0eda1b...c7b0e7a3d489c02a8feed7a5ba8b8b19e07e9c22)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `2752492` to `cf1ab6d`
+  ([#655](https://github.com/zain13337/lyft-amundsen/pull/655),
+  [`457f677`](https://github.com/zain13337/lyft-amundsen/commit/457f677be80a855cbda6271a17f8f8663d4a3ff1))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `2752492` to `cf1ab6d`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/2752492e71d6f5e134cdf55c4b55e67254409a88...cf1ab6d179c70c0f43156cc499332c465226cb45)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `2b94d46` to `681893f`
+  ([#957](https://github.com/zain13337/lyft-amundsen/pull/957),
+  [`a7a5e41`](https://github.com/zain13337/lyft-amundsen/commit/a7a5e417aafcd03ffc13bcdaa74704c19331d83a))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `2b94d46` to `681893f`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/2b94d462e5e927f32dc69997d133cdd0b333d3b3...681893fb47ebcfc61ed4736f535618fddb6c4631)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `3a96f7f` to `5680775`
+  ([#825](https://github.com/zain13337/lyft-amundsen/pull/825),
+  [`2cc77dd`](https://github.com/zain13337/lyft-amundsen/commit/2cc77dd67376519cc1cde7ca336bdf06086bf41b))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `3a96f7f` to `5680775`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/3a96f7f3005a57d1c7c4af50c8cbc9d397209e11...56807753963735eaf1556dae199e0da82b4ebb71)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `3c9a55e` to `ef7bcf0`
+  ([#801](https://github.com/zain13337/lyft-amundsen/pull/801),
+  [`629ad48`](https://github.com/zain13337/lyft-amundsen/commit/629ad482bc8595e886672ac81807612e96301906))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `3c9a55e` to `ef7bcf0`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/3c9a55e6af4cac9b342803c34cfe81851470e7f5...ef7bcf0aa8b601a5db9f250728d3eb995e506b5e)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `3f4cb7c` to `5a8c117`
+  ([#555](https://github.com/zain13337/lyft-amundsen/pull/555),
+  [`b22ca5c`](https://github.com/zain13337/lyft-amundsen/commit/b22ca5cb56d190bbac68007b7812732429f504cc))
+
+Bumps [amundsenmetadatalibrary](https://github.com/lyft/amundsenmetadatalibrary) from `3f4cb7c` to
+  `5a8c117`. - [Release notes](https://github.com/lyft/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenmetadatalibrary/compare/3f4cb7cad75e6477e8717b5a743b736ddceeb7bd...5a8c1170358cbfb56b7d9341c4c519815e3cbdbb)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `48dfa05` to `6178a03`
+  ([#582](https://github.com/zain13337/lyft-amundsen/pull/582),
+  [`e17ceb0`](https://github.com/zain13337/lyft-amundsen/commit/e17ceb0c5e2da109187de0a2dfa2add763d24d1c))
+
+Bumps [amundsenmetadatalibrary](https://github.com/lyft/amundsenmetadatalibrary) from `48dfa05` to
+  `6178a03`. - [Release notes](https://github.com/lyft/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenmetadatalibrary/compare/48dfa0550d7e90e09a689ecda85d997dc28b8af2...6178a03c3d46eac412578b8ccf3de6a27450e74c)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `5680775` to `a7b2ec5`
+  ([#849](https://github.com/zain13337/lyft-amundsen/pull/849),
+  [`cd3bc79`](https://github.com/zain13337/lyft-amundsen/commit/cd3bc790262a3b67ddbec643679d35c73a180ef0))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `5680775` to `a7b2ec5`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/56807753963735eaf1556dae199e0da82b4ebb71...a7b2ec543470157361767e705f945beed4b32bac)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `5a8c117` to `48dfa05`
+  ([#571](https://github.com/zain13337/lyft-amundsen/pull/571),
+  [`da17ed1`](https://github.com/zain13337/lyft-amundsen/commit/da17ed19294e4077935e1bfc99e14f83f34f0de5))
+
+Bumps [amundsenmetadatalibrary](https://github.com/lyft/amundsenmetadatalibrary) from `5a8c117` to
+  `48dfa05`. - [Release notes](https://github.com/lyft/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenmetadatalibrary/compare/5a8c1170358cbfb56b7d9341c4c519815e3cbdbb...48dfa0550d7e90e09a689ecda85d997dc28b8af2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `5f1d056` to `3f4cb7c`
+  ([#532](https://github.com/zain13337/lyft-amundsen/pull/532),
+  [`82a827f`](https://github.com/zain13337/lyft-amundsen/commit/82a827f9a58c5f619a90aab02e28384a484b95ee))
+
+Bumps [amundsenmetadatalibrary](https://github.com/lyft/amundsenmetadatalibrary) from `5f1d056` to
+  `3f4cb7c`. - [Release notes](https://github.com/lyft/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenmetadatalibrary/compare/5f1d0568e9aa646a44a27b7e948a94c17f14d747...3f4cb7cad75e6477e8717b5a743b736ddceeb7bd)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `60290f6` to `2752492`
+  ([#636](https://github.com/zain13337/lyft-amundsen/pull/636),
+  [`573479a`](https://github.com/zain13337/lyft-amundsen/commit/573479a4c4a491cebff6360b32bcbc1437890b6e))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `60290f6` to `2752492`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/60290f62b522befb127704168f776c24f07fc6e7...2752492e71d6f5e134cdf55c4b55e67254409a88)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `6178a03` to `ce86f20`
+  ([#604](https://github.com/zain13337/lyft-amundsen/pull/604),
+  [`df442d6`](https://github.com/zain13337/lyft-amundsen/commit/df442d603b1251add55b8358b339ade6ddaf0be7))
+
+Bumps [amundsenmetadatalibrary](https://github.com/lyft/amundsenmetadatalibrary) from `6178a03` to
+  `ce86f20`. - [Release notes](https://github.com/lyft/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenmetadatalibrary/compare/6178a03c3d46eac412578b8ccf3de6a27450e74c...ce86f2052f02a8d8bc4fa9b5e323c79c6f7ddeb9)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `681893f` to `ee0ac63`
+  ([#966](https://github.com/zain13337/lyft-amundsen/pull/966),
+  [`130d543`](https://github.com/zain13337/lyft-amundsen/commit/130d5433a415cf05cd0a8985b84b387e69fd3264))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `681893f` to `ee0ac63`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/681893fb47ebcfc61ed4736f535618fddb6c4631...ee0ac63194a4286715cd32c34042443c979f4cea)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `6a81b97` to `84280b7`
+  ([#750](https://github.com/zain13337/lyft-amundsen/pull/750),
+  [`8d40d14`](https://github.com/zain13337/lyft-amundsen/commit/8d40d1456df1393a563f373c19de1a97d864a071))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `6a81b97` to `84280b7`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/6a81b974f2715429748f86bdb3459b1c91dfedfb...84280b7dfc0f02873c6bbbafef6767bd84a72d5a)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `7b97f62` to `3c9a55e`
+  ([#765](https://github.com/zain13337/lyft-amundsen/pull/765),
+  [`7eaf02e`](https://github.com/zain13337/lyft-amundsen/commit/7eaf02e841de298fa29f505a7cccbea933a53561))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `7b97f62` to `3c9a55e`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/7b97f62cc2ef0279d3b292991a952e7b103dfc92...3c9a55e6af4cac9b342803c34cfe81851470e7f5)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `7e63c1d` to `1e2e3c8`
+  ([#897](https://github.com/zain13337/lyft-amundsen/pull/897),
+  [`6b54194`](https://github.com/zain13337/lyft-amundsen/commit/6b541942d71fb8bac5555d8cf4e732a26143bffe))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `7e63c1d` to `1e2e3c8`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/7e63c1dc6e1d23f99c00f1ad4b17ab7419d48bbe...1e2e3c8b50a8f83489d441316ff5491e5cb73934)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `84280b7` to `7b97f62`
+  ([#757](https://github.com/zain13337/lyft-amundsen/pull/757),
+  [`d968a4e`](https://github.com/zain13337/lyft-amundsen/commit/d968a4e02317a79bd05c7f7e0882a283e3386ed6))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `84280b7` to `7b97f62`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/84280b7dfc0f02873c6bbbafef6767bd84a72d5a...7b97f62cc2ef0279d3b292991a952e7b103dfc92)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `a2272af` to `f51001f`
+  ([#477](https://github.com/zain13337/lyft-amundsen/pull/477),
+  [`8f11b50`](https://github.com/zain13337/lyft-amundsen/commit/8f11b50a56f2ea402beaeaa7f30184de4c8f8097))
+
+Bumps [amundsenmetadatalibrary](https://github.com/lyft/amundsenmetadatalibrary) from `a2272af` to
+  `f51001f`. - [Release notes](https://github.com/lyft/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenmetadatalibrary/compare/a2272af78ef1059dd91ddf6837dc9ba64ed01edd...f51001f005422a5e1bf1424fba357afb03da859c)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `a680282` to `19e1bf8`
+  ([#707](https://github.com/zain13337/lyft-amundsen/pull/707),
+  [`ba8f6fd`](https://github.com/zain13337/lyft-amundsen/commit/ba8f6fdaad8ff7b525c3eaf852e3e0ad765dbbc1))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `a680282` to `19e1bf8`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/a6802825191d722037ca56793b6f1d4670879d42...19e1bf8e5c9581ab4b6947f37b7584bac8f2ccf1)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `a7b2ec5` to `c7dc172`
+  ([#872](https://github.com/zain13337/lyft-amundsen/pull/872),
+  [`bb6fc9c`](https://github.com/zain13337/lyft-amundsen/commit/bb6fc9cefa950056c184c0dc1b6846f45ee2e725))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `a7b2ec5` to `c7dc172`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/a7b2ec543470157361767e705f945beed4b32bac...c7dc172b2b8c3b8ff4d7f145e5564474a3cb8dd8)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `c7dc172` to `7e63c1d`
+  ([#884](https://github.com/zain13337/lyft-amundsen/pull/884),
+  [`d7c8150`](https://github.com/zain13337/lyft-amundsen/commit/d7c815037c6a5e23b0f5e96b553e8f57f892bfa6))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `c7dc172` to `7e63c1d`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/c7dc172b2b8c3b8ff4d7f145e5564474a3cb8dd8...7e63c1dc6e1d23f99c00f1ad4b17ab7419d48bbe)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `ce86f20` to `60290f6`
+  ([#624](https://github.com/zain13337/lyft-amundsen/pull/624),
+  [`223b270`](https://github.com/zain13337/lyft-amundsen/commit/223b27036185974784846f1bdb2fae66df9ee606))
+
+Bumps [amundsenmetadatalibrary](https://github.com/lyft/amundsenmetadatalibrary) from `ce86f20` to
+  `60290f6`. - [Release notes](https://github.com/lyft/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenmetadatalibrary/compare/ce86f2052f02a8d8bc4fa9b5e323c79c6f7ddeb9...60290f62b522befb127704168f776c24f07fc6e7)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `cf1ab6d` to `e94419f`
+  ([#666](https://github.com/zain13337/lyft-amundsen/pull/666),
+  [`f3a5783`](https://github.com/zain13337/lyft-amundsen/commit/f3a578340c7ab2841acd9ce864dbb074032a235d))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Bump amundsenmetadatalibrary from `df756a7` to `5f1d056`
+  ([#509](https://github.com/zain13337/lyft-amundsen/pull/509),
+  [`a80827c`](https://github.com/zain13337/lyft-amundsen/commit/a80827cafb6359c9f802ac687eed9732964c8096))
+
+Bumps [amundsenmetadatalibrary](https://github.com/lyft/amundsenmetadatalibrary) from `df756a7` to
+  `5f1d056`. - [Release notes](https://github.com/lyft/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenmetadatalibrary/compare/df756a7110969fb4e6706589921813a1f602afee...5f1d0568e9aa646a44a27b7e948a94c17f14d747)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `e94419f` to `a680282`
+  ([#681](https://github.com/zain13337/lyft-amundsen/pull/681),
+  [`feb9035`](https://github.com/zain13337/lyft-amundsen/commit/feb90355364d93a84cdc3a241fdf820674545caf))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `e94419f` to `a680282`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/e94419fe094c30716e40cfc5d9ee8acfd797093a...a6802825191d722037ca56793b6f1d4670879d42)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `ee0ac63` to `2336439`
+  ([#978](https://github.com/zain13337/lyft-amundsen/pull/978),
+  [`c3713fb`](https://github.com/zain13337/lyft-amundsen/commit/c3713fb5693228c43e95446a5cbc31f278c7a245))
+
+Bumps [amundsenmetadatalibrary](https://github.com/amundsen-io/amundsenmetadatalibrary) from
+  `ee0ac63` to `2336439`. - [Release
+  notes](https://github.com/amundsen-io/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenmetadatalibrary/compare/ee0ac63194a4286715cd32c34042443c979f4cea...2336439c112e371f2dbb442ba5ae34b91d0eda1b)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenmetadatalibrary from `f51001f` to `df756a7`
+  ([#493](https://github.com/zain13337/lyft-amundsen/pull/493),
+  [`91ad547`](https://github.com/zain13337/lyft-amundsen/commit/91ad54703624b9e2bd342a97d0726a91dbcf9d74))
+
+Bumps [amundsenmetadatalibrary](https://github.com/lyft/amundsenmetadatalibrary) from `f51001f` to
+  `df756a7`. - [Release notes](https://github.com/lyft/amundsenmetadatalibrary/releases) -
+  [Commits](https://github.com/lyft/amundsenmetadatalibrary/compare/f51001f005422a5e1bf1424fba357afb03da859c...df756a7110969fb4e6706589921813a1f602afee)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenrds from `18adfe8` to `589be11`
+  ([#995](https://github.com/zain13337/lyft-amundsen/pull/995),
+  [`5ab688c`](https://github.com/zain13337/lyft-amundsen/commit/5ab688ca38fb86d96d520a284f08436650205d73))
+
+Bumps [amundsenrds](https://github.com/amundsen-io/amundsenrds) from `18adfe8` to `589be11`. -
+  [Release notes](https://github.com/amundsen-io/amundsenrds/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenrds/compare/18adfe8ff350806b14e972b3ca10feab9c471f03...589be110895b149eb3cdb83e86df3058337e5763)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenrds from `2304c79` to `86437a7`
+  ([#949](https://github.com/zain13337/lyft-amundsen/pull/949),
+  [`003ab3d`](https://github.com/zain13337/lyft-amundsen/commit/003ab3d8fe3c42c0587b560c41519a0ea459142e))
+
+Bumps [amundsenrds](https://github.com/amundsen-io/amundsenrds) from `2304c79` to `86437a7`. -
+  [Release notes](https://github.com/amundsen-io/amundsenrds/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenrds/compare/2304c79066627651747e334fb3a2742ff74875c3...86437a7fce08523b691d6903026e6a85deafa921)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenrds from `86437a7` to `18adfe8`
+  ([#967](https://github.com/zain13337/lyft-amundsen/pull/967),
+  [`f2ca448`](https://github.com/zain13337/lyft-amundsen/commit/f2ca448621e442b0fe1fd880e3f44865077ad5ba))
+
+Bumps [amundsenrds](https://github.com/amundsen-io/amundsenrds) from `86437a7` to `18adfe8`. -
+  [Release notes](https://github.com/amundsen-io/amundsenrds/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenrds/compare/86437a7fce08523b691d6903026e6a85deafa921...18adfe8ff350806b14e972b3ca10feab9c471f03)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsenrds from `d21da32` to `d2d6072`
+  ([#915](https://github.com/zain13337/lyft-amundsen/pull/915),
+  [`43056cb`](https://github.com/zain13337/lyft-amundsen/commit/43056cb42b84a0c5a59a717ea1049321b58138ee))
+
+Bumps [amundsenrds](https://github.com/amundsen-io/amundsenrds) from `d21da32` to `d2d6072`. -
+  [Release notes](https://github.com/amundsen-io/amundsenrds/releases) -
+  [Commits](https://github.com/amundsen-io/amundsenrds/compare/d21da3207605e8a0cccc1da874c7b1915efb12d9...d2d607295d80fad8cbbdcdc16cf8341c8c525b61)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `08a9b75` to `431d6cd`
+  ([#626](https://github.com/zain13337/lyft-amundsen/pull/626),
+  [`c2d4d60`](https://github.com/zain13337/lyft-amundsen/commit/c2d4d609557983f55402eea4a2775df94fa08e41))
+
+Bumps [amundsensearchlibrary](https://github.com/lyft/amundsensearchlibrary) from `08a9b75` to
+  `431d6cd`. - [Release notes](https://github.com/lyft/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsensearchlibrary/compare/08a9b758afc56ef3550683a58ee28eb09550d693...431d6cd28ef608fa1b599905d587c7e88147af4f)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `1af021b` to `9961fde`
+  ([#479](https://github.com/zain13337/lyft-amundsen/pull/479),
+  [`414528b`](https://github.com/zain13337/lyft-amundsen/commit/414528b7374e5de874838a5b8f5a1301205c6ac2))
+
+Bumps [amundsensearchlibrary](https://github.com/lyft/amundsensearchlibrary) from `1af021b` to
+  `9961fde`. - [Release notes](https://github.com/lyft/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsensearchlibrary/compare/1af021bc90a553212c62e7b3f380035900284692...9961fdef30f5bcd467f05df65d4ac7f40130ef1e)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `1c95ff4` to `e61bea5`
+  ([#682](https://github.com/zain13337/lyft-amundsen/pull/682),
+  [`d9c44fe`](https://github.com/zain13337/lyft-amundsen/commit/d9c44feed1d77f120fe570dbb4b8f7f4736062dc))
+
+Bumps [amundsensearchlibrary](https://github.com/amundsen-io/amundsensearchlibrary) from `1c95ff4`
+  to `e61bea5`. - [Release notes](https://github.com/amundsen-io/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsensearchlibrary/compare/1c95ff4362dac5d3674c735244855186cf7fa744...e61bea51b9df26b382ad8d745861ba05bfbadf65)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `26548a0` to `d9817e5`
+  ([#914](https://github.com/zain13337/lyft-amundsen/pull/914),
+  [`62a35bc`](https://github.com/zain13337/lyft-amundsen/commit/62a35bc95097aaadbf53c139ba3697c65483b056))
+
+Bumps [amundsensearchlibrary](https://github.com/amundsen-io/amundsensearchlibrary) from `26548a0`
+  to `d9817e5`. - [Release notes](https://github.com/amundsen-io/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsensearchlibrary/compare/26548a027ba2e0f4d43106d7163f15fe8df653df...d9817e5a7372f5a2609d55ede74fb6684b229090)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `3d922df` to `fc4503f`
+  ([#800](https://github.com/zain13337/lyft-amundsen/pull/800),
+  [`5ae12d3`](https://github.com/zain13337/lyft-amundsen/commit/5ae12d331cc8fed99075b435f44f32aa4722a377))
+
+Bumps [amundsensearchlibrary](https://github.com/amundsen-io/amundsensearchlibrary) from `3d922df`
+  to `fc4503f`. - [Release notes](https://github.com/amundsen-io/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsensearchlibrary/compare/3d922dfd29eb04fd5ba505995b279dea90e52713...fc4503f92faece804c7ad49a0875a85d209cd75b)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `431d6cd` to `5eb3c20`
+  ([#653](https://github.com/zain13337/lyft-amundsen/pull/653),
+  [`f837bf7`](https://github.com/zain13337/lyft-amundsen/commit/f837bf7f3f2e56a92be33d6d77be3e7a216c5ce5))
+
+Bumps [amundsensearchlibrary](https://github.com/amundsen-io/amundsensearchlibrary) from `431d6cd`
+  to `5eb3c20`. - [Release notes](https://github.com/amundsen-io/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsensearchlibrary/compare/431d6cd28ef608fa1b599905d587c7e88147af4f...5eb3c20c3d98e0563a00dcf632e42baa7ee81c15)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `53634fa` to `26548a0`
+  ([#903](https://github.com/zain13337/lyft-amundsen/pull/903),
+  [`9995c31`](https://github.com/zain13337/lyft-amundsen/commit/9995c3103b433fa8761809dd79af27c7dbaf1720))
+
+Bumps [amundsensearchlibrary](https://github.com/amundsen-io/amundsensearchlibrary) from `53634fa`
+  to `26548a0`. - [Release notes](https://github.com/amundsen-io/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsensearchlibrary/compare/53634fa355bee468341d391b2fd5291b4991fc38...26548a027ba2e0f4d43106d7163f15fe8df653df)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `5eb3c20` to `1c95ff4`
+  ([#668](https://github.com/zain13337/lyft-amundsen/pull/668),
+  [`d642269`](https://github.com/zain13337/lyft-amundsen/commit/d642269676cb58058326f0925834cef602197ae9))
+
+Bumps [amundsensearchlibrary](https://github.com/amundsen-io/amundsensearchlibrary) from `5eb3c20`
+  to `1c95ff4`. - [Release notes](https://github.com/amundsen-io/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsensearchlibrary/compare/5eb3c20c3d98e0563a00dcf632e42baa7ee81c15...1c95ff4362dac5d3674c735244855186cf7fa744)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `6ae8194` to `08a9b75`
+  ([#572](https://github.com/zain13337/lyft-amundsen/pull/572),
+  [`ae3af91`](https://github.com/zain13337/lyft-amundsen/commit/ae3af91009295e017ccc3a09faec64e74bf3f093))
+
+Bumps [amundsensearchlibrary](https://github.com/lyft/amundsensearchlibrary) from `6ae8194` to
+  `08a9b75`. - [Release notes](https://github.com/lyft/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsensearchlibrary/compare/6ae8194f9344e792c884b2763723de0f83199d81...08a9b758afc56ef3550683a58ee28eb09550d693)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `9961fde` to `e02a563`
+  ([#492](https://github.com/zain13337/lyft-amundsen/pull/492),
+  [`ba558c6`](https://github.com/zain13337/lyft-amundsen/commit/ba558c6ed7f44524deb3ff03f68a0ce5713ba6a8))
+
+Bumps [amundsensearchlibrary](https://github.com/lyft/amundsensearchlibrary) from `9961fde` to
+  `e02a563`. - [Release notes](https://github.com/lyft/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsensearchlibrary/compare/9961fdef30f5bcd467f05df65d4ac7f40130ef1e...e02a563c5b8b1d03fc30c4e92706e651a2a32c07)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `a56bea6` to `ca57770`
+  ([#521](https://github.com/zain13337/lyft-amundsen/pull/521),
+  [`bca4f9a`](https://github.com/zain13337/lyft-amundsen/commit/bca4f9a0fc945242637cb2b749921e27b0dd04b4))
+
+Bumps [amundsensearchlibrary](https://github.com/lyft/amundsensearchlibrary) from `a56bea6` to
+  `ca57770`. - [Release notes](https://github.com/lyft/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsensearchlibrary/compare/a56bea64b39a32416216f3a53290f5260dfe5e49...ca57770d82f7956339376655aaae736870671a66)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `af5d4a3` to `c14b263`
+  ([#975](https://github.com/zain13337/lyft-amundsen/pull/975),
+  [`4e14b2a`](https://github.com/zain13337/lyft-amundsen/commit/4e14b2aa588ebb095a3e64664346840c044a4cea))
+
+Bumps [amundsensearchlibrary](https://github.com/amundsen-io/amundsensearchlibrary) from `af5d4a3`
+  to `c14b263`. - [Release notes](https://github.com/amundsen-io/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsensearchlibrary/compare/af5d4a34ec0925c9a6a6ea4551ca0d08a19d5eec...c14b26391a2c7e9168810af0aea808e8f19fccc8)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `bba6434` to `3d922df`
+  ([#764](https://github.com/zain13337/lyft-amundsen/pull/764),
+  [`3bd01a3`](https://github.com/zain13337/lyft-amundsen/commit/3bd01a3d51d5f3db7df192b3e290c283d183a9fd))
+
+Bumps [amundsensearchlibrary](https://github.com/amundsen-io/amundsensearchlibrary) from `bba6434`
+  to `3d922df`. - [Release notes](https://github.com/amundsen-io/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsensearchlibrary/compare/bba643483fc340285795d31600e938f9ec21ad88...3d922dfd29eb04fd5ba505995b279dea90e52713)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `ca57770` to `6ae8194`
+  ([#554](https://github.com/zain13337/lyft-amundsen/pull/554),
+  [`68d679b`](https://github.com/zain13337/lyft-amundsen/commit/68d679b3df6ff39080787340037cc1c1f007f0f4))
+
+Bumps [amundsensearchlibrary](https://github.com/lyft/amundsensearchlibrary) from `ca57770` to
+  `6ae8194`. - [Release notes](https://github.com/lyft/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsensearchlibrary/compare/ca57770d82f7956339376655aaae736870671a66...6ae8194f9344e792c884b2763723de0f83199d81)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `d9817e5` to `af5d4a3`
+  ([#968](https://github.com/zain13337/lyft-amundsen/pull/968),
+  [`26cbfe6`](https://github.com/zain13337/lyft-amundsen/commit/26cbfe698ada2b0e1d2bfcd5c8e59c1f4e111a13))
+
+Bumps [amundsensearchlibrary](https://github.com/amundsen-io/amundsensearchlibrary) from `d9817e5`
+  to `af5d4a3`. - [Release notes](https://github.com/amundsen-io/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsensearchlibrary/compare/d9817e5a7372f5a2609d55ede74fb6684b229090...af5d4a34ec0925c9a6a6ea4551ca0d08a19d5eec)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `e02a563` to `a56bea6`
+  ([#511](https://github.com/zain13337/lyft-amundsen/pull/511),
+  [`51bf129`](https://github.com/zain13337/lyft-amundsen/commit/51bf1291179ac0a1980bc3a32865f814b15de4f8))
+
+Bumps [amundsensearchlibrary](https://github.com/lyft/amundsensearchlibrary) from `e02a563` to
+  `a56bea6`. - [Release notes](https://github.com/lyft/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/lyft/amundsensearchlibrary/compare/e02a563c5b8b1d03fc30c4e92706e651a2a32c07...a56bea64b39a32416216f3a53290f5260dfe5e49)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `e61bea5` to `bba6434`
+  ([#748](https://github.com/zain13337/lyft-amundsen/pull/748),
+  [`0ad863d`](https://github.com/zain13337/lyft-amundsen/commit/0ad863d14f14d83ca6ee6099bb3a21fbe4ee2afc))
+
+Bumps [amundsensearchlibrary](https://github.com/amundsen-io/amundsensearchlibrary) from `e61bea5`
+  to `bba6434`. - [Release notes](https://github.com/amundsen-io/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsensearchlibrary/compare/e61bea51b9df26b382ad8d745861ba05bfbadf65...bba643483fc340285795d31600e938f9ec21ad88)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump amundsensearchlibrary from `fc4503f` to `53634fa`
+  ([#898](https://github.com/zain13337/lyft-amundsen/pull/898),
+  [`2fdf855`](https://github.com/zain13337/lyft-amundsen/commit/2fdf8551515d1af9193ecfb54ef945d1f04dbd89))
+
+Bumps [amundsensearchlibrary](https://github.com/amundsen-io/amundsensearchlibrary) from `fc4503f`
+  to `53634fa`. - [Release notes](https://github.com/amundsen-io/amundsensearchlibrary/releases) -
+  [Commits](https://github.com/amundsen-io/amundsensearchlibrary/compare/fc4503f92faece804c7ad49a0875a85d209cd75b...53634fa355bee468341d391b2fd5291b4991fc38)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- Bump common in databuilder ([#1266](https://github.com/zain13337/lyft-amundsen/pull/1266),
+  [`319f798`](https://github.com/zain13337/lyft-amundsen/commit/319f79869a41c75acfbb93400287b955ecd081fc))
+
+* bump common in databuilder
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+* typo
+
+- Bump common version in requirements-common.txt #1727
+  ([`3a3b530`](https://github.com/zain13337/lyft-amundsen/commit/3a3b5301fb95018314b2edea3ddb021a58a2d23c))
+
+Signed-off-by: Mariusz Górski <gorskimariusz13@gmail.com>
+
+- Bump databuilder to 6.7.5 ([#1829](https://github.com/zain13337/lyft-amundsen/pull/1829),
+  [`242c8db`](https://github.com/zain13337/lyft-amundsen/commit/242c8db656360d19c7a935fd48f3e31f47630a5c))
+
+* fix: issue with neo4j query for ES data
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* fixed multiple columns because of user match bug, and fixed uppercase fields breaking filters
+  issue
+
+* chore: bump databuilder to 6.7.5
+
+- Bump databuilder version to 5.2.5 ([#1394](https://github.com/zain13337/lyft-amundsen/pull/1394),
+  [`45f7710`](https://github.com/zain13337/lyft-amundsen/commit/45f77100cd13c4faa4f922e1daf5e2e92fd23434))
+
+Signed-off-by: Parth Upadhyay <parth.upadhyay@gmail.com>
+
+- Bump databuilder version to 5.2.6 ([#1395](https://github.com/zain13337/lyft-amundsen/pull/1395),
+  [`b6302d6`](https://github.com/zain13337/lyft-amundsen/commit/b6302d626324a45fc68775b3b377f7cb8537d67b))
+
+Signed-off-by: Parth Upadhyay <parth.upadhyay@gmail.com>
+
+- Bump databuilder version to 6.1.0 ([#1495](https://github.com/zain13337/lyft-amundsen/pull/1495),
+  [`a1ddce3`](https://github.com/zain13337/lyft-amundsen/commit/a1ddce3ba2e8d073d4a0edcee77c075e4aae2dfa))
+
+Signed-off-by: MrwanBaghdad <marwan.nabil@deliveryhero.com>
+
+- Bump flaskoidc
+  ([`64d457d`](https://github.com/zain13337/lyft-amundsen/commit/64d457d2e30132e1ff25db9215f42bcda08c9895))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Bump frontend image in helm chart ([#1336](https://github.com/zain13337/lyft-amundsen/pull/1336),
+  [`dba9850`](https://github.com/zain13337/lyft-amundsen/commit/dba98502bd6134f50d131c231f0ce63a0a026fa1))
+
+A new frontend build was released:
+  https://hub.docker.com/layers/amundsendev/amundsen-frontend/3.11.1/images/sha256-5211d896cf9ebdc07288cb91008cf4ffa1df1d417d3fa5b1c6e13b883a09be36?context=explore.
+  Bump the helm chart frontend image tag.
+
+Signed-off-by: jroof88 <jack.roof@samsara.com>
+
+- Bump lib deps to fix security alert ([#277](https://github.com/zain13337/lyft-amundsen/pull/277),
+  [`7916237`](https://github.com/zain13337/lyft-amundsen/commit/7916237022e6f2da3061a2e11d83387da28fa5f0))
+
+- Bump marshmallow to 3 ([#192](https://github.com/zain13337/lyft-amundsen/pull/192),
+  [`991e49a`](https://github.com/zain13337/lyft-amundsen/commit/991e49a6d943a7485b1d9c09702397c4be89cc13))
+
+chore: bump marshmallow to 3 (#192)
+
+- Bump Neo4j version from 3.3 to 3.5 ([#953](https://github.com/zain13337/lyft-amundsen/pull/953),
+  [`d3f9b3c`](https://github.com/zain13337/lyft-amundsen/commit/d3f9b3cde21cfdc13df1392fac0dcf5a35c854f3))
+
+* chore: Bump Neo4j version from 3.3 to 3.5
+
+Signed-off-by: Madison Swain-Bowden <madison.bowden@ookla.com>
+
+* Fix neo4j config, include Neo4j upgrade in ECS compose script
+
+- Bump release versions for search and frontend
+  ([#1862](https://github.com/zain13337/lyft-amundsen/pull/1862),
+  [`e13ae29`](https://github.com/zain13337/lyft-amundsen/commit/e13ae29cb7045337cafa80cf3fbab332d0b0612c))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Bump up amundsen_common to 0.13.0 ([#1183](https://github.com/zain13337/lyft-amundsen/pull/1183),
+  [`fc049ec`](https://github.com/zain13337/lyft-amundsen/commit/fc049ec00dab7c3b34d7411cfa56e94770a50db7))
+
+Signed-off-by: dechoma <dominik.choma@gmail.com>
+
+- Bump version ([#63](https://github.com/zain13337/lyft-amundsen/pull/63),
+  [`04b60cf`](https://github.com/zain13337/lyft-amundsen/commit/04b60cfa82bf2230e8908c54bdb639956354ecfc))
+
+* removed table_type field from badge
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* bomped version
+
+- Bump version for pypi release. ([#596](https://github.com/zain13337/lyft-amundsen/pull/596),
+  [`a5bdd33`](https://github.com/zain13337/lyft-amundsen/commit/a5bdd331cc0c1ca15716cec58034148f107081d8))
+
+* Bump version for test release
+
+Signed-off-by: Tamika Tannis <ttannis@lyft.com>
+
+* Bump version for real release
+
+- Bump version from 3.0.0 -> 3.1.0 ([#801](https://github.com/zain13337/lyft-amundsen/pull/801),
+  [`4314b36`](https://github.com/zain13337/lyft-amundsen/commit/4314b363d55f895d13f21ef944b98013035fd9e3))
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+- Bumped amundsen common to 0.20.0 ([#1507](https://github.com/zain13337/lyft-amundsen/pull/1507),
+  [`bd3e54a`](https://github.com/zain13337/lyft-amundsen/commit/bd3e54a020c3304fd2af8d270daf1b0255ec5ec1))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Bumped amundsen-common version ([#795](https://github.com/zain13337/lyft-amundsen/pull/795),
+  [`f4532a2`](https://github.com/zain13337/lyft-amundsen/commit/f4532a2f448bb031a56854700df51b578888c04f))
+
+* bumped amundsen-common version
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* bump again
+
+- Bumped common to 0.18.0 ([#1281](https://github.com/zain13337/lyft-amundsen/pull/1281),
+  [`f652106`](https://github.com/zain13337/lyft-amundsen/commit/f652106e0898adbde75c4e4dc1fe88bd2f8b53ab))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Bumped databuilder to 6.11.0 ([#1923](https://github.com/zain13337/lyft-amundsen/pull/1923),
+  [`0254c59`](https://github.com/zain13337/lyft-amundsen/commit/0254c59846e5f39e51c399880d0ad1f22cebf0d5))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Bumped databuilder to 6.2.0 + @dkunitsk added as code owner
+  ([#1505](https://github.com/zain13337/lyft-amundsen/pull/1505),
+  [`261e348`](https://github.com/zain13337/lyft-amundsen/commit/261e3488cf3e4184f569fad2df6dcad70442cbaf))
+
+* chore: bumped databuilder to 6.2.0
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* added @dkunitsk as a code owner
+
+- Bumped flaskoidc dependency ([#689](https://github.com/zain13337/lyft-amundsen/pull/689),
+  [`7596896`](https://github.com/zain13337/lyft-amundsen/commit/75968960a1fb7c1d39232d644f341f8be30d84fc))
+
+Signed-off-by: Jonas Brunsgaard <jonas.brunsgaard@gmail.com>
+
+- Bumped search to 3.0.0 ([#1630](https://github.com/zain13337/lyft-amundsen/pull/1630),
+  [`b463b45`](https://github.com/zain13337/lyft-amundsen/commit/b463b4582dad042377e28ad40fca00cb7f5f988b))
+
+* chore: bumped search to 3.0.0
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* changed default proxy client
+
+- Bumped version for release 0.10.0 ([#104](https://github.com/zain13337/lyft-amundsen/pull/104),
+  [`0e5b387`](https://github.com/zain13337/lyft-amundsen/commit/0e5b387ccd3f59107ebf7d6f05a974505a235330))
+
+* New release for 0.10.0
+
+Signed-off-by: github-actions <github-actions@github.com>
+
+* Bumped version to 0.10.0
+
+Co-authored-by: github-actions <github-actions@github.com>
+
+- Bumped version for release 0.6.0 ([#89](https://github.com/zain13337/lyft-amundsen/pull/89),
+  [`a78c12a`](https://github.com/zain13337/lyft-amundsen/commit/a78c12af93b948312ef0f3a6834529a78d75a7b1))
+
+* New release for 0.6.0
+
+Signed-off-by: github-actions <github-actions@github.com>
+
+* Bumped version to 0.6.0
+
+Co-authored-by: github-actions <github-actions@github.com>
+
+- Bumped version for release 0.7.0 ([#92](https://github.com/zain13337/lyft-amundsen/pull/92),
+  [`e66a6d3`](https://github.com/zain13337/lyft-amundsen/commit/e66a6d3feeedb9f2a4ae96f398b7e9e8b4814a5b))
+
+* New release for 0.7.0
+
+Signed-off-by: github-actions <github-actions@github.com>
+
+* Bumped version to 0.7.0
+
+Co-authored-by: github-actions <github-actions@github.com>
+
+- Bumped version for release 2.5.0 ([#186](https://github.com/zain13337/lyft-amundsen/pull/186),
+  [`fc75131`](https://github.com/zain13337/lyft-amundsen/commit/fc7513128df0356230c39d65dad80b40490c772c))
+
+* New release for 2.5.0
+
+Signed-off-by: github-actions <github-actions@github.com>
+
+* Bumped version to 2.5.0
+
+Co-authored-by: github-actions <github-actions@github.com>
+
+- Bumped version for release 3.1.0 ([#256](https://github.com/zain13337/lyft-amundsen/pull/256),
+  [`ed701b7`](https://github.com/zain13337/lyft-amundsen/commit/ed701b7d4fed0f062e7de82d9bf9d341b5687d5c))
+
+* New release for 3.1.0
+
+Signed-off-by: github-actions <github-actions@github.com>
+
+* Bumped version to 3.1.0
+
+Co-authored-by: github-actions <github-actions@github.com>
+
+- Bumped version for release 3.2.0 ([#274](https://github.com/zain13337/lyft-amundsen/pull/274),
+  [`68c6382`](https://github.com/zain13337/lyft-amundsen/commit/68c6382a735048c50447cc8aa9f421cd45f3ecb5))
+
+* New release for 3.2.0
+
+Signed-off-by: github-actions <github-actions@github.com>
+
+* Bumped version to 3.2.0
+
+Co-authored-by: github-actions <github-actions@github.com>
+
+- Bumped version for release 3.4.0 ([#918](https://github.com/zain13337/lyft-amundsen/pull/918),
+  [`8bd2605`](https://github.com/zain13337/lyft-amundsen/commit/8bd260548a2fc7f81ab651c9a192fe5d4547e3de))
+
+* New release for 3.4.0
+
+Signed-off-by: github-actions <github-actions@github.com>
+
+* Bumped version to 3.4.0
+
+Co-authored-by: github-actions <github-actions@github.com>
+
+- Bumped version for release 3.5.0 ([#296](https://github.com/zain13337/lyft-amundsen/pull/296),
+  [`ff42c95`](https://github.com/zain13337/lyft-amundsen/commit/ff42c95cc9605dd772b91ba7e0038bdea2f5fb9a))
+
+* New release for 3.5.0
+
+Signed-off-by: github-actions <github-actions@github.com>
+
+* Bumped version to 3.5.0
+
+Co-authored-by: github-actions <github-actions@github.com>
+
+- Bumped version for release 3.7.0 ([#977](https://github.com/zain13337/lyft-amundsen/pull/977),
+  [`3a474a6`](https://github.com/zain13337/lyft-amundsen/commit/3a474a6cdcafcb45e708313131bc3a0821b6e68a))
+
+* New release for 3.7.0
+
+Signed-off-by: github-actions <github-actions@github.com>
+
+* Bumped version to 3.7.0
+
+Co-authored-by: github-actions <github-actions@github.com>
+
+- Bumped version for release 4.1.0 ([#436](https://github.com/zain13337/lyft-amundsen/pull/436),
+  [`db819c8`](https://github.com/zain13337/lyft-amundsen/commit/db819c84857bb98748b02a666096ee6a1d9ab0b0))
+
+* New release for 4.1.0
+
+Signed-off-by: github-actions <github-actions@github.com>
+
+* Bumped version to 4.1.0
+
+Co-authored-by: github-actions <github-actions@github.com>
+
+- Bumped version for release 4.2.0 ([#460](https://github.com/zain13337/lyft-amundsen/pull/460),
+  [`9233ac0`](https://github.com/zain13337/lyft-amundsen/commit/9233ac03e76120430fc700990f32762980dea15c))
+
+* New release for 4.2.0
+
+Signed-off-by: github-actions <github-actions@github.com>
+
+* Bumped version to 4.2.0
+
+Co-authored-by: github-actions <github-actions@github.com>
+
+- Bumped version for release 4.3.0 ([#467](https://github.com/zain13337/lyft-amundsen/pull/467),
+  [`ac967ca`](https://github.com/zain13337/lyft-amundsen/commit/ac967cab847885a0050d2cc04a1f7c81a7edfe76))
+
+* New release for 4.3.0
+
+Signed-off-by: github-actions <github-actions@github.com>
+
+* Bumped version to 4.3.0
+
+Co-authored-by: github-actions <github-actions@github.com>
+
+- Bumped version of commonm ([#1265](https://github.com/zain13337/lyft-amundsen/pull/1265),
+  [`bfa68f8`](https://github.com/zain13337/lyft-amundsen/commit/bfa68f8be8e68f91a5735551959b9bf27ed7f943))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Change deprecated function assertEquals to assertEqual
+  ([#224](https://github.com/zain13337/lyft-amundsen/pull/224),
+  [`1c8b177`](https://github.com/zain13337/lyft-amundsen/commit/1c8b1772f772a796259267088fa79d66cb33519a))
+
+Signed-off-by: Wonyeong Choi <ciwnyg0815@gmail.com>
+
+- Clean and modify repo references ([#632](https://github.com/zain13337/lyft-amundsen/pull/632),
+  [`c0b6ff4`](https://github.com/zain13337/lyft-amundsen/commit/c0b6ff48ba0f20caaf3272b1ffcdbd2b31059635))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Clean up unused badge and deprecated models
+  ([#76](https://github.com/zain13337/lyft-amundsen/pull/76),
+  [`9bc6cff`](https://github.com/zain13337/lyft-amundsen/commit/9bc6cff859235ab34abd5bf2a54135356ef05292))
+
+* chore: clean up unused badge and deprecated models
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* chore: update
+
+- Cleans and refactors global navbar code
+  ([#2098](https://github.com/zain13337/lyft-amundsen/pull/2098),
+  [`169e269`](https://github.com/zain13337/lyft-amundsen/commit/169e2696ebf760fba85f185701aed9996da40ca5))
+
+* chore: navbar cleanup and tweaks
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: extracts logo component on navbar
+
+* chore: fixes ESLint and type warnings
+
+---------
+
+- Cleans up ESLint issues ([#731](https://github.com/zain13337/lyft-amundsen/pull/731),
+  [`dca78a9`](https://github.com/zain13337/lyft-amundsen/commit/dca78a97d36121797e7cfab5727a5d0226e87750))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Cleanup simple typings ([#753](https://github.com/zain13337/lyft-amundsen/pull/753),
+  [`0c4f940`](https://github.com/zain13337/lyft-amundsen/commit/0c4f940e3a1c51a49451e31297894044539a9b6b))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Convert typings to mypy ([#311](https://github.com/zain13337/lyft-amundsen/pull/311),
+  [`bf78381`](https://github.com/zain13337/lyft-amundsen/commit/bf783814a91a00292e41e6accb4e3b8c5922881b))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Delete csv folder for sample postgres loader
+  ([#365](https://github.com/zain13337/lyft-amundsen/pull/365),
+  [`eceae73`](https://github.com/zain13337/lyft-amundsen/commit/eceae73156216ecb0e176fa5126a0e7e61457b7a))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Delete legacy ModeDashboardChartsExtractor
+  ([#1064](https://github.com/zain13337/lyft-amundsen/pull/1064),
+  [`d683181`](https://github.com/zain13337/lyft-amundsen/commit/d683181f117dc9394dc81c5d8fc9e80fbb57f382))
+
+* remove-legacy-charts-extractor
+
+Signed-off-by: Junda Yang <youngyjd@gmail.com>
+
+* nit
+
+- Delete unused metric models ([#423](https://github.com/zain13337/lyft-amundsen/pull/423),
+  [`93c4357`](https://github.com/zain13337/lyft-amundsen/commit/93c4357e16b0f960d706e7664e7ff365f84c6abe))
+
+* chore: Delete unused metric models
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* remove one more
+
+- Deprecate Atlas in Search ([#1530](https://github.com/zain13337/lyft-amundsen/pull/1530),
+  [`19952de`](https://github.com/zain13337/lyft-amundsen/commit/19952de9a34236b90c93ce209060eb1b7fd1f6ec))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Event logging in EditableText component
+  ([#2130](https://github.com/zain13337/lyft-amundsen/pull/2130),
+  [`a14667b`](https://github.com/zain13337/lyft-amundsen/commit/a14667b6340dd214f848b2a2caef9871444f7fdf))
+
+* chore: deprecates use of .body-2
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: tracks events on EditableText; tweaks spacing on btn-link
+
+---------
+
+- Explicitly declare license with classifier
+  ([#2281](https://github.com/zain13337/lyft-amundsen/pull/2281),
+  [`f9a835b`](https://github.com/zain13337/lyft-amundsen/commit/f9a835bd7fcb686b4ffed837be8f5477861851df))
+
+Signed-off-by: William Nelson <william.roy.nelson@gmail.com>
+
+- Finish remaining simple null check typing fixes
+  ([#756](https://github.com/zain13337/lyft-amundsen/pull/756),
+  [`6f03002`](https://github.com/zain13337/lyft-amundsen/commit/6f0300254e1fa4c898ca7f6809fc607a368c5699))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Fix and update mkdoc file ([#775](https://github.com/zain13337/lyft-amundsen/pull/775),
+  [`419d374`](https://github.com/zain13337/lyft-amundsen/commit/419d374d21dd7c5c0b24b10b79b86e7d534244b6))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Fix databuilder dep typo ([#1046](https://github.com/zain13337/lyft-amundsen/pull/1046),
+  [`1a75458`](https://github.com/zain13337/lyft-amundsen/commit/1a7545860e0adfef0b110ed2b7529ae670d94ebf))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Fix deps ([#152](https://github.com/zain13337/lyft-amundsen/pull/152),
+  [`0b81bdc`](https://github.com/zain13337/lyft-amundsen/commit/0b81bdcfd0a837b27c7b9d08128e485443143d42))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Fix deps ([#214](https://github.com/zain13337/lyft-amundsen/pull/214),
+  [`7317db5`](https://github.com/zain13337/lyft-amundsen/commit/7317db57318821b5b4186fb7b764a58339b5b1cf))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Fix docker push ([#190](https://github.com/zain13337/lyft-amundsen/pull/190),
+  [`e258c6e`](https://github.com/zain13337/lyft-amundsen/commit/e258c6ef5494bec6af1d5db6e00597f5c763ba6c))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Fix docker push action ([#132](https://github.com/zain13337/lyft-amundsen/pull/132),
+  [`a24e584`](https://github.com/zain13337/lyft-amundsen/commit/a24e5842b30aecdb756de6fa87f55ca09ab2ede0))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Fix docker push action ([#172](https://github.com/zain13337/lyft-amundsen/pull/172),
+  [`ab28f4e`](https://github.com/zain13337/lyft-amundsen/commit/ab28f4e45711e5dfeac95e63c2f8839647e06362))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Fix docker push action ([#593](https://github.com/zain13337/lyft-amundsen/pull/593),
+  [`86d8908`](https://github.com/zain13337/lyft-amundsen/commit/86d89081d69e199dcebebac2a821f1cfb3062439))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Fix docker push in FE repo ([#637](https://github.com/zain13337/lyft-amundsen/pull/637),
+  [`737fe49`](https://github.com/zain13337/lyft-amundsen/commit/737fe495ecec697b97831df70dd1655ecb8d3b78))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Fix docker push in search repo ([#142](https://github.com/zain13337/lyft-amundsen/pull/142),
+  [`8b96f5b`](https://github.com/zain13337/lyft-amundsen/commit/8b96f5b15b00c95694a8fe9d3b6f79002bbce777))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Fix docker push script ([#180](https://github.com/zain13337/lyft-amundsen/pull/180),
+  [`6a89b52`](https://github.com/zain13337/lyft-amundsen/commit/6a89b52280dd730e7eeb8d17f693187214aaea38))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Fix gh license wf ([#1454](https://github.com/zain13337/lyft-amundsen/pull/1454),
+  [`de01192`](https://github.com/zain13337/lyft-amundsen/commit/de01192005202202070c5b2b10f7de29cadf1ebb))
+
+* chore: fix gh license wf
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* chore: use go 1.16
+
+* fix license issue
+
+* chore: fix FE
+
+* chore: fix js
+
+* fix
+
+- Fix gh page build workflow ([#1062](https://github.com/zain13337/lyft-amundsen/pull/1062),
+  [`aca136b`](https://github.com/zain13337/lyft-amundsen/commit/aca136bdea2efe3b22e4eab623068be0e9a6261c))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Fix license CI for new file ([#1458](https://github.com/zain13337/lyft-amundsen/pull/1458),
+  [`4cc8a95`](https://github.com/zain13337/lyft-amundsen/commit/4cc8a95695ab33853af7134761be9d5d9f63a607))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Fix license for package.json ([#512](https://github.com/zain13337/lyft-amundsen/pull/512),
+  [`80f76c4`](https://github.com/zain13337/lyft-amundsen/commit/80f76c49e8296ee5154e9d6c30f56af7cbeab6dc))
+
+- Fix markdown format for mkdoc page ([#697](https://github.com/zain13337/lyft-amundsen/pull/697),
+  [`14c224c`](https://github.com/zain13337/lyft-amundsen/commit/14c224cfbb9fb84b73ebd07d0199ee7b12bbc944))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Fix readme ([#736](https://github.com/zain13337/lyft-amundsen/pull/736),
+  [`75794f7`](https://github.com/zain13337/lyft-amundsen/commit/75794f7307ab2ffc2c6c6a9276ca6c03a6b77e2c))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Fix remaining strictNullChecks errors; enforce in tsconfig
+  ([#758](https://github.com/zain13337/lyft-amundsen/pull/758),
+  [`21579dd`](https://github.com/zain13337/lyft-amundsen/commit/21579dd86abd2250b6da199d30ec6a5a90a40448))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Fix setup.py ([#69](https://github.com/zain13337/lyft-amundsen/pull/69),
+  [`73b7205`](https://github.com/zain13337/lyft-amundsen/commit/73b720573914557169c6139603ebd0c15ef04139))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Fix test failure ([#797](https://github.com/zain13337/lyft-amundsen/pull/797),
+  [`1c58732`](https://github.com/zain13337/lyft-amundsen/commit/1c58732a8a0dcedf0464255ebd88400b52a26c0f))
+
+* chore: fix test failure
+
+This error was introduced in
+  https://github.com/amundsen-io/amundsenfrontendlibrary/commit/0b47694ea74cbbef34e03eb45f29643b16a1332a
+
+I do not understand why that changeset passed CI (it shouldn't have), but once it landed into master
+  it didn't. But regardless, fix
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+* chore: fix lint errors
+
+- Fixes the edge case of Data Owner for Atlas proxy
+  ([#194](https://github.com/zain13337/lyft-amundsen/pull/194),
+  [`f1c418f`](https://github.com/zain13337/lyft-amundsen/commit/f1c418fecc14b3c41da5dbce4af77ec738b337ca))
+
+* Fixes the edge case for Atlas proxy
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+* Updates the test data accordingly
+
+- Gets to total test coverage on config-utils methods
+  ([#2137](https://github.com/zain13337/lyft-amundsen/pull/2137),
+  [`5f75de6`](https://github.com/zain13337/lyft-amundsen/commit/5f75de663d47351872c215e7d36abe3e26622824))
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+- Improvements to Data Owner feature in Atlas
+  ([#183](https://github.com/zain13337/lyft-amundsen/pull/183),
+  [`a6180ad`](https://github.com/zain13337/lyft-amundsen/commit/a6180ad5894fb5d52151b666f37d796ff34cb3a8))
+
+* Improvements to Data Owner feature in Atlas
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+* Code Review changes
+
+- Improves UI tracking ([#2122](https://github.com/zain13337/lyft-amundsen/pull/2122),
+  [`e0c2a88`](https://github.com/zain13337/lyft-amundsen/commit/e0c2a88cab15ea5bb70c53d35a6875f1859f61f0))
+
+* chore: adds more tracking for advanced search and announcements in the homepage
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: log bookmarks and notice interactions
+
+* chore: logs editable section toggles
+
+* chore: updates betterer results
+
+* chore: mocks analytics for bookmark tests
+
+---------
+
+- Improves user profile page tracking
+  ([#2134](https://github.com/zain13337/lyft-amundsen/pull/2134),
+  [`1fcc405`](https://github.com/zain13337/lyft-amundsen/commit/1fcc40504ec221be50b2b2f2105685a134dfd5fa))
+
+* fix: fixes aligment of search list item contents
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: simplifies owner editor tracking
+
+---------
+
+- Log searches and add tag to filter for features when clicking from the homepage
+  ([#1663](https://github.com/zain13337/lyft-amundsen/pull/1663),
+  [`8df2b36`](https://github.com/zain13337/lyft-amundsen/commit/8df2b364945c8ee63b9c4e8833f602ba30f41679))
+
+- Migrate databuilder to neo4j-driver 4.4.5
+  ([#1938](https://github.com/zain13337/lyft-amundsen/pull/1938),
+  [`5d83413`](https://github.com/zain13337/lyft-amundsen/commit/5d834130acee2a9d6f432191b0b58aa8659cefe6))
+
+* chore: upgrade neo4j-driver to 4.4.5
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* bumped driver version and removed neotime since it is no longer a dependency
+
+* create array fo results
+
+* create aaraay fo results
+
+* staleness removal records array
+
+* make sure driver is correctly configured
+
+* databuilder v7.0.0
+
+* bumped service versions for docker images
+
+- Monthly release action ([#865](https://github.com/zain13337/lyft-amundsen/pull/865),
+  [`11190d1`](https://github.com/zain13337/lyft-amundsen/commit/11190d1e0489c27c7b085a18d847e76877aed357))
+
+* added monthly release action
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* changed python version to correct one
+
+- Move CONTRIBUTING file to root dir ([#468](https://github.com/zain13337/lyft-amundsen/pull/468),
+  [`443ce88`](https://github.com/zain13337/lyft-amundsen/commit/443ce88b412e2af1e11582a4873c7c01cb16cb36))
+
+- Move repo references from lyft -> amundsen
+  ([#51](https://github.com/zain13337/lyft-amundsen/pull/51),
+  [`13fe7bf`](https://github.com/zain13337/lyft-amundsen/commit/13fe7bf87bebfdc4f574ae483185d9fc31392076))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Mypy cleanup (convert last comment types, remove noqa imports)
+  ([#338](https://github.com/zain13337/lyft-amundsen/pull/338),
+  [`5bb3125`](https://github.com/zain13337/lyft-amundsen/commit/5bb3125904ac4ffae77c856bad23fe861ade9b6f))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Print human-readable error if index.html isn't found
+  ([#788](https://github.com/zain13337/lyft-amundsen/pull/788),
+  [`c78f307`](https://github.com/zain13337/lyft-amundsen/commit/c78f3079a09f82e91fa5fa105d7b35cc82935e52))
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+- Re-useable OwnerEditor ([#548](https://github.com/zain13337/lyft-amundsen/pull/548),
+  [`cf680b2`](https://github.com/zain13337/lyft-amundsen/commit/cf680b2129ce409ae180258510a18b3ad8055c64))
+
+* Generic OwnerEditor; Create TableOwnerEditor
+
+Signed-off-by: Tamika Tannis <ttannis@lyft.com>
+
+* Create & use DashboardOwnerEditor
+
+* Code cleanup
+
+* Add tests + user fixtures
+
+- Refactors away the .h1, .h2 and .h3 text classes
+  ([#602](https://github.com/zain13337/lyft-amundsen/pull/602),
+  [`894f18a`](https://github.com/zain13337/lyft-amundsen/commit/894f18aab4478064f2b38c9e0dfc107848199142))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Release metadata 3.8.0 ([#1345](https://github.com/zain13337/lyft-amundsen/pull/1345),
+  [`adde30b`](https://github.com/zain13337/lyft-amundsen/commit/adde30b1d0610c043273b492cef99a8be099dfe3))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Remove a comment that conflicts with implementation
+  ([#1154](https://github.com/zain13337/lyft-amundsen/pull/1154),
+  [`f4bb1de`](https://github.com/zain13337/lyft-amundsen/commit/f4bb1dea6500d48c67f7155031e5f78f54ee1a9c))
+
+Signed-off-by: Tero Paananen <tpaananen@bloomberg.net>
+
+- Remove deprecate hive watermark model
+  ([#281](https://github.com/zain13337/lyft-amundsen/pull/281),
+  [`e513e68`](https://github.com/zain13337/lyft-amundsen/commit/e513e685762f80e92eff3d361cfcdb809ef2a523))
+
+* chore: remove deprecate hive watermark model
+
+* bump version
+
+- Remove duplicate article ([#461](https://github.com/zain13337/lyft-amundsen/pull/461),
+  [`33507ee`](https://github.com/zain13337/lyft-amundsen/commit/33507eebce0b292d518f03a7ba1f925fad642678))
+
+- Remove gremlin from core dependencies of metadata proxy
+  ([#1681](https://github.com/zain13337/lyft-amundsen/pull/1681),
+  [`ae0771c`](https://github.com/zain13337/lyft-amundsen/commit/ae0771c39cc7a29b028877d9b34eea134fcaa85b))
+
+Signed-off-by: Mariusz Górski <gorskimariusz13@gmail.com>
+
+- Remove py36 from github workflows ([#1673](https://github.com/zain13337/lyft-amundsen/pull/1673),
+  [`fa1ebea`](https://github.com/zain13337/lyft-amundsen/commit/fa1ebea50588248febaaebad40bef99f0b6f9e22))
+
+* chore: remove py36 from github workflows
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* chore: update setup.py
+
+* chore: add py36 to noop
+
+* chore: update version
+
+- Remove py37 support, and unify compatibility matrix from 3.8-3.9
+  ([#2226](https://github.com/zain13337/lyft-amundsen/pull/2226),
+  [`890bfaf`](https://github.com/zain13337/lyft-amundsen/commit/890bfaf92c4b01ff524791b0447f2f57fee1b0a1))
+
+* Remove py37 support, and unify compatibility matrix from 3.8-3.10
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Remove py3.10 for now, requires other upgrades
+
+* lint
+
+* Upgrade confluent-kafka
+
+* Upgrade feast
+
+* Attempt to fix feast versioning
+
+---------
+
+- Remove pyatlasclient version pinning
+  ([#1587](https://github.com/zain13337/lyft-amundsen/pull/1587),
+  [`416d609`](https://github.com/zain13337/lyft-amundsen/commit/416d6099e5b5c2eae9f166173cc30e5a46a6e61f))
+
+Signed-off-by: sinkuladis <sink.vlad@gmail.com>
+
+- Remove python2 ([#310](https://github.com/zain13337/lyft-amundsen/pull/310),
+  [`a789a69`](https://github.com/zain13337/lyft-amundsen/commit/a789a6946c9084ae1e2ddec3feb6401b07a38373))
+
+* ci: remove py2 ci (#280)
+
+(cherry picked from commit 2ac583cf40bc6efbe1470ffaea82c1da14892220)
+
+* Remove all usages of six
+
+* makefile: remove defunct python2 test command
+
+* setup.py: bump version to 3.0.0
+
+This change removes python2 support. Python 3.6 or up are now required.
+
+There are no other breaking changes in this release.
+
+Co-authored-by: Tao Feng <fengtao04@gmail.com>
+
+- Remove six ([#458](https://github.com/zain13337/lyft-amundsen/pull/458),
+  [`3536103`](https://github.com/zain13337/lyft-amundsen/commit/3536103ddbb3c8df7920343927739d9ca93caa05))
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+- Remove sqlalchemy dependency upper bound
+  ([#2000](https://github.com/zain13337/lyft-amundsen/pull/2000),
+  [`bfd5e09`](https://github.com/zain13337/lyft-amundsen/commit/bfd5e095e8c387b05aa40a9274ffbd5c1b9ba37c))
+
+* chore: remove sqlalchemy dep upper bound
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* bumped to 7.4.1
+
+- Remove stale bot for central repo ([#564](https://github.com/zain13337/lyft-amundsen/pull/564),
+  [`fb8b399`](https://github.com/zain13337/lyft-amundsen/commit/fb8b3991c6cea15e2de1294bce49bb6bde162e73))
+
+- Remove support for Python<3.6 ([#407](https://github.com/zain13337/lyft-amundsen/pull/407),
+  [`02e72cb`](https://github.com/zain13337/lyft-amundsen/commit/02e72cb3a2174e0e0dcf576b3af6f3636904fe92))
+
+Signed-off-by: Joseph Atkins-Turkish <jatkins-turkish@brex.com>
+
+- Remove travis badge and update doc link
+  ([#599](https://github.com/zain13337/lyft-amundsen/pull/599),
+  [`8d9d0a6`](https://github.com/zain13337/lyft-amundsen/commit/8d9d0a69827b36260142c1df0b4e701daf2f84dc))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Remove unused badges ([#395](https://github.com/zain13337/lyft-amundsen/pull/395),
+  [`0ea56d4`](https://github.com/zain13337/lyft-amundsen/commit/0ea56d457efab1ee055db29ecfccfa28d772e8dd))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Remove unused libs ([#184](https://github.com/zain13337/lyft-amundsen/pull/184),
+  [`5b75025`](https://github.com/zain13337/lyft-amundsen/commit/5b7502520a9659bd3d1c12b2926fcf825db00c5c))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Removes 84 unused variables ([#600](https://github.com/zain13337/lyft-amundsen/pull/600),
+  [`1ec8e63`](https://github.com/zain13337/lyft-amundsen/commit/1ec8e63dfff7964ba21e9bb6ac46875a1c39bd36))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Removes direct access to AppConfig object
+  ([#2136](https://github.com/zain13337/lyft-amundsen/pull/2136),
+  [`be25812`](https://github.com/zain13337/lyft-amundsen/commit/be2581232d60d74a589a32998cf005ac13088b71))
+
+* chore: adds tracking to owner editor; adds accessor to userIdLabel
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: uses getFilterConfigByResource in filter reducer; updates breaking tests
+
+* chore: use indexUsersEnabled in frequent users component
+
+* chore: removes all direct usage of AppConfig
+
+---------
+
+- Removes extra column from sample_col.csv
+  ([#279](https://github.com/zain13337/lyft-amundsen/pull/279),
+  [`09e6768`](https://github.com/zain13337/lyft-amundsen/commit/09e6768f1459b809a1643a7ccfff2bcb43d66751))
+
+This was preventing the file from being pretty printed in table form by Github.
+
+- Rename delta-lake to delta ([#419](https://github.com/zain13337/lyft-amundsen/pull/419),
+  [`05fe200`](https://github.com/zain13337/lyft-amundsen/commit/05fe20093cf0dd88b4aec5d2baf653c527ef2773))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Rename Groups to Group in dashboard search filter
+  ([#670](https://github.com/zain13337/lyft-amundsen/pull/670),
+  [`277eb48`](https://github.com/zain13337/lyft-amundsen/commit/277eb48bcf74d7832608e9d1042f838844cb5056))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Replace all references of Lyft repo with Amundsen
+  ([#323](https://github.com/zain13337/lyft-amundsen/pull/323),
+  [`70c69f5`](https://github.com/zain13337/lyft-amundsen/commit/70c69f5a7519965af02fe4a7fb1afcd136ac92bd))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Replace links to lyft org with amundsen-io org
+  ([#619](https://github.com/zain13337/lyft-amundsen/pull/619),
+  [`71bb5bc`](https://github.com/zain13337/lyft-amundsen/commit/71bb5bc32b51c71cb77ea4ae3a55c6117b6ed039))
+
+Signed-off-by: jornh <jornhansen@gmail.com>
+
+- Replace references to Lyft -> Amundsen
+  ([#174](https://github.com/zain13337/lyft-amundsen/pull/174),
+  [`114a7d4`](https://github.com/zain13337/lyft-amundsen/commit/114a7d4d6820c71085803fcb9cfd2230239d7743))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Replace references to Lyft with Amundsen
+  ([#133](https://github.com/zain13337/lyft-amundsen/pull/133),
+  [`bea0f78`](https://github.com/zain13337/lyft-amundsen/commit/bea0f780f2cfc21acf3a6f6cc2bdecabf39418c5))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Sample dags minor cleanup ([#344](https://github.com/zain13337/lyft-amundsen/pull/344),
+  [`7a998cc`](https://github.com/zain13337/lyft-amundsen/commit/7a998cc1823fb8d8f5f207321cf93ce79d3bcf9f))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Set a range for deps ([#70](https://github.com/zain13337/lyft-amundsen/pull/70),
+  [`d881f2f`](https://github.com/zain13337/lyft-amundsen/commit/d881f2f3668137e1fad127f2136a81ea2877c4db))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Testing types for table input ([#699](https://github.com/zain13337/lyft-amundsen/pull/699),
+  [`2641c58`](https://github.com/zain13337/lyft-amundsen/commit/2641c58638c2dfc72d7ecf0b96e76402fb107b78))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Tweaks notices icon color, storybook and spacing
+  ([#2106](https://github.com/zain13337/lyft-amundsen/pull/2106),
+  [`6b2dc4d`](https://github.com/zain13337/lyft-amundsen/commit/6b2dc4dcd215541988d118efd9571c65be31c1fa))
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+- Two minor path fixes ([#1026](https://github.com/zain13337/lyft-amundsen/pull/1026),
+  [`7314e54`](https://github.com/zain13337/lyft-amundsen/commit/7314e54eb10fe9673ea4df34803461f58b635a53))
+
+* docker-amundsen-atlas: fix paths
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+There was a misspelling that caused this file to not get updated.
+
+* gitignore: fix path for frontend
+
+- Un-template all of the ConfigFactory keys.
+  ([#265](https://github.com/zain13337/lyft-amundsen/pull/265),
+  [`719a56a`](https://github.com/zain13337/lyft-amundsen/commit/719a56ab31a3896a9d2d1a4da5524bffc5461ef5))
+
+* chore: un-template all of the ConfigFactory keys.
+
+* lint errors
+
+- Update 'Who uses Amundsen?' ([#1973](https://github.com/zain13337/lyft-amundsen/pull/1973),
+  [`bcc7ccf`](https://github.com/zain13337/lyft-amundsen/commit/bcc7ccf2b5b94b9dfbf92029e76a2f287b5275f2))
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+- Update actions versions ([#2211](https://github.com/zain13337/lyft-amundsen/pull/2211),
+  [`402f63a`](https://github.com/zain13337/lyft-amundsen/commit/402f63a1c6cdd85a66f77979451725249ffd5ff2))
+
+* chore: update actions versions
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: updates Go version to 1.17
+
+---------
+
+- Update airflow image ([#530](https://github.com/zain13337/lyft-amundsen/pull/530),
+  [`e862930`](https://github.com/zain13337/lyft-amundsen/commit/e86293050719706a78bbbf0b142dc1f9548e94d2))
+
+- Update all the git submodules ([#943](https://github.com/zain13337/lyft-amundsen/pull/943),
+  [`6445175`](https://github.com/zain13337/lyft-amundsen/commit/6445175e790e13ec8b1eef3f053c5d7a0cfed548))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Update amundsengremlin submodule to use https
+  ([#751](https://github.com/zain13337/lyft-amundsen/pull/751),
+  [`39bb08e`](https://github.com/zain13337/lyft-amundsen/commit/39bb08e03f33e357b3c2161d50685c02870305d6))
+
+Signed-off-by: Joshua Hoskins <hoskins@squareup.com>
+
+- Update Betterer with eslint rules ([#769](https://github.com/zain13337/lyft-amundsen/pull/769),
+  [`e7eaf96`](https://github.com/zain13337/lyft-amundsen/commit/e7eaf96c12e4c593f4bdd6cd0b9c67130cbcc6a5))
+
+* Update Betterer with eslint rules
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Update documentation
+
+- Update codeowners ([#1364](https://github.com/zain13337/lyft-amundsen/pull/1364),
+  [`9db7762`](https://github.com/zain13337/lyft-amundsen/commit/9db77627c6a90b2ec413290a2a890871aaf84bb4))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Update codeowners ([#1533](https://github.com/zain13337/lyft-amundsen/pull/1533),
+  [`82a6dbe`](https://github.com/zain13337/lyft-amundsen/commit/82a6dbed9f212bc57235040d05310a82bab468f3))
+
+Signed-off-by: Mariusz Górski <gorskimariusz13@gmail.com>
+
+- Update deprecated functions ([#398](https://github.com/zain13337/lyft-amundsen/pull/398),
+  [`156296e`](https://github.com/zain13337/lyft-amundsen/commit/156296ef3fe19ec715c8ecd9bc20f01a28e23d50))
+
+Signed-off-by: Wonyeong Choi <ciwnyg0815@gmail.com>
+
+- Update deps for databuilder ([#309](https://github.com/zain13337/lyft-amundsen/pull/309),
+  [`05ab45f`](https://github.com/zain13337/lyft-amundsen/commit/05ab45f4e89dfff01accd59245b03e84ac11c29a))
+
+- Update derpecated functions: assertEquals, assertDictContainsSubset
+  ([#752](https://github.com/zain13337/lyft-amundsen/pull/752),
+  [`56c83d5`](https://github.com/zain13337/lyft-amundsen/commit/56c83d5abe7a1eedcdcda3709eac5b7e6f710b34))
+
+Signed-off-by: Wonyeong Choi <ciwnyg0815@gmail.com>
+
+- Update docker compose service version
+  ([#805](https://github.com/zain13337/lyft-amundsen/pull/805),
+  [`a09cb61`](https://github.com/zain13337/lyft-amundsen/commit/a09cb618fdcf1d7866dfe4d443feee25e198c8ef))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Update docker publisher new action ([#956](https://github.com/zain13337/lyft-amundsen/pull/956),
+  [`e808b73`](https://github.com/zain13337/lyft-amundsen/commit/e808b73b7850307146d93ae1b607f327f403d2f0))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Update lfai logo ([#816](https://github.com/zain13337/lyft-amundsen/pull/816),
+  [`8dd7dd9`](https://github.com/zain13337/lyft-amundsen/commit/8dd7dd9d8b8147d6c7256aada75bf1c3e29e3624))
+
+* chore: update lfai logo
+
+* chore: fix wording
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Update make target name ([#181](https://github.com/zain13337/lyft-amundsen/pull/181),
+  [`152ac9f`](https://github.com/zain13337/lyft-amundsen/commit/152ac9f3e31d9cf0e37c60206c264962b0942819))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Update ModeDashboardLastModifiedTimestampExtractor typing
+  ([#1048](https://github.com/zain13337/lyft-amundsen/pull/1048),
+  [`f120539`](https://github.com/zain13337/lyft-amundsen/commit/f120539cb8a791fe91d0c2938cf0bfef99b38371))
+
+- Update order of table metadata on TableDetailPage
+  ([#652](https://github.com/zain13337/lyft-amundsen/pull/652),
+  [`827fe35`](https://github.com/zain13337/lyft-amundsen/commit/827fe3519b0c26159518e2d965373295e6c7aa05))
+
+* Update metadata order
+
+Signed-off-by: Tamika Tannis <ttannis@lyft.com>
+
+* Code cleanup
+
+* Lint fix
+
+* Betterer update
+
+- Update OWNERS.md adding Alagappan ([#2208](https://github.com/zain13337/lyft-amundsen/pull/2208),
+  [`b832431`](https://github.com/zain13337/lyft-amundsen/commit/b83243181bc676af831965313c4ef1c9c7118b5a))
+
+Adding Alagappan as core maintainer of Amundsen
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+- Update PULL_REQUEST_TEMPLATE to note code freeze
+  ([`95b7a53`](https://github.com/zain13337/lyft-amundsen/commit/95b7a5359c0b112121a1bf75c08c20d076abf857))
+
+- Update PULL_REQUEST_TEMPLATE to note code freeze
+  ([#194](https://github.com/zain13337/lyft-amundsen/pull/194),
+  [`f9aa886`](https://github.com/zain13337/lyft-amundsen/commit/f9aa886757e256cfb9cdff3eee68ed387dc8525d))
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+- Update PULL_REQUEST_TEMPLATE to note code freeze
+  ([#295](https://github.com/zain13337/lyft-amundsen/pull/295),
+  [`607ef9e`](https://github.com/zain13337/lyft-amundsen/commit/607ef9e2411cec6d157432a0c4b6d3c7448065b5))
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+- Update PULL_REQUEST_TEMPLATE to note code freeze
+  ([#480](https://github.com/zain13337/lyft-amundsen/pull/480),
+  [`93055fb`](https://github.com/zain13337/lyft-amundsen/commit/93055fb1075d38e0b736ded215ddb8692f7612c1))
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+- Update PULL_REQUEST_TEMPLATE to note code freeze
+  ([#976](https://github.com/zain13337/lyft-amundsen/pull/976),
+  [`0fcbc56`](https://github.com/zain13337/lyft-amundsen/commit/0fcbc56f99d7a04b3a6391025289774c717bd4d1))
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+- Update README.md ([#541](https://github.com/zain13337/lyft-amundsen/pull/541),
+  [`afa76af`](https://github.com/zain13337/lyft-amundsen/commit/afa76af4ac7351a9305a3e1679db04f91044c7cb))
+
+- Update README.md with ES Table connector
+  ([#1351](https://github.com/zain13337/lyft-amundsen/pull/1351),
+  [`caa661b`](https://github.com/zain13337/lyft-amundsen/commit/caa661b3734059b6244b974a35c63ea56341d0c5))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Update request_utils.py ([#787](https://github.com/zain13337/lyft-amundsen/pull/787),
+  [`2e4be27`](https://github.com/zain13337/lyft-amundsen/commit/2e4be27b8eae9f614bb17a98865a06b29b8adbd4))
+
+- Update requirement file in metadata
+  ([#1194](https://github.com/zain13337/lyft-amundsen/pull/1194),
+  [`0e600de`](https://github.com/zain13337/lyft-amundsen/commit/0e600dea3127569169093aabe0c5a2280a7d2cda))
+
+* chore: update requirement file in metadata
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* chore: update CI
+
+* update version
+
+- Update sample data loader to remove sqlite
+  ([#413](https://github.com/zain13337/lyft-amundsen/pull/413),
+  [`01a9512`](https://github.com/zain13337/lyft-amundsen/commit/01a95127d550f2959d0dde2d1aa0dd7880ef47e9))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Update setup.py version ([#371](https://github.com/zain13337/lyft-amundsen/pull/371),
+  [`5643513`](https://github.com/zain13337/lyft-amundsen/commit/56435131d5dbdb0f1825a88d653a366e2117d40a))
+
+* Update setup.py
+
+* bumped version again
+
+- Update slack link ([#1367](https://github.com/zain13337/lyft-amundsen/pull/1367),
+  [`c43c974`](https://github.com/zain13337/lyft-amundsen/commit/c43c9745679520c544af267ec1934cb27f4b3895))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Update submodules to latest commit ([#812](https://github.com/zain13337/lyft-amundsen/pull/812),
+  [`e09a8d3`](https://github.com/zain13337/lyft-amundsen/commit/e09a8d3a902468c0e95083ac378c2185fc810a68))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Update the email for the project ([#114](https://github.com/zain13337/lyft-amundsen/pull/114),
+  [`d4d2754`](https://github.com/zain13337/lyft-amundsen/commit/d4d2754ec09936d801b23b369eb1b4bda67a3e31))
+
+- Update the email for the project ([#148](https://github.com/zain13337/lyft-amundsen/pull/148),
+  [`31b8cae`](https://github.com/zain13337/lyft-amundsen/commit/31b8cae896c80cb7a3d6dd7882688284586575d1))
+
+- Update the email for the project ([#302](https://github.com/zain13337/lyft-amundsen/pull/302),
+  [`9c87ee2`](https://github.com/zain13337/lyft-amundsen/commit/9c87ee2ba066683d46a0f9a8be0b134930400cc0))
+
+- Update the email for the project ([#505](https://github.com/zain13337/lyft-amundsen/pull/505),
+  [`28ae360`](https://github.com/zain13337/lyft-amundsen/commit/28ae360299a3a7d79e8c3902c4f808475efcb8fe))
+
+- Update unit test coverage to 100% on util files
+  ([#2139](https://github.com/zain13337/lyft-amundsen/pull/2139),
+  [`a99fc0d`](https://github.com/zain13337/lyft-amundsen/commit/a99fc0d4dbc5b90d3d4d61e1270a445e3c0072d4))
+
+* chore: adds extra test coverage on the analytics utils
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: adds total test coverage on the analytics utils
+
+* chore: total test coverage on date utils
+
+* chore: total unit test coverage on navigation utils
+
+* chore: total test coverage on number utils
+
+* chore: total unit test coverage
+
+* chore: total coverage on stats utils
+
+* chore: total test coverage on text utils
+
+* chore: splits util file tests into files
+
+* refactor: renames dateUtils into date
+
+* chore: simplifies lint-staged configuration
+
+* refactor: renames textUtils into text
+
+* refactor: renames ownerUtils into owner
+
+* refactor: renames numberUtils into number
+
+* refactor: renames navigationUtils into navigation
+
+* chore: some tweaks and betterer run
+
+* chore: tweaks type checking configuration
+
+* chore: updated test
+
+---------
+
+- Update version for next release ([#364](https://github.com/zain13337/lyft-amundsen/pull/364),
+  [`38adf18`](https://github.com/zain13337/lyft-amundsen/commit/38adf1865b8df8547348b909f33163893d2e2c83))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Update version in docker script ([#785](https://github.com/zain13337/lyft-amundsen/pull/785),
+  [`6bd9e3e`](https://github.com/zain13337/lyft-amundsen/commit/6bd9e3e54d35a33f81690a0c8730f6e0df74b972))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Update version to pick up report url changes
+  ([`9deb5dc`](https://github.com/zain13337/lyft-amundsen/commit/9deb5dc4e114f6453666920210360bb0a9f7e24b))
+
+chore: Update version to pick up report url changes
+
+- Update versions for Amundsen Atlas Databuilder release #1411
+  ([`c4478bb`](https://github.com/zain13337/lyft-amundsen/commit/c4478bb2529aec425218d6f0bf315d3d2387d1bc))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Updated search readme ([#1859](https://github.com/zain13337/lyft-amundsen/pull/1859),
+  [`55c34e7`](https://github.com/zain13337/lyft-amundsen/commit/55c34e7acade992ed1a284c07df87da84015847f))
+
+- Updated the deployment search file with Release.Name instead of Release.Namespace
+  ([#488](https://github.com/zain13337/lyft-amundsen/pull/488),
+  [`87d0f2d`](https://github.com/zain13337/lyft-amundsen/commit/87d0f2d7b3166350154ba11c3d86aa662e32c16c))
+
+- Updated version of library for new release
+  ([#225](https://github.com/zain13337/lyft-amundsen/pull/225),
+  [`23ac9c1`](https://github.com/zain13337/lyft-amundsen/commit/23ac9c1c0e521d02b817ac5345e78bded35b9b41))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Updates betterer; cleans some eslint issues
+  ([#2088](https://github.com/zain13337/lyft-amundsen/pull/2088),
+  [`c295495`](https://github.com/zain13337/lyft-amundsen/commit/c2954950d28c5720fed1a5d71e4e0917a77482d1))
+
+* chore: deal with ESLint issues in EditableSection
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: updates betterer; cleans eslint issues
+
+* chore: fix issue
+
+* chore: betterer update
+
+---------
+
+- Updates codeowners with latests maintainers
+  ([#2158](https://github.com/zain13337/lyft-amundsen/pull/2158),
+  [`cf40755`](https://github.com/zain13337/lyft-amundsen/commit/cf40755d1b14114ebb4909159135d3c4d4abfc15))
+
+* chore: updates codeowners with latests maintainers
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: retrieving markdown format
+
+---------
+
+- Updates logging to cover tour and feedback widget
+  ([#2024](https://github.com/zain13337/lyft-amundsen/pull/2024),
+  [`d14a3ea`](https://github.com/zain13337/lyft-amundsen/commit/d14a3ea525318f1359f407b3f902d68760b85f61))
+
+* chore: adds extensive tracking on the feedback component
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: log steps in tour
+
+* chore: logs tour close
+
+* chore: cleans log
+
+* chore: update labels, removing a11y control eslint rule as it is flaky
+
+- Updates Storybook to version 6 ([#712](https://github.com/zain13337/lyft-amundsen/pull/712),
+  [`86ff443`](https://github.com/zain13337/lyft-amundsen/commit/86ff443ed8492e6540c686b32240f5b36713f101))
+
+* Removing story.name
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Adding pre-push hook
+
+* Updating Flag and Card
+
+* Updating Storybook to version 6
+
+* Updating betterer results
+
+* Update eslint config
+
+* Removing pre-push hook as it runs on .src-custom
+
+- Updating frontend dependencies ([#751](https://github.com/zain13337/lyft-amundsen/pull/751),
+  [`fcaece3`](https://github.com/zain13337/lyft-amundsen/commit/fcaece30b7f4899b283651c2c2e87009b93fedd1))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Updating JS packages ([#835](https://github.com/zain13337/lyft-amundsen/pull/835),
+  [`ccb1d10`](https://github.com/zain13337/lyft-amundsen/commit/ccb1d10b2bd9d8e6bdf6ca28878e6cb044fb777b))
+
+* Updating JS packages
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Linting things
+
+* Updating betterer results
+
+- Updating Storybook with Cards, Colors and Typography
+  ([#620](https://github.com/zain13337/lyft-amundsen/pull/620),
+  [`0d04898`](https://github.com/zain13337/lyft-amundsen/commit/0d04898aff1500355eb2748466928e3916ab3179))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Upgrade dependency of Amundsen-gremlin
+  ([#473](https://github.com/zain13337/lyft-amundsen/pull/473),
+  [`6595965`](https://github.com/zain13337/lyft-amundsen/commit/65959650e351e2ae8fbe04bb96108a7589268a77))
+
+* Upgrade dependency of amundsen-gremlin
+
+Signed-off-by: Andrew Ciambrone <andrjc4@vt.edu>
+
+* linting
+
+- Upgrade flask to 2.2.5 and its related dependencies
+  ([#2237](https://github.com/zain13337/lyft-amundsen/pull/2237),
+  [`125b04f`](https://github.com/zain13337/lyft-amundsen/commit/125b04ff9f696091e2e5ff696ab8ad201580385d))
+
+* Upgrade flask and related dependencies
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Fix frontend tests
+
+* Fixing more tests
+
+* Revert databuilder version bump, changes don't affect it
+
+---------
+
+- Upgrade mypy ([#2243](https://github.com/zain13337/lyft-amundsen/pull/2243),
+  [`7a8fcba`](https://github.com/zain13337/lyft-amundsen/commit/7a8fcbac40bfc9b8de297a1ad2e588a9e73d60fa))
+
+* Upgrade mypy plus initial code updates
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* fixes
+
+* fix test
+
+* Ignore type checking for stubbed functions
+
+* lint
+
+---------
+
+- Upgrade sqlalchemy in frontend to latest 1.x.x version
+  ([#2246](https://github.com/zain13337/lyft-amundsen/pull/2246),
+  [`6d7b730`](https://github.com/zain13337/lyft-amundsen/commit/6d7b73010634388b073be88d5bd1eea7d7bc38c6))
+
+* Upgrade sqlalchemy in frontend
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Fix test
+
+---------
+
+- Upgrade to marshmallow 3 ([#963](https://github.com/zain13337/lyft-amundsen/pull/963),
+  [`22e0524`](https://github.com/zain13337/lyft-amundsen/commit/22e0524c02a63982736e117c4d81036ab4f15226))
+
+* chore: upgrade to marshmallow 3 and marshmallow3-annotations
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+* typos
+
+- Upgrades ES to 7.13.3 ([#1386](https://github.com/zain13337/lyft-amundsen/pull/1386),
+  [`217d211`](https://github.com/zain13337/lyft-amundsen/commit/217d211e6d02250f44c3558e82b96d91dc817703))
+
+* Upgrades ES to 7.13.3
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+* typo
+
+* Fixes the test cases, and code review
+
+- Use text-unidecode instead of unidecode package to fix license incompatibility
+  ([#2168](https://github.com/zain13337/lyft-amundsen/pull/2168),
+  [`13a6996`](https://github.com/zain13337/lyft-amundsen/commit/13a69966f9d0a62aeb2806619c74760813194658))
+
+* Use text-unidecode instead of unidecode package to fix license incompatibility
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Ignore incorrect error on None type
+
+* Addressing PR feedback
+
+---------
+
+- Using f-string instead of string.format
+  ([#428](https://github.com/zain13337/lyft-amundsen/pull/428),
+  [`67ea182`](https://github.com/zain13337/lyft-amundsen/commit/67ea18232e5a69da879669e4f020b5a0b36a5f94))
+
+* cleanup: string.format -> f-string
+
+Signed-off-by: Đặng Minh Dũng <dungdm93@live.com>
+
+* add isort
+
+* isort them all
+
+* split long line in setup.cfg file
+
+- Various typing fixes ([#754](https://github.com/zain13337/lyft-amundsen/pull/754),
+  [`a3b5da3`](https://github.com/zain13337/lyft-amundsen/commit/a3b5da35bbb6c3c838822d3e4ba0123f9b747d9c))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- **deps**: Bump axios from 0.21.1 to 1.6.0 in /frontend/amundsen_application/static
+  ([#2207](https://github.com/zain13337/lyft-amundsen/pull/2207),
+  [`d1ac187`](https://github.com/zain13337/lyft-amundsen/commit/d1ac18797a1012cfd822561479d5f70b0592c6e3))
+
+* chore(deps): bump axios in /frontend/amundsen_application/static
+
+Bumps [axios](https://github.com/axios/axios) from 0.21.1 to 1.6.0. - [Release
+  notes](https://github.com/axios/axios/releases) -
+  [Changelog](https://github.com/axios/axios/blob/v1.x/CHANGELOG.md) -
+  [Commits](https://github.com/axios/axios/compare/v0.21.1...v1.6.0)
+
+--- updated-dependencies: - dependency-name: axios dependency-type: direct:production
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+* Typing/lint fixes
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Attempt to fix test issue (not reproducable locally for me)
+
+---------
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+Co-authored-by: Kristen Armes <karmes@lyft.com>
+
+- **deps**: Bump axios in /frontend/amundsen_application/static
+  ([#2259](https://github.com/zain13337/lyft-amundsen/pull/2259),
+  [`804f67b`](https://github.com/zain13337/lyft-amundsen/commit/804f67b97bbcc40c30c8d3c873b6360d045d678d))
+
+Bumps [axios](https://github.com/axios/axios) from 1.6.0 to 1.7.4. - [Release
+  notes](https://github.com/axios/axios/releases) -
+  [Changelog](https://github.com/axios/axios/blob/v1.x/CHANGELOG.md) -
+  [Commits](https://github.com/axios/axios/compare/v1.6.0...v1.7.4)
+
+--- updated-dependencies: - dependency-name: axios dependency-type: direct:production
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump boto3 from 1.12.12 to 1.17.23
+  ([#276](https://github.com/zain13337/lyft-amundsen/pull/276),
+  [`ad0a034`](https://github.com/zain13337/lyft-amundsen/commit/ad0a034be6e40f4cb8de154446677fea6fa7515b))
+
+Bumps [boto3](https://github.com/boto/boto3) from 1.12.12 to 1.17.23. - [Release
+  notes](https://github.com/boto/boto3/releases) -
+  [Changelog](https://github.com/boto/boto3/blob/develop/CHANGELOG.rst) -
+  [Commits](https://github.com/boto/boto3/compare/1.12.12...1.17.23)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump cookie and express ([#2270](https://github.com/zain13337/lyft-amundsen/pull/2270),
+  [`2d89c86`](https://github.com/zain13337/lyft-amundsen/commit/2d89c86774ed1244333f3848de82901df01e5898))
+
+Bumps [cookie](https://github.com/jshttp/cookie) and
+  [express](https://github.com/expressjs/express). These dependencies needed to be updated together.
+
+Updates `cookie` from 0.6.0 to 0.7.1 - [Release notes](https://github.com/jshttp/cookie/releases) -
+  [Commits](https://github.com/jshttp/cookie/compare/v0.6.0...v0.7.1)
+
+Updates `express` from 4.21.0 to 4.21.1 - [Release
+  notes](https://github.com/expressjs/express/releases) -
+  [Changelog](https://github.com/expressjs/express/blob/4.21.1/History.md) -
+  [Commits](https://github.com/expressjs/express/compare/4.21.0...4.21.1)
+
+--- updated-dependencies: - dependency-name: cookie dependency-type: indirect
+
+- dependency-name: express dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump decode-uri-component
+  ([#2048](https://github.com/zain13337/lyft-amundsen/pull/2048),
+  [`7ddbc16`](https://github.com/zain13337/lyft-amundsen/commit/7ddbc164411b3142377049def55ab6643292f8ae))
+
+Bumps [decode-uri-component](https://github.com/SamVerschueren/decode-uri-component) from 0.2.0 to
+  0.2.2. - [Release notes](https://github.com/SamVerschueren/decode-uri-component/releases) -
+  [Commits](https://github.com/SamVerschueren/decode-uri-component/compare/v0.2.0...v0.2.2)
+
+--- updated-dependencies: - dependency-name: decode-uri-component dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump elliptic in /frontend/amundsen_application/static
+  ([#2264](https://github.com/zain13337/lyft-amundsen/pull/2264),
+  [`462fd76`](https://github.com/zain13337/lyft-amundsen/commit/462fd76f39c3018c57094aee1607d2aeb93bb6b8))
+
+Bumps [elliptic](https://github.com/indutny/elliptic) from 6.5.4 to 6.5.7. -
+  [Commits](https://github.com/indutny/elliptic/compare/v6.5.4...v6.5.7)
+
+--- updated-dependencies: - dependency-name: elliptic dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump elliptic in /frontend/amundsen_application/static
+  ([#2276](https://github.com/zain13337/lyft-amundsen/pull/2276),
+  [`ade1bdf`](https://github.com/zain13337/lyft-amundsen/commit/ade1bdff9b0921ee2c069e1e91b663f0474d1e11))
+
+Bumps [elliptic](https://github.com/indutny/elliptic) from 6.5.7 to 6.6.0. -
+  [Commits](https://github.com/indutny/elliptic/compare/v6.5.7...v6.6.0)
+
+--- updated-dependencies: - dependency-name: elliptic dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump flask-cors from 3.0.10 to 4.0.1
+  ([#2255](https://github.com/zain13337/lyft-amundsen/pull/2255),
+  [`03ddf42`](https://github.com/zain13337/lyft-amundsen/commit/03ddf420f8b3cafa582c7d93c3974ee41148e6a8))
+
+Bumps [flask-cors](https://github.com/corydolphin/flask-cors) from 3.0.10 to 4.0.1. - [Release
+  notes](https://github.com/corydolphin/flask-cors/releases) -
+  [Changelog](https://github.com/corydolphin/flask-cors/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/corydolphin/flask-cors/compare/3.0.10...4.0.1)
+
+--- updated-dependencies: - dependency-name: flask-cors dependency-type: direct:production
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump flask-cors from 3.0.8 to 3.0.10
+  ([#268](https://github.com/zain13337/lyft-amundsen/pull/268),
+  [`83f3928`](https://github.com/zain13337/lyft-amundsen/commit/83f39283986ac65427c20d1c648881aa66b541de))
+
+Bumps [flask-cors](https://github.com/corydolphin/flask-cors) from 3.0.8 to 3.0.10. - [Release
+  notes](https://github.com/corydolphin/flask-cors/releases) -
+  [Changelog](https://github.com/corydolphin/flask-cors/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/corydolphin/flask-cors/compare/3.0.8...3.0.10)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump flask-cors from 4.0.1 to 5.0.0
+  ([#2265](https://github.com/zain13337/lyft-amundsen/pull/2265),
+  [`a63ab4b`](https://github.com/zain13337/lyft-amundsen/commit/a63ab4b69a432b55fdf71d12cb032c89afca0d0a))
+
+Bumps [flask-cors](https://github.com/corydolphin/flask-cors) from 4.0.1 to 5.0.0. - [Release
+  notes](https://github.com/corydolphin/flask-cors/releases) -
+  [Changelog](https://github.com/corydolphin/flask-cors/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/corydolphin/flask-cors/compare/4.0.1...5.0.0)
+
+--- updated-dependencies: - dependency-name: flask-cors dependency-type: direct:production
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump follow-redirects ([#2227](https://github.com/zain13337/lyft-amundsen/pull/2227),
+  [`b2a07c4`](https://github.com/zain13337/lyft-amundsen/commit/b2a07c4ee26417a9db9cd591eab9abb3fce7bbd1))
+
+Bumps [follow-redirects](https://github.com/follow-redirects/follow-redirects) from 1.15.3 to
+  1.15.4. - [Release notes](https://github.com/follow-redirects/follow-redirects/releases) -
+  [Commits](https://github.com/follow-redirects/follow-redirects/compare/v1.15.3...v1.15.4)
+
+--- updated-dependencies: - dependency-name: follow-redirects dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump follow-redirects ([#2239](https://github.com/zain13337/lyft-amundsen/pull/2239),
+  [`0260cf7`](https://github.com/zain13337/lyft-amundsen/commit/0260cf737ec4aaa842aed14afb4c7e2371d9202a))
+
+Bumps [follow-redirects](https://github.com/follow-redirects/follow-redirects) from 1.15.4 to
+  1.15.6. - [Release notes](https://github.com/follow-redirects/follow-redirects/releases) -
+  [Commits](https://github.com/follow-redirects/follow-redirects/compare/v1.15.4...v1.15.6)
+
+--- updated-dependencies: - dependency-name: follow-redirects dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump jinja2 from 3.1.2 to 3.1.3
+  ([#2240](https://github.com/zain13337/lyft-amundsen/pull/2240),
+  [`40e3d97`](https://github.com/zain13337/lyft-amundsen/commit/40e3d971d48a6467d03cda12e284955a1cd135d5))
+
+Bumps [jinja2](https://github.com/pallets/jinja) from 3.1.2 to 3.1.3. - [Release
+  notes](https://github.com/pallets/jinja/releases) -
+  [Changelog](https://github.com/pallets/jinja/blob/main/CHANGES.rst) -
+  [Commits](https://github.com/pallets/jinja/compare/3.1.2...3.1.3)
+
+--- updated-dependencies: - dependency-name: jinja2 dependency-type: direct:production
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump jinja2 from 3.1.3 to 3.1.4
+  ([#2250](https://github.com/zain13337/lyft-amundsen/pull/2250),
+  [`a7c00ce`](https://github.com/zain13337/lyft-amundsen/commit/a7c00ced13fe673473f5935ec520f80a474e0bea))
+
+Bumps [jinja2](https://github.com/pallets/jinja) from 3.1.3 to 3.1.4. - [Release
+  notes](https://github.com/pallets/jinja/releases) -
+  [Changelog](https://github.com/pallets/jinja/blob/main/CHANGES.rst) -
+  [Commits](https://github.com/pallets/jinja/compare/3.1.3...3.1.4)
+
+--- updated-dependencies: - dependency-name: jinja2 dependency-type: direct:production
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump json5 in /frontend/amundsen_application/static
+  ([#2071](https://github.com/zain13337/lyft-amundsen/pull/2071),
+  [`4b651e1`](https://github.com/zain13337/lyft-amundsen/commit/4b651e18f493d2003132faa9aac2338618863e98))
+
+Bumps [json5](https://github.com/json5/json5) from 1.0.1 to 1.0.2. - [Release
+  notes](https://github.com/json5/json5/releases) -
+  [Changelog](https://github.com/json5/json5/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/json5/json5/compare/v1.0.1...v1.0.2)
+
+--- updated-dependencies: - dependency-name: json5 dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump loader-utils in /frontend/amundsen_application/static
+  ([#2035](https://github.com/zain13337/lyft-amundsen/pull/2035),
+  [`7d6bb2a`](https://github.com/zain13337/lyft-amundsen/commit/7d6bb2a61778e73296615c1f81b2b9351c801aca))
+
+Bumps [loader-utils](https://github.com/webpack/loader-utils) from 1.4.0 to 1.4.2. - [Release
+  notes](https://github.com/webpack/loader-utils/releases) -
+  [Changelog](https://github.com/webpack/loader-utils/blob/v1.4.2/CHANGELOG.md) -
+  [Commits](https://github.com/webpack/loader-utils/compare/v1.4.0...v1.4.2)
+
+--- updated-dependencies: - dependency-name: loader-utils dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump nanoid in /frontend/amundsen_application/static
+  ([#2282](https://github.com/zain13337/lyft-amundsen/pull/2282),
+  [`2ea2f83`](https://github.com/zain13337/lyft-amundsen/commit/2ea2f835b11d267a576e1c7f03f5af94f886ee6a))
+
+Bumps and [nanoid](https://github.com/ai/nanoid). These dependencies needed to be updated together.
+
+Updates `nanoid` from 3.3.7 to 3.3.8 - [Release notes](https://github.com/ai/nanoid/releases) -
+  [Changelog](https://github.com/ai/nanoid/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/ai/nanoid/compare/3.3.7...3.3.8)
+
+Updates `nanoid` from 3.1.30 to 3.3.8 - [Release notes](https://github.com/ai/nanoid/releases) -
+  [Changelog](https://github.com/ai/nanoid/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/ai/nanoid/compare/3.3.7...3.3.8)
+
+Updates `nanoid` from 3.3.4 to 3.3.8 - [Release notes](https://github.com/ai/nanoid/releases) -
+  [Changelog](https://github.com/ai/nanoid/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/ai/nanoid/compare/3.3.7...3.3.8)
+
+Updates `nanoid` from 3.3.6 to 3.3.8 - [Release notes](https://github.com/ai/nanoid/releases) -
+  [Changelog](https://github.com/ai/nanoid/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/ai/nanoid/compare/3.3.7...3.3.8)
+
+--- updated-dependencies: - dependency-name: nanoid dependency-type: indirect
+
+- dependency-name: nanoid dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump path-to-regexp and express
+  ([#2267](https://github.com/zain13337/lyft-amundsen/pull/2267),
+  [`6b6d768`](https://github.com/zain13337/lyft-amundsen/commit/6b6d7686ac354984e40ce19a127f69b9217cd40a))
+
+Bumps [path-to-regexp](https://github.com/pillarjs/path-to-regexp) and
+  [express](https://github.com/expressjs/express). These dependencies needed to be updated together.
+
+Updates `path-to-regexp` from 1.8.0 to 1.9.0 - [Release
+  notes](https://github.com/pillarjs/path-to-regexp/releases) -
+  [Changelog](https://github.com/pillarjs/path-to-regexp/blob/master/History.md) -
+  [Commits](https://github.com/pillarjs/path-to-regexp/compare/v1.8.0...v1.9.0)
+
+Updates `express` from 4.19.2 to 4.21.0 - [Release
+  notes](https://github.com/expressjs/express/releases) -
+  [Changelog](https://github.com/expressjs/express/blob/4.21.0/History.md) -
+  [Commits](https://github.com/expressjs/express/compare/4.19.2...4.21.0)
+
+--- updated-dependencies: - dependency-name: path-to-regexp dependency-type: indirect
+
+- dependency-name: express dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump sanitize-html in /frontend/amundsen_application/static
+  ([#2236](https://github.com/zain13337/lyft-amundsen/pull/2236),
+  [`0602992`](https://github.com/zain13337/lyft-amundsen/commit/0602992ce833f8cbdd2a9b31749d24cb7398e5f7))
+
+Bumps [sanitize-html](https://github.com/apostrophecms/sanitize-html) from 1.27.5 to 2.12.1. -
+  [Changelog](https://github.com/apostrophecms/sanitize-html/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/apostrophecms/sanitize-html/commits/2.12.1)
+
+--- updated-dependencies: - dependency-name: sanitize-html dependency-type: direct:production
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump statsd from 3.2.1 to 3.3.0
+  ([#269](https://github.com/zain13337/lyft-amundsen/pull/269),
+  [`a367391`](https://github.com/zain13337/lyft-amundsen/commit/a36739160d8de73535ab618034fb1d083b52ba5f))
+
+Bumps [statsd](https://github.com/jsocol/pystatsd) from 3.2.1 to 3.3.0. - [Release
+  notes](https://github.com/jsocol/pystatsd/releases) -
+  [Changelog](https://github.com/jsocol/pystatsd/blob/master/CHANGES) -
+  [Commits](https://github.com/jsocol/pystatsd/compare/v3.2.1...v3.3)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump typed-ast from 1.4.1 to 1.4.2
+  ([#253](https://github.com/zain13337/lyft-amundsen/pull/253),
+  [`ad05d42`](https://github.com/zain13337/lyft-amundsen/commit/ad05d42b2c4015132465f3fdc3f953e5307aedcd))
+
+Bumps [typed-ast](https://github.com/python/typed_ast) from 1.4.1 to 1.4.2. - [Release
+  notes](https://github.com/python/typed_ast/releases) -
+  [Changelog](https://github.com/python/typed_ast/blob/master/release_process.md) -
+  [Commits](https://github.com/python/typed_ast/compare/1.4.1...1.4.2)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+- **deps**: Bump werkzeug from 3.0.1 to 3.0.3
+  ([#2249](https://github.com/zain13337/lyft-amundsen/pull/2249),
+  [`3b12791`](https://github.com/zain13337/lyft-amundsen/commit/3b127919d00961ee2da3804414bbf0260486c74b))
+
+Bumps [werkzeug](https://github.com/pallets/werkzeug) from 3.0.1 to 3.0.3. - [Release
+  notes](https://github.com/pallets/werkzeug/releases) -
+  [Changelog](https://github.com/pallets/werkzeug/blob/main/CHANGES.rst) -
+  [Commits](https://github.com/pallets/werkzeug/compare/3.0.1...3.0.3)
+
+--- updated-dependencies: - dependency-name: werkzeug dependency-type: direct:production
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps**: Bump wheel from 0.36.2 to 0.38.1
+  ([#2192](https://github.com/zain13337/lyft-amundsen/pull/2192),
+  [`224a6fc`](https://github.com/zain13337/lyft-amundsen/commit/224a6fc1279a579a8d9d617685a35a83bb3a0aa1))
+
+Bumps [wheel](https://github.com/pypa/wheel) from 0.36.2 to 0.38.1. -
+  [Changelog](https://github.com/pypa/wheel/blob/main/docs/news.rst) -
+  [Commits](https://github.com/pypa/wheel/compare/0.36.2...0.38.1)
+
+--- updated-dependencies: - dependency-name: wheel dependency-type: direct:production
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump @babel/traverse ([#2220](https://github.com/zain13337/lyft-amundsen/pull/2220),
+  [`016dfb2`](https://github.com/zain13337/lyft-amundsen/commit/016dfb2456570c1580331c8fb01f3db6e505f8ba))
+
+Bumps [@babel/traverse](https://github.com/babel/babel/tree/HEAD/packages/babel-traverse) from
+  7.16.3 to 7.23.5. - [Release notes](https://github.com/babel/babel/releases) -
+  [Changelog](https://github.com/babel/babel/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/babel/babel/commits/v7.23.5/packages/babel-traverse)
+
+--- updated-dependencies: - dependency-name: "@babel/traverse" dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump browserify-sign ([#2203](https://github.com/zain13337/lyft-amundsen/pull/2203),
+  [`6bd288e`](https://github.com/zain13337/lyft-amundsen/commit/6bd288efa8ea93495ede3856ea02749fc810a001))
+
+Bumps [browserify-sign](https://github.com/crypto-browserify/browserify-sign) from 4.2.1 to 4.2.2. -
+  [Changelog](https://github.com/browserify/browserify-sign/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/crypto-browserify/browserify-sign/compare/v4.2.1...v4.2.2)
+
+--- updated-dependencies: - dependency-name: browserify-sign dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump express in /frontend/amundsen_application/static
+  ([#2241](https://github.com/zain13337/lyft-amundsen/pull/2241),
+  [`c006884`](https://github.com/zain13337/lyft-amundsen/commit/c0068845f79f9ad84825c919775e01b1ea32371e))
+
+Bumps [express](https://github.com/expressjs/express) from 4.18.2 to 4.19.2. - [Release
+  notes](https://github.com/expressjs/express/releases) -
+  [Changelog](https://github.com/expressjs/express/blob/master/History.md) -
+  [Commits](https://github.com/expressjs/express/compare/4.18.2...4.19.2)
+
+--- updated-dependencies: - dependency-name: express dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump ip in /frontend/amundsen_application/static
+  ([#2231](https://github.com/zain13337/lyft-amundsen/pull/2231),
+  [`3cfdefe`](https://github.com/zain13337/lyft-amundsen/commit/3cfdefea7673510fd0b751cd926591f42d4b27ff))
+
+Bumps [ip](https://github.com/indutny/node-ip) from 2.0.0 to 2.0.1. -
+  [Commits](https://github.com/indutny/node-ip/compare/v2.0.0...v2.0.1)
+
+--- updated-dependencies: - dependency-name: ip dependency-type: indirect
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump postcss in /frontend/amundsen_application/static
+  ([#2200](https://github.com/zain13337/lyft-amundsen/pull/2200),
+  [`d3d7a2e`](https://github.com/zain13337/lyft-amundsen/commit/d3d7a2e90ba3aa7dc3746ee84de58c272526ab74))
+
+Bumps [postcss](https://github.com/postcss/postcss) from 7.0.39 to 8.4.31. - [Release
+  notes](https://github.com/postcss/postcss/releases) -
+  [Changelog](https://github.com/postcss/postcss/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/postcss/postcss/compare/7.0.39...8.4.31)
+
+--- updated-dependencies: - dependency-name: postcss dependency-type: direct:development
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump stylelint in /frontend/amundsen_application/static
+  ([#2173](https://github.com/zain13337/lyft-amundsen/pull/2173),
+  [`8f78937`](https://github.com/zain13337/lyft-amundsen/commit/8f7893723f3b64ff360989556de0532cff4598f8))
+
+Bumps [stylelint](https://github.com/stylelint/stylelint) from 13.13.1 to 15.10.1. - [Release
+  notes](https://github.com/stylelint/stylelint/releases) -
+  [Changelog](https://github.com/stylelint/stylelint/blob/main/CHANGELOG.md) -
+  [Commits](https://github.com/stylelint/stylelint/compare/13.13.1...15.10.1)
+
+--- updated-dependencies: - dependency-name: stylelint dependency-type: direct:development
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump webpack in /frontend/amundsen_application/static
+  ([#2117](https://github.com/zain13337/lyft-amundsen/pull/2117),
+  [`1c5be84`](https://github.com/zain13337/lyft-amundsen/commit/1c5be846ed890426a61b9a0f16995f9e3cc5b0db))
+
+Bumps [webpack](https://github.com/webpack/webpack) from 5.74.0 to 5.76.0. - [Release
+  notes](https://github.com/webpack/webpack/releases) -
+  [Commits](https://github.com/webpack/webpack/compare/v5.74.0...v5.76.0)
+
+--- updated-dependencies: - dependency-name: webpack dependency-type: direct:development
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump webpack in /frontend/amundsen_application/static
+  ([#2262](https://github.com/zain13337/lyft-amundsen/pull/2262),
+  [`9587a6b`](https://github.com/zain13337/lyft-amundsen/commit/9587a6b3c868974a5c52c2192a05c05482725e13))
+
+Bumps [webpack](https://github.com/webpack/webpack) from 5.76.0 to 5.94.0. - [Release
+  notes](https://github.com/webpack/webpack/releases) -
+  [Commits](https://github.com/webpack/webpack/compare/v5.76.0...v5.94.0)
+
+--- updated-dependencies: - dependency-name: webpack dependency-type: direct:development
+
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- **deps-dev**: Bump word-wrap from 1.2.3 to 1.2.4 in /frontend/amundsen_application/static
+  ([#2178](https://github.com/zain13337/lyft-amundsen/pull/2178),
+  [`00377a3`](https://github.com/zain13337/lyft-amundsen/commit/00377a3a29461212e3c6ad0b5b3546a39f5698ee))
+
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+### Code Style
+
+- Design Fixes to resource detail ([#461](https://github.com/zain13337/lyft-amundsen/pull/461),
+  [`8639b16`](https://github.com/zain13337/lyft-amundsen/commit/8639b16c6fcbafcd64ef8a4d8ea3965c9d3d1008))
+
+* Changing owners font to 16px
+
+* Changing Font size on Dashboard details page
+
+* Removed extra div
+
+* Changed Font size for Table Description
+
+* Overriding font-size to 16px in markdown tag
+
+* Using layout file to set font size of table description
+
+- Parametrizing notices test cases ([#1321](https://github.com/zain13337/lyft-amundsen/pull/1321),
+  [`a32caac`](https://github.com/zain13337/lyft-amundsen/commit/a32caacd5953830d6511023a25f0c665ec16beaa))
+
+* parametrizing notices test cases
+
+Signed-off-by: Elena Boal <elenaboal@lyft.com>
+
+* fix build error
+
+### Continuous Integration
+
+- Add dependabot config ([#128](https://github.com/zain13337/lyft-amundsen/pull/128),
+  [`3b82e85`](https://github.com/zain13337/lyft-amundsen/commit/3b82e85db4aa6fc774819e29d75c39a94616887e))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add dependabot config ([#169](https://github.com/zain13337/lyft-amundsen/pull/169),
+  [`9d9223f`](https://github.com/zain13337/lyft-amundsen/commit/9d9223fd1b1b423caed98144e4f97319b171ff32))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add dependabot config ([#330](https://github.com/zain13337/lyft-amundsen/pull/330),
+  [`4bd2539`](https://github.com/zain13337/lyft-amundsen/commit/4bd2539d3fdf68f5ac06760aa8f84adbb728d9b2))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add dependabot config ([#50](https://github.com/zain13337/lyft-amundsen/pull/50),
+  [`7c0bc6d`](https://github.com/zain13337/lyft-amundsen/commit/7c0bc6d9717deceb132b54ada15d03f5d2f84d78))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add dependabot config ([#572](https://github.com/zain13337/lyft-amundsen/pull/572),
+  [`a0b23d5`](https://github.com/zain13337/lyft-amundsen/commit/a0b23d53fee15f4fdde06e4502e832f0e509c9eb))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add dependabot config ([#620](https://github.com/zain13337/lyft-amundsen/pull/620),
+  [`ff27a4e`](https://github.com/zain13337/lyft-amundsen/commit/ff27a4e88d154b5804162338f62bfc39cd79943c))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Fix metadata ci config ([#1039](https://github.com/zain13337/lyft-amundsen/pull/1039),
+  [`6fb5814`](https://github.com/zain13337/lyft-amundsen/commit/6fb58140145467003816f759dc290427a43c1fd1))
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+- Move stale yml file to correct dir ([#49](https://github.com/zain13337/lyft-amundsen/pull/49),
+  [`e22e98d`](https://github.com/zain13337/lyft-amundsen/commit/e22e98dfd8009cfabc4089ef10de2a8ebfdb26da))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Release new version to pickup pytest fix
+  ([#295](https://github.com/zain13337/lyft-amundsen/pull/295),
+  [`15e1e34`](https://github.com/zain13337/lyft-amundsen/commit/15e1e345890cfdc7d194318a763b8976b28a7eb9))
+
+- Remove py2 ci ([#280](https://github.com/zain13337/lyft-amundsen/pull/280),
+  [`16479ad`](https://github.com/zain13337/lyft-amundsen/commit/16479ad7ed59b4f616f1f830990b4497c735e19f))
+
+- Rename tests to allow for mandatory merge conditions in the monorepo
+  ([#1024](https://github.com/zain13337/lyft-amundsen/pull/1024),
+  [`0629f1d`](https://github.com/zain13337/lyft-amundsen/commit/0629f1d9d0da3e50100cd42262fea61306c30035))
+
+* test: normalize ci test names
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+* test: add dummy CI tests to please github
+
+* ci: make the dummy thing apply to the full matrix
+
+* ci: rename dummy PR -> noop
+
+* ci: clarify no-op test limitation
+
+- Test pypi travis setting ([#48](https://github.com/zain13337/lyft-amundsen/pull/48),
+  [`e810e24`](https://github.com/zain13337/lyft-amundsen/commit/e810e24dec9e7fb45ad20b576b83fc76de7319de))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Trigger ci on all services for changes to common
+  ([#1379](https://github.com/zain13337/lyft-amundsen/pull/1379),
+  [`32f74e3`](https://github.com/zain13337/lyft-amundsen/commit/32f74e3c08e73c4a612d3440c6d054f1ab1363b0))
+
+Signed-off-by: John Kulzick <john@stemma.ai>
 
 ### Documentation
-* Enumeration requires newline ([#291](https://github.com/amundsen-io/amundsenmetadatalibrary/issues/291)) ([`cf6710d`](https://github.com/amundsen-io/amundsenmetadatalibrary/commit/cf6710d3ab319dbab6f6d07ba5ed1a1c3315f9fa))
+
+- Add a blog from convoy ([#1475](https://github.com/zain13337/lyft-amundsen/pull/1475),
+  [`c9e1a12`](https://github.com/zain13337/lyft-amundsen/commit/c9e1a12d995dd91423fb3c83cc734f67537ac94b))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add a doc about Amundsen ([#474](https://github.com/zain13337/lyft-amundsen/pull/474),
+  [`c307a7f`](https://github.com/zain13337/lyft-amundsen/commit/c307a7f6dd175f2862846c5a43d4af7a4e85c62b))
+
+- Add article about using Amundsen in ING
+  ([#516](https://github.com/zain13337/lyft-amundsen/pull/516),
+  [`c6a14bf`](https://github.com/zain13337/lyft-amundsen/commit/c6a14bf83aa8ce2b37007a879fe7916e50bc2aab))
+
+* amundsen_in_ing_wbaa | :memo: Writing docs.
+
+* Update README.md
+
+- Add Asana to list of Amundsen users ([#548](https://github.com/zain13337/lyft-amundsen/pull/548),
+  [`1783e26`](https://github.com/zain13337/lyft-amundsen/commit/1783e26f1d526bb477728e2e64891f3c599e1b5e))
+
+- Add Dashboard Preview Doc ([#496](https://github.com/zain13337/lyft-amundsen/pull/496),
+  [`591f0f5`](https://github.com/zain13337/lyft-amundsen/commit/591f0f54cb0481c0c4478bcd293baf4b28410277))
+
+* Add doc; Nest dashboard preview code into same directory
+
+* Some edits
+
+* Lint fix
+
+- Add data quality post from Sam ([#470](https://github.com/zain13337/lyft-amundsen/pull/470),
+  [`4a3e284`](https://github.com/zain13337/lyft-amundsen/commit/4a3e284fd9f2688fed1182679f6e788a009bf086))
+
+- Add homepage ([#566](https://github.com/zain13337/lyft-amundsen/pull/566),
+  [`394fc5a`](https://github.com/zain13337/lyft-amundsen/commit/394fc5a953d9d6387f860db80a71b9d78cb89125))
+
+- Add hurb to readme ([#745](https://github.com/zain13337/lyft-amundsen/pull/745),
+  [`4051a61`](https://github.com/zain13337/lyft-amundsen/commit/4051a6178296cdf72fdee5cbed5f4c0965a0939e))
+
+Summary of Changes Add [Hurb](https://hurb.com) as a user of Amundsen
+
+Documentation Changed the [README.md](https://github.com/lyft/amundsen/blob/master/README.md)
+
+CheckList Make sure you have checked all steps below to ensure a timely review.
+
+[] PR title addresses the issue accurately and concisely, including a title prefix. [] PR includes a
+  summary of changes. [] My commits follow the guidelines from "How to write a good git commit
+  message"
+
+- Add Instacart to readme ([#753](https://github.com/zain13337/lyft-amundsen/pull/753),
+  [`0a8877b`](https://github.com/zain13337/lyft-amundsen/commit/0a8877b76b964b14d920f64fe85d95b6d731bed9))
+
+* Add in documentation for how to bypass adblockers
+
+Signed-off-by: Zack Wu <zack.wu@instacart.com>
+
+* docs: add Instacart to readme
+
+- Add LFAI announcement ([#610](https://github.com/zain13337/lyft-amundsen/pull/610),
+  [`c3142bb`](https://github.com/zain13337/lyft-amundsen/commit/c3142bb860dc545603ef2abc01c8005ed2320be9))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add Loft to list of Amundsen users ([#901](https://github.com/zain13337/lyft-amundsen/pull/901),
+  [`321505d`](https://github.com/zain13337/lyft-amundsen/commit/321505df34f29713ec91764c3816853f0bffa13e))
+
+* docs: Add Loft to list of Amundsen users
+
+Signed-off-by: Cristiano <cristianoperez@gmail.com>
+
+* doc: sort alphabetical
+
+- Add metaframe doc ([#500](https://github.com/zain13337/lyft-amundsen/pull/500),
+  [`6405ae7`](https://github.com/zain13337/lyft-amundsen/commit/6405ae7a9a656efd66b1ff3cccaa5e7dc05258d9))
+
+- Add minimum usage to docs ([#1452](https://github.com/zain13337/lyft-amundsen/pull/1452),
+  [`a035d6d`](https://github.com/zain13337/lyft-amundsen/commit/a035d6d8142e77cb5290b777568ced66ec3236b6))
+
+- Add one doc that covers Amundsen ([#469](https://github.com/zain13337/lyft-amundsen/pull/469),
+  [`84504d6`](https://github.com/zain13337/lyft-amundsen/commit/84504d6c7e19b915fc17801cebab11d4ed6f98f0))
+
+- Add one external doc about Amundsen ([#467](https://github.com/zain13337/lyft-amundsen/pull/467),
+  [`a2c1bd7`](https://github.com/zain13337/lyft-amundsen/commit/a2c1bd7d01f75eee7b0455ca756089ec8d01ff72))
+
+- Add owners file ([#621](https://github.com/zain13337/lyft-amundsen/pull/621),
+  [`a57cb8b`](https://github.com/zain13337/lyft-amundsen/commit/a57cb8b1f83d01dfa4c7fff43b31374d24639d46))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add picpay to readme ([#485](https://github.com/zain13337/lyft-amundsen/pull/485),
+  [`2a883fb`](https://github.com/zain13337/lyft-amundsen/commit/2a883fb47c47367c6514cbc48f1b9a1960b0e5ca))
+
+* add picpay to readme
+
+* fix alphabetically order
+
+- Add Plarium to list of Amundsen users
+  ([#874](https://github.com/zain13337/lyft-amundsen/pull/874),
+  [`b2e57b0`](https://github.com/zain13337/lyft-amundsen/commit/b2e57b0d52b390eae3316a3c04e67a2fafad3118))
+
+Co-authored-by: David <userr@Userrs-MacBook-Pro.local>
+
+- Add PUBG as a user of Amundsen ([#484](https://github.com/zain13337/lyft-amundsen/pull/484),
+  [`128ba24`](https://github.com/zain13337/lyft-amundsen/commit/128ba24c1e45fe2ce99d2b547d630df3261c95aa))
+
+- Add SECURITY.md, security reporting process
+  ([#810](https://github.com/zain13337/lyft-amundsen/pull/810),
+  [`32ad4de`](https://github.com/zain13337/lyft-amundsen/commit/32ad4de5c891639a79ccbf04143f316c4b6cd722))
+
+* chore: add SECURITY.md, security reporting process
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+* security.md: link to the announcements mailing list
+
+* README: add link to security reporting process
+
+- Add Square blog post to readme ([#561](https://github.com/zain13337/lyft-amundsen/pull/561),
+  [`39b2caa`](https://github.com/zain13337/lyft-amundsen/commit/39b2caa6eec44971865bcde728d03515e97e98bf))
+
+- Add Troubleshooting for Docker error 137
+  ([#866](https://github.com/zain13337/lyft-amundsen/pull/866),
+  [`fd80777`](https://github.com/zain13337/lyft-amundsen/commit/fd80777ba0d0628cebadf4d332afefc462a55080))
+
+ES crashed on the first call due to out of memory for ES query. Increasing Docker engine memory
+  helps fix this issue.
+
+- Add troubleshooting notes for neo4j container
+  ([#1128](https://github.com/zain13337/lyft-amundsen/pull/1128),
+  [`f922c10`](https://github.com/zain13337/lyft-amundsen/commit/f922c10e1deb87d0d7c3a6e2c296f6ad468ae5c1))
+
+* Add troubleshooting notes for neo4j container
+
+Signed-off-by: Prafulla Kotecha <prafull.kotecha@gmail.com>
+
+* Restored previous version to reflect move to monorepo
+
+- Add ttannis as a contributor ([#728](https://github.com/zain13337/lyft-amundsen/pull/728),
+  [`37a2863`](https://github.com/zain13337/lyft-amundsen/commit/37a2863c9fd61a6441cbbdfa33ebd5b1f3edd9f1))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Add two talks from Airflow summit ([#540](https://github.com/zain13337/lyft-amundsen/pull/540),
+  [`c7dd3f7`](https://github.com/zain13337/lyft-amundsen/commit/c7dd3f7612d6f4c91ad4aa161a2509b1834907e6))
+
+- Added Tile to the list of companies officially using Amundsen
+  ([#929](https://github.com/zain13337/lyft-amundsen/pull/929),
+  [`ae1db2b`](https://github.com/zain13337/lyft-amundsen/commit/ae1db2b23ed6a140eb720d6cad0ba7e1382054ef))
+
+Signed-off-by: Salil Kulkarni <salilk957@gmail.com>
+
+- Adding knobs to Table and SVG Icons ([#698](https://github.com/zain13337/lyft-amundsen/pull/698),
+  [`f956efb`](https://github.com/zain13337/lyft-amundsen/commit/f956efb58f7e074bc1f73a65f3a43a905fd14d48))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Adds documentation and cleans up ESLint rules
+  ([#489](https://github.com/zain13337/lyft-amundsen/pull/489),
+  [`469ee1e`](https://github.com/zain13337/lyft-amundsen/commit/469ee1e9a0c5d7ccb05233ffeb0f11c21fb01b14))
+
+* Cleans up a11y rules and orders ESLint rules
+
+* Updates developer guide docs with accessibility section
+
+* Adds documentation about semantic HTML
+
+- Adds frontend strategy doc ([#2100](https://github.com/zain13337/lyft-amundsen/pull/2100),
+  [`7b4d0d3`](https://github.com/zain13337/lyft-amundsen/commit/7b4d0d3155bc5188beaff43fb68a9e324c4ab874))
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+- Adds Governance document ([#598](https://github.com/zain13337/lyft-amundsen/pull/598),
+  [`9967b74`](https://github.com/zain13337/lyft-amundsen/commit/9967b7411c7b643ab2735fbc38ffaa7c6bf8a27f))
+
+- Adds React components naming conventions
+  ([#713](https://github.com/zain13337/lyft-amundsen/pull/713),
+  [`00a317d`](https://github.com/zain13337/lyft-amundsen/commit/00a317de2cea522a3b763c49f7ddd2ab038632f6))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Cleanup and broken link fixing ([#2101](https://github.com/zain13337/lyft-amundsen/pull/2101),
+  [`2f7ddbf`](https://github.com/zain13337/lyft-amundsen/commit/2f7ddbf8846729a44e5b99c3cf5df0c1c5e67898))
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+- Create start of best-practices doc ([#885](https://github.com/zain13337/lyft-amundsen/pull/885),
+  [`a8a23d8`](https://github.com/zain13337/lyft-amundsen/commit/a8a23d8694f52735b6ffd14c233bca77c57875ea))
+
+Amundsen allows for many modifications, and many require code-level modifications. Until we put
+  together a "paved path" suggestion on how to manage such a set-up, for now we will document what
+  community members are doing independenly. If you have a production Amundsen deployment, please
+  edit this doc to describe your setup.
+
+- Describe storybook ([#577](https://github.com/zain13337/lyft-amundsen/pull/577),
+  [`fed7546`](https://github.com/zain13337/lyft-amundsen/commit/fed7546c9b0948d951577f288ceef0fea8bfb913))
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+- Document the opensearch.xml file ([#1753](https://github.com/zain13337/lyft-amundsen/pull/1753),
+  [`7c2c25c`](https://github.com/zain13337/lyft-amundsen/commit/7c2c25c9fc338cc1a201a53f5242ae8fadd2279f))
+
+* Create search_from_browser.md
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+* Update search_from_browser.md
+
+- Draft for the Maintaining document ([#504](https://github.com/zain13337/lyft-amundsen/pull/504),
+  [`c5e4988`](https://github.com/zain13337/lyft-amundsen/commit/c5e498846a0fe3cd6b37c525311304324cc48149))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Enumeration requires newline ([#291](https://github.com/zain13337/lyft-amundsen/pull/291),
+  [`2390be5`](https://github.com/zain13337/lyft-amundsen/commit/2390be58d805cbdfb859e6126cabb7556816f7d2))
+
+Signed-off-by: sbrugman <sfbbrugman@gmail.com>
+
+- Fix broken doc link to dashboard_execution model
+  ([#296](https://github.com/zain13337/lyft-amundsen/pull/296),
+  [`6b48c1c`](https://github.com/zain13337/lyft-amundsen/commit/6b48c1c4c30142cb205ad9fa2bc1e2f39a4c10ee))
+
+- Fix build and coverage status links in README.md
+  ([#134](https://github.com/zain13337/lyft-amundsen/pull/134),
+  [`a902c3f`](https://github.com/zain13337/lyft-amundsen/commit/a902c3f2d2c99e0f42a50b13cd1129ae8ef8459c))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Fix README.md ([#301](https://github.com/zain13337/lyft-amundsen/pull/301),
+  [`492c513`](https://github.com/zain13337/lyft-amundsen/commit/492c51386ce74d905da410292b770c97f710439e))
+
+- Fix some broken links ([#1125](https://github.com/zain13337/lyft-amundsen/pull/1125),
+  [`b182c67`](https://github.com/zain13337/lyft-amundsen/commit/b182c67bdcbf889737f99fc6ef63788d72d23449))
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+- Fix the link from index.md to LICENSE
+  ([#942](https://github.com/zain13337/lyft-amundsen/pull/942),
+  [`e1b3bef`](https://github.com/zain13337/lyft-amundsen/commit/e1b3bef16329c90def6c5854f3175b86b1533092))
+
+Without a symbolic link to bring LICENSE in to this folder, that license link takes people to a 404
+  page.
+
+Signed-off-by: Dave Cameron <dcameron@digitalocean.com>
+
+- Fixes the "Edit this page" for symbolic links
+  ([#989](https://github.com/zain13337/lyft-amundsen/pull/989),
+  [`7c914b2`](https://github.com/zain13337/lyft-amundsen/commit/7c914b2d7020b2976e1b26ae5c326edd9f337325))
+
+* feat: introduce custom dir to override mkdocs theme
+
+Signed-off-by: sbrugman <sfbbrugman@gmail.com>
+
+* fix: edit on github link for symbolic links
+
+- Improve the documentation of Databuilder
+  ([#1476](https://github.com/zain13337/lyft-amundsen/pull/1476),
+  [`45d96dd`](https://github.com/zain13337/lyft-amundsen/commit/45d96dd8cfa0a92c06b0b84b791150a5603dbeee))
+
+* docs: clarify the introduction to Databuilder
+
+Signed-off-by: Hoseung Lee <astrohsy@gmail.com>
+
+* docs: update the outdated URLs of Databuilder
+
+- Improves the frontend documentation on announcements
+  ([#1921](https://github.com/zain13337/lyft-amundsen/pull/1921),
+  [`c723dd4`](https://github.com/zain13337/lyft-amundsen/commit/c723dd470d3890ac87bfebbc6388039b19e31bf7))
+
+* Fix typo in application_config.md
+
+Signed-off-by: xfiderek <fiderekblazej@gmail.com>
+
+* make documentation about announcements mor explicit
+
+- Increase CONTRIBUTING.md visibility ([#466](https://github.com/zain13337/lyft-amundsen/pull/466),
+  [`680241b`](https://github.com/zain13337/lyft-amundsen/commit/680241bea6379bd6583002ac6d1edb4f6b968684))
+
+* docs: Increase CONTRIBUTING.md visibility
+
+* Link license badge as well
+
+- Minor fixes to README ([#457](https://github.com/zain13337/lyft-amundsen/pull/457),
+  [`053a6fa`](https://github.com/zain13337/lyft-amundsen/commit/053a6faa976bcaf3505112df8689c80eb0474ca6))
+
+* README: tabs -> spaces
+
+Just to match rest of codebase
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+* README: minor fixes to some examples
+
+- Ms SQL Server example ([#278](https://github.com/zain13337/lyft-amundsen/pull/278),
+  [`9451ff5`](https://github.com/zain13337/lyft-amundsen/commit/9451ff53a137902d6e2c2778b19300d308e97aed))
+
+* Change result header to small caps. Large CAPS were causing an error.
+
+* script to load sample data to MSSQL, based on PostgreSQL sample .
+
+* change line ends to LF
+
+* unit tests
+
+* remove flag unnecessary change.
+
+* whitespace tabs and readability
+
+* flake8
+
+- Proposal for issue triage process ([#2052](https://github.com/zain13337/lyft-amundsen/pull/2052),
+  [`99227c1`](https://github.com/zain13337/lyft-amundsen/commit/99227c1d40a3399e379ac6530ae6f87cb8d9a54f))
+
+* docs: proposal for issue triage process
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* docs: update contributing guide
+
+- Removes roadmap link from the readme
+  ([#2163](https://github.com/zain13337/lyft-amundsen/pull/2163),
+  [`2488a7c`](https://github.com/zain13337/lyft-amundsen/commit/2488a7c6398944f0c6c25877b092a446d77d22d0))
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+- Rename Plarium to Plarium Krasnodar ([#876](https://github.com/zain13337/lyft-amundsen/pull/876),
+  [`2eec0b2`](https://github.com/zain13337/lyft-amundsen/commit/2eec0b2801980f58ea9ab33ddaee4d3ed15355ad))
+
+* docs: Add Plarium to list of Amundsen users
+
+* Rename Plarium to Plarium Krasnodar
+
+Co-authored-by: David <userr@Userrs-MacBook-Pro.local>
+
+- Tutorial for the Neptune Integration ([#940](https://github.com/zain13337/lyft-amundsen/pull/940),
+  [`97b0cc9`](https://github.com/zain13337/lyft-amundsen/commit/97b0cc9fdee8e229d99283b25b8021b7984087f7))
+
+* Write tutorial for the Neptune Integration
+
+Signed-off-by: Andrew Ciambrone <andrjc4@vt.edu>
+
+* Add Neptune tutorial to mkdocs
+
+- Update community meeting notes with recording
+  ([#505](https://github.com/zain13337/lyft-amundsen/pull/505),
+  [`78cc448`](https://github.com/zain13337/lyft-amundsen/commit/78cc4489e5a1a803f442c66538c4857e77d3e61d))
+
+- Update DashboardMetadata docs ([#402](https://github.com/zain13337/lyft-amundsen/pull/402),
+  [`1354862`](https://github.com/zain13337/lyft-amundsen/commit/1354862b6274a61f71cac3b9b7d5b2a533bc5c8c))
+
+* Update DashboardMetadata docs
+
+Signed-off-by: Joseph Atkins-Turkish <jatkins-turkish@brex.com>
+
+* Update dashboard_metadata.py
+
+- Update data-preview-with-superset.md ([#657](https://github.com/zain13337/lyft-amundsen/pull/657),
+  [`fd695d6`](https://github.com/zain13337/lyft-amundsen/commit/fd695d68cde55fc430d8b2bb981573e41670c08d))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Update databuilder directory name after deprecating databuilder submodule
+  ([#1106](https://github.com/zain13337/lyft-amundsen/pull/1106),
+  [`e90658a`](https://github.com/zain13337/lyft-amundsen/commit/e90658acf016c823fe8b3b15729f7502ed0a1dfa))
+
+Signed-off-by: Marcin Mazurek <marcin@mazurek.pro>
+
+- Update databuilder docs ES version reference
+  ([#2049](https://github.com/zain13337/lyft-amundsen/pull/2049),
+  [`546add2`](https://github.com/zain13337/lyft-amundsen/commit/546add2b09e2bd268145f9fe41edd9cfe3de68d7))
+
+Per https://github.com/amundsen-io/amundsen/pull/1722/files and
+  https://github.com/amundsen-io/amundsen/pull/1386/files, databuilder seems to already supports ES
+  8.x, but there is no mention in requirements.txt
+
+Signed-off-by: Bryan A. S <bryanasdev000@gmail.com>
+
+- Update doc site ([#609](https://github.com/zain13337/lyft-amundsen/pull/609),
+  [`3a9325d`](https://github.com/zain13337/lyft-amundsen/commit/3a9325d6c690655056b01d81809f684ebe328d22))
+
+- Update faq.md ([#1038](https://github.com/zain13337/lyft-amundsen/pull/1038),
+  [`b461e5a`](https://github.com/zain13337/lyft-amundsen/commit/b461e5a578e611581740bad807603be64568d03e))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Update flask config
+  ([`94a4d18`](https://github.com/zain13337/lyft-amundsen/commit/94a4d1867902d96de7f515048ef7630baaa702f9))
+
+Add note for ISSUE_LABELS configuration
+
+- Update installation document to clarify sample data ingestion process
+  ([#587](https://github.com/zain13337/lyft-amundsen/pull/587),
+  [`2c23fec`](https://github.com/zain13337/lyft-amundsen/commit/2c23fece1c4684dae0c5523270a602bc8148fb2d))
+
+* Update installation document to clarify sample data ingestion process
+
+* Minor clarification
+
+- Update Notice file ([#1324](https://github.com/zain13337/lyft-amundsen/pull/1324),
+  [`f3ad0a4`](https://github.com/zain13337/lyft-amundsen/commit/f3ad0a47c049cb02f1f093f17de2a86cc2dda57e))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Update readme ([#627](https://github.com/zain13337/lyft-amundsen/pull/627),
+  [`7a4d4f0`](https://github.com/zain13337/lyft-amundsen/commit/7a4d4f08b7a1cefa0da2aa8a385cd3ee391388e4))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Update readme to fix the badges ([#1275](https://github.com/zain13337/lyft-amundsen/pull/1275),
+  [`73fa3f9`](https://github.com/zain13337/lyft-amundsen/commit/73fa3f944840cf3d5e62cbcd53980a269f71efe9))
+
+* doc: update readme to fix the badges
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* doc: update title lint
+
+- Update readme with contributor graph
+  ([#1331](https://github.com/zain13337/lyft-amundsen/pull/1331),
+  [`c0d7b3f`](https://github.com/zain13337/lyft-amundsen/commit/c0d7b3f3ba09da96d8e4694207d15cb60a0c5ba5))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Update roadmap ([#524](https://github.com/zain13337/lyft-amundsen/pull/524),
+  [`02f3ebb`](https://github.com/zain13337/lyft-amundsen/commit/02f3ebb6eb560b71a79bb1e3dc403eb67650ffca))
+
+* docs: update roadmap
+
+* update
+
+- Update roadmap ([#834](https://github.com/zain13337/lyft-amundsen/pull/834),
+  [`14140f2`](https://github.com/zain13337/lyft-amundsen/commit/14140f2526f67e6af3f8bb06a58cef4129f0c931))
+
+* doc: update roadmap
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* chore: update
+
+- Update roadmap.md ([#650](https://github.com/zain13337/lyft-amundsen/pull/650),
+  [`c5c5278`](https://github.com/zain13337/lyft-amundsen/commit/c5c527878e83b18c3c50010c335e3a19704f5417))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Update Verifying setup as per latest example
+  ([#1286](https://github.com/zain13337/lyft-amundsen/pull/1286),
+  [`6643587`](https://github.com/zain13337/lyft-amundsen/commit/664358715133afaa731a8763f66d39a4b067c782))
+
+Signed-off-by: Aseem Bansal <aseem.bansal@gogox.com>
+
+- Update with notes from last meeting & date for next
+  ([#589](https://github.com/zain13337/lyft-amundsen/pull/589),
+  [`9acae8e`](https://github.com/zain13337/lyft-amundsen/commit/9acae8ed8642258545133a8f77eeae6427a2d1c0))
+
+- Update wording ([#538](https://github.com/zain13337/lyft-amundsen/pull/538),
+  [`fad23bc`](https://github.com/zain13337/lyft-amundsen/commit/fad23bce93b1658a7d3db3e0a369df06483c4050))
+
+- Updated GOVERNANCE.md to remove time requirements
+  ([#2154](https://github.com/zain13337/lyft-amundsen/pull/2154),
+  [`a9a2cb0`](https://github.com/zain13337/lyft-amundsen/commit/a9a2cb07f5d4dd2e5c7ae5ce9148079f7a7218b4))
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+- Updates application configuration docs
+  ([#2107](https://github.com/zain13337/lyft-amundsen/pull/2107),
+  [`0bf4ddb`](https://github.com/zain13337/lyft-amundsen/commit/0bf4ddb1ad14a98af462e54d80e0a175a67ffa27))
+
+* docs: updates application configuration docs
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* Update frontend/docs/application_config.md
+
+Co-authored-by: Kristen Armes <6732445+kristenarmes@users.noreply.github.com>
+
+---------
+
+- Updates Developer guide with linting information
+  ([#478](https://github.com/zain13337/lyft-amundsen/pull/478),
+  [`d9d35d8`](https://github.com/zain13337/lyft-amundsen/commit/d9d35d81abd283665415635ec7b414ea8acf8ef8))
+
+* Updates Developer guide with linting infor
+
+* Rewords issues on document
+
+- Updates frontend docs with styleguide and consolidation
+  ([#2124](https://github.com/zain13337/lyft-amundsen/pull/2124),
+  [`b86a06a`](https://github.com/zain13337/lyft-amundsen/commit/b86a06a15f5acccecc6d4c1dc512603a5daaa1cf))
+
+* docs: updates on coding styleguide
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* docs: reorganizes FE docs, adds styleguide section, consolidates docs
+
+* docs: fixes links and more
+
+---------
+
+- Updates labeling doc with lowercase labels; updates templates and Readme links
+  ([#2062](https://github.com/zain13337/lyft-amundsen/pull/2062),
+  [`7e3b63f`](https://github.com/zain13337/lyft-amundsen/commit/7e3b63f8c4cc19647d0721b7b5f87c60379ba956))
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+- Updates PR template and adds document for labeling explanation
+  ([#471](https://github.com/zain13337/lyft-amundsen/pull/471),
+  [`bf459cf`](https://github.com/zain13337/lyft-amundsen/commit/bf459cf5398deb6ecd0b86d16aa33fcd6afef1f6))
+
+* Updates PR template and adds document for labeling explanation
+
+* Adds Tao comment
+
+* Updates styling and image path
+
+* Removing mention to labeling on the PR template
+
+- Updates the missing application configuration docs
+  ([#2123](https://github.com/zain13337/lyft-amundsen/pull/2123),
+  [`08785c9`](https://github.com/zain13337/lyft-amundsen/commit/08785c957a176e89bfcc83f74817de07f12dd93b))
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+- Updating date of next community meeting
+  ([#523](https://github.com/zain13337/lyft-amundsen/pull/523),
+  [`4fbb82d`](https://github.com/zain13337/lyft-amundsen/commit/4fbb82dbfaec12cf827708928cd0dcf3abc04655))
+
+- Updating install documentation related to Docker memory allocation
+  ([#913](https://github.com/zain13337/lyft-amundsen/pull/913),
+  [`b1627c6`](https://github.com/zain13337/lyft-amundsen/commit/b1627c64fae1e3ea5c6cee941a7214f86aef00f3))
+
+* docs: Updating install documentation related to Docker memory allocation
+
+Signed-off-by: Mark Grover <mark@apache.org>
+
+* Move the proactive recommendation below code block
+
+### Features
+
+- Accept new badges ([#669](https://github.com/zain13337/lyft-amundsen/pull/669),
+  [`902948e`](https://github.com/zain13337/lyft-amundsen/commit/902948ee2084b1bde4962bf6f7a4415a1fdcafa5))
+
+* general badges change
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* added temporary table to use in FE in order to accomodate to different types of badges
+
+* accepts both badges
+
+* changes
+
+* added more TODOs and @s
+
+* left out table
+
+* added license comment
+
+* lint fix
+
+* style mapping
+
+* lint
+
+* moved mapping of stylee
+
+* removed export
+
+- Add a button to open dashboard group ([#662](https://github.com/zain13337/lyft-amundsen/pull/662),
+  [`c17db15`](https://github.com/zain13337/lyft-amundsen/commit/c17db154deb04ecd0aeacc33877240e5b285126e))
+
+* feat: add a button to open dashboard group
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* fix: update
+
+- Add a transformer that adds tags to all tables created in a job
+  ([#287](https://github.com/zain13337/lyft-amundsen/pull/287),
+  [`c6a2637`](https://github.com/zain13337/lyft-amundsen/commit/c6a2637ef38885f9de54a5f81e171dffdec70169))
+
+* initial commit
+
+* imports
+
+* remove debugging print
+
+* tests
+
+* print
+
+* lint
+
+* standardize on single quotes
+
+* fix python 2 compatibility
+
+- Add amundsen gremlin ([#743](https://github.com/zain13337/lyft-amundsen/pull/743),
+  [`a7de2c0`](https://github.com/zain13337/lyft-amundsen/commit/a7de2c0d6c1d26231cf39f07a5ae8b68c2f3c926))
+
+Signed-off-by: Joshua Hoskins <hoskins@squareup.com>
+
+- Add an extractor for pulling user information from BambooHR
+  ([#369](https://github.com/zain13337/lyft-amundsen/pull/369),
+  [`b1b07f1`](https://github.com/zain13337/lyft-amundsen/commit/b1b07f166e08538f22f9ae19a5095ef5ea14a95c))
+
+Signed-off-by: Nathan Lawrence <nathanlawrence@asana.com>
+
+- Add analytics events to lineage features and cleanup
+  ([#972](https://github.com/zain13337/lyft-amundsen/pull/972),
+  [`59d7de0`](https://github.com/zain13337/lyft-amundsen/commit/59d7de0b08349eb02ee94b7332c3f46a5c404bc8))
+
+- LineageList updated to use TableListItem component - moved 'logAction' and 'logClick' into
+  Analytics.ts, added 'trackEvent' call to 'logAction' - Add tracking to Tabs on Table page,
+  Dashboard Page, and Column Lineage links
+
+Signed-off-by: Daniel Won <dwon@lyft.com>
+
+- Add bigquery column mode when consuming bigquery metadata
+  ([#1491](https://github.com/zain13337/lyft-amundsen/pull/1491),
+  [`6fc4599`](https://github.com/zain13337/lyft-amundsen/commit/6fc4599fc0a7a022ff8bb590fa1ba5dad66f3082))
+
+* DCAT-182 Consume column mode when consumeing metadata from bigquery and append this information as
+  part of the column type
+
+Signed-off-by: MrwanBaghdad <marwan.nabil@deliveryhero.com>
+
+* fix lint issues
+
+* Use the column type as prefix, instead of mode
+
+- Add boolean config for adding publisher metadata to neo4j node
+  ([#1789](https://github.com/zain13337/lyft-amundsen/pull/1789),
+  [`d2de0cb`](https://github.com/zain13337/lyft-amundsen/commit/d2de0cb34666d7c923f75e62587f70c5a8ab3933))
+
+* add boolean flag for adding publisher metadata
+
+Signed-off-by: Wentao <wli@brex.com>
+
+* fix indent
+
+* comment
+
+* do not raise on publish_tag if no publish metadata is needed
+
+- Add chart into common ES index map ([#77](https://github.com/zain13337/lyft-amundsen/pull/77),
+  [`320500c`](https://github.com/zain13337/lyft-amundsen/commit/320500ca001547155af47593e1428ddda010b6dc))
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+- Add chart to dashboard model ([#73](https://github.com/zain13337/lyft-amundsen/pull/73),
+  [`f4355d4`](https://github.com/zain13337/lyft-amundsen/commit/f4355d43dc033461fb132f9a499978d19ae812de))
+
+* feat: add chart to dashboard model
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* feat: fix model
+
+- Add clickable rows to table detail page and new expand/collapse arrow icons
+  ([#1897](https://github.com/zain13337/lyft-amundsen/pull/1897),
+  [`76620f2`](https://github.com/zain13337/lyft-amundsen/commit/76620f21ee5f2405fc01bdaceb3e61c5b68a727b))
+
+* Add clickable rows to table detail page and new arrow icons
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Small fixes
+
+* Bug fix and PR comments
+
+- Add Column Badge API ([#273](https://github.com/zain13337/lyft-amundsen/pull/273),
+  [`8973a5f`](https://github.com/zain13337/lyft-amundsen/commit/8973a5fe8aaa02ff2a369572880d64478fa388ca))
+
+* Badge Column API
+
+Signed-off-by: adoami <adoami@chanzuckerberg.com>
+
+* neo4j query change
+
+* delete badge
+
+* yaml
+
+* log
+
+* import
+
+* Delete
+
+* WORKING
+
+* added ResourceType to add_badge test
+
+* resource_type
+
+* lint
+
+* proxy
+
+* other proxies
+
+* add test
+
+* shorten lines
+
+* indenting
+
+* remove backslashg
+
+* updates
+
+* add test for column badge
+
+* chore: Bumped version for release 3.2.0 (#274)
+
+* New release for 3.2.0
+
+Signed-off-by: github-actions <github-actions@github.com>
+
+* Bumped version to 3.2.0
+
+Co-authored-by: github-actions <github-actions@github.com>
+
+* chore(deps): bump flask-cors from 3.0.8 to 3.0.10 (#268)
+
+Bumps [flask-cors](https://github.com/corydolphin/flask-cors) from 3.0.8 to 3.0.10. - [Release
+  notes](https://github.com/corydolphin/flask-cors/releases) -
+  [Changelog](https://github.com/corydolphin/flask-cors/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/corydolphin/flask-cors/compare/3.0.8...3.0.10)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+* added docker publish, need to do for other repos (#275)
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* New release for 3.3.0 (#277)
+
+* chore(deps): bump boto3 from 1.12.12 to 1.17.23 (#276)
+
+Bumps [boto3](https://github.com/boto/boto3) from 1.12.12 to 1.17.23. - [Release
+  notes](https://github.com/boto/boto3/releases) -
+  [Changelog](https://github.com/boto/boto3/blob/develop/CHANGELOG.rst) -
+  [Commits](https://github.com/boto/boto3/compare/1.12.12...1.17.23)
+
+* refactor: Remove Global call (#278)
+
+* Remove the global call and set it to ignore the shard in the init of the proxy
+
+Signed-off-by: Andrew Ciambrone <andrjc4@vt.edu>
+
+* clean up spacing
+
+* isort lint
+
+* refactor: Separate configs based on the backends/proxies (#279)
+
+* fixes pip install and configs
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+* cleanup
+
+* test fix
+
+* removes the requirements changes from branch
+
+* merge
+
+* remove logs
+
+* badge
+
+* revert resource
+
+* Working new method
+
+* working new changes
+
+* update yaml
+
+Co-authored-by: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+
+Co-authored-by: Allison Suarez Miranda <22477579+allisonsuarez@users.noreply.github.com>
+
+Co-authored-by: Andrew Ciambrone <andrjc4@vt.edu>
+
+Co-authored-by: Verdan Mahmood <verdan.mahmood@gmail.com>
+
+- Add column statistics indicator for columns with TableColumnStats available
+  ([#1693](https://github.com/zain13337/lyft-amundsen/pull/1693),
+  [`b862c8a`](https://github.com/zain13337/lyft-amundsen/commit/b862c8ac6c7cb9f32ed04b42afe407d21aefddaf))
+
+Signed-off-by: Mariusz Górski <gorskimariusz13@gmail.com>
+
+- Add compat with flask-oidc v0.1.x ([#777](https://github.com/zain13337/lyft-amundsen/pull/777),
+  [`748edcb`](https://github.com/zain13337/lyft-amundsen/commit/748edcb89cf983889bd857182eb1c59c17b88a10))
+
+Signed-off-by: Jonas Brunsgaard <jonas.brunsgaard@gmail.com>
+
+- Add complex delta type rendering on frontend
+  ([#1326](https://github.com/zain13337/lyft-amundsen/pull/1326),
+  [`022f697`](https://github.com/zain13337/lyft-amundsen/commit/022f697d78257b7a754b6d54e495da9f63821971))
+
+This commit adds support to render complex delta types as nested columns on the UI. This is modeled
+  after the implementation already done for hive and presto types. I added several tests in
+  parser.spec.ts to test some delta complex types are rendered into the proper types.
+
+Signed-off-by: jroof88 <jack.roof@samsara.com>
+
+- Add config for nested columns feature
+  ([#1595](https://github.com/zain13337/lyft-amundsen/pull/1595),
+  [`07f6452`](https://github.com/zain13337/lyft-amundsen/commit/07f64520eb6fd85ed542469d26df22cb1f489c26))
+
+* Add config for nested columns - Enable/disable - Max column count for hiding nested columns
+
+Signed-off-by: Daniel Won <dwon@lyft.com>
+
+- Add config key for connect_arg for SqlAlchemyExtractor
+  ([#434](https://github.com/zain13337/lyft-amundsen/pull/434),
+  [`c9e5f9e`](https://github.com/zain13337/lyft-amundsen/commit/c9e5f9ec76340165917e61ffa8cd932e5510c43e))
+
+* General connect_args for SqlAlchemyExtractor
+
+Signed-off-by: benrifkind <ben.rifkind@gmail.com>
+
+* lint
+
+* more lint
+
+- Add config to hide non-clickable badges
+  ([#1943](https://github.com/zain13337/lyft-amundsen/pull/1943),
+  [`f30e9e1`](https://github.com/zain13337/lyft-amundsen/commit/f30e9e1a01bada97e133c18f05230d701b83ab9d))
+
+* feat: Add config to hide non-clickable badges
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+* feat: Fix config-custom
+
+* feat: Add frontend documentation
+
+- Add config to prevent neo4j staleness removal task from removing data with missing publisher
+  metadata ([#1662](https://github.com/zain13337/lyft-amundsen/pull/1662),
+  [`633515d`](https://github.com/zain13337/lyft-amundsen/commit/633515daae9435dfe98b08ffd930fce87bb284e3))
+
+* Add config to prevent neo4j staleness removal task from removing data with missing publisher
+  metadata
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Addressing PR comments
+
+* Small parentheses change
+
+- Add configurable message to lineage tabs
+  ([#2038](https://github.com/zain13337/lyft-amundsen/pull/2038),
+  [`fcf2758`](https://github.com/zain13337/lyft-amundsen/commit/fcf2758999f4b8abbaf0696c723b379b2d7bf89e))
+
+* adding notices to lineage tabs with configurable messages
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* feat: add count fields to lineage response
+
+* bumped to 0.30.0
+
+* reqs
+
+* adding configurable lineage list message
+
+* finalized customizeable bottom banner for lineage lists
+
+* add target
+
+* some linting and cleanup
+
+* link and use ?
+
+* fixed negative margin
+
+* moved to line 5
+
+* shirnk text and fix feedback
+
+* lint
+
+* remove unused imports
+
+* unit test
+
+* unit tests
+
+* lineage unit test
+
+* GET
+
+* functional unit tests
+
+* ran autopep8 on test file
+
+- Add configurable prop types to neo4j csv publisher
+  ([#1993](https://github.com/zain13337/lyft-amundsen/pull/1993),
+  [`261134a`](https://github.com/zain13337/lyft-amundsen/commit/261134a07956304206b0681972267a631292a59a))
+
+* Add configurable prop types to neo4j csv publisher
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Bump databuilder version
+
+- Add dashboard search filter support ([#112](https://github.com/zain13337/lyft-amundsen/pull/112),
+  [`3a959cf`](https://github.com/zain13337/lyft-amundsen/commit/3a959cf2d736368e02d7f8d5bdea018b2fb3964a))
+
+* feat: Add search filter support dashboard
+
+* fix mypy
+
+* keep table filter endpoint the same for now
+
+* fix issue
+
+* pass index by default
+
+* remove index and keep page_index
+
+* update tag name
+
+* update per feedback
+
+* update version
+
+- Add databuilder models for Feature ([#1201](https://github.com/zain13337/lyft-amundsen/pull/1201),
+  [`aa67a0c`](https://github.com/zain13337/lyft-amundsen/commit/aa67a0c14d191501b23ea488f1a4b9d4bbe20230))
+
+* [feat] Add databuilder models for Feature
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+* add feature model docs
+
+* fix dashboard owner test
+
+* lint failures
+
+* docstring improvements
+
+* bump version
+
+- Add dbt extractor for table lineage + metadata
+  ([#1015](https://github.com/zain13337/lyft-amundsen/pull/1015),
+  [`1cece5b`](https://github.com/zain13337/lyft-amundsen/commit/1cece5b4461c8623414ccfb635e495e794a55988))
+
+* converted dbt extractor to mono repo
+
+Signed-off-by: Grant Seward <grant@stemma.ai>
+
+* Flake8 formatting
+
+* Updates per feedback from Convoy
+
+* Commented sample logging
+
+* Added dbt to main amundsen README
+
+- Add ElasticsearchWatermarkExtractor
+  ([#1684](https://github.com/zain13337/lyft-amundsen/pull/1684),
+  [`19e9f70`](https://github.com/zain13337/lyft-amundsen/commit/19e9f7066c7908c9ee7866026190b1ac1baf3779))
+
+- Add Frequent Users feature in [AtlasProxy]
+  ([#147](https://github.com/zain13337/lyft-amundsen/pull/147),
+  [`a3e2f80`](https://github.com/zain13337/lyft-amundsen/commit/a3e2f80e7e29d5ed3d74ded598f80f81d33054b7))
+
+* :tada: Initial commit.
+
+* :recycle: Refactoring code.
+
+* :ok_hand: Updating code due to code review changes.
+
+* :ok_hand: Updating code due to code review changes. (tests)
+
+- Add generic data quality checks ([#1073](https://github.com/zain13337/lyft-amundsen/pull/1073),
+  [`22dcca5`](https://github.com/zain13337/lyft-amundsen/commit/22dcca55d1348de677c33de5af5b62528e4cf2b6))
+
+This commit adds a table quality checks summary on the table page.
+
+- Add table quality checks frontend component - Add table quality check client and interface
+  Signed-off-by: Daniel Won <dwon@lyft.com>
+
+- Add get_dashbaord support for neptune
+  ([#1927](https://github.com/zain13337/lyft-amundsen/pull/1927),
+  [`876eb42`](https://github.com/zain13337/lyft-amundsen/commit/876eb4212d6b4b147b985fe123c7f514683845fe))
+
+* feat: add get_dashbaord support for neptune
+
+Signed-off-by: owenlch <owen.leung2@gmail.com>
+
+* Update gremlin_proxy.py
+
+- Add get_lineage support for neptune backend
+  ([#1915](https://github.com/zain13337/lyft-amundsen/pull/1915),
+  [`0b39e4d`](https://github.com/zain13337/lyft-amundsen/commit/0b39e4d403547a13b6a9680938998934618031a5))
+
+* feat: add get_lineage support for neptune backend
+
+Signed-off-by: owenlch <owen.leung2@gmail.com>
+
+* Fix Failing CI
+
+* Fix failing CI
+
+* Fix import sequence & type hint
+
+- Add github action for test and pypi publish
+  ([#47](https://github.com/zain13337/lyft-amundsen/pull/47),
+  [`c8433a1`](https://github.com/zain13337/lyft-amundsen/commit/c8433a1606a2a8e5e335da5b608dd3871651d819))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add github action to publish doc ([#637](https://github.com/zain13337/lyft-amundsen/pull/637),
+  [`1ac4e7a`](https://github.com/zain13337/lyft-amundsen/commit/1ac4e7a9e132953ce131c9e8f7243886fb993dcb))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add github actions for databuilder ([#336](https://github.com/zain13337/lyft-amundsen/pull/336),
+  [`34547fc`](https://github.com/zain13337/lyft-amundsen/commit/34547fca3ed30fa0a698fd76dd49897f03398bc7))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add github actions for FE ([#592](https://github.com/zain13337/lyft-amundsen/pull/592),
+  [`c01e868`](https://github.com/zain13337/lyft-amundsen/commit/c01e86832d27715e341d71170eaf43e1b1789aba))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add imagePullSecrets to support amundsen private images
+  ([#927](https://github.com/zain13337/lyft-amundsen/pull/927),
+  [`c64c358`](https://github.com/zain13337/lyft-amundsen/commit/c64c358ed46ae3b6262408837dcb27d7940bee49))
+
+* feat(helm): Add imagePullSecrets to support amundsen private images
+
+Signed-off-by: Joey Bates <35610156+joeybaer@users.noreply.github.com>
+
+* feat(helm): Update values to support helm-docs latest version, bump version to 2.1.0
+
+- Add lineage item counts to lineage response
+  ([#2039](https://github.com/zain13337/lyft-amundsen/pull/2039),
+  [`194e2f8`](https://github.com/zain13337/lyft-amundsen/commit/194e2f8cb6f277c73a17becbfec987e2083d06ec))
+
+* feat: add count fields to lineage response
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* bumped to 0.30.0
+
+* reqs
+
+- Add logging for total extracted records
+  ([#1347](https://github.com/zain13337/lyft-amundsen/pull/1347),
+  [`141fd21`](https://github.com/zain13337/lyft-amundsen/commit/141fd210510695f6162ef58cdce26ddb0b2d1dc3))
+
+Signed-off-by: iamtodor <todor.ilya@gmail.com>
+
+- Add marshmallow packages to setup.py ([#66](https://github.com/zain13337/lyft-amundsen/pull/66),
+  [`747d7f8`](https://github.com/zain13337/lyft-amundsen/commit/747d7f8fa7b52dda7d7fbb676ec1bbd97aa2c0e7))
+
+Signed-off-by: Wonyeong Choi <ciwnyg0815@gmail.com>
+
+- Add merge query results functionality to rest_api_query
+  ([#1058](https://github.com/zain13337/lyft-amundsen/pull/1058),
+  [`ade4902`](https://github.com/zain13337/lyft-amundsen/commit/ade49021c0ea8a9ff8fa150e89754eb7718db038))
+
+* Add merge query results functionality
+
+Signed-off-by: Junda Yang <youngyjd@gmail.com>
+
+* fix mypy
+
+* nit
+
+- Add ml feature ES index mapping ([#1257](https://github.com/zain13337/lyft-amundsen/pull/1257),
+  [`94edf0f`](https://github.com/zain13337/lyft-amundsen/commit/94edf0f9e7ad7f7a3cf425a9c2f9528609bb9202))
+
+* add ml feature ES index mapping
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+* fix typos
+
+- Add mode_user_id into User detail API
+  ([#141](https://github.com/zain13337/lyft-amundsen/pull/141),
+  [`f31ab9f`](https://github.com/zain13337/lyft-amundsen/commit/f31ab9fc7008226731dec729300c536e35f6261a))
+
+* Add mode_user_id into User detail API
+
+* Update
+
+- Add mysql as backend store ([#471](https://github.com/zain13337/lyft-amundsen/pull/471),
+  [`4400873`](https://github.com/zain13337/lyft-amundsen/commit/44008730475cbb5ca0ec7eb24d34522235f4ecc4))
+
+* add requirements for mysql store support
+
+Signed-off-by: xuans <xuan_shen@outlook.com>
+
+* add mysql_csv_loader
+
+* add mysql_csv_publisher
+
+* add mysql_search_data_extractor
+
+* add the sample script for mysql ETL
+
+* load timestamp of dashboard_execution in the query
+
+- Add MySQL sample data loader ([#359](https://github.com/zain13337/lyft-amundsen/pull/359),
+  [`fe7549a`](https://github.com/zain13337/lyft-amundsen/commit/fe7549a66e93ea5ac79741a33e948fbab4a642e0))
+
+Signed-off-by: Madison Bowden <madison.bowden@ookla.com>
+
+- Add mysql staleness removal task ([#474](https://github.com/zain13337/lyft-amundsen/pull/474),
+  [`02bb638`](https://github.com/zain13337/lyft-amundsen/commit/02bb6384b5ee481a17b50cf597274282e2566831))
+
+* Add mysql_staleness_removal_task
+
+Signed-off-by: Sahithi Velma <sahithiv@wepay.com>
+
+* Remove empty constructor
+
+Co-authored-by: Sahithi Velma <sahithiv@wepay.com>
+
+- Add neptune proxy ([#204](https://github.com/zain13337/lyft-amundsen/pull/204),
+  [`d695144`](https://github.com/zain13337/lyft-amundsen/commit/d6951444e4d5b9e9f52db5520986425c310d7db0))
+
+* metadataservice: add neptune proxy
+
+add a bunch of test only proxy endpoints to support roundtrip tests. pin specific common version to
+  reduce surprises.
+
+Signed-off-by: Joshua Hoskins <hoskins@squareup.com>
+
+* Support roundtrip test segmentation by proxy.
+
+Per comment, remove deprecated aws4auth code.
+
+* feedback 2
+
+Remove typing from requirements Move put methods to a roundtrip test class. Fix super() so this
+  works in roundtrip tests with multiple inheritance.
+
+* feedback 3
+
+- Add optional configuration to disable Lineage list view links
+  ([#1958](https://github.com/zain13337/lyft-amundsen/pull/1958),
+  [`01d6e8c`](https://github.com/zain13337/lyft-amundsen/commit/01d6e8c9b4e467420978d4f9aea95ecc7bbf7659))
+
+* feat: Add optional configuration to disable Lineage list view links
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+* feat: Add config comment
+
+* feat: Remove inline styling
+
+* feat: s/disabled/is-disabled
+
+* feat: Add LineageList test
+
+* feat: Refactor LineageList test
+
+- Add Oracle extractor loader to Amundsen
+  ([#1357](https://github.com/zain13337/lyft-amundsen/pull/1357),
+  [`78047b2`](https://github.com/zain13337/lyft-amundsen/commit/78047b22e3eaf588c9de9e2f9541bba9c03409ef))
+
+- Add partition column badge ([#1661](https://github.com/zain13337/lyft-amundsen/pull/1661),
+  [`b21beae`](https://github.com/zain13337/lyft-amundsen/commit/b21beaefb1378c3d41936f483a61d8234c6feb35))
+
+* feat: add partition column badge
+
+Signed-off-by: AykCanDem <aykut.caner.demir@gmail.com>
+
+* test code is updated: badge is added to partition column
+
+* flake8, isort checks are done
+
+- Add persistent volumes for Neo4J, Elasticsearch in docker-compose
+  ([#699](https://github.com/zain13337/lyft-amundsen/pull/699),
+  [`d2b22af`](https://github.com/zain13337/lyft-amundsen/commit/d2b22afd2a0b5d16b7bdcf95488dd1c28beafb89))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add profile url to user model in databuilder and metadata services
+  ([#1524](https://github.com/zain13337/lyft-amundsen/pull/1524),
+  [`c1d1a7e`](https://github.com/zain13337/lyft-amundsen/commit/c1d1a7e474d4935b3f988ebe8edce08cc9f1a77b))
+
+* Adding profile_url field to user model
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Adding profile_url in more spots for consistency
+
+* Linting and adding new amundsenrds version to metadata setup.py
+
+* Fixing test
+
+* Bumping databuilder version
+
+- Add programmatic descriptions parser for [AtlasProxy]
+  ([#152](https://github.com/zain13337/lyft-amundsen/pull/152),
+  [`a82a14c`](https://github.com/zain13337/lyft-amundsen/commit/a82a14cac65c320f60b75b53668711bd7cf9f950))
+
+* :tada: Initial commit.
+
+* :rotating_light: Removing linter warnings.
+
+- Add programmatic descriptions to feature details page
+  ([#2115](https://github.com/zain13337/lyft-amundsen/pull/2115),
+  [`99faa2a`](https://github.com/zain13337/lyft-amundsen/commit/99faa2a04fc132247c7492593aa7605a9d90e7f6))
+
+* feat: add programmatic descriptions to feature details page
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* feedback and lint
+
+* fix lint
+
+---------
+
+- Add query text and query URL into Dashboard detail API
+  ([#140](https://github.com/zain13337/lyft-amundsen/pull/140),
+  [`8168085`](https://github.com/zain13337/lyft-amundsen/commit/8168085d2cf9cabd134e57d184599b0af3b1ec9b))
+
+* Dashboard query text and URL
+
+* Update
+
+* Flake8
+
+- Add Query text to Dashboard Query model
+  ([#273](https://github.com/zain13337/lyft-amundsen/pull/273),
+  [`0b7eeea`](https://github.com/zain13337/lyft-amundsen/commit/0b7eeea84fd279bfcb94484384bcde0858b54c1a))
+
+* Add Query text to Dashboard Query model
+
+* Update
+
+- Add Redash Preview Client ([#974](https://github.com/zain13337/lyft-amundsen/pull/974),
+  [`5c45234`](https://github.com/zain13337/lyft-amundsen/commit/5c4523474a7b7f31aeac9bbb372a5908cdae253f))
+
+* Added Redash preview runner and associated tests
+
+Signed-off-by: Grant Seward <grant@stemma.ai>
+
+* Added new tests and documentation
+
+* Minor documentation / docstring updates
+
+* Updates per PR feedback
+
+* Fixed formatting and added comments per PR
+
+- Add Redash to list of dashboard connectors
+  ([#539](https://github.com/zain13337/lyft-amundsen/pull/539),
+  [`a96068f`](https://github.com/zain13337/lyft-amundsen/commit/a96068f5e00c1ab7221172ed24ed5727525ea711))
+
+- Add RedashDashboardExtractor for extracting dashboards from redash.io
+  ([#300](https://github.com/zain13337/lyft-amundsen/pull/300),
+  [`04412ee`](https://github.com/zain13337/lyft-amundsen/commit/04412eebaf6d8e88a4eb79efcd058b254c91be89))
+
+* Add RedashDashboardExtractor for extracting dashboards from redash.io
+
+* Fixed broken tests in python2
+
+* Added supported Redash version and required Redash API endpoints to README
+
+- Add remark-gfm plugin ([#2171](https://github.com/zain13337/lyft-amundsen/pull/2171),
+  [`00e3477`](https://github.com/zain13337/lyft-amundsen/commit/00e3477b3b9875282737e98112d611a9890c44d5))
+
+- Add resource_reports field in Table API ( Atlas proxy)
+  ([#149](https://github.com/zain13337/lyft-amundsen/pull/149),
+  [`9cf15ed`](https://github.com/zain13337/lyft-amundsen/commit/9cf15ed888e2ed10fd11efd08cb5202626bbb983))
+
+* resource reports init commit
+
+* move report logic to separate function _get_reports
+
+* bump up amundsen-common version to at least 0.3.6 (missing ResourceReport in table model)
+
+* sytling fix
+
+* change unittest helper function
+
+* make use of extract_entities method
+
+* Merge branch 'master' into feature/resource_reports
+
+- Add ResourceReport dropdown button in TableDetail
+  ([#495](https://github.com/zain13337/lyft-amundsen/pull/495),
+  [`9fe9ce5`](https://github.com/zain13337/lyft-amundsen/commit/9fe9ce5f1864d02b0b9daf7cc2821816c2fcdba5))
+
+* add ResourceReport button
+
+* adjust unit tests
+
+* styling fixes
+
+* remove noCaret & pullRight options
+
+* test fix
+
+* add report button unit tests
+
+- Add Salesforce extractor ([#1370](https://github.com/zain13337/lyft-amundsen/pull/1370),
+  [`15d1e83`](https://github.com/zain13337/lyft-amundsen/commit/15d1e83e25a760ca8c0cfd55b112e9fe16172696))
+
+* SalesForce extractor
+
+Signed-off-by: benrifkind <ben.rifkind@gmail.com>
+
+* Add simple-salesforce dependency
+
+* lint tests
+
+* Add license header
+
+* Add documentation
+
+* Add salesforce to all_deps
+
+* fix lint
+
+* isort
+
+* Actually fix issues
+
+- Add sample_glue_loader script ([#366](https://github.com/zain13337/lyft-amundsen/pull/366),
+  [`a73dd02`](https://github.com/zain13337/lyft-amundsen/commit/a73dd02cdfafcc1241c44a73f4853423d9361237))
+
+* feat : add sample_glue_loader script
+
+Signed-off-by: higee <gshock94@gmail.com>
+
+* style : follow flake8
+
+- Add search header ([#643](https://github.com/zain13337/lyft-amundsen/pull/643),
+  [`61e2841`](https://github.com/zain13337/lyft-amundsen/commit/61e28418958d47f679d2387740d5a147b148d5f5))
+
+* added search header, unsure if this is the right place for this component
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* lint and small fixes
+
+* updated text
+
+* got alignmed right
+
+* lint :(
+
+- Add Snowflake table last updated timestamp extractor
+  ([#348](https://github.com/zain13337/lyft-amundsen/pull/348),
+  [`9f95fe3`](https://github.com/zain13337/lyft-amundsen/commit/9f95fe3d2d8b5d6669301201522b1c0dadb0bcd5))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add support for a partition key badge to GlueExtractor
+  ([#1710](https://github.com/zain13337/lyft-amundsen/pull/1710),
+  [`7570b3b`](https://github.com/zain13337/lyft-amundsen/commit/7570b3b31335fc8074656118d724d0231c777bfb))
+
+* Add support for a partition key badge to GlueExtractor
+
+This adds a new configuration option to specify a partition badge label, and applies that badge to
+  any partitions, so they will be flagged as such in the Amundsen UI.
+
+* add docs
+
+* add tests
+
+* remove debug prints
+
+* lint
+
+* lint2
+
+- Add support for tags based on atlas terms
+  ([#466](https://github.com/zain13337/lyft-amundsen/pull/466),
+  [`f188384`](https://github.com/zain13337/lyft-amundsen/commit/f188384cda9a0874c976738cf5ab3c69607f050c))
+
+* feat: add support for tags based on atlas terms
+
+Signed-off-by: DOMINIK CHOMA <dominik.choma@gmail.com>
+
+* fix linting
+
+Signed-off-by: DOMINIK CHOMA <dominik.choma@ing.com>
+
+* add _get_entity_details warning log
+
+Co-authored-by: DOMINIK CHOMA <dominik.choma@ing.com>
+
+- Add support for tracking Data Issues via Asana
+  ([#700](https://github.com/zain13337/lyft-amundsen/pull/700),
+  [`60bff22`](https://github.com/zain13337/lyft-amundsen/commit/60bff2230b6c0211fd3341e0578fe0f41ca59f26))
+
+Signed-off-by: Nathan Lawrence <nathanlawrence@asana.com>
+
+- Add System Statistics Metrics Endpoint
+  ([#228](https://github.com/zain13337/lyft-amundsen/pull/228),
+  [`7a99d2d`](https://github.com/zain13337/lyft-amundsen/commit/7a99d2d47607f79cd47f540b3f316164ffbee249))
+
+* Add System Statistics Metrics Endpoint
+
+Signed-off-by: Paschalis Dimitriou <paschalis.dimitriou@gmail.com>
+
+* fix unit-test for neo4j statistics
+
+* Fix linting
+
+* Fix return statement error
+
+* Add a new returned field in the statistics
+
+* In statistics endpoint return {} if error
+
+Co-authored-by: Dorian Johnson <2020@dorianj.net>
+
+- Add Table Notices ([#957](https://github.com/zain13337/lyft-amundsen/pull/957),
+  [`9b211dd`](https://github.com/zain13337/lyft-amundsen/commit/9b211dd66ef1d474112ea9c23b197de2b3148164))
+
+* Alert styling on Table Detail page
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Sources table notification from the config object
+
+* Adds severities to notices
+
+* Adding it to dashboard
+
+* Updating for dashboard notices as well
+
+* Update betterer results
+
+* Adding documentation
+
+* Unique table and dashboard identifications, messageHtml as key and docs and tests updates
+
+- Add table owners to description in issue tickets
+  ([#1547](https://github.com/zain13337/lyft-amundsen/pull/1547),
+  [`b5651d3`](https://github.com/zain13337/lyft-amundsen/commit/b5651d38fc7e2f396faa746896f5e37ae4f9ee11))
+
+- Add Tableau dashboard metadata extractors
+  ([#333](https://github.com/zain13337/lyft-amundsen/pull/333),
+  [`55c5ed4`](https://github.com/zain13337/lyft-amundsen/commit/55c5ed4dd96e42a2e9f1625fbdcf83d139c59345))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add Tableau icon to fe ([#616](https://github.com/zain13337/lyft-amundsen/pull/616),
+  [`08da51d`](https://github.com/zain13337/lyft-amundsen/commit/08da51daad97c81d6d3488a79ed53a2387fb10f8))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Add TableSerializable and mysql_serializer
+  ([#459](https://github.com/zain13337/lyft-amundsen/pull/459),
+  [`54f5ed6`](https://github.com/zain13337/lyft-amundsen/commit/54f5ed6bb4dbcb0ed59182e485bd109374d549a9))
+
+* Add TableSerializable and implement record_iterators in applicable models
+
+Signed-off-by: xuans <xuan_shen@outlook.com>
+
+* Add mysql serializer
+
+Signed-off-by: Sahithi Velma <sahithiv@wepay.com>
+
+* Add unit tests for dashboard and schema models
+
+* Add unit tests for table and user models
+
+* ignore type for Base in test_table_serializable.py
+
+* Add comments and rds model package in requirements
+
+* Address the unit test failure
+
+* Address comments
+
+Co-authored-by: Sahithi Velma <sahithiv@wepay.com>
+
+- Add tracking to search resource selector
+  ([#1532](https://github.com/zain13337/lyft-amundsen/pull/1532),
+  [`f523c5a`](https://github.com/zain13337/lyft-amundsen/commit/f523c5a99ccdc6ccfde031ab953722ece6b69ced))
+
+* Add tracking to search resource selector
+
+Signed-off-by: Daniel Won <dwon@lyft.com>
+
+* cleanup lint
+
+* too me an embarassing amount of time to figuere this out
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* lint fixes
+
+* betterer
+
+Co-authored-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Add TypeMetadata to ResourceType enums
+  ([#1785](https://github.com/zain13337/lyft-amundsen/pull/1785),
+  [`28a11d3`](https://github.com/zain13337/lyft-amundsen/commit/28a11d35ff17ec30d0da8908bd9945ebe670e63f))
+
+* Adding TypeMetadata to ResourceType enums
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Pin werkzeug version to avoid issue with current version of flask
+
+- Add version meta field and term_vector to mappings
+  ([#1838](https://github.com/zain13337/lyft-amundsen/pull/1838),
+  [`cc79d3b`](https://github.com/zain13337/lyft-amundsen/commit/cc79d3bad5482d1bbcfb8c0a99af7a6504c80604))
+
+* feat: add new_mapping meta field and term_vector to mappings
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* actual solution to add meta to mappings
+
+* lint fixes
+
+* bumped databuilder to 6.8.0
+
+* changed new mapping true to version 2
+
+* Fixed metafields
+
+* mypy fix
+
+* added elasticsearch-dsl==7.4.0 req
+
+* deprecation warning and comment
+
+- Added addition fields config to publisher
+  ([#1898](https://github.com/zain13337/lyft-amundsen/pull/1898),
+  [`75b858e`](https://github.com/zain13337/lyft-amundsen/commit/75b858ef3a15cf99820dd38f58c3c75182dbac9d))
+
+* feat: added optional published_by publishing metadata to nodes
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* bumped to 6.9.0
+
+* set default value for publish by to None
+
+* added quote around published by value
+
+* made publisher accept a dict of fields through config
+
+* autopep
+
+* lint
+
+* r in wrong place
+
+* morel inting
+
+* rerun checks
+
+* flake
+
+* isort
+
+- Added badges field (optional) to column in table model
+  ([#68](https://github.com/zain13337/lyft-amundsen/pull/68),
+  [`1bdfce7`](https://github.com/zain13337/lyft-amundsen/commit/1bdfce7242094ae22e29e9fb1e2bd6aea1df7bdf))
+
+* added badges field (optional) to column in table model
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* bumped versionm
+
+- Added custom icons file ([#1446](https://github.com/zain13337/lyft-amundsen/pull/1446),
+  [`6afff14`](https://github.com/zain13337/lyft-amundsen/commit/6afff143a72d43dfce2a4cdef97e624bc60fd745))
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Added Dremio extractor ([#377](https://github.com/zain13337/lyft-amundsen/pull/377),
+  [`ec21032`](https://github.com/zain13337/lyft-amundsen/commit/ec210326cdd02633f65d4703e94ac064de5a0faf))
+
+Signed-off-by: Josh Howard <josh.t.howard@ey.com>
+
+Co-authored-by: Josh Howard <josh.t.howard@ey.com>
+
+- Added get_lineage method to neo4j proxy
+  ([#259](https://github.com/zain13337/lyft-amundsen/pull/259),
+  [`0ef337b`](https://github.com/zain13337/lyft-amundsen/commit/0ef337bbd78b633744b457d129b5fc878a7faefb))
+
+* added query to neo4j for small details needed to add to lineage
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* lint
+
+* added return type
+
+* added get_lineage to base proxy
+
+* added method to app proxys
+
+* removed method
+
+* removed lineage item from base proxy import
+
+* bumped amundsen common version to 0.7.0
+
+* moved import to sort
+
+* fixed imports
+
+* implemented PR feedback
+
+- Added GraphQL source to gschema views
+  ([#582](https://github.com/zain13337/lyft-amundsen/pull/582),
+  [`3b87793`](https://github.com/zain13337/lyft-amundsen/commit/3b87793bef9a2afb335a53e701f25e76a43f80f6))
+
+* Added GraphQL source to gschema views
+
+Signed-off-by: dikshathakur3119 <dikshathakur@lyft.com>
+
+* Added Table Source config
+
+Signed-off-by: dikshathakur3119 <dikshathakur3119@gmail.com>
+
+* Deleted gql icon file
+
+* Add unit test cases for SourceLink component
+
+* Run betterer and lint check
+
+* Removed not required null test
+
+* Restructured configurations
+
+* fix utils functions and linting
+
+* Add null check and betterer results file
+
+* Added documentation
+
+* Code cleanup
+
+* Add new type for description source configuration
+
+* Fix unit test's descriptions
+
+* Update display name on edit table/column description button
+
+* Update betterer result
+
+- Added highlight options to search API definition
+  ([#1819](https://github.com/zain13337/lyft-amundsen/pull/1819),
+  [`23582bd`](https://github.com/zain13337/lyft-amundsen/commit/23582bd5581d5fd89d5317c6e715b4b28aeb2f87))
+
+* feat: added highlight options to search API definition
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* typed dict, does this ever stop or do I have to make it any?
+
+* HighlightOptions schema
+
+* highlight options per resource granularity
+
+* expand range of amundsen-common
+
+* remove ignore
+
+- Added lineage item and lineage entities
+  ([#90](https://github.com/zain13337/lyft-amundsen/pull/90),
+  [`1eb6cbb`](https://github.com/zain13337/lyft-amundsen/commit/1eb6cbb8eb0f06b9d596da62146d73d40339ecc4))
+
+* added lineage item and lineage entities
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* lint fixes
+
+* added BAdge for badge list
+
+* small change to lineage schema
+
+* whitespace
+
+* rename
+
+- Added new badge model ([#55](https://github.com/zain13337/lyft-amundsen/pull/55),
+  [`b9b006e`](https://github.com/zain13337/lyft-amundsen/commit/b9b006eb7044184a92408dc7332067b18b1471cc))
+
+* added new badge model
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* changed type to category
+
+* bumped version and updated fields
+
+* forgot the patch
+
+- Added ngram subfield with no stemming on ES mappings
+  ([#1895](https://github.com/zain13337/lyft-amundsen/pull/1895),
+  [`055f81a`](https://github.com/zain13337/lyft-amundsen/commit/055f81ab54cf40926d21695ae19c728377ee41eb))
+
+* feat: added addition subfield with no stemming on ES mappings
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* lint fix
+
+* added ngram subfield to mappings
+
+* comment
+
+* lint
+
+* bump version
+
+* want unigrams for 1 word matches
+
+* made method static
+
+- Added optional in_amundsen bool to lineage items
+  ([#2010](https://github.com/zain13337/lyft-amundsen/pull/2010),
+  [`73d7dc1`](https://github.com/zain13337/lyft-amundsen/commit/73d7dc16b2cc63f06326c008ce664583479d52c8))
+
+* additional logging
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* feat: added optiona in_amundsen bool to lineage items
+
+* lint
+
+* prettier
+
+* remove dedbugging logging
+
+- Added Redash logo, configured as supported dashboard source
+  ([#501](https://github.com/zain13337/lyft-amundsen/pull/501),
+  [`7b1d721`](https://github.com/zain13337/lyft-amundsen/commit/7b1d7219b9a95ae1252fa9d782d10a9fc0154c66))
+
+- Added resource_reports into Table model
+  ([`4f2ddd3`](https://github.com/zain13337/lyft-amundsen/commit/4f2ddd35b2473a766bd9ccf2d78369c7043671c0))
+
+feat: added resource_reports into Table model
+
+- Added TableStats model ([#1503](https://github.com/zain13337/lyft-amundsen/pull/1503),
+  [`aeacfc8`](https://github.com/zain13337/lyft-amundsen/commit/aeacfc8e79793b92e81695e47e78194a888fcf04))
+
+* feat: added TableStats model
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* lint
+
+* ...
+
+* implemented feedback
+
+* updated unit test
+
+- Added tags and badges into Dashboard Elasticsearch index
+  ([#288](https://github.com/zain13337/lyft-amundsen/pull/288),
+  [`0937024`](https://github.com/zain13337/lyft-amundsen/commit/0937024877411e69b2e7a0fba28f8f6e57c76b93))
+
+* Added tags and badges into Dashboard Elasticsearch index
+
+* Update
+
+- Adding ability to include conditions along with node and relation types in the neo4j staleness
+  removal task ([#1464](https://github.com/zain13337/lyft-amundsen/pull/1464),
+  [`1b25881`](https://github.com/zain13337/lyft-amundsen/commit/1b2588158bf2a568441a2a3cbf8b9735de4d3079))
+
+* Adding ability to include conditions along with node and relation types in the neo4j staleness
+  removal task
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Addressing PR comments
+
+* Fixing up query templates
+
+* Fixing type issue in test
+
+* Fixing formatting requirements
+
+- Adding CsvTableBadgeExtractor ([#417](https://github.com/zain13337/lyft-amundsen/pull/417),
+  [`4d8067e`](https://github.com/zain13337/lyft-amundsen/commit/4d8067ed96c92387e14523bfa6eb8269998bb61e))
+
+* adding CsvTableBadgeExtractor
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* still work in progress
+
+* still wip
+
+* done with code need to test
+
+* working now
+
+* lint
+
+- Adding expand all/collapse all functionality for nested columns
+  ([#1888](https://github.com/zain13337/lyft-amundsen/pull/1888),
+  [`1204acc`](https://github.com/zain13337/lyft-amundsen/commit/1204acc0fb2dd0a968658087d7ef1d6b098f86d0))
+
+* Adding expand all/collapse all functionality for nested columns
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Updating icon and other PR comments
+
+- Adding first pass of delta lake metadata extractor as well as a sample script on how it would be
+  used. ([#351](https://github.com/zain13337/lyft-amundsen/pull/351),
+  [`e808eb9`](https://github.com/zain13337/lyft-amundsen/commit/e808eb94bd7a4d176bf4d1d74fbdc0ab2fd4c5f0))
+
+Signed-off-by: sshuster <sshuster@edmunds.com>
+
+fixing the table last updated parts
+
+Adding pyspark dependency Fixing formatting for the two deltalake classes
+
+Adding delta-lake unit tests and fixing delta lake metadata extractor bugs. Now is a working piece
+  of code.
+
+Adding more typing information and changing formatting
+
+Fixing column taggging issue which doesn't accomplish what we need it to.
+
+fixing lint
+
+Fixing the typing
+
+fixing lint again
+
+More documentation
+
+adding some todos per code review. fixing the sample deltalake metadata script
+
+- removed pyspark from requirements and moved to extras - added some simple parallelism to the
+  scraping - Fixed bug that should allow for parsing the describe statement on both spark 2 and
+  spark 3 - Fixed bug that caused parser to die if table does not exist
+
+Fixing another exception. Adding spark to all_deps
+
+Fixed table parsing so that it doesn't try getting table details on views.
+
+Fixed import
+
+fixing mypy issues
+
+- Adding nested columns to be displayed in the column dropdowns as rows
+  ([#1865](https://github.com/zain13337/lyft-amundsen/pull/1865),
+  [`de9f13a`](https://github.com/zain13337/lyft-amundsen/commit/de9f13a901130c99a4a2cf86277f31b60b90ba11))
+
+* Adding nested columns to be displayed in the column dropdowns as rows (currently disabled)
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Addressing PR comments
+
+- Adding new Trino type parser and other type metadata updates
+  ([#1917](https://github.com/zain13337/lyft-amundsen/pull/1917),
+  [`11f1f64`](https://github.com/zain13337/lyft-amundsen/commit/11f1f6458e55c83175d6f65708cd3d5f615e8f50))
+
+* Adding new Trino type parser and other type metadata updates
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Revert change to _format_as_list function name
+
+* Updating warning logging messages for when badges and descriptions aren't supported
+
+* lint
+
+* Bump databuilder version
+
+- Adding regional endpoint url for NeptunePublisher
+  ([#1375](https://github.com/zain13337/lyft-amundsen/pull/1375),
+  [`22f9311`](https://github.com/zain13337/lyft-amundsen/commit/22f9311de1a887684198bc284d292c260db6dc6a))
+
+* Add endpoint url
+
+Signed-off-by: Amom <amommendes@hotmail.com>
+
+* Update readme
+
+- Adding schema description to search result items
+  ([#468](https://github.com/zain13337/lyft-amundsen/pull/468),
+  [`9b8b484`](https://github.com/zain13337/lyft-amundsen/commit/9b8b4842fa2d284f3770d6c72918dd7455e28f4d))
+
+* Adding new component for schema name and attached description
+
+* Adding underline to schema name
+
+* Adding schema_description to TableResource
+
+* Adding style in ResourceListItem component
+
+* Modified unit test to incorporate schema desciption changes
+
+* Reverted unwanted addition of schema_description in unrelated files
+
+* Changed calling Schema Info Component and related unit test cases
+
+* Changed python test to incorporate schema description
+
+* Identation fixes
+
+* Unit test cases for SchemaInfo component
+
+* removing unnecessary imports
+
+* Changing unit test name
+
+- Adding single apply and clear buttons to apply to all search filters
+  ([#1605](https://github.com/zain13337/lyft-amundsen/pull/1605),
+  [`2480cfb`](https://github.com/zain13337/lyft-amundsen/commit/2480cfbd5150576a33b6949f164844f31b58f08e))
+
+* Adding single apply and clear buttons to apply to all search filters
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Improve betterer results
+
+* lint
+
+- Adding TypeMetadata model in amundsen-common
+  ([#1732](https://github.com/zain13337/lyft-amundsen/pull/1732),
+  [`6d329e9`](https://github.com/zain13337/lyft-amundsen/commit/6d329e99c488222ed110539cf3a860ead32076a3))
+
+* Adding common model for complex columns with subtypes
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Removing unnecessary optional types
+
+* Remove optional from subtype children for consistency
+
+* Using type_metadata terminology instead of subtype
+
+- Adds a basic Table to our component library
+  ([#636](https://github.com/zain13337/lyft-amundsen/pull/636),
+  [`8b4b4fd`](https://github.com/zain13337/lyft-amundsen/commit/8b4b4fd69e7ce7cba0ff9b5854a620f494c7e602))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Adds ability to use custom component on table
+  ([#645](https://github.com/zain13337/lyft-amundsen/pull/645),
+  [`7ebf4e0`](https://github.com/zain13337/lyft-amundsen/commit/7ebf4e0b541ed2ad6bd2a8a8a34d82066f8dd667))
+
+* Adds component wrapper capabilities to columns Adds storybook and updates caption font
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Improving typing, still needs more work
+
+- Adds caption and monospace font definitions
+  ([#644](https://github.com/zain13337/lyft-amundsen/pull/644),
+  [`51f537c`](https://github.com/zain13337/lyft-amundsen/commit/51f537c3557b8f4bdf6ab8cb75f6451f401268b1))
+
+* Adds .text-monospace-w3 and removes monospace from resource type styles
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Adding caption and monospace fonts
+
+* Updating resource type font
+
+- Adds dynamic notices flag on config
+  ([#2091](https://github.com/zain13337/lyft-amundsen/pull/2091),
+  [`7cda40f`](https://github.com/zain13337/lyft-amundsen/commit/7cda40fffc99f522fe37f338f5522ec75932f8c6))
+
+* feat: adds dynamic notices flag on config
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* docs: updated docs
+
+---------
+
+- Adds expandable feature to table ([#654](https://github.com/zain13337/lyft-amundsen/pull/654),
+  [`5eef221`](https://github.com/zain13337/lyft-amundsen/commit/5eef2216196005a42a8570d0e7d55c71ca9fe270))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Adds InformationIcon and LeftIcon ([#715](https://github.com/zain13337/lyft-amundsen/pull/715),
+  [`7890493`](https://github.com/zain13337/lyft-amundsen/commit/78904934ab473f0c68fec9b1480c7afe977ec8f8))
+
+* Adds Left Icon
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Adds Information Icon and uses it within the InfoButton; refactors client components
+
+* Constant for default placement
+
+- Adds initial API files for notices endpoint
+  ([#2093](https://github.com/zain13337/lyft-amundsen/pull/2093),
+  [`ed552d1`](https://github.com/zain13337/lyft-amundsen/commit/ed552d163b9cc5457ae1b6e476228fdd03cca02c))
+
+* chore: adds fixture data for notices API chore: adds basic api file and test
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: normalizes initialState for tags and badges
+
+* feat: adds notices sagas and related tests
+
+* chore: adds action tests
+
+* chore: adds reducer and tests
+
+* chore: updated rootReducer and rootSaga
+
+* chore: adds STATUS_CODES constants
+
+* chore: rolls out STATUS_CODES constants
+
+* chore: adds copyright messages
+
+* fix: fixes type issues
+
+* chore: using other data builder options to increase coverage
+
+* chore: move into testDataBuilder file and exclude from test coverage
+
+---------
+
+- Adds light themed header option ([#2112](https://github.com/zain13337/lyft-amundsen/pull/2112),
+  [`884de1f`](https://github.com/zain13337/lyft-amundsen/commit/884de1f53f2f2589168d85e6d4c17e970a6f9d61))
+
+* feat: adds navTheme option for dark/light navigation; includes docs
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* feat: transforms theme configuration into a class
+
+* feat: updates styles, elevation and spacing for light themed navigation
+
+* feat: polishes logo placement
+
+* docs: updates application configuration
+
+* docs: added images
+
+* chore: adds story for NavBar
+
+* chore: fixes story
+
+* docs: typos fixing
+
+---------
+
+- Adds page view tracking with the new analytics approach
+  ([#838](https://github.com/zain13337/lyft-amundsen/pull/838),
+  [`17876dd`](https://github.com/zain13337/lyft-amundsen/commit/17876dd57b1682da0504a27dd403a7b8332cc48d))
+
+* Listens to history from the routes component
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Adds UI reducer, pageView action and logic to track page views using analytics
+
+* Fixing linting error
+
+* Updating betterer results
+
+- Adds related dashboards tab to the Table detail page
+  ([#470](https://github.com/zain13337/lyft-amundsen/pull/470),
+  [`8fe25d6`](https://github.com/zain13337/lyft-amundsen/commit/8fe25d675630c11da084c6413d350f8f186abd31))
+
+* Renders empty dashboards tab and adds some basic tests
+
+* Adds new object to the type, testing request that doesn't work
+
+* Merges dashboard data into TableMetadata object
+
+* Reusing the DashboardResource type instead of creating a new one
+
+* Removing msg and status_code attributes from the merged response as per Tamika's comment
+
+* Updates first of list top border
+
+- Adds Shimmer loader to the Table Issues and Footer
+  ([#483](https://github.com/zain13337/lyft-amundsen/pull/483),
+  [`ce1b1f8`](https://github.com/zain13337/lyft-amundsen/commit/ce1b1f802e21d8b77a4832f2dd1a6fdc30f76067))
+
+* Adds loading state to Table Issues and Footer
+
+* Updates spacing on issues loader
+
+* Updates issues block height to adapt to the content's height
+
+* Prettier errors
+
+* Reducing number of lines
+
+* Retriveing pre-commit hook
+
+* Fixing linting issues
+
+- Adds sortable table detail page ([#691](https://github.com/zain13337/lyft-amundsen/pull/691),
+  [`2b8313f`](https://github.com/zain13337/lyft-amundsen/commit/2b8313fea6deef87b502fde95264a25251e2f8a7))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Adds support for app suite links dropdown menu
+  ([#2113](https://github.com/zain13337/lyft-amundsen/pull/2113),
+  [`24416cf`](https://github.com/zain13337/lyft-amundsen/commit/24416cfac301cd19878c20fed57442dfc98a6ffa))
+
+* feat: adds navAppSuite configuration option and docs feat: adds Grid icon
+
+feat: adds app suite links configuration; tweaks popover radius
+
+chore: adds storybook and refactors styles
+
+docs: adds documentation for navLinks
+
+docs: updates application docs; reorganizes them and adds placeholders for missing ones
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: updates tour radius styles
+
+* chore: tweaks
+
+* chore: removes 15 ESLint warnings
+
+* Update frontend/docs/application_config.md
+
+Co-authored-by: Kristen Armes <6732445+kristenarmes@users.noreply.github.com>
+
+* chore: moves tracking messages to constants
+
+---------
+
+- Adds support of `USER_DETAIL_METHOD` to Neo4j
+  ([#1249](https://github.com/zain13337/lyft-amundsen/pull/1249),
+  [`511d649`](https://github.com/zain13337/lyft-amundsen/commit/511d649d4323175840ab76eaafa834eb3c1ea7ac))
+
+* Adds support of USER_DETAIL_METHOD to Neo4j
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+* Makes the app module and app class consistent
+
+* wrong branch
+
+- Adds text alignment and row height options to the reusable table
+  ([#642](https://github.com/zain13337/lyft-amundsen/pull/642),
+  [`a0d9b17`](https://github.com/zain13337/lyft-amundsen/commit/a0d9b175851a8c3e7b1710e9aec3220b8a1a9abf))
+
+* Adding row height and styling polishing
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Adds header and column alignment options
+
+* Fixing betterer issue
+
+- Addswaggerenabledasenvvar ([#215](https://github.com/zain13337/lyft-amundsen/pull/215),
+  [`e7d28c4`](https://github.com/zain13337/lyft-amundsen/commit/e7d28c470bdb85e00beefff48eceacd43dcc8f49))
+
+Signed-off-by: Paschalis Dimitriou <paschalis.dimitriou@gmail.com>
+
+- Aggregating Alerts Feature ([#2230](https://github.com/zain13337/lyft-amundsen/pull/2230),
+  [`73313b8`](https://github.com/zain13337/lyft-amundsen/commit/73313b8ec875ed239b50642551764e792ff2e201))
+
+* Aggregating Alerts Feature
+
+Signed-off-by: Josh Slaughter <jslaughter@lyft.com>
+
+* Fixing lint issue
+
+* - Deeper grouping of notices, now by message then severity - Sorting of notices by severity -
+  Added a number next to show details if # of notices > 1 - Adjusted css for info-svg-icon to align
+  it with others - Turned off param-reassign rule
+
+* Adjusting betterer to account for eslint rule change
+
+---------
+
+- Alerts component ([#621](https://github.com/zain13337/lyft-amundsen/pull/621),
+  [`f57d57e`](https://github.com/zain13337/lyft-amundsen/commit/f57d57ebb4905a05c3f2e973d71d55b15f913bd2))
+
+* Alert component, unstyled
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Using SVG icon and styling
+
+* Knowl adjustments Supporting an action link
+
+* Extracts SVGIcons, adds story, adds link and custom action element to Alert
+
+* Fixing null check
+
+- Allow counting reads from different GCP project id as config in bigquery_usage_extactor
+  ([#1328](https://github.com/zain13337/lyft-amundsen/pull/1328),
+  [`fac7bf5`](https://github.com/zain13337/lyft-amundsen/commit/fac7bf5b6b42162d00fb4c4291b437448f45364f))
+
+* DCAT-162 Allow counting reads from different GCP project ids to be configuration based
+
+Signed-off-by: Marwan Baghdad <marwan.nabil@deliveryhero.com>
+
+* Fix lint errors
+
+* Added test cases for configuration
+
+- Allow dangerous html based on config variable
+  ([#1459](https://github.com/zain13337/lyft-amundsen/pull/1459),
+  [`95e5458`](https://github.com/zain13337/lyft-amundsen/commit/95e5458b632e9dbd368459e58a6513eeac05b237))
+
+* For table page's programmatic descriptions, allow dangerous html based on configuration variable
+
+Signed-off-by: MrwanBaghdad <marwan.nabil@deliveryhero.com>
+
+* feat: PR review
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+* feat: Always allowDangerousHtml in programmatic descriptions
+
+* feat: Remove unused imports
+
+* feat: Remove unrelated changes
+
+Co-authored-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+- Allow hive sql to be provided as config
+  ([#312](https://github.com/zain13337/lyft-amundsen/pull/312),
+  [`8a6dbe7`](https://github.com/zain13337/lyft-amundsen/commit/8a6dbe72c69995eaeb51a724f7d88011358db3a9))
+
+* feat: allow hive sql to be provided as config
+
+* update test name
+
+* remove print
+
+* update
+
+- Allow multiple applications ([#1569](https://github.com/zain13337/lyft-amundsen/pull/1569),
+  [`c0b2893`](https://github.com/zain13337/lyft-amundsen/commit/c0b28938942242a09d1ec275a312d79722227e24))
+
+* feat: allow multiple applications
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+* update test...
+
+- Allow multiple badges on a single record for csv extracts
+  ([#469](https://github.com/zain13337/lyft-amundsen/pull/469),
+  [`63b5f93`](https://github.com/zain13337/lyft-amundsen/commit/63b5f9308b4efc3226c07c79aad04b76912d2d04))
+
+* Allow multiple badges on a single record for csv extracts
+
+Signed-off-by: Grant Seward <grant@stemma.ai>
+
+* Fixed make errors
+
+* Separator spelling
+
+- Allow null values set for empty props in neo4j unwind publisher and multiple rels between nodes
+  ([#1983](https://github.com/zain13337/lyft-amundsen/pull/1983),
+  [`c08f251`](https://github.com/zain13337/lyft-amundsen/commit/c08f25123bde8ceff9a38082621b1e38c786f520))
+
+* Allow for null values set for empty props in neo4j publisher, and allow multiple rels between two
+  nodes if they have unique keys
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Rename prop to preserve_empty_props
+
+- Allow override of default issue tracking project and improving sorting of issues displayed
+  ([#1557](https://github.com/zain13337/lyft-amundsen/pull/1557),
+  [`cde80f9`](https://github.com/zain13337/lyft-amundsen/commit/cde80f95fd4b40c3ab73abafece128c7acb73eb5))
+
+* Adding config for allowing users to override default issue tracking project and improving sorting
+  of issues displayed
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Lint
+
+* Addressing PR comments
+
+* mypy fix
+
+* Minor css cleanup
+
+* Addressing latest PR comments
+
+- Allows for splitting stats' distinct values into a different element that shows in modal
+  ([#960](https://github.com/zain13337/lyft-amundsen/pull/960),
+  [`149ca85`](https://github.com/zain13337/lyft-amundsen/commit/149ca85069d5dc09d2943381c3e622f2045f528f))
+
+* Summary of values
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Tested ExpandableUniqueValues and consolidated helpers related to stats
+
+* Plugging the modal, not tested on app yet
+
+* Tweaking link and comma separated list
+
+* Modal showing with right sizes and tweaking spacing on summary
+
+* Add tooltip to see all button
+
+* Moved hardcoded distinct values key into the configuration
+
+* Updatind docs
+
+* Removing naming convention betterer checks
+
+* Updating proptypes rule, simplifying stats logic
+
+* Renaming distinct to unique values all over
+
+- Alphabetized badges ([#804](https://github.com/zain13337/lyft-amundsen/pull/804),
+  [`71ed31c`](https://github.com/zain13337/lyft-amundsen/commit/71ed31c95793e477d56b5387e49a158aa91850f6))
+
+* alphabetized badges
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* Moving BadgeList container into a features folder
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+Co-authored-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+- Analytics Tracking middleware ([#739](https://github.com/zain13337/lyft-amundsen/pull/739),
+  [`14da882`](https://github.com/zain13337/lyft-amundsen/commit/14da882093d7a8307b825990c97dabc18f08aa87))
+
+* Added middleware and typed it
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+* Extracting Google Analytics tracker util
+
+* Adds getGoogleAnalyticsConfig configuration helper and tests
+
+* config-types: add AnalyticsConfig
+
+* docs: add analytics to app config docs
+
+* app analytics: hacky method
+
+* app analytics: plugin architecture
+
+* app config-custom: remove segment key
+
+This key isn't secret, and is a dev environment anyhow, so do not need to wipe from git history.
+
+* app: remove old google analytics tag manager integration
+
+* app analytics: code style cleanup and PR feedback
+
+* app analytics: add typings for analytics event meta
+
+* app analytics typings: change "payload" to "properties"
+
+"payload" already has meaning elsewhere in this context
+
+* app analytics: unknown instead of any in typings
+
+* jest config: reduce coverage req for ducks
+
+* Adds extra tracking to bookmarks, modifies mapping of event, adds google analytics and mixpanel
+  dependencies
+
+* Adding segment, updating docs
+
+* Space
+
+* fe package: save package-lock.json
+
+Co-authored-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+- Announcements in Homepage ([#591](https://github.com/zain13337/lyft-amundsen/pull/591),
+  [`9e35c7e`](https://github.com/zain13337/lyft-amundsen/commit/9e35c7ec1d9213f6287daff6af5075e557570827))
+
+* feat: AnnouncementsList component (#540)
+
+* Adds fake endpoint return for development
+
+* Basic Announcements list
+
+* Basic unstyled Announcements list
+
+* Restoring proper announcements endpoint code
+
+* Linting issues
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* feat: Announcements container and saga, api and reducer modifications (#541)
+
+* Basic container
+
+* Adding status code to announcement response
+
+* Updating Announcements reducer, sagas and api to support loading and error states
+
+* Linting details
+
+* Completing the global state fixture
+
+* Basic tests for connection
+
+* Basic card with loading shimmer (#546)
+
+* feat: Card Styling for announcements (#550)
+
+* Shimmering card styles
+
+* Basic card typography styling
+
+* Add links and link styles to cards
+
+* Adjusting card copy per Knowl specs
+
+* feat: Wiring announcements block on Homepage (#551)
+
+* Adds announcemetns to homepage, integrates basic card
+
+* Spacing and details
+
+* Adjusting loading state
+
+* Adds card and see more links logging
+
+* Updates layout size; focus detail
+
+* Variables on List component styles
+
+* Cleaning fake response
+
+* feat: Adds config for announcements (#562)
+
+* Moves config tests, adds config for announcements and test
+
+* Wiring announcements feature to the config option
+
+* Updating configuration docs
+
+* Extracting navLinks logic into the config utils
+
+* Adds LPL typography to announcements; some layout fine-tuning (#581)
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+* Fixing merge conflicts
+
+- Apache Superset Extractor ([#1076](https://github.com/zain13337/lyft-amundsen/pull/1076),
+  [`cb9042a`](https://github.com/zain13337/lyft-amundsen/commit/cb9042a8306c1633dd95e0f9f63129abcbfac847))
+
+Adds support for syncing dashboard metadata from Apache Superset.
+
+- Apache Superset UI Icons ([#1100](https://github.com/zain13337/lyft-amundsen/pull/1100),
+  [`c441ed7`](https://github.com/zain13337/lyft-amundsen/commit/c441ed7c3518622f92385c3922aa14f1a45db3f8))
+
+adds Apache Superset icons to frontend
+
+- Atlas Dashboard Support ([#1066](https://github.com/zain13337/lyft-amundsen/pull/1066),
+  [`14f2632`](https://github.com/zain13337/lyft-amundsen/commit/14f26320d586a3256c36d20ec7b81284d3a1db0c))
+
+- metadata: extended atlas proxy with dashboard support - databuilder: extended atlas search
+  extractor with dashboard support
+
+- Atlas databuilder compatibility ([#1225](https://github.com/zain13337/lyft-amundsen/pull/1225),
+  [`e0c6bbb`](https://github.com/zain13337/lyft-amundsen/commit/e0c6bbba06ab5fe2b4c237495c1da7593dee0ec6))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Atlas Lineage support ([#1103](https://github.com/zain13337/lyft-amundsen/pull/1103),
+  [`0cb9098`](https://github.com/zain13337/lyft-amundsen/commit/0cb90980d1948594fbcfdd7e8a06c529bd53d00d))
+
+introduces support for lineage in atlas metadata proxy
+
+- Atlas_search_extractor | :tada: Initial commit.
+  ([#415](https://github.com/zain13337/lyft-amundsen/pull/415),
+  [`1fd464a`](https://github.com/zain13337/lyft-amundsen/commit/1fd464ac9fb8346cb4c72e7b15fff3e2ce3c73c8))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Backend support for nested columns ([#1695](https://github.com/zain13337/lyft-amundsen/pull/1695),
+  [`9854948`](https://github.com/zain13337/lyft-amundsen/commit/98549484befea6e72a5d160038c8b36b39af0564))
+
+* Type metadata classes to represent complex column types
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Adding a few more type metadata tests
+
+* Adding __eq__ implementation for the different types for easier testing
+
+* Addressing PR comments, bringing description into base class, removing extra StructItem class and
+  using dict for structs instead, and implemented ScalarTypeMetadata to use as the terminal type
+  rather than string
+
+* lint
+
+* mypy
+
+* Changes to type metadata, adding hive parser, adding generic complex type transformer
+
+* Updating description metadata imports
+
+* Adding parent and name attributes to child type metadata, base type metadata can now get own
+  key/parent key, fixing struct node handling
+
+* Adding documentation for the transformer
+
+* Changing the type metadata and parser to be created with parent and name instead of data_type
+  (test and mypy fixes remaining todo)
+
+* Fixing tests to work with changes
+
+* mypy fixes
+
+* Addressing PR comments
+
+* Addressing PR comments and fixing up is terminal check handling
+
+* Ceaning up map attributes and removing info from README for now
+
+- Badges with category and badge_type fields
+  ([#201](https://github.com/zain13337/lyft-amundsen/pull/201),
+  [`8e5ce5e`](https://github.com/zain13337/lyft-amundsen/commit/8e5ce5e62d7124f767495f5e83defb9b804b0395))
+
+* setting things up and experimenting with creating new endpoint
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* fixed issue with other proxys
+
+* wrote queries, the code is so similar to tags that I see why it might be wroth keeping the
+  functionality similar
+
+* working BadgeAPI..?
+
+* PUT not working, get seems fine so far
+
+* adding more to API
+
+* able to call resource/badge/badge_name now, having errors but the route works
+
+* merge conf resolved
+
+* small fix on init
+
+* ITS ALIVEgit status! PUT badges in resource works (at least for table resource)
+
+* added logger to add badge, badges not showing up on resource detail GET
+
+* GET badges works
+
+* get table now returns badges properly on tables :D
+
+* Got badges on dashboards
+
+* DELETE says it happened successful but badge still showing up on GET for dashboard, haven't tested
+  for table yet
+
+* small error in neo4j proxy query, fixed, delete works now
+
+* lint fixes
+
+* added unit tests for badge api, will update other tests once new functionality is finalized
+
+* added more unit tests
+
+* removed new badges, just badges now
+
+* updated TagAPI to not accept badges
+
+* fixed all unit tests
+
+* still trying to figure out how to implement exclusivity of categories
+
+* implemented combination whitelist check
+
+* added config with acceptable badges and init for modules
+
+* changed things around a bit
+
+* updated mock import
+
+* small changes, updated import
+
+* merge conflict
+
+* merge conf
+
+* fixed tests to use new config
+
+* atlas
+
+* atlas changes
+
+* lint
+
+* config
+
+* requirements common version bump
+
+* removed print
+
+* reverted get tags change to mater state
+
+* logic changes
+
+* fixed tests for table badges
+
+* fixing tests
+
+* messages updated
+
+* Badge type fixes
+
+* records to record
+
+* records fix indent
+
+* changed name of test
+
+* changed more table names
+
+* more whitelist fixes
+
+* fixed tag logic
+
+Co-authored-by: Tao Feng <fengtao04@gmail.com>
+
+- Blanket uneditable schema option ([#1353](https://github.com/zain13337/lyft-amundsen/pull/1353),
+  [`7bd434b`](https://github.com/zain13337/lyft-amundsen/commit/7bd434bf798fff029f69ac135ce16229f1cce448))
+
+This commit adds a new configuration value for the concept of uneditable schemas. The two options
+  right now UNEDITABLE_SCHEMAS and UNEDITABLE_TABLE_DESCRIPTION_MATCH_RULES are not conducive to
+  folks who are deploying amundsen from the docker containers in dockerhub. Here we add a new
+  configuration value ALL_UNEDITABLE_SCHEMAS that pulls it's value from an environment variable
+  andand is a blanket on/off switch to allow schema editing on the UI.
+
+Within my organization, we want don't want users updating anything on the UI. We want to handle all
+  of the metadata during ETL and not allow users to mess with it. I suspect other people using
+  amundsen will want to do the same.
+
+I added some comments in the code about these config values and also updated the documentation for
+  Uneditable Table Descriptions
+  (https://www.amundsen.io/amundsen/frontend/docs/flask_config/#uneditable-table-descriptions) to
+  note this change.
+
+Lastly, I added a value to the helm chart to set this environment variable for those who are
+  deploying to K8s using helm...which I am doing :)
+
+Signed-off-by: jroof88 <jack.roof@samsara.com>
+
+- Clickable badge style behavior ([#529](https://github.com/zain13337/lyft-amundsen/pull/529),
+  [`62d6806`](https://github.com/zain13337/lyft-amundsen/commit/62d68066bbb784dad4a0637b5ceac342493ed356))
+
+* looking good, alignment might still be messed up, need to verify
+
+* focused
+
+* more generla styling and added some variables as suggested
+
+* made -height into a variable
+
+* removed unecessary display style
+
+* alpha to variable
+
+* added pressed state styling
+
+* lint fix
+
+* renamed opacity
+
+* added -height
+
+* changed and tested labeltype names
+
+* fixed other labelStyle instances
+
+- Column badges in Atlas Proxy ([#263](https://github.com/zain13337/lyft-amundsen/pull/263),
+  [`d326719`](https://github.com/zain13337/lyft-amundsen/commit/d32671933a3d8a1913ae11c9f11efe50bf5a983f))
+
+feat: Column badges in Atlas Proxy (#263)
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Column level badges ([#375](https://github.com/zain13337/lyft-amundsen/pull/375),
+  [`708cad1`](https://github.com/zain13337/lyft-amundsen/commit/708cad13ef5973f0a42f22be21e94de0310e0cad))
+
+* changes for column level badges, not tested yet
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* table metadata changes to badges
+
+* changing and adding tests
+
+* lint fixes
+
+* rename
+
+* updated HiveTableMetadataExtractor to add column level badge for partition column
+
+* changed partition col condition
+
+* fixed most tests, still trying to figur eout how to properly link cloumn and badge nodes on model
+
+* almost there
+
+* using create method for badhe node
+
+* more changes
+
+* docstring
+
+* almost there..?
+
+* fix
+
+* works now, still need to fix tests and clean up
+
+* fixed lint issues
+
+* missing 1 test to fix
+
+* still failing because cluster and db now missing in actual
+
+* pushing wahtever I have
+
+* fix: fix unit test cleanup
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* removed print statements
+
+* removed empty badge list
+
+* updated test
+
+* fixed tests pr 2
+
+* added constants file for partition column string
+
+* lint
+
+Co-authored-by: feng-tao <fengtao04@gmail.com>
+
+- Column level badges cont. ([#381](https://github.com/zain13337/lyft-amundsen/pull/381),
+  [`b777181`](https://github.com/zain13337/lyft-amundsen/commit/b77718144aaccb28806044f19a68b5c5c3280580))
+
+* made create_relation meth for BadgeMetadata
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* small fix
+
+* started setting up badge to be entity
+
+* made standalone badge metadata file and changed table metadata to use this for column badges, can
+  use with any other entity really
+
+* fixed an oopsie in column metadata
+
+* added tests for badge.py and fixed none type issue in cloumn metadata
+
+* replaced with None cause badges are optional
+
+* fixed all unit tests
+
+* lint :/
+
+* fixed typing issues
+
+* bumped minor version on setup.py
+
+* removed leftover comments and prints
+
+* implemented check and pattern matching for start label and key on badge
+
+* fixed circular dep and regex issue
+
+* tests for exceptions
+
+- Column Lineage API ([#280](https://github.com/zain13337/lyft-amundsen/pull/280),
+  [`f0e0ed3`](https://github.com/zain13337/lyft-amundsen/commit/f0e0ed30d244b63f663ec903f4112957d6bd0c21))
+
+* starting commit for column lineage API
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* flake8 fix
+
+* table uri and column name isntead of id
+
+* sort imports
+
+* more import sorting
+
+- Column lineage implementation & sample ingest scripts
+  ([#470](https://github.com/zain13337/lyft-amundsen/pull/470),
+  [`a2f8a1b`](https://github.com/zain13337/lyft-amundsen/commit/a2f8a1bf0850d9f7dd4cedc3b69caa60d3a1096b))
+
+* Slight refactor to table lineage interface, added csv extract to import table lineage
+
+Signed-off-by: Grant Seward <grant@stemma.ai>
+
+* Removed whitespace
+
+* Local fork test
+
+* Fixed linting
+
+* Fixed isort
+
+* Additional test data
+
+* Created generic lineage interface, changed upstream/downstream wording to be explicit
+
+* removed white space...
+
+* Fixed static typing
+
+* Fixed test from upstream merge
+
+- Column list with usage column and new reusable table
+  ([#684](https://github.com/zain13337/lyft-amundsen/pull/684),
+  [`bf52435`](https://github.com/zain13337/lyft-amundsen/commit/bf524354c02dd4802b209fd2cbe3d18acfd197d9))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Common models to support better health checks
+  ([#1359](https://github.com/zain13337/lyft-amundsen/pull/1359),
+  [`4f98d38`](https://github.com/zain13337/lyft-amundsen/commit/4f98d3884854a368e4634856007da5c82019555c))
+
+* Added common models to support health checks for metadata, frontend and search
+
+Signed-off-by: Grant Seward <grant@stemma.ai>
+
+- Common query models ([#1155](https://github.com/zain13337/lyft-amundsen/pull/1155),
+  [`9bc05f2`](https://github.com/zain13337/lyft-amundsen/commit/9bc05f21d0f94f0b484a10ea114090e5f663a031))
+
+* Added join and where models for how tables are joined / filtered with sql
+
+Signed-off-by: Grant Seward <grant@stemma.ai>
+
+* removed addl space
+
+* version bump
+
+- Configurable default filter values ([#1754](https://github.com/zain13337/lyft-amundsen/pull/1754),
+  [`573219d`](https://github.com/zain13337/lyft-amundsen/commit/573219dbb1cff08b8a4df2578eb5ec7339ef5a95))
+
+* added defaultValue to BaseFilterCategory
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* switched string default value to array of strings for multi value
+
+* this works :D
+
+* unit tests + lint
+
+* missing ,
+
+* implemented feedback from Marcos
+
+* lint
+
+* more lint
+
+* fixed [] ewuality issue
+
+* i swear i ran the linter locally lol
+
+* changed back to appconfig rather than config util use
+
+* more fixed
+
+- Configuration option to init custom routes
+  ([#1160](https://github.com/zain13337/lyft-amundsen/pull/1160),
+  [`5248336`](https://github.com/zain13337/lyft-amundsen/commit/52483367f556777295d520c1d251509ca2ef8421))
+
+* configuration option to init custom routes
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+* Fixes isort
+
+* :sigh: really fixes isort
+
+- Configure JIRA Issue Labels ([#464](https://github.com/zain13337/lyft-amundsen/pull/464),
+  [`4d02a52`](https://github.com/zain13337/lyft-amundsen/commit/4d02a52de51a9a4bc5cb4915b46a8c3aa66e5220))
+
+* Allow configuration of jira issue labels
+
+* Fix UI when there are multiple issues
+
+* Type fix
+
+- Create a RedshiftMetadataExtractor that supports late binding views
+  ([#356](https://github.com/zain13337/lyft-amundsen/pull/356),
+  [`ae230ea`](https://github.com/zain13337/lyft-amundsen/commit/ae230eae2c3d798695b7d3c54a4f370497446d51))
+
+Signed-off-by: Nathan Lawrence <nathanlawrence@asana.com>
+
+Co-authored-by: Nathan Lawrence <nathanlawrence@Nathan-Lawrences-MacBook-Pro.local>
+
+- Create right side column details panel
+  ([#1831](https://github.com/zain13337/lyft-amundsen/pull/1831),
+  [`7951d00`](https://github.com/zain13337/lyft-amundsen/commit/7951d000a853342430e067547406f03fa5daef3f))
+
+* Adding right side column details panel
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Updating behavior of linking to a specific column and making nested columns not clickable for now
+
+* Removing some col metadata from main table when side panel is open to save space
+
+* Addressing PR comments
+
+* Adding row selected styling to tell which one is related to the open right panel
+
+- Create users in metadata backend via API
+  ([#289](https://github.com/zain13337/lyft-amundsen/pull/289),
+  [`a42de9f`](https://github.com/zain13337/lyft-amundsen/commit/a42de9f016389d85d294a7698360f7c10da9c93d))
+
+* Initial commit of rough draft. Allow creating users in metadata db via API.
+
+Signed-off-by: Grant Seward <grant@stemma.ai>
+
+* Cleaned up commented items
+
+* Added abstract functions to fix make test
+
+* added initial proxy test
+
+* Added user tests, fixes for make file to pass
+
+* Removed extra test mocks per PR feedback
+
+- Dashboard Filter Support ([#482](https://github.com/zain13337/lyft-amundsen/pull/482),
+  [`a88813f`](https://github.com/zain13337/lyft-amundsen/commit/a88813f074456715764bf44d7ba4014f756cfc4a))
+
+* Initial dashboard search support
+
+* Fix some logic
+
+* Fix aligment of FilterSection label; Unnest component tests
+
+* Further modify search
+
+* Fix merge issue
+
+* WIP
+
+* Fix build
+
+* Update ducks tests
+
+* Fix test
+
+* Cleanup; Add default helpText for consistency
+
+- Data Owner Implementation of Atlas Proxy
+  ([#156](https://github.com/zain13337/lyft-amundsen/pull/156),
+  [`2884b8f`](https://github.com/zain13337/lyft-amundsen/commit/2884b8fbc1a9418995c34cfb6296c6da1c6ca28e))
+
+* Implements the Data Owner functionality for the Table
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+Updates
+
+Refactoring - Code Reviews
+
+Refactoring
+
+Updates the test cases, based on owner changes
+
+Updates the lambda function definition
+
+* Code Review Changes
+
+- Databricks sql dashboard extractor ([#1575](https://github.com/zain13337/lyft-amundsen/pull/1575),
+  [`895d136`](https://github.com/zain13337/lyft-amundsen/commit/895d136eae4860d81042137a4a1150f868e99e05))
+
+This commit creates a new dashboard extractor to extract dashboard metadata information from
+  Databricks SQL. Users will need their databricks host and a databricks api token to use the
+  extractor, otherwise it is pretty straight forward.
+
+One note: this new extractor has a lot (~70%) of it's code pulled from the redash extractor.
+  Databricks bought redash so it makes sense the api is close to 1:1 since I believe Databricks SQL
+  is redash under the hood (or pulls from it). I decided to duplicate all the functions since it
+  appears all the extractor exist in their own right and they were different enough.
+
+Signed-off-by: jroof88 <jack.roof@samsara.com>
+
+- Databuilder & Metadata Query Components
+  ([#1158](https://github.com/zain13337/lyft-amundsen/pull/1158),
+  [`ae1d831`](https://github.com/zain13337/lyft-amundsen/commit/ae1d831aebcea78a65494ede7581af4212a5ad62))
+
+* Added join and where models for how tables are joined / filtered with sql
+
+Signed-off-by: Grant Seward <grant@stemma.ai>
+
+* removed addl space
+
+Created databuilder models + extractor framework for ingesting SQL components
+
+Added common join / filters to neo4j proxy
+
+Bumped common version
+
+chore: remove a comment that conflicts with implementation (#1154)
+
+Signed-off-by: Tero Paananen <tpaananen@bloomberg.net>
+
+feat: Common query models (#1155)
+
+* version bump
+
+Removed metadata changes to place in separate PR
+
+Decremented metadata common version to submit in separate PR
+
+Flake8 fixes
+
+mypy fixes..
+
+Updated description of class
+
+Added documentation
+
+removed extractor
+
+Removed examples
+
+Removed extractor reference from query metadata guide
+
+Co-authored-by: Dorian Johnson <2020@dorianj.net>
+
+- Delta table partition watermarks ([#1694](https://github.com/zain13337/lyft-amundsen/pull/1694),
+  [`f9c0eeb`](https://github.com/zain13337/lyft-amundsen/commit/f9c0eeb02dba4705c0b2f52f3d79246c06e4bced))
+
+* Install pyspark for dev work
+
+So now we can run pytest on a fresh clone.
+
+Due to the rather old version this will throw some DeprecationWarning messages, but we can upgrade
+  to 3.1 at a later stage.
+
+Signed-off-by: Harm Weites <harm@weites.com>
+
+* Read watermarks for Delta tables
+
+* Include tests
+
+* More proper watermark yielding
+
+* Select the partition_column
+
+Going with the first item of the returned list will return the same column, which is not
+  deterministic at all (given there are multiple partitions).
+
+* Cut the line length
+
+* Only process partitions of a workable type
+
+Since watermarking strings doesn't make much sense, keep to checking integer/float/date/datetime
+  types.
+
+* Updated tests
+
+* Oops, the .first() returns a Row object
+
+* Wrap this extraction in a try/except
+
+There are scenarios where a dataset exists, but is empty. In this case .first() will fail.
+
+* Flake8 fixes
+
+* Simplicity
+
+* Revert "Simplicity"
+
+This reverts commit 06b9fc39f3da4546321679a66f1724e3e9756932.
+
+Working with this as part of job.launch() brings errors, where the original code would bring the
+  desired result.
+
+* Simplicity in return typing
+
+* There is no complexity here :jedi_hand_wave:
+
+* Pass the mypy
+
+* Fix the return type here, finally
+
+* Fix import sorting order
+
+- Elasticsearch 8 compatiblity ([#1722](https://github.com/zain13337/lyft-amundsen/pull/1722),
+  [`cdcf738`](https://github.com/zain13337/lyft-amundsen/commit/cdcf738fe84631e0b55a0e8b79b0bd26963c58c0))
+
+Signed-off-by: Mariusz Górski <gorskimariusz13@gmail.com>
+
+- Elasticsearch metadata extractors ([#1196](https://github.com/zain13337/lyft-amundsen/pull/1196),
+  [`c9b557f`](https://github.com/zain13337/lyft-amundsen/commit/c9b557f4165f3379835b849949b5b6584b4c6b56))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Empty and Loading states for the table
+  ([#639](https://github.com/zain13337/lyft-amundsen/pull/639),
+  [`3ad1902`](https://github.com/zain13337/lyft-amundsen/commit/3ad1902d04eee83f41d9c15809b1bd4d7463eead))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Enable new nested columns ([#1907](https://github.com/zain13337/lyft-amundsen/pull/1907),
+  [`a2a082a`](https://github.com/zain13337/lyft-amundsen/commit/a2a082a731c1a660b211a49712350c4265ed6508))
+
+* Enable new nested columns
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Updating the readme
+
+- Enable Support for Teradata Metadata Scanner
+  ([#1791](https://github.com/zain13337/lyft-amundsen/pull/1791),
+  [`7f269e3`](https://github.com/zain13337/lyft-amundsen/commit/7f269e336449cdaf0159379b12d9bb7cda203326))
+
+Signed-off-by: Deepak Bhatt <dbhatt@lowes.com>
+
+- Enable UI config overrides post build
+  ([#1830](https://github.com/zain13337/lyft-amundsen/pull/1830),
+  [`6d805e0`](https://github.com/zain13337/lyft-amundsen/commit/6d805e0de751b660a97f2ff4e6392b1eae5f70bd))
+
+* Apply App config with out rebuild the application
+
+Signed-off-by: rajasekhar reddy <reddy.rajasekhar.parvatha@gmail.com>
+
+* use config override if JS_CONFIG_OVERRIDE_ENABLED is set
+
+Signed-off-by: Aneesh Joseph <kaneeshjoseph@gmail.com>
+
+* Fixed lint errors
+
+* fix lint errors
+
+* Resolved lint errors
+
+Co-authored-by: Aneesh Joseph <kaneeshjoseph@gmail.com>
+
+- Enhance glue extractor ([#306](https://github.com/zain13337/lyft-amundsen/pull/306),
+  [`f87dcfb`](https://github.com/zain13337/lyft-amundsen/commit/f87dcfbae37a39f7fe1886d70edccc4f6f72afc1))
+
+* Add `is_view`
+
+* Update glue table description For Athena tables, the table description is stored in
+  Parameters.comment.
+
+* fix missing partition keys Partition keys should be part of the columns.
+
+* Add tests
+
+* fix typo
+
+* fix flake8
+
+- Enhance search logging ([#2280](https://github.com/zain13337/lyft-amundsen/pull/2280),
+  [`1d01f19`](https://github.com/zain13337/lyft-amundsen/commit/1d01f19ef7fea9b24632f2d4ccc3044639ca9d0e))
+
+* Support custom fields in logging.
+
+Signed-off-by: Jackson Goerner <jgoerner@squareup.com>
+
+* Add search logSearchEvent function.
+
+* Add utility for retrieving search state elements.
+
+* Call logSearchEvent in search item classes.
+
+* Fix issue where search_term not being updated for inline results.
+
+* Add tests for log ducks.
+
+* Add header to new scripts.
+
+* Be explicit with kwargs for log generic action.
+
+* Provide default case and forced return for getResults.
+
+* Fix eslint error default case.
+
+* Use python 3.9 type annotations.
+
+* Update betterer results file.
+
+* Fix tests related to tests using the connect wrapper.
+
+* Fix test related to inlineresults fix.
+
+* Fix + Add log tests.
+
+---------
+
+- Exclude stats icon if configured stat types are the only ones present
+  ([#1939](https://github.com/zain13337/lyft-amundsen/pull/1939),
+  [`7a0366f`](https://github.com/zain13337/lyft-amundsen/commit/7a0366fbd77c097a9e2d67be85b7e4426d1c8905))
+
+* Exclude stats icon if configured stat types are the only ones present
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Updating config naming
+
+- Expose config for mTLS certificates. ([#757](https://github.com/zain13337/lyft-amundsen/pull/757),
+  [`33d2de7`](https://github.com/zain13337/lyft-amundsen/commit/33d2de7e7eb3dd2691792fc7702863a1933d5c79))
+
+A client certificate can be specified to present with requests to metadata and search services for
+  mTLS. The configuration is given as a pair of paths to the PEM encoded cert and key files. This is
+  described in more detail in the requests documentation:
+  https://requests.readthedocs.io/en/master/user/advanced/#client-side-certificates
+
+This assumes that the frontend should present the same client cert to both the search and metadata
+  services, which is consistent with the idea that a client cert should uniquely identify the
+  service that is presenting it.
+
+If the environment variables are not set, then the clients are created as normal without any
+  expectation of mTLS.
+
+Signed-off-by: Dave Cameron <dcameron@digitalocean.com>
+
+- Extend Lineage list view configuration
+  ([#1961](https://github.com/zain13337/lyft-amundsen/pull/1961),
+  [`966faa8`](https://github.com/zain13337/lyft-amundsen/commit/966faa8c0e2fc68e22a8125c27194727382a4923))
+
+* feat: Extend Lineage list view configuration
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+* feat: Change filter condition
+
+* feat: Add getTableLineageDisableAppListLinks util
+
+* feat: Add test for getTableLineageDisableAppListLinks
+
+* feat: Retrigger build
+
+- Extend preview client to support ML feature sample data for tab
+  ([#1262](https://github.com/zain13337/lyft-amundsen/pull/1262),
+  [`680a379`](https://github.com/zain13337/lyft-amundsen/commit/680a3793626d07e061185db2d131c4d528c202fd))
+
+* feat: extend preview client to support feature sample
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* added method stub for classes that use base preview client interface
+
+* lint
+
+* fixed unit tests
+
+* limt
+
+* response -> flask response
+
+* bumped common version
+
+* unit tests
+
+* naming
+
+- Extend search result click logging ([#1509](https://github.com/zain13337/lyft-amundsen/pull/1509),
+  [`527fda4`](https://github.com/zain13337/lyft-amundsen/commit/527fda4b87415a0b9343f53b51f783fa42481f95))
+
+* feat: extend search result click logging
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* updated other resources files
+
+- Extends resource notices to support extra information
+  ([#2045](https://github.com/zain13337/lyft-amundsen/pull/2045),
+  [`1e2d230`](https://github.com/zain13337/lyft-amundsen/commit/1e2d230e9ba0ce8d79f29fc81a4d302ea4e0a42d))
+
+* chore: extends configuration for notices to accept a payload object
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: alert with payload shows see details button link
+
+* chore: updates default button and modal styles
+
+* feat: adds support for extra information on the Alert component
+
+* chore: design QA with Knowl
+
+* chore: pass down payload to alerts
+
+* fix: fixes modal styling issues
+
+* docs: updating Notices docs
+
+* chore: cleans log
+
+- Extract search results per page into a config variable
+  ([#1922](https://github.com/zain13337/lyft-amundsen/pull/1922),
+  [`23f68fa`](https://github.com/zain13337/lyft-amundsen/commit/23f68fa55dc5ba2fd7e40019fd45d2ff8ba0a847))
+
+* feat: Extract search results per page into a config variable
+
+Signed-off-by: Ozan Dogrultan <ozan.dogrultan@deliveryhero.com>
+
+* feat: Add config-utils test
+
+- Fe document update with v2/document search service endpoint use
+  ([#1619](https://github.com/zain13337/lyft-amundsen/pull/1619),
+  [`63a3139`](https://github.com/zain13337/lyft-amundsen/commit/63a3139080600d630c4d7db4d53f8c7d3b0c7403))
+
+* Functional document update
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* updated unit tests
+
+* test fix 2
+
+* unit test fixing again, having trouble running lo caly
+
+* had the wrong route
+
+* delete
+
+* rewrite cleaner
+
+* lint
+
+- Feast extractor ([#414](https://github.com/zain13337/lyft-amundsen/pull/414),
+  [`5263bab`](https://github.com/zain13337/lyft-amundsen/commit/5263bab21bc35f79dd8e66d8443eba1616fb571b))
+
+* Feast extractor
+
+Signed-off-by: Mariusz Strzelecki <mariusz.strzelecki@getindata.com>
+
+* Better looking descriptions
+
+* Sample loader
+
+* Docstrings
+
+* Licence header
+
+- Frontend work to support multiple generalized applications
+  ([#1578](https://github.com/zain13337/lyft-amundsen/pull/1578),
+  [`14cafc2`](https://github.com/zain13337/lyft-amundsen/commit/14cafc2d4cf7ecc5f5abdccb7d441f47644f7d21))
+
+* Frontend work to support generalized applications
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Addressing most of the PR comments
+
+* Minor styling fixes
+
+* Adding JS tests for dropdown
+
+* Refactor to pull out separate supported apps for the dropdown menu component
+
+* Addressing PR comments
+
+- General document mappings for ES ([#1637](https://github.com/zain13337/lyft-amundsen/pull/1637),
+  [`0f6ec38`](https://github.com/zain13337/lyft-amundsen/commit/0f6ec38548492cb6eb328b451b656613d3c17df6))
+
+* feat: general document mappings for ES
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* notes and chnages to come on what is general vs resource specific mapping
+
+* functional task to extract and publish search metadata using elasticsearch-dsl document for
+  mappings
+
+* missing new line at eof
+
+* small fixes
+
+* rewrote config to add custom index and mappings
+
+* revert neo4j search data extractor change
+
+* removed whitespace
+
+* defaul config set as fallback
+
+* type check for document_mapping
+
+* lint
+
+* added ds and uuic to new index withinn task
+
+* more lint
+
+* fixes and rolled back some chnages from feedback
+
+* bumped library version to 6.5.0
+
+* space missing
+
+* mypy fixes
+
+* had to rename generator function
+
+* oops
+
+* isort
+
+* fixed mapping name mismatch
+
+* fixed mappings, added timeouts, have keyword sub field for all filter fields
+
+* lint plus analyzer aplhanum rename
+
+* this default behavior for mapping selection makes more sense
+
+* most recent feedback implemented except 2 commentd
+
+* changed analyzer for display name no stemming
+
+* fixed delete old index
+
+* fixed improts
+
+* removed empty ()
+
+- Generalize application model (+ add databricks application support)
+  ([#1398](https://github.com/zain13337/lyft-amundsen/pull/1398),
+  [`1a75a2f`](https://github.com/zain13337/lyft-amundsen/commit/1a75a2f16648e73698b8b6b21641ed8d2e4c5c0e))
+
+Signed-off-by: jroof88 <jack.roof@samsara.com>
+
+- Generic Usage Extractor ([#1199](https://github.com/zain13337/lyft-amundsen/pull/1199),
+  [`a8f2310`](https://github.com/zain13337/lyft-amundsen/commit/a8f2310147d357dd363c626771060dada13ed445))
+
+Signed-off-by: Allison Doami <adoami@chanzuckerberg.com>
+
+- Get last updated ts for AtlasProxy ([#177](https://github.com/zain13337/lyft-amundsen/pull/177),
+  [`7e3bb7b`](https://github.com/zain13337/lyft-amundsen/commit/7e3bb7bde85aac1a6afbc3f2aab120bbb79bf30f))
+
+* get_latest_updated_ts_atlas_proxy | :tada: Initial commit.
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+* get_latest_updated_ts_atlas_proxy | :white_check_mark: Adding tests.
+
+- Healthier health checks ([#1355](https://github.com/zain13337/lyft-amundsen/pull/1355),
+  [`5468b80`](https://github.com/zain13337/lyft-amundsen/commit/5468b80da6a650e0359a8992cbd8c0453e8866b0))
+
+* Added health checks that check for health
+
+Signed-off-by: Grant Seward <grant@stemma.ai>
+
+* PR updates - DRY for frontend health checks, moved mypy params to setup cfg
+
+* isof check
+
+* mypy update
+
+- Helm chart improvements ([#1545](https://github.com/zain13337/lyft-amundsen/pull/1545),
+  [`3d96b70`](https://github.com/zain13337/lyft-amundsen/commit/3d96b70cdf3d40099ee16c484ea2b9ca99c1ca83))
+
+* migrate from es6 to es7
+
+* update comments for doc generation
+
+* update comments in value.yaml for helm doc
+
+* update README for the new helm chart
+
+* set default value of ingress to false
+
+* remove private comments
+
+- Helm will keep persistent volume claims on delete
+  ([#783](https://github.com/zain13337/lyft-amundsen/pull/783),
+  [`f305146`](https://github.com/zain13337/lyft-amundsen/commit/f305146453e1d49c0196acbc40278262e051de23))
+
+Signed-off-by: Jonas Brunsgaard <jonas.brunsgaard@gmail.com>
+
+- Implement configurable minimum number of readers for popular tables
+  ([#146](https://github.com/zain13337/lyft-amundsen/pull/146),
+  [`35d38fe`](https://github.com/zain13337/lyft-amundsen/commit/35d38febb9816f1b05697a49b35f2243caf0db19))
+
+* Add num_readers to get_popular_tables and _get_popular_tables_uris
+
+* Update metadata service to accept num_readers for popular tables
+
+* Update unittest for popular tables
+
+* Rename popular test unittest to test_should_get_popular_tables_with_default_args
+
+* Revert changes to popular_tables API and add POPULAR_TABLE_MINIMUM_READER_COUNT as config variable
+
+* pep8
+
+* revert swagger doc
+
+* Default POPULAR_TABLE_MINIMUM_READER_COUNT 4 -> 10
+
+- Implement Feature Tag, Badge, Description and Owner APIs
+  ([#1108](https://github.com/zain13337/lyft-amundsen/pull/1108),
+  [`ce9e3e0`](https://github.com/zain13337/lyft-amundsen/commit/ce9e3e0f975851ec9e8d38905f0c5bac58c23121))
+
+* feature model
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* feature model lint
+
+* lint
+
+* added query schema
+
+* reorder
+
+* metadata swagger template
+
+* stubbing out all classes and methods
+
+* Created models for tabs, stubbed out all API methods
+
+* defined feature API routes
+
+* bumped common version
+
+* more specific type
+
+* Started implwementation
+
+* workflow change
+
+* isort
+
+* badge import and tag import chnages
+
+* fixed imports
+
+* small fixes
+
+* functional, need to verify structure, finish up some queries, and write tests
+
+* looks fully functional
+
+* fully functional details
+
+* cleaned up a bit
+
+* lint and start testing
+
+* added standalone query file to common
+
+* tests and some small changes
+
+* made _exec_feature_query less complex
+
+* added type annotation to classify tags arg
+
+* fixed import order
+
+* more unit tests
+
+* implemented feature badge API
+
+* implementing more feature APIs
+
+* manual testing and fixed bug
+
+* added final except and fixed query order
+
+* created methods to extract objects from neo4j query
+
+* pinned common version in FE to latest
+
+* description API works
+
+* functional owners API
+
+* reverted and added separate method
+
+* cleaning up
+
+* added from base proxy
+
+* more to base proxy and other proxies
+
+* reuse code
+
+* uodated test
+
+* added unit tests
+
+* cleanup
+
+* oops
+
+* added logging
+
+* updated comment
+
+- Implement ML Feature Details API ([#1091](https://github.com/zain13337/lyft-amundsen/pull/1091),
+  [`13f5298`](https://github.com/zain13337/lyft-amundsen/commit/13f5298edcd96252a4e42917944d22bf9863487d))
+
+* feature model
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* feature model lint
+
+* lint
+
+* added query schema
+
+* reorder
+
+* metadata swagger template
+
+* stubbing out all classes and methods
+
+* Created models for tabs, stubbed out all API methods
+
+* defined feature API routes
+
+* bumped common version
+
+* more specific type
+
+* Started implwementation
+
+* workflow change
+
+* isort
+
+* badge import and tag import chnages
+
+* fixed imports
+
+* small fixes
+
+* functional, need to verify structure, finish up some queries, and write tests
+
+* looks fully functional
+
+* fully functional details
+
+* cleaned up a bit
+
+* lint and start testing
+
+* added standalone query file to common
+
+* tests and some small changes
+
+* made _exec_feature_query less complex
+
+* added type annotation to classify tags arg
+
+* fixed import order
+
+* more unit tests
+
+* added final except and fixed query order
+
+* created methods to extract objects from neo4j query
+
+* pinned common version in FE to latest
+
+- Implements Popular Dashboards, when index dashboard flag is enabled
+  ([#1271](https://github.com/zain13337/lyft-amundsen/pull/1271),
+  [`ff3a113`](https://github.com/zain13337/lyft-amundsen/commit/ff3a1133d5d380d16fe4e4ef63e1acdbdb8919b1))
+
+* Changes PopularTables -> `PopularResources`
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+* Implementes the Popular Resources endpoint
+
+* Fixes the config variables, and adds deprecation warnings
+
+* code review fixes
+
+* renames the ducks and fixes test
+
+* changes the frontend code
+
+* betterer results
+
+* More test fixes
+
+- Implements the table and column lineage for Neo4j
+  ([#294](https://github.com/zain13337/lyft-amundsen/pull/294),
+  [`10462a2`](https://github.com/zain13337/lyft-amundsen/commit/10462a25b2bbd99e399588e94e91b41e2f8412bd))
+
+Implements the Table & Column Level Lineage for Neo4j proxy
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+- Improve Nested Column Types UI ([#627](https://github.com/zain13337/lyft-amundsen/pull/627),
+  [`fc15726`](https://github.com/zain13337/lyft-amundsen/commit/fc15726480a95c1ea23ebd970c53f91b8c74652b))
+
+* feat: Create ColumnType component (#604)
+
+* Create ColumnType component
+
+Signed-off-by: Tamika Tannis <ttannis@lyft.com>
+
+* Update Modal UI
+
+* Code cleanup; Add a test file
+
+* Prevent ColumnListItem expand/collapse from being triggered
+
+* Lint fix
+
+* feat: Parse column types (#611)
+
+* WIP: Create a parser & render parsed text
+
+* Cleanup logic
+
+* More cleanup
+
+* Code cleanup
+
+* Use more appropriate elements; Fix typo
+
+* Parser tests
+
+* Fix button; Fix test; Remove obsolete style
+
+* Fix duplicate test name
+
+* style: Improve UI styles and interactions (#617)
+
+* Vertically center modal
+
+* Match design font specifications
+
+* Miscellaneous cleanup
+
+* Use variables
+
+* test: Improves unit tests for ColumnType + QA fixes (#625)
+
+* Updates from design qa
+
+* Improve ColumnType tests
+
+* log support
+
+* Fix some lint warning
+
+* Betterer update
+
+- Ingest Mode Analytics user ([#282](https://github.com/zain13337/lyft-amundsen/pull/282),
+  [`b902562`](https://github.com/zain13337/lyft-amundsen/commit/b902562e9ed6531826cba6e7dce4b284aa14ec38))
+
+* Ingest Mode Analytics user
+
+* Flake8
+
+* Update
+
+* Added doc
+
+- Integration with Dremio ([#859](https://github.com/zain13337/lyft-amundsen/pull/859),
+  [`e59a40b`](https://github.com/zain13337/lyft-amundsen/commit/e59a40b9a927b553211aa74e94e13fe5f5013522))
+
+* Added Dremio preview example
+
+Signed-off-by: Josh Howard <joshthoward@gmail.com>
+
+* Checkpoint on flight preview
+
+* Reworked flight preview to construct new client on each invocation; somehow reduces loading times
+
+* Updated table icon and sources link to include Dremio
+
+* Fixed flake errors
+
+* Fixed code review comments
+
+- Intorduce atlas dashboard bookmarks
+  ([#1208](https://github.com/zain13337/lyft-amundsen/pull/1208),
+  [`a18fd78`](https://github.com/zain13337/lyft-amundsen/commit/a18fd78e2aba43233fb9e69e4842238f8a648fa2))
+
+Signed-off-by: dechoma <dominik.choma@gmail.com>
+
+- Introduce atlas serializable for dashboards
+  ([#1138](https://github.com/zain13337/lyft-amundsen/pull/1138),
+  [`06b0e16`](https://github.com/zain13337/lyft-amundsen/commit/06b0e16d574d832e47c42b58bafb86811e590132))
+
+Signed-off-by: dechoma <dominik.choma@gmail.com>
+
+- Introduce resource reports client in neo4j proxy #1670
+  ([`b533e5b`](https://github.com/zain13337/lyft-amundsen/commit/b533e5bb2203a6250e38bb1e4a79c7d88d1497e3))
+
+Signed-off-by: Mariusz Górski <gorskimariusz13@gmail.com>
+
+- Introduces Resource Report model in databuilder & neo4j
+  ([#1534](https://github.com/zain13337/lyft-amundsen/pull/1534),
+  [`88b7709`](https://github.com/zain13337/lyft-amundsen/commit/88b7709023b3a8efc8b6c59a0919aa36a9af6067))
+
+Signed-off-by: Mariusz Górski <gorskimariusz13@gmail.com>
+
+- Kafka schema registry integration ([#1959](https://github.com/zain13337/lyft-amundsen/pull/1959),
+  [`ca4a048`](https://github.com/zain13337/lyft-amundsen/commit/ca4a04816165f3ed70949c23159bc680eb724ebd))
+
+Signed-off-by: Farbod Ahmadian <farbodahmadian2014@gmail.com>
+
+- List available badges on Home & Browse Pages #1535
+  ([`5685791`](https://github.com/zain13337/lyft-amundsen/commit/5685791bf91233bd1e6b18301f3c4f329d422d5b))
+
+Signed-off-by: Mariusz Górski <gorskimariusz13@gmail.com>
+
+- Make 'schema' and 'database' clickable to initiate a search
+  ([#766](https://github.com/zain13337/lyft-amundsen/pull/766),
+  [`73b6097`](https://github.com/zain13337/lyft-amundsen/commit/73b6097c0c7e50702f5d22a417f5290ddb950245))
+
+* search works, no checkbox marked
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* search for schema is working
+
+* added these || to set default values for missing props
+
+* changed the tests to kind of adjust to new testing practices, left some very much the same
+
+* fixed tests, all that's missing is the checkbox
+
+* fixed small == vs === typo
+
+* oops
+
+* prettier lint'
+
+* lintttt
+
+* filter now shows checked box
+
+* fixed prettier error
+
+- Make default depth configurable for table lineage graph view (commanded)
+  ([#2078](https://github.com/zain13337/lyft-amundsen/pull/2078),
+  [`306421f`](https://github.com/zain13337/lyft-amundsen/commit/306421fe86be0227d2387faf0beec23f8896c04f))
+
+* make default depth configurable for table lineage graph
+
+Signed-off-by: Jason Brownstein <jason.brownstein@devoted.com>
+
+* lint fix
+
+* fixing unit tests
+
+* depth is required -- fix lineage dispatch
+
+* make it prettier
+
+* fix: fixes tests and type issues
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+Co-authored-by: Jason Brownstein <jason.brownstein@devoted.com>
+
+- Make DescriptionMetadata inherit from GraphSerializable
+  ([#461](https://github.com/zain13337/lyft-amundsen/pull/461),
+  [`1196770`](https://github.com/zain13337/lyft-amundsen/commit/11967705d0c999cfbad3ea3162be6cfd7c96ef06))
+
+* make descriptionmetadata inherit from GraphSerializable
+
+Signed-off-by: Junda Yang <youngyjd@gmail.com>
+
+* fix mypy
+
+* address comment
+
+* bump up databuilder version
+
+- Make owners for certain tables uneditable
+  ([#800](https://github.com/zain13337/lyft-amundsen/pull/800),
+  [`f33f5b3`](https://github.com/zain13337/lyft-amundsen/commit/f33f5b3ba11202f5045e2bdd7a85812aac3c1b38))
+
+* made owners for tables where is_editable=false uneditable
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* added config, waiting on confirmation about desired behavior
+
+* wip
+
+* no config
+
+* should be good now
+
+- Making clickable badges ([#519](https://github.com/zain13337/lyft-amundsen/pull/519),
+  [`2c16028`](https://github.com/zain13337/lyft-amundsen/commit/2c1602872dff42a484b6e49485753aa57c627cb6))
+
+* setting up for clickable badge component
+
+* logic for search first try on badges
+
+* we now have some really wonky looking clickable badges, don't quite work the way I expected them
+  to yet
+
+* major style changes, work in progress
+
+* updated test on badge list
+
+* lots of changes, functioning cloick and search
+
+* clean up clean up everybody everywhere
+
+* clean up pt 2
+
+* lint
+
+* fix
+
+* fix make sure no config names change
+
+* reverting change to navbar style because not part of this PR
+
+* cleaning up an oopsie
+
+* changed badgelist test to count ClickableBadge rather than Flag
+
+* fixed test to reflect where the _ are replaced now
+
+* commented out test
+
+* moved badge
+
+* updated imports
+
+* removed all style and added pointer cursor
+
+* samll fix to test
+
+* Updated comment to reflect new functionality
+
+* lint issue
+
+* deleted old Badges dir
+
+* fixed test
+
+* fixed import
+
+* applies to all badge styles
+
+* applied cursor hover to clickable-badge rathern than flag
+
+* added tests for clickable badges
+
+* too many });
+
+* fixed lint issue
+
+* updated tests
+
+- Making notices more general (real) ([#1280](https://github.com/zain13337/lyft-amundsen/pull/1280),
+  [`242748d`](https://github.com/zain13337/lyft-amundsen/commit/242748dae8097a19b5e57aa8f7d4e597d926b8bf))
+
+* adding wildcard and dynamic functionality to getResourceNotices
+
+Signed-off-by: Elena Boal <elenaboal@lyft.com>
+
+* messageHtml can either be a string or function
+
+* adding tests to the index file for making sure wildcards and dynamic messages work
+
+* add documentation on wildcard notices and dynamic messages
+
+* fix betterer error
+
+- Migrate amundsen-atlas-types ([#1238](https://github.com/zain13337/lyft-amundsen/pull/1238),
+  [`d87c614`](https://github.com/zain13337/lyft-amundsen/commit/d87c614a54f69401aa071c0e65fd5a5aa4eae110))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Ml Feature Generation Code API ([#1122](https://github.com/zain13337/lyft-amundsen/pull/1122),
+  [`06b54b9`](https://github.com/zain13337/lyft-amundsen/commit/06b54b9c1951315704b5a79825e8539c743ef84c))
+
+* WIP not functional
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* still wip
+
+* Functional generation code API
+
+* added method to base proxy and others
+
+* space
+
+* whitespace
+
+* eliminated weirdness
+
+* unit tests!'
+
+* lint
+
+* isort
+
+- Ml Feature Lineage Tab ([#1294](https://github.com/zain13337/lyft-amundsen/pull/1294),
+  [`c7d35d5`](https://github.com/zain13337/lyft-amundsen/commit/c7d35d5712010df46a9e8bdae734f3a176fd0b9c))
+
+* feat: ML Feature Lineage Tab
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* small fix
+
+* betterer
+
+* fixed tab order
+
+* fixed lint issue
+
+* added test for isFeatureListLineageEnabled
+
+- Ml feature search ([#1256](https://github.com/zain13337/lyft-amundsen/pull/1256),
+  [`eb42b54`](https://github.com/zain13337/lyft-amundsen/commit/eb42b544bf35bb27999f64cc16e6444c842f6233))
+
+* ml feature search
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+* typos
+
+* tests and fixes
+
+* isort
+
+- Ml Feature search API work ([#1246](https://github.com/zain13337/lyft-amundsen/pull/1246),
+  [`4d166b2`](https://github.com/zain13337/lyft-amundsen/commit/4d166b2f12b0d78debe9c9c812a05990612ecb67))
+
+* waiting for search service work to be done
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* removed mock response, still waiting on search service work
+
+* updates based on search service wip
+
+* bumped common version to 0.15.2
+
+* fixed non optional entity issue, bumped comon
+
+* bump requirements comon
+
+* implemented feedback
+
+* tryint to simplify this logic
+
+* mor fixes
+
+* better fix
+
+* de-bumped, will bump in other PR
+
+- Ml Features common schema and metadata API definition
+  ([#1059](https://github.com/zain13337/lyft-amundsen/pull/1059),
+  [`dc9a1f9`](https://github.com/zain13337/lyft-amundsen/commit/dc9a1f9aa0df7637319c0f9bcad5ab670ab12d5c))
+
+* feature model
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* feature model lint
+
+* lint
+
+* added query schema
+
+* reorder
+
+* metadata swagger template
+
+* stubbing out all classes and methods
+
+* Created models for tabs, stubbed out all API methods
+
+* defined feature API routes
+
+* bumped common version
+
+* more specific type
+
+* workflow change
+
+* isort
+
+* badge import and tag import chnages
+
+* fixed imports
+
+* small fixes
+
+* added standalone query file to common
+
+- Mode Batch dashboard charrt API ([#362](https://github.com/zain13337/lyft-amundsen/pull/362),
+  [`c8a7245`](https://github.com/zain13337/lyft-amundsen/commit/c8a7245e21e44e7bd9456cd016e7a6e79aae47bf))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Mode dashboard preview ACL ([#481](https://github.com/zain13337/lyft-amundsen/pull/481),
+  [`1eeb94c`](https://github.com/zain13337/lyft-amundsen/commit/1eeb94cf640147f821f80eb72527095046cf20d1))
+
+* Mode dashboard preview ACL
+
+* Update
+
+- Modifying the create issue action to send a link to the table from which the issue was created
+  ([#1485](https://github.com/zain13337/lyft-amundsen/pull/1485),
+  [`9e508ab`](https://github.com/zain13337/lyft-amundsen/commit/9e508ab02b9f0a3e4ae62ed06fc03fc7c35ea2fb))
+
+* Modifying the create issue action to send a link to the table from which the issue was created,
+  and including the link in the description for Jira tickets
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Fixing test and checks
+
+* Adding table url to signature of superclass BaseIssueTrackerClient
+
+* Updating asana client to include the table URL in the description to match the jira client and
+  provide compatibility between the superclass BaseIssueTrackerClient and all its subclasses
+
+- More flexible ES search proxy implementation
+  ([#1649](https://github.com/zain13337/lyft-amundsen/pull/1649),
+  [`f47c14c`](https://github.com/zain13337/lyft-amundsen/commit/f47c14ca6c6726be4e5b9036ce26440c57ab8c7d))
+
+* feat: made search proxy class easier to customize
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* removed unused import
+
+* updated default implementation
+
+* updated fixtores to reflect updated query
+
+* fixed unit tests
+
+* whitespace
+
+- More general notices ([#1408](https://github.com/zain13337/lyft-amundsen/pull/1408),
+  [`c4c908d`](https://github.com/zain13337/lyft-amundsen/commit/c4c908df7a14e72058932f4d597656df5a926f48))
+
+* more general notices
+
+Signed-off-by: Elena Boal <elenaboal@lyft.com>
+
+* remove commented out line
+
+* fix tests
+
+- Moving location of the column stats icon
+  ([#1802](https://github.com/zain13337/lyft-amundsen/pull/1802),
+  [`2784454`](https://github.com/zain13337/lyft-amundsen/commit/2784454259eee53f193bc451568565cf086bdba2))
+
+* Moving location of the column stats icon
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Addressing PR comments
+
+* lint
+
+- Multi-yield transformers ([#396](https://github.com/zain13337/lyft-amundsen/pull/396),
+  [`518dfe2`](https://github.com/zain13337/lyft-amundsen/commit/518dfe2de2e3c26ac6e85f1651b42fea331ebf7d))
+
+* Implement multi-yield transformers
+
+Signed-off-by: Joseph Atkins-Turkish <jatkins-turkish@brex.com>
+
+* add license
+
+* isort
+
+- Neo4j 4.x support ([#1942](https://github.com/zain13337/lyft-amundsen/pull/1942),
+  [`e97b74d`](https://github.com/zain13337/lyft-amundsen/commit/e97b74dc1d0f5a35d9bcdf8c0c4088563fdb935b))
+
+* added more configuration to support newer neo4j
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* added condition to all drivers and added db option
+
+* fix driver
+
+* implemented feedback
+
+* Implemented more feedback
+
+* fix imports
+
+* fixed unit tests
+
+* fixing neo4j config
+
+* property patch
+
+* struggling with how to patch the driver creatioon method
+
+* fixed patching
+
+* removed unused imports
+
+* typiong fix
+
+* missing an any in tuple
+
+* sort imports
+
+* check URI scheme security and set default trust and encrypted values accordingly
+
+* self.conf needed in neo4j extractor
+
+* updating unit tests
+
+* fixed uri in neo4j search data extractor test
+
+* fix improts and lint
+
+- Neo4j backend for popular tables personalization
+  ([#233](https://github.com/zain13337/lyft-amundsen/pull/233),
+  [`b32b654`](https://github.com/zain13337/lyft-amundsen/commit/b32b654404a6e358335114e10d1a23eaa17c520d))
+
+Signed-off-by: Josh Howard <joshthoward@gmail.com>
+
+- Neo4j driver 4.4.5 on metadata ([#1952](https://github.com/zain13337/lyft-amundsen/pull/1952),
+  [`2cf51a8`](https://github.com/zain13337/lyft-amundsen/commit/2cf51a87dce2f6b1814511980e80c1b8761f3d44))
+
+* testing new driver with old and new db
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* some cleanup
+
+* more cleanup
+
+* fix req
+
+* removed neobolt import
+
+* added legit looking uri
+
+* fix create proxy tests
+
+* fixed some more tests
+
+* almost done
+
+* fixed all unit tests
+
+* bumped version
+
+* one more test
+
+* oops
+
+* lint
+
+* more lint
+
+* isort
+
+* implemented feedback, added default port value and used more specific error for safe list get
+
+* fixed unit tests
+
+* changed safe list get to get single result
+
+* kwargs for atlas proxy
+
+* added back comment
+
+* type annotation for kwargs
+
+- Neptune Data builder Integration ([#438](https://github.com/zain13337/lyft-amundsen/pull/438),
+  [`cc10671`](https://github.com/zain13337/lyft-amundsen/commit/cc106719d9713c092f875ca838046643201233f2))
+
+* Implement Neptune databuilder connection
+
+Signed-off-by: Andrew Ciambrone <andrjc4@vt.edu>
+
+* Added documentation and isort
+
+* Additional documentation
+
+* Make the neo4j_es_last_updated more generic for all datastores
+
+* A few fixes due to upstream changes
+
+* Acknowledge reviewers comments
+
+* linting fix
+
+* do not read file into memory
+
+* acknowledge reviewers comments
+
+- Nested columns special type rows and expand by default
+  ([#1872](https://github.com/zain13337/lyft-amundsen/pull/1872),
+  [`30cf377`](https://github.com/zain13337/lyft-amundsen/commit/30cf377ef9d4516cc36f4c7cf08fc5abc4d77461))
+
+* Special type handling rows for nested columns, and expand nested by default unless max config is
+  reached
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Using constant for row height
+
+* Addressing PR comments
+
+* Passing max number of nested cols as an option to Table instead of from config
+
+- New option added for column stats info text
+  ([#1696](https://github.com/zain13337/lyft-amundsen/pull/1696),
+  [`3e5dfdb`](https://github.com/zain13337/lyft-amundsen/commit/3e5dfdbbac1bcbaa34d5830bf94c41a35ae80841))
+
+* feat: new option added for column stats info text
+
+Signed-off-by: AykCanDem <aykut.caner.demir@gmail.com>
+
+* fix eslint error
+
+- Openlineage extractor for databuilder
+  ([#1444](https://github.com/zain13337/lyft-amundsen/pull/1444),
+  [`b42fb4a`](https://github.com/zain13337/lyft-amundsen/commit/b42fb4a72379e6b346ad69a8454489c45ed9fafe))
+
+Signed-off-by: dechoma <dominik.choma@gmail.com>
+
+- Pandas-profiling TableColumnStats Extractor
+  ([#1105](https://github.com/zain13337/lyft-amundsen/pull/1105),
+  [`ebd3e81`](https://github.com/zain13337/lyft-amundsen/commit/ebd3e8124150e5f58968c56e52db7d033cf60ce2))
+
+introduces pandas-profiling based extractor for table column stats
+
+- Parameterize Snowflake Schema in Snowflake Metadata Extractor
+  ([#361](https://github.com/zain13337/lyft-amundsen/pull/361),
+  [`f0dec0e`](https://github.com/zain13337/lyft-amundsen/commit/f0dec0e58fe377a45c553cf98c7b10a0aca4145b))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Populate is_view property in AtlasProxy
+  ([#155](https://github.com/zain13337/lyft-amundsen/pull/155),
+  [`4992503`](https://github.com/zain13337/lyft-amundsen/commit/4992503b43eee5cdece43ff75df0b1735144b66e))
+
+* :tada: Initial commit.
+
+* :ok_hand: Updating code due to code review changes.
+
+- Pre-work needed for the lineage graph visualization
+  ([#1084](https://github.com/zain13337/lyft-amundsen/pull/1084),
+  [`32499e6`](https://github.com/zain13337/lyft-amundsen/commit/32499e6841e5cba2b126571fde7eb06b135424fa))
+
+* parent f6b21b3b9b45fcc3f1bdc001f06401c8ad18f5da author verdan <verdan.mahmood@gmail.com>
+  1620122095 +0200 committer verdan <verdan.mahmood@gmail.com> 1620776994 +0200
+
+initial commit
+
+Fixes the lineage query, updates the common model
+
+more updates
+
+updates the look and feel
+
+removes commented code
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+passes the paramters to backend
+
+adds the zooming feature
+
+code refactor, addresses review comments
+
+docs: update faq.md (#1038)
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+Modified methods to throw NOTFOUNDEXCEPTION instead RuntimeEror in neo4j_proxy (metadata_service)
+  (#1028)
+
+Signed-off-by: aparna-cimpress <aparna.singhal@cimpress.com>
+
+perf: Update ModeDashboardLastModifiedTimestampExtractor to use Mode discovery api (#1040)
+
+* update ModeDashboardLastModifiedTimestampExtractor to use Mode discovery api
+
+Signed-off-by: Junda Yang <youngyjd@gmail.com>
+
+* add empty line at the end of the file
+
+* update comment
+
+* fix lint
+
+* fix import
+
+ci: fix metadata ci config (#1039)
+
+Signed-off-by: Dorian Johnson <2020@dorianj.net>
+
+perf: update ModeDashboardLastSuccessfulExecutionExtractor to discovery api (#1042)
+
+* update ModeDashboardLastSuccessfulExecutionExtractor to discovery api
+
+* lint
+
+* remove unused import
+
+perf: Update ModeDashboardOwner extractor to use Mode discovery api (#1043)
+
+* update ModeDashboardOwnerExtractor to discovery api
+
+* update import
+
+update ModeDashboardQueryExtractor to discovery api (#1044)
+
+chore: fix databuilder dep typo (#1046)
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+build(deps): bump py from 1.5.3 to 1.10.0 in /databuilder (#1049)
+
+chore: Update ModeDashboardLastModifiedTimestampExtractor typing (#1048)
+
+update Mode dashboard extractor tests (#1047)
+
+fix: Temporarily fix potential 404 in mode dashboard executions extractor (#1051)
+
+* fix ModeDashboardExecutionsExtractor
+
+* nit
+
+test: refactor: update test and directory of ModeDashboardChartsBatchExtractor (#1052)
+
+Temporarily fix potential 404 in ModeDashboardUsageExtractor (#1053)
+
+feat: Add dbt extractor for table lineage + metadata (#1015)
+
+* converted dbt extractor to mono repo
+
+Signed-off-by: Grant Seward <grant@stemma.ai>
+
+* Flake8 formatting
+
+* Updates per feedback from Convoy
+
+* Commented sample logging
+
+* Added dbt to main amundsen README
+
+fix bug in rest_api_query (#1056)
+
+feat: Add merge query results functionality to rest_api_query (#1058)
+
+* Add merge query results functionality
+
+* fix mypy
+
+chore: fix gh page build workflow (#1062)
+
+chore: add mailmap to associate the right user (#1061)
+
+fix: Update ModeDashboardExtractor to Mode discovery api (#1063)
+
+* Update ModeDashboardExtractor to Mode discovery api
+
+chore: delete legacy ModeDashboardChartsExtractor (#1064)
+
+* remove-legacy-charts-extractor
+
+bump up databuilder version (#1065)
+
+fix in another PR
+
+makes Verdan and Dorian the code owners (#1081)
+
+Adds a new "parent" field in lineage model (#1080)
+
+* adds 'parent' field to help build the graph
+
+* make the default to None
+
+deploy_release: on release, publish to pypi/docker (#1079)
+
+Given a release with a title of `<module_name> <version_number>`, this will push that release to
+  PyPi and docker.
+
+Note that this does not attempt to create the changelog or any of that stuff. That will need to be
+  done by a separate action. This creates a nice modularity boundary, in that this action doesn't
+  care where the release came from (manual or another automated step)
+
+Fixes the test cases
+
+Removes extra functionality
+
+removes redundant flag
+
+* FIxes the betterer issues
+
+* code review changes
+
+* updates the common version
+
+* Fixes lint errors for metadata
+
+- Product tour in homepage ([#1716](https://github.com/zain13337/lyft-amundsen/pull/1716),
+  [`b6e5cfa`](https://github.com/zain13337/lyft-amundsen/commit/b6e5cfa829948e359b94f66223915a9ac648f5a6))
+
+* chore: adds configuration for product tour
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* chore: update caniuse lite; tweak eslint rules for tests and stories
+
+* feat: addds tour button on homepage, dummy icon
+
+* chore: show in all PageTour pages
+
+* refactor: changes configuration to be indexed by paths
+
+* refactor: moves navbar into a functional component
+
+* feat: adds Tour component
+
+* fix: updates outline styles to match interactive styles
+
+* feat: adds tour to the header
+
+* feat: styling of nav-bar icon buttons, documents icon creation
+
+* fix: more outlines visible for a11y
+
+* chore: cleans up config-custom.ts in open source code
+
+* docs: tour configuration docs
+
+* fix: hooks issue
+
+* chore: updates betterer rules and fixes issues on Feedback button
+
+* fix: criterias thing
+
+* fix: simplified avatar styles and fixed alignment and spacing
+
+- Redirect dashboard group to search filter after clicking
+  ([#655](https://github.com/zain13337/lyft-amundsen/pull/655),
+  [`55b8e75`](https://github.com/zain13337/lyft-amundsen/commit/55b8e7586be01a2bbbdad7e8e5e20ffd8a57fd7e))
+
+Signed-off-by: Tao Feng <fengtao04@gmail.com>
+
+- Reducing width of left side panel on resource detail pages
+  ([#1809](https://github.com/zain13337/lyft-amundsen/pull/1809),
+  [`233c443`](https://github.com/zain13337/lyft-amundsen/commit/233c443d322131d763d046b78ae619490ced0e6f))
+
+* Reducing width of left side panel on table, dashboard, and feature detail pages
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Making panel slightly larger and reverting layout changes
+
+* FE refactoring
+
+- Refactor generic usage extractor #1669
+  ([`0c5b068`](https://github.com/zain13337/lyft-amundsen/commit/0c5b06804710e2b6aebbc1f1f800e9febbafbcaf))
+
+Signed-off-by: Mariusz Górski <gorskimariusz13@gmail.com>
+
+- Refactor hive extractor sql query refs
+  ([#1664](https://github.com/zain13337/lyft-amundsen/pull/1664),
+  [`4ef2ce5`](https://github.com/zain13337/lyft-amundsen/commit/4ef2ce53acfb599e60252e2ed2bc92d10c476fb3))
+
+Signed-off-by: Mariusz Górski <gorskimariusz13@gmail.com>
+
+- Refactor must fields for new es proxy
+  ([#1676](https://github.com/zain13337/lyft-amundsen/pull/1676),
+  [`f577ee2`](https://github.com/zain13337/lyft-amundsen/commit/f577ee202c1341c5ceb29f9490e8d28b4fe53160))
+
+Signed-off-by: Mariusz Górski <gorskimariusz13@gmail.com>
+
+- Region parameter added to boto3, doc: glue extractor info is enriched.
+  ([#1687](https://github.com/zain13337/lyft-amundsen/pull/1687),
+  [`0524cbb`](https://github.com/zain13337/lyft-amundsen/commit/0524cbbb4cf46ff34b7d11d9df9791ff29fcce72))
+
+Signed-off-by: AykCanDem <aykut.caner.demir@gmail.com>
+
+- Related Dashboards endpoint on Flask app
+  ([#467](https://github.com/zain13337/lyft-amundsen/pull/467),
+  [`d2113da`](https://github.com/zain13337/lyft-amundsen/commit/d2113da8cf4fe02c20eca93e88e91476278efc98))
+
+* Trying to create an endpoint
+
+* Getting tests ready
+
+* Fixes lint error
+
+* Adding missing type
+
+* Adjusting return to not use the results_dict
+
+- Remove jira and asana from primary deps in frontend
+  ([`153c89b`](https://github.com/zain13337/lyft-amundsen/commit/153c89b59a043672dd90837b551659db55df93fa))
+
+Signed-off-by: Mariusz Górski <gorskimariusz13@gmail.com>
+
+- Report an issue - allow user to set ticket priority
+  ([#1508](https://github.com/zain13337/lyft-amundsen/pull/1508),
+  [`f34c953`](https://github.com/zain13337/lyft-amundsen/commit/f34c95380a730445c1a7d1035cf0dbe969818d0c))
+
+* Adding ability to set priority when reporting an issue
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Use priority level instead of severity name
+
+* Use P3-P0 for priority buttons
+
+* Updating betterer results
+
+* Fix lint
+
+* Fixing setting of priority enum value for Asana task
+
+* Addressing PR comments
+
+* Changing submit label constant
+
+- Return column level badges ([#205](https://github.com/zain13337/lyft-amundsen/pull/205),
+  [`657f91d`](https://github.com/zain13337/lyft-amundsen/commit/657f91d9c7abc63da1b658009e70e1f1594027ed))
+
+* _exec_col_query now returns column badges if they exist
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* fixed tests
+
+* removed debug prints
+
+* chaged MATCH to be one directional
+
+- S3 preview client ([#1499](https://github.com/zain13337/lyft-amundsen/pull/1499),
+  [`20bdb07`](https://github.com/zain13337/lyft-amundsen/commit/20bdb07aca9e697d656853ee427933048b70d47e))
+
+This commit implements a new preview client that gets preview data from S3. The preview client is
+  good for folks who want to persist their preview data somewhere rather than relaying on an
+  external API call that can both fail and take a while depending on the table the query is being
+  run on.
+
+In addition to the base client, I implemented a JSON version of the preview client that my
+  organization is using. This fetches data from S3 in a JSON format and works very nicely with
+  marshmellow serialization to the PreviewData format.
+
+Signed-off-by: jroof88 <jack.roof@samsara.com>
+
+- Sample Feast job with ES publisher ([#425](https://github.com/zain13337/lyft-amundsen/pull/425),
+  [`9e69d43`](https://github.com/zain13337/lyft-amundsen/commit/9e69d4364e79085082d6bc685ce554bc3f705674))
+
+Signed-off-by: Mariusz Strzelecki <mariusz.strzelecki@getindata.com>
+
+- Search highlighting UI ([#1850](https://github.com/zain13337/lyft-amundsen/pull/1850),
+  [`8756312`](https://github.com/zain13337/lyft-amundsen/commit/8756312183dcb493e84211058202bc90f5209f81))
+
+* feat: search highlighting UI
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* wip
+
+* functional for tables pending styling and other resources
+
+* some rewrite
+
+* functional highlighting
+
+* functional and cleaned up
+
+* added column descriptions
+
+* unit tests, feature description highlight and feedback fixes
+
+* betterer results updated
+
+* feature description highlight, fix of descriptions, unit tests, and lint
+
+* some feedback cleanup
+
+* reverted betterer changes
+
+* revert betterer
+
+* styling fixes
+
+* implemented all feedback from Amrcos
+
+* lint
+
+* rewrote ResourceListItem as fuctional component
+
+* fixed betterer issues
+
+* lint fix
+
+* update unit tests
+
+* add highlight options to expected
+
+- Search ML features frontend components
+  ([#1234](https://github.com/zain13337/lyft-amundsen/pull/1234),
+  [`f085dbe`](https://github.com/zain13337/lyft-amundsen/commit/f085dbe0cbf32cff5971ee1ca6afd057008b33f2))
+
+* feat: Merge feature discovery work into protected branch (#1153)
+
+* bump up databuilder version to 4.4.1 (#1130)
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* feat: FE ML Feature get_feature_metadata (#1147)
+
+* functional API for feature details
+
+* lint
+
+* starting unit tests
+
+* changed naming
+
+* correct feat key
+
+* oopsie
+
+* mock data
+
+* removed stuff
+
+* expected metadata
+
+* tests should work now
+
+* oopies pt 2
+
+* all unit tests
+
+* format string
+
+* chore: remove a comment that conflicts with implementation (#1154)
+
+Signed-off-by: Tero Paananen <tpaananen@bloomberg.net>
+
+* feat: ML Feature Lineage (#1156)
+
+* funtional
+
+* unit tests
+
+* 404 case and id
+
+Co-authored-by: Junda Yang <youngyjd@gmail.com>
+
+Co-authored-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+Co-authored-by: Allison Suarez Miranda <22477579+allisonsuarez@users.noreply.github.com>
+
+Co-authored-by: gorbachev <tpp+github@iki.fi>
+
+* chore: get latest code from main (#1181)
+
+* feat: Common query models (#1155)
+
+* Added join and where models for how tables are joined / filtered with sql
+
+Signed-off-by: Grant Seward <grant@stemma.ai>
+
+* removed addl space
+
+* version bump
+
+* feat: Configuration option to init custom routes (#1160)
+
+* configuration option to init custom routes
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+* Fixes isort
+
+* :sigh: really fixes isort
+
+* feat: Search service adding suport for AWS Elasticsearch (#1141)
+
+Signed-off-by: Jakub Nowacki <j.s.nowacki@gmail.com>
+
+* Fix installation link (#1159)
+
+The link was broken
+
+Signed-off-by: Fokko Driesprong <fokko@datafold.com>
+
+* fix: 1157 issude - metadata sql alchemy for iodc component (#1169)
+
+Signed-off-by: iamtodor <todor.ilya@gmail.com>
+
+* Helm service versions moved up to latest ones (#1165)
+
+* Fix doc links in README.md (#1164)
+
+Just a quick driveby to fix a few doc links that still point to old locations.
+
+Signed-off-by: James Davidheiser <jamesdavidheiser@asana.com>
+
+* fix: aws_config (#1167)
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+* fix: add optional list to atlas_search_extractor (#1180)
+
+Signed-off-by: dechoma <dominik.choma@gmail.com>
+
+* feat: introduce atlas serializable for dashboards (#1138)
+
+Co-authored-by: sewardgw <grant@stemma.ai>
+
+Co-authored-by: Verdan Mahmood <verdan.mahmood@gmail.com>
+
+Co-authored-by: Jakub Nowacki <j.s.nowacki@gmail.com>
+
+Co-authored-by: Fokko Driesprong <fokko@driesprong.frl>
+
+Co-authored-by: iamtodor <todor.ilya@gmail.com>
+
+Co-authored-by: James Davidheiser <jdavidheiser@users.noreply.github.com>
+
+Co-authored-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+Co-authored-by: dechoma <dominik.choma@gmail.com>
+
+* feat: FE ML features additonal metadata endpoints (#1152)
+
+* made endpoint methods generic
+
+* Added get-resource-generation_code
+
+* fixes, lint
+
+* more
+
+* prettier
+
+* cleanup
+
+* more unit tests
+
+* fixed tests
+
+* fixed lint long line issue
+
+* fixes and added unit tests
+
+* bumped version
+
+* implemented dmitry's feedback
+
+* fixed big oopsie
+
+* removed prints
+
+* feat: Add databuilder models for Feature (#1190)
+
+* [feat] Add databuilder models for Feature
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+* add feature model docs
+
+* fix dashboard owner test
+
+* lint failures
+
+* docstring improvements
+
+* feat: Add feature discovery route and page (#1185)
+
+* Added redux boilerplate for feature
+
+Signed-off-by: Daniel Won <dwon@lyft.com>
+
+* Add feature page basics
+
+* - Added feature as a resource type - Code cleanup
+
+* Add loading state for feature page - Removed 'prefer-promise-reject-errors' betterer rule
+
+* Add tests to feature ducks
+
+* work for feature search
+
+* update interface
+
+* corrected help text for feature filters
+
+* functional resource selector, filters, etc for ML features, still need API work which will be in
+  separate PR
+
+* badge list option
+
+* revert this change, will put it in separate PR
+
+* betterer not working to update
+
+* better
+
+* fixed unit test
+
+* lint, its too late for this
+
+* removed debug logs
+
+* Adds tests to some components
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Brings back eslint ignore line
+
+Co-authored-by: Daniel <dwon@lyft.com>
+
+Co-authored-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+Co-authored-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+- Search service adding suport for AWS Elasticsearch
+  ([#1141](https://github.com/zain13337/lyft-amundsen/pull/1141),
+  [`fc18c0e`](https://github.com/zain13337/lyft-amundsen/commit/fc18c0ed0cca80f90d3d11436f2c73eb5e385235))
+
+Signed-off-by: Jakub Nowacki <j.s.nowacki@gmail.com>
+
+- Search Service Highlighting ([#1856](https://github.com/zain13337/lyft-amundsen/pull/1856),
+  [`78dd856`](https://github.com/zain13337/lyft-amundsen/commit/78dd856260e51040289ce4d44cf1839785b65407))
+
+* feat: Search Service Highlighting
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* fixed unit test
+
+* put attrdict access in try in case of keyerror
+
+* stupid
+
+* ???
+
+* mock mathc
+
+* debug
+
+* all unit tests pass
+
+* lint
+
+* cinf fix
+
+* check that request has highlights
+
+* implemented feedback
+
+* empty checks
+
+* updated format response tests anhd put them in utils test file
+
+* fixed all tests
+
+* mypy
+
+* isort
+
+* added another unit test
+
+* major oopsie
+
+* some changes
+
+* updated test
+
+* latets pending marshmallow3-annotations bump
+
+* remove debugging line
+
+* bumped marshmallow3-annotation to 1.1.0
+
+* typing extensions issue attempt to fix
+
+* had to convert sttrdict and lsit in the end
+
+* sort imports
+
+- Search v2 API ([#1556](https://github.com/zain13337/lyft-amundsen/pull/1556),
+  [`25265d9`](https://github.com/zain13337/lyft-amundsen/commit/25265d9cbae7f6c28ad09923f302994b128620df))
+
+* Initial commit for new search API
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* small cleanup
+
+* query formation works for search term and filters, need to implement multi search and decide on
+  behavior for when a filter does not apply to a resource
+
+* verified some behavior and need to get proper functionality on multi search
+
+* way simpler thanks to Dmitriy
+
+* Pagination implemented
+
+* enum
+
+* parse args correctly in endpoint to make request to es proxy
+
+* formatted response
+
+* execute returns a list of Response items not just a Response
+
+* but of cleanup
+
+* added pagination details to response
+
+* tested and made some fixes to format response, still writing unit tests
+
+* added search score
+
+* stopping point, writing tests
+
+* we want to respond with they keys in the mapping not the values
+
+* tests taking shape, removed prelim models, will put reeq/resp schemas in common
+
+* added common req/resp/filters model
+
+* marshmallow request validation
+
+* unit tests
+
+* cleanup + feedback imp
+
+* deleted test file for api not needed
+
+* lint from common
+
+* mypy
+
+* lint and cleanup
+
+* mypy + flake
+
+* sorted imports
+
+* feedback small
+
+* bump common version
+
+* renamed endpoint to v2/search
+
+* AMDResource -> AmundsenResource
+
+- Show more tags in browse and home ([#532](https://github.com/zain13337/lyft-amundsen/pull/532),
+  [`022ce53`](https://github.com/zain13337/lyft-amundsen/commit/022ce5399faf06c53de23b49aee67a55259dc8ff))
+
+* renamed section header to Popular Tags
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* trying things out
+
+* set up logic for different exec paths, still have to test sorting function getPopularTags,
+  commented out all tests for TagsList because rewrite will be necessary
+
+* functionaltiy for home page with both curated and popular tags functionality implemented on
+  TagsList, still need to do some work to make section not show up when no tags exist
+
+* completed basic implementation of home page tasks with link to browse page, as well as two section
+  brose page displayz'
+
+* tested and fixed some edge cases
+
+* lint
+
+* sorted tags alphabetically within categories
+
+* some refactoring, adjusted spacing on homepage, fixed styling, implemented title switching base
+  don curated vs popular tags
+
+* lint and test fix
+
+* fixed issue to filter out 0 value tags from other tags, keeping curated tags with 0
+
+* refactor, still need to fix some errors
+
+* this works
+
+* replaced a with Link component
+
+* resolved lint issues
+
+* fixed minor issues from PR feedback
+
+* made tag_name key instead of index
+
+* browse page test issue
+
+* trying to use mount, not working
+
+* still having issues when using mount on TagsList for test
+
+* here are some working tests for tagsList
+
+* used map for allChildren
+
+* added fixture fro huge tags list
+
+* fixes/cleanup
+
+* added test for shimmer loading render
+
+- Shows Query code block within Dashboard Query tab
+  ([#474](https://github.com/zain13337/lyft-amundsen/pull/474),
+  [`e4bed23`](https://github.com/zain13337/lyft-amundsen/commit/e4bed23244673b73988afcc768e9fbf8347072dc))
+
+* Creates QueryResource and updates data definitions
+
+* Mades it a functional component with hooks, added link to dashboard
+
+* Right button behavior (almost)
+
+* Fixes code block styling conflict
+
+* Lazy loads Codeblock for improved performance
+
+* Adds tooltip to mode button
+
+* Cleaning up styles
+
+* Cleaning query_names from the frontend code
+
+* Fixes warnings and mock type issue
+
+* Fixes Typescript warning
+
+* TEst cleanup
+
+* Cleans up webpack flags and extends loading message
+
+* Adds shimmer loader, extract animations include and moves tooltip to top
+
+* Tamika comments
+
+* Making the shimmer a set of lines
+
+* Adds an extra line on the loading screen
+
+* Delete eslint cache file
+
+* Adds comment
+
+- Sort UserFollowsAPI response alphabetically
+  ([#1697](https://github.com/zain13337/lyft-amundsen/pull/1697),
+  [`fe0fdce`](https://github.com/zain13337/lyft-amundsen/commit/fe0fdce5d81f93b5294889c0c33eddc701121ab3))
+
+* sort bookmarks
+
+Signed-off-by: Junda Yang <youngyjd@gmail.com>
+
+* fix test
+
+- Stat is_metric field ([#1500](https://github.com/zain13337/lyft-amundsen/pull/1500),
+  [`60f99e8`](https://github.com/zain13337/lyft-amundsen/commit/60f99e8d8db034871cc62ac3d417551be9de1fb0))
+
+* chore: bumped version of commonm
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* feat: stat is_metric field
+
+* bumped version
+
+* version minor bump
+
+- Sticky TabsComponent and Table headers
+  ([#1924](https://github.com/zain13337/lyft-amundsen/pull/1924),
+  [`8093039`](https://github.com/zain13337/lyft-amundsen/commit/8093039ef5473c91ea35c61dc9a60976b0145cc7))
+
+* Made the tabs component and the table details page table header both sticky
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Addressing PR comment and updating variable name
+
+- Support complex & nested column extraction for delta
+  ([#1329](https://github.com/zain13337/lyft-amundsen/pull/1329),
+  [`9db18bc`](https://github.com/zain13337/lyft-amundsen/commit/9db18bc080aaa79bb45e73f5fe3805c73c0f780c))
+
+This commit implements proper extraction of complex & nested types for delta tables in the
+  delta_metadata_extractor. This commit was slightly modeled off of the bigquery_metadata_extractor
+  which supports nested columns
+  (https://github.com/amundsen-io/amundsen/blob/main/databuilder/databuilder/extractor/bigquery_metadata_extractor.py).
+  However, this implementation is slightly more complex because delta allows support for arrays and
+  maps whose elements, keys, and values can also be nested types.
+
+This commit also includes a new test suite to test delta tables with these complex types and make
+  sure the parsing works properly.
+
+I also added this behind a configuration value. Since users of amundsen might be using the delta
+  extractor as is, it could be jarring that one day they have X number more columns since their
+  complex types are properly parsed. This configuration value is checked before recursing into a
+  nested type to verify we have backwards compatibility. Folks who are using the delta extractor but
+  want nested columns can easily opt in by setting the configuration values.
+
+Two Design Descisions: 1. I toyed with how to render the name for MapTypes. Delta allows you have
+  complex types as the maps key (ex: 'map<struct<b:array<struct<c:int,d:string>>,e:double>,int>').
+  Although this is a valid delta table I wonder how used an array or a map is as a maps key. As a
+  result, I chose not to parse through a maps key and display all nested columns as it's own
+  columns. I figured people who are using maps are more concerning with complex types in the value
+  and can simply construct the key from the regular string that is printed out when showing the
+  whole map type. I added tests for this as well.
+
+2. Nested Fields have the ability to be commented. This DDL statement works for delta: `CREATE TABLE
+  db.jack_test (struct_col struct<a:string COMMENT "NESTED STRING COL", b:int COMMENT "NESTED INT
+  COL"> COMMENT "THIS IS A STRUCT COL") USING delta;` But there is not way to actually extract the
+  nested fields comments: ``` from pprint import pprint raw = spark.sql("DESCRIBE
+  db.jack_test").collect() pprint(raw) ``` Prints just the top level struct comment: ```
+  [Row(col_name='struct_col', data_type='struct<a:string,b:int>', comment='THIS IS A STRUCT COL'),
+  Row(col_name='', data_type='', comment=''), Row(col_name='# Partitioning', data_type='',
+  comment=''), Row(col_name='Not partitioned', data_type='', comment='')] ``` Since this is the
+  current state of delta, this commit sets all descriptions of nested fields to None. I filed a bug
+  report with delta about this and will revist if they implement it.
+
+Signed-off-by: jroof88 <jack.roof@samsara.com>
+
+- Support dashboard chart in search ([#383](https://github.com/zain13337/lyft-amundsen/pull/383),
+  [`d0d6980`](https://github.com/zain13337/lyft-amundsen/commit/d0d69801c88b0695e6ce23b8c0b781b2e65d3bdf))
+
+* feat: support dashboard chart in search
+
+Signed-off-by: feng-tao <fengtao04@gmail.com>
+
+* feat: fix lint
+
+* update
+
+- Support for ES 7, ES field names containing dots, ES field sort order
+  ([#1648](https://github.com/zain13337/lyft-amundsen/pull/1648),
+  [`9e2aa4e`](https://github.com/zain13337/lyft-amundsen/commit/9e2aa4e0b093d1875cf37028ac64e5e588be2b8b))
+
+Signed-off-by: jaredbwasserman <jaredbwasserman@gmail.com>
+
+- Support for feature tours ([#1764](https://github.com/zain13337/lyft-amundsen/pull/1764),
+  [`3b2713a`](https://github.com/zain13337/lyft-amundsen/commit/3b2713a0d35e012131a65720ac4a92c0eb7e8be6))
+
+* feat: adds support for feature tours
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* docs: updates docs on tour feature
+
+* chore: adding more generic text on the test files
+
+- Support markdown for dashboard descriptions
+  ([#506](https://github.com/zain13337/lyft-amundsen/pull/506),
+  [`336fea4`](https://github.com/zain13337/lyft-amundsen/commit/336fea43519d40ce6e1ce36d67ad9a91e6156958))
+
+* Support markdown for dashboard descriptions
+
+* Code cleanup
+
+* Fix test for build to pass; Need to re-write so this doesn't keep happening
+
+- Support mysql in metadata service ([#1182](https://github.com/zain13337/lyft-amundsen/pull/1182),
+  [`4c7316e`](https://github.com/zain13337/lyft-amundsen/commit/4c7316efc58e27ae04ccf9a721d1a0cfa1c633aa))
+
+* support metadata service for mysql
+
+Signed-off-by: xuans <xuan_shen@outlook.com>
+
+* update doc
+
+* fixed some typo in doc
+
+* Add configurable cli registration
+
+- Support popular_resources() in mysql_proxy
+  ([#1488](https://github.com/zain13337/lyft-amundsen/pull/1488),
+  [`e491c1f`](https://github.com/zain13337/lyft-amundsen/commit/e491c1f71e8dc85c24dcb6a3f2f11579ce2bcd7b))
+
+* support popular_resources endpoint in mysql_proxy for table and dashboard
+
+Signed-off-by: xuans <xuan_shen@outlook.com>
+
+* refactor code
+
+* fix mypy issue and some refactoring
+
+- Support skipping configured Mode spaces
+  ([#1129](https://github.com/zain13337/lyft-amundsen/pull/1129),
+  [`7a51f0d`](https://github.com/zain13337/lyft-amundsen/commit/7a51f0dc35580b29bf83cfcbedd506e08139798f))
+
+- Support table/column lineage for mysql backend
+  ([#2077](https://github.com/zain13337/lyft-amundsen/pull/2077),
+  [`251d4e7`](https://github.com/zain13337/lyft-amundsen/commit/251d4e7fc1a21e7a8752bfbac9e746b3dc1d5d7f))
+
+* support table/column lineage for rds backend in databuilder
+
+Signed-off-by: xuans <xuan_shen@outlook.com>
+
+* support table/column lineage for rds backend in metadata_service
+
+* fixed typing check issue
+
+- Surface column level badges ([#706](https://github.com/zain13337/lyft-amundsen/pull/706),
+  [`14248ea`](https://github.com/zain13337/lyft-amundsen/commit/14248eaaa7bf276a005aae3938c91b539e712f24))
+
+* adding badges to column and starting badges column work in table
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* tests and adding column badges logic
+
+* fixed test issues and fixed search bug by forcing badge text to be lower case when searching
+
+* lint
+
+* fixed method isse
+
+* betterer fix
+
+* build(deps): bump throttle-debounce in /amundsen_application/static (#711)
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+* build(deps-dev): bump @babel/preset-react (#710)
+
+* build(deps-dev): bump enzyme-adapter-react-16 (#707)
+
+* build(deps-dev): bump jest in /amundsen_application/static (#708)
+
+Bumps [jest](https://github.com/facebook/jest) from 26.4.2 to 26.5.0. - [Release
+  notes](https://github.com/facebook/jest/releases) -
+  [Changelog](https://github.com/facebook/jest/blob/master/CHANGELOG.md) -
+  [Commits](https://github.com/facebook/jest/compare/v26.4.2...v26.5.0)
+
+Signed-off-by: dependabot-preview[bot] <support@dependabot.com>
+
+Co-authored-by: dependabot-preview[bot] <27856297+dependabot-preview[bot]@users.noreply.github.com>
+
+* chore: Updates Storybook to version 6 (#712)
+
+* Removing story.name
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Adding pre-push hook
+
+* Updating Flag and Card
+
+* Updating Storybook to version 6
+
+* Updating betterer results
+
+* Update eslint config
+
+* Removing pre-push hook as it runs on .src-custom
+
+* added new table with 4 columns to storybook
+
+* removed weird package file
+
+* removed ternary
+
+* refactored badges, need to clean up all leftover code
+
+* bits of cleanup and rename donClick to handleClick
+
+* lint fix
+
+* added text utils tests
+
+* got convertText out of Flag
+
+* lint fixes
+
+* removed important
+
+* oopsie
+
+* Update amundsen_application/static/js/utils/textUtils.ts
+
+Co-authored-by: Marcos Iglesias <190833+Golodhros@users.noreply.github.com>
+
+* removed comments and renamed onClick
+
+* type issue
+
+- Table and Column Lineage Lists ([#969](https://github.com/zain13337/lyft-amundsen/pull/969),
+  [`aa3029b`](https://github.com/zain13337/lyft-amundsen/commit/aa3029b25642869d10c713831b0e5011dfea7cf0))
+
+Added support for table and column level lineage. - Adds table and column lineage configurations -
+  Adds 'upstream' and 'downstream' tabs in table details - Adds column lineage list in column
+  details
+
+Signed-off-by: Daniel Won <dwon@lyft.com>
+
+- Table and Column Lineage Polish ([#970](https://github.com/zain13337/lyft-amundsen/pull/970),
+  [`630dbb7`](https://github.com/zain13337/lyft-amundsen/commit/630dbb79d4aead5769de54e59c15ffe6ae086dcd))
+
+Cleanup / polish of lineage features - Reordeered upstream/downstream tabs - Hide
+  upstream/downstream tabs when no tables are found - Add loading state for column lineage
+
+- Table Lineage API ([#262](https://github.com/zain13337/lyft-amundsen/pull/262),
+  [`9bf07ef`](https://github.com/zain13337/lyft-amundsen/commit/9bf07efd9228c8607cbfb1fbe294dfb3e3a7f479))
+
+* Table Lingeage API
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* cleaned up implementation and tested manually
+
+* flake fixes
+
+* added response template
+
+* some import changes
+
+* addind unit tests
+
+* finished tests
+
+* flake
+
+* forgot to add this change
+
+* reqs and chnge
+
+* changed reqs back
+
+* reqs test
+
+* marsh req
+
+* marshmalllow-annotations in setup
+
+* lets see if this works
+
+* marshmallow version doesn't require .data
+
+* removed use of strict
+
+* removed many
+
+* put back in correct place
+
+* updated failing test after marshmallow update
+
+* resolved naming conflict for user
+
+* indent
+
+* organized imports
+
+* more isort
+
+* typo fix
+
+- Table model badges field update ([#56](https://github.com/zain13337/lyft-amundsen/pull/56),
+  [`ddf056f`](https://github.com/zain13337/lyft-amundsen/commit/ddf056fd0c35a5aadb09e3ccb18fd52a71e82a8a))
+
+* changed Table model to have badges contain badges rather than tags
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* forgot to bump version up
+
+- Testing Codeowners file ([#605](https://github.com/zain13337/lyft-amundsen/pull/605),
+  [`167d95f`](https://github.com/zain13337/lyft-amundsen/commit/167d95fdb940f7bb33438fcef1674d72b8e1b881))
+
+* Testing Codeowners file
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Updating Tamika's name, adding Tao
+
+- Thins out the global header to gain vertical space
+  ([#2116](https://github.com/zain13337/lyft-amundsen/pull/2116),
+  [`09e20aa`](https://github.com/zain13337/lyft-amundsen/commit/09e20aa639ddc57f62575d9690cc4191fa934a71))
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+- Toggle filter component ([#1767](https://github.com/zain13337/lyft-amundsen/pull/1767),
+  [`d665823`](https://github.com/zain13337/lyft-amundsen/commit/d665823ad16d5eee16dcd1a2194b2d43dd010719))
+
+* Functional pending some tests and cleanup
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* lint fix
+
+* porper state to props mapping
+
+* fixed unit test for togle switch
+
+* more tests and cleanup
+
+* betterer
+
+* changed title and filter to FC and removed title-2
+
+* remove title-2 again
+
+* unit tests
+
+* oops on unit test
+
+* removed elses because of returns and updated docs
+
+* little fixes
+
+* fixed unit tests
+
+* removed constructor no longer needed
+
+* uncommented check
+
+- Tweaks for gremlin support ([#60](https://github.com/zain13337/lyft-amundsen/pull/60),
+  [`f73b1b1`](https://github.com/zain13337/lyft-amundsen/commit/f73b1b1730bc3c0d67cb4ef408da1a25b9d612f2))
+
+* common: gremlin support tweaks
+
+add optional key parameter to column, table. rename Statistics -> Stat. add fixtures, streaming,
+  utils to common. Update mypy to 761 to fix false errors. Fix flake8 complaints about extra line in
+  __init__.py files
+
+Signed-off-by: Joshua Hoskins <hoskins@squareup.com>
+
+* Feedback 1
+
+Remove streams Move fixtures to amundsen_common/tests Stat as additional class, deprecate Statistics
+
+* feedback 2
+
+remove utils, make mypy ignore missing imports module-specific
+
+- Tweaks styling of Alerts ([#2043](https://github.com/zain13337/lyft-amundsen/pull/2043),
+  [`e7ad6f8`](https://github.com/zain13337/lyft-amundsen/commit/e7ad6f8bb038da2a08925d2d9b7ed656789cc259))
+
+* chore: udpates alert story format; adds severity cases
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* feat: updates styling of alert backgrounds
+
+* docs: udpates screenshots
+
+* chore: updating screenshot name
+
+- Update 'table view', 'alumni' and SLA status badges
+  ([#595](https://github.com/zain13337/lyft-amundsen/pull/595),
+  [`5747816`](https://github.com/zain13337/lyft-amundsen/commit/5747816b63b374175f1df1b9b3e6b9e6a3108ace))
+
+* removed badges section for users cause we dont need that moving forward
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* removed ALumni badge from user profile and added it to header-bullets instead
+
+* removed Alumni badge checks for user profiles
+
+* not working for some reason
+
+* lint and missed test update
+
+* fixed conflict
+
+* updated DashboardPage tests
+
+* added icons
+
+* lint
+
+* fixed alignment issue
+
+* fixed table view
+
+* added variables for style
+
+* made component more genric, still need to rename and fix icon issue
+
+* updated text to use typography defined
+
+* variable
+
+* hit icon broken
+
+* fixed hit icon a bit
+
+* fixed tets
+
+* moved setup into it clause
+
+* added resource badges back in
+
+* lint + added back tests
+
+* fixes
+
+* fixed icon for hit
+
+* bettered updated file
+
+* removed text prop
+
+* fixed text issue
+
+* small fix
+
+* cleanup
+
+- Update Avatar and Profile Page Loading State
+  ([#487](https://github.com/zain13337/lyft-amundsen/pull/487),
+  [`a26f8a7`](https://github.com/zain13337/lyft-amundsen/commit/a26f8a7d549b3fcb9d9e5c66a506b319cd4f02dd))
+
+* Adds shimmering loader to Navigation Avatar
+
+* Adds User PRofile header shimmer loader
+
+* Removing avatar border
+
+- Update es document request model ([#1613](https://github.com/zain13337/lyft-amundsen/pull/1613),
+  [`8674721`](https://github.com/zain13337/lyft-amundsen/commit/86747215ac75f6e263b71055d1e9d1a530c1e6e5))
+
+* feat: update es document request model
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* added operation field for option to add or overwrite field value
+
+- Update feature models ([#1222](https://github.com/zain13337/lyft-amundsen/pull/1222),
+  [`0d5e9c3`](https://github.com/zain13337/lyft-amundsen/commit/0d5e9c3d6361c59b22d0bc563dce136aff0e91fa))
+
+* update feature models
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+* linter
+
+- Update feature tags in search on user action
+  ([#1342](https://github.com/zain13337/lyft-amundsen/pull/1342),
+  [`c4e3296`](https://github.com/zain13337/lyft-amundsen/commit/c4e3296c1059d4b2b97d0d40eabc157428c3835a))
+
+- Update ListItem Loading State into Shimmering loader
+  ([#484](https://github.com/zain13337/lyft-amundsen/pull/484),
+  [`4479307`](https://github.com/zain13337/lyft-amundsen/commit/4479307f9c15d81dec07e1bc85ce47fe8218fd82))
+
+* Adds shimmer loader to Bookmarks
+
+* Adds loader for popular tables
+
+* Shimmering loader on results page
+
+* Abstracting Shimering Resource Loader
+
+* Adding tests
+
+* Formatting
+
+* Reusing RESULTS_PER_PAGE on the number of shimmering row items
+
+- Update metadata neo4j proxy column query to retrieve its TypeMetadata
+  ([#1776](https://github.com/zain13337/lyft-amundsen/pull/1776),
+  [`dc2ac83`](https://github.com/zain13337/lyft-amundsen/commit/dc2ac83080c8fc1e2db36cf55495844b6735e5ea))
+
+* Update neo4j proxy column query to retrieve its TypeMetadata
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Update col_types in tests
+
+* lint
+
+* mypy
+
+* Adding get/put descriptions and put/delete badges for type metadata
+
+* Fix handling empty type_metadata results
+
+* Updating type metadata endpoints to only take its key
+
+* Adding a few clarifying comments
+
+- Update prog_desc configuration + UI ([#527](https://github.com/zain13337/lyft-amundsen/pull/527),
+  [`f671ea2`](https://github.com/zain13337/lyft-amundsen/commit/f671ea22564c119f3b41310437abfaaa59cca788))
+
+* Update prog_desc configuration + UI
+
+* Lint
+
+* mypy
+
+* Component cleanup; Add types
+
+* Lint fix
+
+* Clean up and fix bug
+
+* Update doc
+
+* Update docs
+
+* Update test
+
+* Update python logic
+
+- Update readme to include merlinjobs.com
+  ([#201](https://github.com/zain13337/lyft-amundsen/pull/201),
+  [`5616acc`](https://github.com/zain13337/lyft-amundsen/commit/5616acc07ba17841b26a6b3587fc5fa53a22ea12))
+
+- Update search service to use new search mappings
+  ([#1832](https://github.com/zain13337/lyft-amundsen/pull/1832),
+  [`ac75638`](https://github.com/zain13337/lyft-amundsen/commit/ac75638ee05e0e7cbf1c84a57a63793eca76ac05))
+
+* chore: update search service to use new search mappings
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* needed fields back
+
+* updated index name to point to new index
+
+* Added deprecation warning log to old ES client
+
+* made fixtures match new mappings for tests
+
+* fixed other unit ests
+
+* lint
+
+* remove print and import unused
+
+* added docs explaining how to transition to /v2/search
+
+* bit more doc
+
+* change to keep BW compatibility and add new functionality
+
+* a bit of cleanup and comments for clarity
+
+* more cleanup and manual testing of new search
+
+* updated all unit tests and initialize proxy classes according to bww comp functionality
+
+* updated docs
+
+* fixed flake and mypy errors
+
+* more mypy
+
+* sort imports in v3
+
+* implemented most feedback need to do more manual testing and run unit tests + linter
+
+* fixed import
+
+* updated doc
+
+* oops
+
+* fix
+
+* fix mypy issue
+
+* type removed
+
+* more config cleanup and some clarifications
+
+* fix: toggle filter should clear when off (#1848)
+
+* fix: toggle filter should clear when off
+
+* lint fix
+
+* updated unit test
+
+* suggestion
+
+* Refactoring various column details and adding type metadata to the table metadata FE model (#1847)
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* fix: fixes tour not resetting on different pages (#1849)
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* fix: better behavior for search filters (#1852)
+
+* fix: better behavior for application of filters
+
+* explicit comparison to None
+
+* 2nd round of feedback plus more context
+
+* added filters change from different PR and removed deprecated configs
+
+* Revert "Merge branch 'asm-search-with-new-mappings' of github.com:amundsen-io/amundsen into
+  asm-search-with-new-mappings"
+
+This reverts commit 49c5c34dbb2f940ffa286506857fa67e4b7d9488, reversing changes made to
+  e14b54182eb5333927c444d150190cc1a3278369.
+
+* fix args kwards
+
+* deprecating config
+
+* args fix
+
+* readme update
+
+* conf
+
+* flake
+
+* fixed new
+
+* type ignore
+
+* https://peps.python.org/pep-0484/\#arbitrary-argument-lists-and-default-argument-values
+
+* Empty-Commit
+
+Co-authored-by: Kristen Armes <6732445+kristenarmes@users.noreply.github.com>
+
+Co-authored-by: Marcos Iglesias <190833+Golodhros@users.noreply.github.com>
+
+- Update TagList Loading State with a shimmer loader
+  ([#486](https://github.com/zain13337/lyft-amundsen/pull/486),
+  [`0caa5e6`](https://github.com/zain13337/lyft-amundsen/commit/0caa5e66ef21c51a053f71b4c52729476f95bdd6))
+
+* Adds taglist shimmer loader
+
+* Adds test
+
+* Updating border radius value by sharing a sass variable
+
+* Setting explicit values for the numItems prop
+
+* alt attribute on some images
+
+- Updated popular_tables endpoint to allow optional user_id
+  ([#232](https://github.com/zain13337/lyft-amundsen/pull/232),
+  [`f8b05cd`](https://github.com/zain13337/lyft-amundsen/commit/f8b05cd25a7b925e2f250739e461dfd49b38edb7))
+
+Signed-off-by: Josh Howard <joshthoward@gmail.com>
+
+- Updating input placeholder text and hint text for search filters
+  ([#1636](https://github.com/zain13337/lyft-amundsen/pull/1636),
+  [`b30fad8`](https://github.com/zain13337/lyft-amundsen/commit/b30fad8f5feac886108da6be5faaefc545b2b299))
+
+* Updating input placeholder text and hint text for search filters
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Minor fixes
+
+- Upgrade feast to 0.17 ([#1528](https://github.com/zain13337/lyft-amundsen/pull/1528),
+  [`4a9d601`](https://github.com/zain13337/lyft-amundsen/commit/4a9d60176767c4d68d1cad5b093320ea22e26a49))
+
+* :sparkles: Initial commit for feast upgrade
+
+Signed-off-by: Amom Mendes <amommendes@hotmail.com>
+
+* :sparkles: Upgrade feast
+
+* :art: Fix typo and change sample data example
+
+* :rotating_light: black linter
+
+* :pushpin: Fix feast version
+
+* :page_facing_up: Add Amundsen licence
+
+* :wastebasket: Remove binary files
+
+* :pushpin: Set feast 0.14
+
+* :white_check_mark: Remove binary files and add setup and teardown method for feast testing
+
+* :test_tube: Teardown method
+
+* :wastebasket: Delete old binaries
+
+* Upgrade feast
+
+* [Testing] Remove py3.6
+
+* Rename example feature view file
+
+* Fix creation time
+
+* Linting
+
+- Use chart_names in dashboard basic search
+  ([#1140](https://github.com/zain13337/lyft-amundsen/pull/1140),
+  [`96171a0`](https://github.com/zain13337/lyft-amundsen/commit/96171a0803c21c9a8c6a864882a8f2fbd3157d28))
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Use different internal link than the table details page on lineage
+  ([#2006](https://github.com/zain13337/lyft-amundsen/pull/2006),
+  [`1e1b90c`](https://github.com/zain13337/lyft-amundsen/commit/1e1b90cdc533bbc96e1d0f45a45d93c4ee7629ef))
+
+* use different intewrnal link than the table detials page on lineage
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* unit test and lniting
+
+* lint
+
+* mypy ignore
+
+* bump common req
+
+- Use new search endpoint in FE and add search filter operation selection
+  ([#1623](https://github.com/zain13337/lyft-amundsen/pull/1623),
+  [`e55476f`](https://github.com/zain13337/lyft-amundsen/commit/e55476f590d9e2c901a4bf2487559f64d9128a1f))
+
+* almost there
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* almost done
+
+* FE search API correctly requests search service and responds, need to make the ts changes needed
+  to show changes in FE
+
+* correct mappings for resource results
+
+* SEARCH IS FUNCTIONAL WITH NEW API
+
+* cleanup
+
+* Majority of the work done for filter operation selection using new search api
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Fixing resource specific search with filters and clear filters behavior
+
+* Fixing js tests and betterer issues
+
+* Fixing python test and lint/betterer
+
+* Betterer improvements/test fixes
+
+* removed v0 because it is not needed or accesible anymore, and added unit tests for v1
+
+* a bit of cleanup from utils, not done yet
+
+* lint fixes
+
+* lint
+
+* test _transform_filters
+
+* Adding description and timestamp to dashboard mapping and adding js tests
+
+* Addressing PR comments
+
+* Verified that badge is primitive string type during search, cleaned up check
+
+* Changing the name of the config that optionally restricts filter operations to be more clear on
+  what it does
+
+* If a filter term is deleted, remove the category from the filter state instead of keeping it
+  stored as an undefined value
+
+* Bumping major FE version
+
+* Using destructuring instead of delete for removing empty filter
+
+Co-authored-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+- Use parameters to allow special characters in neo4j cypher statement
+  ([#382](https://github.com/zain13337/lyft-amundsen/pull/382),
+  [`90368c5`](https://github.com/zain13337/lyft-amundsen/commit/90368c5a5a3551238689f0a4568bbab46c7fb1c8))
+
+Signed-off-by: Roger Tang <roger.tang@workday.com>
+
+Co-authored-by: Roger Tang <roger.tang@workday.com>
+
+- Use query parameter for basic search [AtlasProxy]
+  ([#105](https://github.com/zain13337/lyft-amundsen/pull/105),
+  [`f6beb51`](https://github.com/zain13337/lyft-amundsen/commit/f6beb514b2b3e7c7434207e9a4621e6a8e76e0f6))
+
+* :tada: Initial commit.
+
+* :fire: Removing code or files.
+
+- Use type metadata description get/update apis
+  ([#1876](https://github.com/zain13337/lyft-amundsen/pull/1876),
+  [`08bea6c`](https://github.com/zain13337/lyft-amundsen/commit/08bea6c18584842a052c4e8015608517f5b640a3))
+
+* Use type metadata description get/update apis
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Adding python tests for tm description apis
+
+* Minor changes from feedback
+
+* Addressing PR comments
+
+- V2/document API ([#1611](https://github.com/zain13337/lyft-amundsen/pull/1611),
+  [`52dd829`](https://github.com/zain13337/lyft-amundsen/commit/52dd82975ca24f77c4e8aad43de00bec6016dcb5))
+
+* feat: v2/document API
+
+Signed-off-by: Allison Suarez Miranda <asuarezmiranda@lyft.com>
+
+* implemented get document by key
+
+* implementation complete, need tests
+
+* cleanup and fixes
+
+* lint
+
+* updated function to use operation add/overwrite
+
+* better error handling
+
+* broke update method down to make it less complex
+
+* type annotation fixes
+
+* sorted imports
+
+* bumped common
+
+* fixed 'AttrDict' object has no attribute 'get' error
+
+* added index to get document
+
+* recreated mappings with dsl to use documents correctly
+
+* provide es client to use
+
+* cleanup and fix in mapped field instead of field
+
+* support multi value
+
+* added logging
+
+* change func call
+
+* should b efixed
+
+* oops
+
+* cleaned up
+
+* fix
+
+* rewrote es update document to not get document just update directly
+
+* linting
+
+* fixed type annotations
+
+* more type fixing
+
+* finally actually fixed typing issue
+
+* getatt istead of .get
+
+* result is dict so use get
+
+* removed check
+
+* mypy fix
+
+* added error if key returns more than one doc
+
+* fixed hit # check
+
+* 2nd round of feedback implemented, cleaup
+
+* import fix
+
+- Vertica metadata extractor ([#433](https://github.com/zain13337/lyft-amundsen/pull/433),
+  [`4003070`](https://github.com/zain13337/lyft-amundsen/commit/4003070b96e1e63d96f98836e7405f8dd8dde92b))
+
+* Adding metadata extractor for Vertica
+
+Adding a metadata extractor for Vertica using MySQL as template
+
+Signed-off-by: Ashutosh Sanzgiri <sanzgiri@gmail.com>
+
+* renaming appropriately
+
+* reordering imports
+
+* add docs for vertica extractor
+
+* fix lint errors
+
+* fix isort errors
+
+- **users**: Add a `user_search_index` Neo4j to ES quickstart sample sync job
+  ([#130](https://github.com/zain13337/lyft-amundsen/pull/130),
+  [`86ef2d4`](https://github.com/zain13337/lyft-amundsen/commit/86ef2d43bb6165e37f8fd745616c146828a0002f))
+
+* feat(user): add Neo4j to ES quickstart sample job
+
+* lint
+
+* Fix (user): Whitespace glitch giving quotes in UI
+
+* Correct ES mapping, thanks Tao!
+
+* Trailing Linefeed
+
+### Performance Improvements
+
+- New neo4j csv publisher to improve performance using batched params
+  ([#1957](https://github.com/zain13337/lyft-amundsen/pull/1957),
+  [`09f2d92`](https://github.com/zain13337/lyft-amundsen/commit/09f2d92bfd570700daf041eafe2f026bd76f9fc2))
+
+* New publisher using managed transactions, unwind statements, configurable two or one way relations
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Add logic for preserving adhoc ui data, and move write transactions logic to reusable function
+
+* Fixing flake8 error (not sure how it got through, not from my change)
+
+* Pulling in a few of the latest changes from the original publisher and lint
+
+* Fix tests
+
+* Addressing PR feedback and change index creation to use a managed transaction
+
+* Refactor props body function and separate out constants
+
+* Addressing PR feedback plus refactoring
+
+* Addressing PR feedback, more refactoring
+
+* Minor fixes and bump version
+
+- Update mode dashboard executions extractor to discovery api
+  ([#1116](https://github.com/zain13337/lyft-amundsen/pull/1116),
+  [`2137cdd`](https://github.com/zain13337/lyft-amundsen/commit/2137cddaa9774b0c193f3061be8d26c265dbb2dc))
+
+* update ModeDashboardExecutionsExtractor to discovery api
+
+Signed-off-by: Junda Yang <youngyjd@gmail.com>
+
+* update README
+
+- Update ModeDashboardLastModifiedTimestampExtractor to use Mode discovery api
+  ([#1040](https://github.com/zain13337/lyft-amundsen/pull/1040),
+  [`b3e2f15`](https://github.com/zain13337/lyft-amundsen/commit/b3e2f15aaef2c56ed5119ae3da74cff2f1653009))
+
+* update ModeDashboardLastModifiedTimestampExtractor to use Mode discovery api
+
+Signed-off-by: Junda Yang <youngyjd@gmail.com>
+
+* add empty line at the end of the file
+
+* update comment
+
+* fix lint
+
+* fix import
+
+- Update ModeDashboardLastSuccessfulExecutionExtractor to discovery api
+  ([#1042](https://github.com/zain13337/lyft-amundsen/pull/1042),
+  [`a16a1e5`](https://github.com/zain13337/lyft-amundsen/commit/a16a1e528bb6e0e80a70a77d58135919234ed6a1))
+
+* update ModeDashboardLastSuccessfulExecutionExtractor to discovery api
+
+Signed-off-by: Junda Yang <youngyjd@gmail.com>
+
+* lint
+
+* remove unused import
+
+- Update ModeDashboardOwner extractor to use Mode discovery api
+  ([#1043](https://github.com/zain13337/lyft-amundsen/pull/1043),
+  [`699652f`](https://github.com/zain13337/lyft-amundsen/commit/699652f7e9a884a05000a9ca00bce72179cfa593))
+
+* update ModeDashboardOwnerExtractor to discovery api
+
+Signed-off-by: Junda Yang <youngyjd@gmail.com>
+
+* update import
+
+- Update ModeDashboardUsageExtractor to discovery endpoint
+  ([#1115](https://github.com/zain13337/lyft-amundsen/pull/1115),
+  [`a723b7a`](https://github.com/zain13337/lyft-amundsen/commit/a723b7ac050e3f3ff4082974c3fae9a75607ee82))
+
+* move mode dashboard usage extractor to discovery api
+
+Signed-off-by: Junda Yang <youngyjd@gmail.com>
+
+* update
+
+* mock post process
+
+* fix test
+
+* solve lint error
+
+* fix isort
+
+### Refactoring
+
+- Add a level of record abstraction ([#380](https://github.com/zain13337/lyft-amundsen/pull/380),
+  [`0dbcc1b`](https://github.com/zain13337/lyft-amundsen/commit/0dbcc1b35cb1015bb9a0d14939b0b53129e77ff6))
+
+* move away from dicts and more structured types
+
+* Add a abstraction layer between the databuilder records and neo4j
+
+Signed-off-by: Andrew <andrjc4@vt.edu>
+
+- Bw-incompatible cleanup of usage models
+  ([#1235](https://github.com/zain13337/lyft-amundsen/pull/1235),
+  [`c36dfa0`](https://github.com/zain13337/lyft-amundsen/commit/c36dfa03a80a91f75ce0a4cc8ad2b7fa1123ac1f))
+
+* bw-incompatible cleanup of usage models
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+* doc and sample data cleanup
+
+* linting
+
+* fall back silently to table level usage instead of raising
+
+- Change error handling in ComplexTypeTransformer
+  ([#1766](https://github.com/zain13337/lyft-amundsen/pull/1766),
+  [`90f9943`](https://github.com/zain13337/lyft-amundsen/commit/90f9943eb35ee4a42b135e67a690187640ed6259))
+
+* Log issues instead of throwing exceptions in ComplexTypeTransformer
+
+Signed-off-by: Kristen Armes <karmes@lyft.com>
+
+* Bump version
+
+* Handle any exceptions with the parser in the transformer instead of supressing them so it knows
+  when there is an issue
+
+* lint
+
+* Don't catch exception for invalid parsing function
+
+* No special handling for invalid parsing function
+
+- Compatibility with Neo4J 4.0.4 (4.x in general should work)
+  ([#270](https://github.com/zain13337/lyft-amundsen/pull/270),
+  [`42c10de`](https://github.com/zain13337/lyft-amundsen/commit/42c10decc80c381674c35ec9054f3f65627ddbf7))
+
+* Compatibility with latest Neo4J 4.0.4
+
+Starting with Neo4J v4, it no longer auto generates SSL/TLS certificates if they aren't supplied. To
+  keep the example working, I needed config to specify whether the connection to Neo4J should be
+  encrypted or not.
+
+It defaults to False, at the moment, so I think most people would need to add an explicit True to
+  their config.
+
+* Satisfy warning and fix test failures.
+
+The neo4j driver is now supposed to be imported using 'neo4j', the older .v1 is now deprecated. I
+  was going to leave this, but then saw there are deprecation warnings.
+
+Several unit tests were failing because they new 'neo4j_encrypted' key wasn't included in the
+  configs. I believe it makes sense to include 'NEO4J_ENCRYPTED: True' as a default anyway. This
+  should stop people with existing configs from having to update them.
+
+* Add a config parameter for SSL cert validation.
+
+- Component file structure reorganization
+  ([#816](https://github.com/zain13337/lyft-amundsen/pull/816),
+  [`713962b`](https://github.com/zain13337/lyft-amundsen/commit/713962bee8653605cb1df03e51798f94e9e105cd))
+
+* Moving Footer to the features folder
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Moving NavBar into features folder
+
+* Moving Navbar
+
+* Moving feedback into features
+
+* Moving constants file to the root
+
+* Moving ColumnList into the features folder
+
+* Updates doc about testing
+
+* Adding some eslint ignore comments
+
+* Updating betterer results
+
+- Made preview and announcements configurable through env
+  ([#740](https://github.com/zain13337/lyft-amundsen/pull/740),
+  [`1e0e863`](https://github.com/zain13337/lyft-amundsen/commit/1e0e8636740e3a82bc6ca262a6f893827df82957))
+
+* Made preview and announcements configurable through environment variables
+
+Signed-off-by: Josh Howard <joshthoward@gmail.com>
+
+* Fixed deprecation warnings in tests
+
+* Replaced backward compatibility for entrypoint config
+
+* Added deprecation warnings for entrypoint config
+
+Co-authored-by: Josh Howard <josh.t.howard@ey.com>
+
+- Migrate atlas_proxy to official Apache Atlas client
+  ([#247](https://github.com/zain13337/lyft-amundsen/pull/247),
+  [`bd082ae`](https://github.com/zain13337/lyft-amundsen/commit/bd082ae89aeb3b653fec58735f4ac4e887f82246))
+
+* Initial Commit - Try the official atlas client
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+* More updates
+
+* Bumps the version
+
+* Move to official atlas client
+
+* Removes the traces of unofficial atlasclient
+
+* bumps the version
+
+* FIxes a minor issue
+
+* More tests fixes
+
+* fixes test cases
+
+* adds the atlas dependency
+
+* updates the documentation
+
+* updates the apache-atlas version
+
+* fixes the version
+
+* fixes lint
+
+* Fixes mypy error
+
+* imports fixed
+
+* applies isort
+
+* Implementes get_badges function
+
+* removes unnecassry lines
+
+* Updates the apache-atlas version.
+
+* Updates apache-atlas version
+
+* feedback changes
+
+* :sparkles: Introducing new features. (perf improvement for owned tables)
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+Co-authored-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+- Moves pages into its own folder ([#624](https://github.com/zain13337/lyft-amundsen/pull/624),
+  [`4340474`](https://github.com/zain13337/lyft-amundsen/commit/4340474aeb581455821e4183800917168d993147))
+
+* Announcements, Dashboard, NotFound and Search pages into the pages folder
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Browse, Home, Preferences, and profile pages
+
+* TableDetail into pages folder
+
+* Renames TableDetail into TableDetailPage
+
+* Fixing some strict null issues
+
+* Update betterer results
+
+* Updates types, adds npm run check and updates stylelint rules due to prettier bug
+
+* Updates betterer results
+
+* Updates test coverage configuration and webpack setup for sourcemaps
+
+* Style linting
+
+* Giving more buffer for test coverage
+
+- Moving common folder down into the components folder
+  ([#817](https://github.com/zain13337/lyft-amundsen/pull/817),
+  [`80e3831`](https://github.com/zain13337/lyft-amundsen/commit/80e3831bf4c8559f3d8b26e5d4ab818949272575))
+
+* Moving alert component
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Moving SVGIcons
+
+* Moving announcements
+
+* Moving AvatarLabel
+
+* Moving BadgeList and Bookmarks
+
+* Moving Breadcrumb
+
+* Moving Card component
+
+* Moved EditableSection
+
+* Moves EditableText, EntityCard, Flag, FlashMessage
+
+* Moves EntityCard, InfoButton, Inputs and PopularTables
+
+* Moves LoadingSpinner, OwnerEditor, PopularTables, Preloader, SearchBar
+
+* Moves ResourceList, ResourceStatusMarker
+
+* Moves SearcBar, ShimmeringResourceLoader, ShimmeringTagListLoader, StorySection
+
+* Moves Table, TabsComponent and Tags
+
+* Updates betterer results
+
+- Refactors connector out of ColumnLIstItems
+  ([#628](https://github.com/zain13337/lyft-amundsen/pull/628),
+  [`257d58d`](https://github.com/zain13337/lyft-amundsen/commit/257d58dc6fda758c97270d7aa777cb301b83c377))
+
+* Refactors connector out of ColumnLIstItems
+
+Signed-off-by: Marcos Iglesias <miglesiasvalle@lyft.com>
+
+* Clean up initial usage stuff
+
+* Updating betterer results
+
+- Remove Global call ([#278](https://github.com/zain13337/lyft-amundsen/pull/278),
+  [`163a5c5`](https://github.com/zain13337/lyft-amundsen/commit/163a5c5c0b758fca9412d283b59d06312632789f))
+
+* Remove the global call and set it to ignore the shard in the init of the proxy
+
+Signed-off-by: Andrew Ciambrone <andrjc4@vt.edu>
+
+* clean up spacing
+
+* isort lint
+
+- Remove hard pins in requirements-common.txt
+  ([#1264](https://github.com/zain13337/lyft-amundsen/pull/1264),
+  [`765907f`](https://github.com/zain13337/lyft-amundsen/commit/765907f704a53cba4aae4a90b3020fd0f20a9d8f))
+
+* remove hard pins
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+* remove unneeded reqs
+
+* remove comment
+
+* bump all packages
+
+- Removing deprecated title-1 class from Amundsen
+  ([#730](https://github.com/zain13337/lyft-amundsen/pull/730),
+  [`1c2923a`](https://github.com/zain13337/lyft-amundsen/commit/1c2923abe934887c862b758ceb10c361e707433e))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Rework alert tests to use React Testing Library
+  ([#2144](https://github.com/zain13337/lyft-amundsen/pull/2144),
+  [`e26ab35`](https://github.com/zain13337/lyft-amundsen/commit/e26ab35aead9e635c1884e59e964175253fb0f37))
+
+* chore: rewrites Alerts check in RTL
+
+Signed-off-by: Marcos Iglesias <golodhros@gmail.com>
+
+* chore: updates tests due to change on alert code
+
+* chore: deprecate enzyme tests for Alert
+
+---------
+
+- Separate configs based on the backends/proxies
+  ([#279](https://github.com/zain13337/lyft-amundsen/pull/279),
+  [`c69b1a2`](https://github.com/zain13337/lyft-amundsen/commit/c69b1a2d54d8be4b0f5e04b27aa26afeb9b1c1dd))
+
+* fixes pip install and configs
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+* cleanup
+
+* test fix
+
+* removes the requirements changes from branch
+
+- Shared dependencies unification ([#1163](https://github.com/zain13337/lyft-amundsen/pull/1163),
+  [`11b0325`](https://github.com/zain13337/lyft-amundsen/commit/11b0325d9fa6c4a3f97c90b93da323635bb22205))
+
+* unify_deps | :tada: Initial commit.
+
+Signed-off-by: mgorsk1 <gorskimariusz13@gmail.com>
+
+* unify_deps | :recycle: Refactoring code.
+
+* unify_deps | :bug: Fixing a bug.
+
+* unify_deps | :rotating_light: Removing linter warnings.
+
+* unify_deps | :white_check_mark: Adding tests.
+
+* unify_deps | :arrow_up: Upgrading dependencies.
+
+* unify_deps | :sparkles: Introducing new features. (run tests when reqs change)
+
+* unify_deps | :bulb: Documenting source code.
+
+* unify_deps | :memo: Writing docs.
+
+* unify_deps | :lipstick: Updating the UI and style files.
+
+* unify_deps | :ok_hand: Updating code due to code review changes.
+
+Co-authored-by: Dorian Johnson <2020@dorianj.net>
+
+- Tested and refactored Stats component
+  ([#687](https://github.com/zain13337/lyft-amundsen/pull/687),
+  [`069b790`](https://github.com/zain13337/lyft-amundsen/commit/069b79058fed7d4d00a145f63d3b3cd234bdc630))
+
+Signed-off-by: Marcos Iglesias Valle <golodhros@gmail.com>
+
+- Undo the great unpinning ([#1267](https://github.com/zain13337/lyft-amundsen/pull/1267),
+  [`3ceacec`](https://github.com/zain13337/lyft-amundsen/commit/3ceacec13a182e40e7e46646c1562e2619561a99))
+
+* undo the great unpinning
+
+Signed-off-by: Dmitriy Kunitskiy <dkunitskiy@lyft.com>
+
+* remove all extra requires
+
+* dev back to all
+
+- Update ES index maps to use same maps of amundsen-common
+  ([#385](https://github.com/zain13337/lyft-amundsen/pull/385),
+  [`4a957b9`](https://github.com/zain13337/lyft-amundsen/commit/4a957b938b89d0d96dc194cada9d2c0554ea8039))
+
+* Update setup.py to remove python2.7
+
+Signed-off-by: Wonyeong Choi <ciwnyg0815@gmail.com>
+
+* Update requirements.txt to include amundsen-common
+
+* Replace ES index maps with amundsen-common's
+
+* Remove ES constants file
+
+- Updates Postgres extractor to not use information_schema
+  ([#1365](https://github.com/zain13337/lyft-amundsen/pull/1365),
+  [`6cf8965`](https://github.com/zain13337/lyft-amundsen/commit/6cf8965ce8b065cc68be8fe021b1e7496b4b7716))
+
+* updates pg extractor to not use information_schema
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+* Fixes the test case
+
+* fixes the lint issue
+
+- Use swagger for table model in search
+  ([#110](https://github.com/zain13337/lyft-amundsen/pull/110),
+  [`22dccdb`](https://github.com/zain13337/lyft-amundsen/commit/22dccdb2ed0c6cca23f6db4485193aba573cdd8f))
+
+* refactor: use swagger for table model in search
+
+* fix tests
+
+* update version
+
+- Use swagger for user model ([#111](https://github.com/zain13337/lyft-amundsen/pull/111),
+  [`ef0a191`](https://github.com/zain13337/lyft-amundsen/commit/ef0a191ee256aefb5bca3d9cd8d348e85bdc0b84))
+
+* refactor: use swagger for user model
+
+* fix lint
+
+* bump deps
+
+* remove deps bump
+
+- Use swagger on Dashboard search API ([#108](https://github.com/zain13337/lyft-amundsen/pull/108),
+  [`5b106f5`](https://github.com/zain13337/lyft-amundsen/commit/5b106f5be936f54e7489f40eaecb67fe25a120e9))
+
+* Use swagger on Dashboard search API
+
+* mypy
+
+* Update
+
+- Use yield instead of return for all node/relation iterators in databuilder models
+  ([#451](https://github.com/zain13337/lyft-amundsen/pull/451),
+  [`2888dd3`](https://github.com/zain13337/lyft-amundsen/commit/2888dd35a3e4d55378f891e415caab3829332a84))
+
+* Use yield instead of return for all node/relation iterators in databuilder models
+
+Signed-off-by: xuans <xuan_shen@outlook.com>
+
+* Removed unused packages
+
+### Testing
+
+- Add unit test for quality endpoint, improve message for not-implemented
+  ([#2127](https://github.com/zain13337/lyft-amundsen/pull/2127),
+  [`11f54d7`](https://github.com/zain13337/lyft-amundsen/commit/11f54d78c909ded1e77b203ccf94e86669fcebfd))
+
+* Add unit test for quality endpoint, and make not implemented message more verbose
+
+Signed-off-by: Ben Dye <bdye@lyft.com>
+
+* Add license manually to one file
+
+* Trying to trigger stuck CI
+
+* Add notice
+
+* Run Black formatter
+
+---------
+
+- Added mypy types to api search unit tests
+  ([#673](https://github.com/zain13337/lyft-amundsen/pull/673),
+  [`94f62ea`](https://github.com/zain13337/lyft-amundsen/commit/94f62ea209a72ad1adfb7c5875ea8b841302af77))
+
+* added mypy types to api search unit tests
+
+Signed-off-by: Alex Kompos <alexkompos@gmail.com>
+
+* removed deprecated method
+
+* refactored into multi-line parameters
+
+* removed unused imports
+
+- Increase test coverage for atlas proxy
+  ([#1173](https://github.com/zain13337/lyft-amundsen/pull/1173),
+  [`a2776fe`](https://github.com/zain13337/lyft-amundsen/commit/a2776fe6d25677ebdf60d47d3f9ff0c056324287))
+
+Signed-off-by: sinkuladis <sink.vlad@gmail.com>
+
+- Refactor: update test and directory of ModeDashboardChartsBatchExtractor
+  ([#1052](https://github.com/zain13337/lyft-amundsen/pull/1052),
+  [`bded207`](https://github.com/zain13337/lyft-amundsen/commit/bded20786358a707a31649c03761c98da9e0dc07))
+
+- Updates the test cases, and documentation for Atlas Proxy
+  ([#195](https://github.com/zain13337/lyft-amundsen/pull/195),
+  [`6031932`](https://github.com/zain13337/lyft-amundsen/commit/603193270b999bf2c25786f567aa376aa432ba92))
+
+* Updates the test cases, and documentation
+
+Signed-off-by: verdan <verdan.mahmood@gmail.com>
+
+* Updates the test cases
+
+* More mypy fixes
